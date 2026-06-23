@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: eaee10ff3c34a894abde0fb99cb6d783
+timeCreated: 1508124027
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/roundtable.prefab
+  uploadId: 809082

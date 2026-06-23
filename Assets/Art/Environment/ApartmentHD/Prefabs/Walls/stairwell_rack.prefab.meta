@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e34b3fb68bf037f4dbcd918c859a4fde
+timeCreated: 1506135022
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/stairwell_rack.prefab
+  uploadId: 809082

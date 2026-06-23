@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b6c700b323eefcd43b62c7e2d602e20d
+timeCreated: 1504397006
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Plane_Big_Wall_Wall.prefab
+  uploadId: 809082

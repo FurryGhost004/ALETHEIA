@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4c1e6ce64084fc241b73cce8053f1a54
+timeCreated: 1503801355
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Speaker.prefab
+  uploadId: 809082

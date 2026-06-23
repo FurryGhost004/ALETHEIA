@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4539609484605bd439d9e5e67fb4d622
+timeCreated: 1501522489
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Materials/Karatedo.mat
+  uploadId: 809082

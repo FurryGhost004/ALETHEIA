@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e34238420784eba44bb5c0dc787c6801
+timeCreated: 1504062148
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Decals_prefabs/Decal_painting.prefab
+  uploadId: 809082

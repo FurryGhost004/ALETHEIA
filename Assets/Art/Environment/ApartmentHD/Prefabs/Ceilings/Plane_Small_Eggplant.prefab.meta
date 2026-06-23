@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 73ea24f8d6e4a9d4cb38989e6d9aaec6
+timeCreated: 1507176348
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Ceilings/Plane_Small_Eggplant.prefab
+  uploadId: 809082

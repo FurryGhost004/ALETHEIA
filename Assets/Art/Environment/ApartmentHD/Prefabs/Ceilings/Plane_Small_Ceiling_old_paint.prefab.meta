@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 39b2b8dec7c967c44851cdd3b56b67d3
+timeCreated: 1504326459
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Ceilings/Plane_Small_Ceiling_old_paint.prefab
+  uploadId: 809082

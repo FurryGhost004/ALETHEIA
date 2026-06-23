@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9d596ac89bca3b047ad0d0e0ad2118bc
+timeCreated: 1508124521
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/neon_tube.prefab
+  uploadId: 809082

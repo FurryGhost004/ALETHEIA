@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a5d7377ae3455ab49b4c95d3546b24b9
+timeCreated: 1507070241
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Plane_Small_Wall_Grey_Plaster.prefab
+  uploadId: 809082

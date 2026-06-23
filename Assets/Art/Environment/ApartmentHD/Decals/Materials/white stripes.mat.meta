@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0a83d40f2220c9a49a8c3eaa5560283b
+timeCreated: 1508464422
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Materials/white stripes.mat
+  uploadId: 809082

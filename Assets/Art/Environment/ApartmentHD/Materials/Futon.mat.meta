@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: dc551ea8408239a4fb1b94b2edc32bb6
+timeCreated: 1501278610
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Futon.mat
+  uploadId: 809082

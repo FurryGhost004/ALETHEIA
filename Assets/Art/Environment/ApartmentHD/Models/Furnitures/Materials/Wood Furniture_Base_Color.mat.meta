@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ec8ab66ee23f17d43937e2aa89223a44
+timeCreated: 1501544771
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Models/Furnitures/Materials/Wood Furniture_Base_Color.mat
+  uploadId: 809082

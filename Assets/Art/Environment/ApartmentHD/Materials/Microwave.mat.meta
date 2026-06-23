@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6ee05f4e52898c144b2c5383bf784aaf
+timeCreated: 1501956683
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Microwave.mat
+  uploadId: 809082

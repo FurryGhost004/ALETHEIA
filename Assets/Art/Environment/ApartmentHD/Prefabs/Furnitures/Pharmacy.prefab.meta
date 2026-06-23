@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: cdd3e03f4297ea84abcc5ab2f1655adc
+timeCreated: 1502058160
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Pharmacy.prefab
+  uploadId: 809082

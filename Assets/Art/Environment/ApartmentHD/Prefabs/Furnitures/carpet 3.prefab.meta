@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9a1d3920a18180844b4137b26844bfee
+timeCreated: 1508124062
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/carpet 3.prefab
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 45c5cdf39351ba943af756cd62b4fc73
+timeCreated: 1507323957
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Models/Doors/Materials/Canvas.mat
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9733a77c7c4ea0548b84a4b388533c81
+timeCreated: 1504397041
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Plane_Big_Wall_Grey_Plaster.prefab
+  uploadId: 809082

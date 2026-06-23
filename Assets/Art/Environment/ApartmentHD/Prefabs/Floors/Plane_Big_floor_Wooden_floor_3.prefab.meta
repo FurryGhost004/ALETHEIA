@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: dd863e0463f758645bca4e183c64abf5
+timeCreated: 1506983295
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Floors/Plane_Big_floor_Wooden_floor_3.prefab
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6b99fa0d0d9797449a5a884e9d5b9619
+timeCreated: 1507691433
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Concrete.mat
+  uploadId: 809082

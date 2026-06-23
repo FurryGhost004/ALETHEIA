@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 7f53671acb85b2541bfe4f096d4678d0
+timeCreated: 1501735053
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Small_chair.mat
+  uploadId: 809082

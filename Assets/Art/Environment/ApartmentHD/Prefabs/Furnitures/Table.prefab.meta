@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a850b5ca614b4fd41b29d2ebb0eb49f9
+timeCreated: 1501995848
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Table.prefab
+  uploadId: 809082

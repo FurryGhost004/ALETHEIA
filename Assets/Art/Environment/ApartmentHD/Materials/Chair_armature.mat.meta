@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ff8e6d87cdf6d39448a6a6dc8387bf88
+timeCreated: 1501094014
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Chair_armature.mat
+  uploadId: 809082

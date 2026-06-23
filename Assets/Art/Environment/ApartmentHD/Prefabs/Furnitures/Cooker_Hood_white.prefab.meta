@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2bebd4bcf58c9cf4b8a8da9d17439bd8
+timeCreated: 1502066269
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Cooker_Hood_white.prefab
+  uploadId: 809082

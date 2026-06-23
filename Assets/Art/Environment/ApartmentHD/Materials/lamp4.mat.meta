@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b54ee23f950b9ba4096a93b1dfca682e
+timeCreated: 1508038031
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/lamp4.mat
+  uploadId: 809082

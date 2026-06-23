@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1274e32a80a2412419f6768df48b8c19
+timeCreated: 1501957331
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Decals_prefabs/decal_Jumping_Jack.prefab
+  uploadId: 809082

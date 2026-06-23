@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2002add54f604d6449885ef1f8b39a00
+timeCreated: 1501365160
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Rail.prefab
+  uploadId: 809082

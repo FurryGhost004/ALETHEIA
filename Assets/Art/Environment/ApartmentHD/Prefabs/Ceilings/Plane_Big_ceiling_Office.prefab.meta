@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 67ac248e98c77ad4ca6fe2f8c25fec2a
+timeCreated: 1504326449
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Ceilings/Plane_Big_ceiling_Office.prefab
+  uploadId: 809082

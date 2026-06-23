@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ff0ffaf71e3faf84ca9737cff66bf09e
+timeCreated: 1501381174
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Wall_Bedroom.prefab
+  uploadId: 809082

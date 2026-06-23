@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6acf96b3f3c4b2d40b1e80309efb6678
+timeCreated: 1501095223
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Halogen_lamp.mat
+  uploadId: 809082

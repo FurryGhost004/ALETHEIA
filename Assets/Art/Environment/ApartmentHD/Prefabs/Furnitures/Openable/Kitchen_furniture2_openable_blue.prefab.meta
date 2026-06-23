@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 64bd757bcc8ab9a4b9356da9496e897b
+timeCreated: 1506559142
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Openable/Kitchen_furniture2_openable_blue.prefab
+  uploadId: 809082

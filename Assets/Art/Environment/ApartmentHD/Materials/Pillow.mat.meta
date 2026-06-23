@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f1a13010c5aec07449466e5cd9b7a59b
+timeCreated: 1500676713
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Pillow.mat
+  uploadId: 809082

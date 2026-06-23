@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6c8ade8553152c346b73939c06964eff
+timeCreated: 1501287456
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Small_window_frame.mat
+  uploadId: 809082

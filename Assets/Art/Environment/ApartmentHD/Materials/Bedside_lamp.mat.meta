@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d3c916566d3947443aaffee982ab4ce1
+timeCreated: 1501951383
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Bedside_lamp.mat
+  uploadId: 809082

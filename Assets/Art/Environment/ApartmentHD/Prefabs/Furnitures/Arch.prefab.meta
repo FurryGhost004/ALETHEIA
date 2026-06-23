@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1fcfda78766681549960c17aff28698e
+timeCreated: 1501703850
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Arch.prefab
+  uploadId: 809082

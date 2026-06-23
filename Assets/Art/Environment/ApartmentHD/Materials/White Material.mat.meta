@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0f46e09a53038a04b8c54d580e7ea1f9
+timeCreated: 1501544106
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/White Material.mat
+  uploadId: 809082

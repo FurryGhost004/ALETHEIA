@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2fee3186fb2d41342b536bb6b58bfcc8
+timeCreated: 1501093057
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/tvcabinet.mat
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 465f7bbcd4b940e4f8ee62154ccd1609
+timeCreated: 1501703731
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Aeration.prefab
+  uploadId: 809082

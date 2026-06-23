@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a9d376a0c9c1494448551725cd1252f7
+timeCreated: 1506112320
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Plane_Small2_old_paint.prefab
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ed147b31df484de41a8ccc013f9529ad
+timeCreated: 1501098902
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Kitchen_furniture_nonopenable.mat
+  uploadId: 809082

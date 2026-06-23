@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f3373dc1d8e7a99458252d23db25868a
+timeCreated: 1502077657
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Models/Furnitures/Materials/GridBox_Default.mat
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e7108fc90a93b4d44a51aa943b009818
+timeCreated: 1508028542
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/trash_bin_top2.mat
+  uploadId: 809082

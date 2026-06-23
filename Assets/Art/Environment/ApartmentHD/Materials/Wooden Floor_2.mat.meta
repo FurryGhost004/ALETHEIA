@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9c94e007b3c2d044685c02a84b055957
+timeCreated: 1500674447
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Wooden Floor_2.mat
+  uploadId: 809082

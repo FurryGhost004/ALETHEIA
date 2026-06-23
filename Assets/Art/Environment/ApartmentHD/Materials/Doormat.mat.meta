@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a6b362fb1c675314e930451bf71b893f
+timeCreated: 1508808592
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Doormat.mat
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c952a6eb8d19e1940a3d3fdf656bd234
+timeCreated: 1500676553
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Office ceiling.mat
+  uploadId: 809082

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: affce0d481e17a4419b656e1254c8431
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Demo/demo1_merged_elements/LightingData.asset
+  uploadId: 809082

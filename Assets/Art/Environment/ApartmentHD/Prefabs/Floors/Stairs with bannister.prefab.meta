@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 654df66038917954584903954668cbfc
+timeCreated: 1506046273
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Floors/Stairs with bannister.prefab
+  uploadId: 809082

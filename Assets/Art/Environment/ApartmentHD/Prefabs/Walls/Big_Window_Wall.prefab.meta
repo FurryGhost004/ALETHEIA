@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c61ca87554243dc4aa67b3159bc1fb7c
+timeCreated: 1504316427
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Big_Window_Wall.prefab
+  uploadId: 809082

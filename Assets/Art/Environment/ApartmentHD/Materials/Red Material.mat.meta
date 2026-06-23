@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d0f4ccca7e1840d409d08f0d39e22f5f
+timeCreated: 1501544106
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Red Material.mat
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8b367da4352243a4f9920f2e18a16d5f
+timeCreated: 1507323637
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Models/Doors/Materials/Wood.mat
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0a377c531ccc6844f9201cde9e3aa2d0
+timeCreated: 1501547725
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Halogen_lamp.prefab
+  uploadId: 809082

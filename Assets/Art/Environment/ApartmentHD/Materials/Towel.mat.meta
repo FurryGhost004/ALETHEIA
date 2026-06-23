@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ad375fb05ec27c144bad872cc13ad748
+timeCreated: 1500673585
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Towel.mat
+  uploadId: 809082

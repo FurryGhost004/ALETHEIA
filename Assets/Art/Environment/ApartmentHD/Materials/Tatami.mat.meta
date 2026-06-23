@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: abe30a01a438d0240a456f9fbb916fe2
+timeCreated: 1501279516
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Tatami.mat
+  uploadId: 809082

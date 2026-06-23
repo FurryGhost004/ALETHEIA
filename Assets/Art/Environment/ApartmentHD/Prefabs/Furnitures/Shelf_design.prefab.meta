@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1ae5abedd77365543a65e224ea663be4
+timeCreated: 1506909737
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Shelf_design.prefab
+  uploadId: 809082

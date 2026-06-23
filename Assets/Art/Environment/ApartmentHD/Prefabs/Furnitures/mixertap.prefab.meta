@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2b39c4678b67aa94ea0bf39c6ed85461
+timeCreated: 1501992798
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/mixertap.prefab
+  uploadId: 809082

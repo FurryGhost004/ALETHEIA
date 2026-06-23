@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a2250d09954fa8e4585731d2246e15d0
+timeCreated: 1508037732
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Desk_drawer2.mat
+  uploadId: 809082

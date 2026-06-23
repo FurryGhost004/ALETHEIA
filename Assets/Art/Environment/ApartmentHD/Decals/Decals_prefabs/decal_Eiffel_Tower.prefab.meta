@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c1bb6a6e1cb07f143a0a3f06f8b98741
+timeCreated: 1501528001
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Decals_prefabs/decal_Eiffel_Tower.prefab
+  uploadId: 809082

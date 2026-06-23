@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 145b719593457c440a1c9b689a571c3c
+timeCreated: 1507579767
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/exterior_door.mat
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 69bd5ed2d2d5bf74abb7832b1a585db3
+timeCreated: 1504060909
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Base_Chair.prefab
+  uploadId: 809082

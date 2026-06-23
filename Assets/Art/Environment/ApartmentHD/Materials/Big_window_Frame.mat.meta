@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4200ba901763f004683d2ef570a6540d
+timeCreated: 1501288243
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Big_window_Frame.mat
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c892a3d3ef7eb0543ba35f73e2f90249
+timeCreated: 1506566313
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Office_wall.mat
+  uploadId: 809082

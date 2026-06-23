@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: db0f1e6773be33d4b9fa4a5498d70ade
+timeCreated: 1506818959
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Carpet_4.mat
+  uploadId: 809082

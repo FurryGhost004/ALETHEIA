@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 427a42a2c7adc514ba16a7877056dd49
+timeCreated: 1501298910
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Enhancer.mat
+  uploadId: 809082

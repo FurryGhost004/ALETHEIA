@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d943e5106e6e83644bd518cbfe332a37
+timeCreated: 1500607209
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Materials/Painting.mat
+  uploadId: 809082

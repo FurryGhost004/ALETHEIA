@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 49971136541ed9c41b6cdc39c5414055
+timeCreated: 1501893566
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Materials/Poster.mat
+  uploadId: 809082

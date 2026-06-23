@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d75ab5da1b61c7b469668d0d194e3fa5
+timeCreated: 1501733859
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Cooker_Hood.mat
+  uploadId: 809082

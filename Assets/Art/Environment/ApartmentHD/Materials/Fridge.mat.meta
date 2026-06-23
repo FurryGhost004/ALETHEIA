@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e9823069879a67c42bcf37fdbf313941
+timeCreated: 1501728052
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Fridge.mat
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8d955390d1b98874bb3eb5107d4837d3
+timeCreated: 1506106829
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Floors/stairwell_floor.prefab
+  uploadId: 809082

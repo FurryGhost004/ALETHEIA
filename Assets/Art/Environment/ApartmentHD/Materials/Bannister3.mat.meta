@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6b73d7b04f95c264c925238463f5caf9
+timeCreated: 1506042765
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Bannister3.mat
+  uploadId: 809082

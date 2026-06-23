@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1643e24fee7b3f941a045ff9b8fbc5c5
+timeCreated: 1501952439
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Nightstand.mat
+  uploadId: 809082

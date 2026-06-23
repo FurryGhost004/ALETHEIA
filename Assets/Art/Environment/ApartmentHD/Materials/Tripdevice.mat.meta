@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b3f054923ab193c45a9bf4e7fcdf0f98
+timeCreated: 1502057889
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Tripdevice.mat
+  uploadId: 809082

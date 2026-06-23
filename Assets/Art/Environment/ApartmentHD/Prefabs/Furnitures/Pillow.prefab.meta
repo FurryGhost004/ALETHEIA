@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8e8db5b381844394b80c019a9be2b45c
+timeCreated: 1504231150
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Pillow.prefab
+  uploadId: 809082

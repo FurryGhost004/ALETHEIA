@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 98b5732a037cf44479a8d04d2bbe4706
+timeCreated: 1506558993
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Kitchen_floorboard.prefab
+  uploadId: 809082

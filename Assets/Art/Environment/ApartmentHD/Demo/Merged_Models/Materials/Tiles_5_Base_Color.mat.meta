@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9a239a489d0f28542893dae317b04770
+timeCreated: 1504130605
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Demo/Merged_Models/Materials/Tiles_5_Base_Color.mat
+  uploadId: 809082

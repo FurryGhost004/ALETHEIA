@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 50a2c55fc6188ba45915815ec388e6b1
+timeCreated: 1508037617
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Chest_openable.mat
+  uploadId: 809082

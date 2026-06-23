@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: cf685f08d41bea945a10c03d341e0092
+timeCreated: 1501554613
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Electricstove_white.prefab
+  uploadId: 809082

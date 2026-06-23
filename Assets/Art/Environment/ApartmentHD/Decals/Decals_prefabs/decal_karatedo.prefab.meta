@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8e7498c13c119154ab84a69c8d1f8b7b
+timeCreated: 1501525867
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Decals_prefabs/decal_karatedo.prefab
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a4d0d9930c53f794482b8890aa57e141
+timeCreated: 1504327161
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Plane_Small_Wall_Tiles5.prefab
+  uploadId: 809082

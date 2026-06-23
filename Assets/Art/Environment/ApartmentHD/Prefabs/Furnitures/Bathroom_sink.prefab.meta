@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4a2b678a57dcf9142a05ab8c7f46bc32
+timeCreated: 1503783881
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Bathroom_sink.prefab
+  uploadId: 809082

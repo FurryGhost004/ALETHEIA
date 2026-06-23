@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f07454583de8e5d4cbf22ae85d7d5681
+timeCreated: 1502064782
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Dressing.prefab
+  uploadId: 809082

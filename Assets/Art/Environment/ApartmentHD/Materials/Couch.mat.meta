@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 51f72bb5701a435439d61913611d1362
+timeCreated: 1500692289
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Couch.mat
+  uploadId: 809082

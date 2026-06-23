@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 154767769f1acaf43a3e009dc58ca75a
+timeCreated: 1508124423
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/wall_shelf.prefab
+  uploadId: 809082

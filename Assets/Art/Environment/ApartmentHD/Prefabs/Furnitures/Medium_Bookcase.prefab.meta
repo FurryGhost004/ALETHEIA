@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 36085813f5230f64f8802b96272e4643
+timeCreated: 1501716959
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Medium_Bookcase.prefab
+  uploadId: 809082

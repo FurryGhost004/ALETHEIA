@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 56a56173469c0d04b9f18e60ac0d0161
+timeCreated: 1507428424
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/bed_structure.mat
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2cbc86c46a0d8294d9f368e390b570ca
+timeCreated: 1507150883
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Plane_Big_Wall_tiles_9.prefab
+  uploadId: 809082

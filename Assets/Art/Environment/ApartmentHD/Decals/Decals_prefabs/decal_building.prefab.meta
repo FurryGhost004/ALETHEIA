@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a4703823047c698498c6750eb9a3eafe
+timeCreated: 1501525873
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Decals_prefabs/decal_building.prefab
+  uploadId: 809082

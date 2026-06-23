@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 006b716d2ab1cf04ca07223f5cd00ba9
+timeCreated: 1506302825
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/electric_stove_2_blue.mat
+  uploadId: 809082

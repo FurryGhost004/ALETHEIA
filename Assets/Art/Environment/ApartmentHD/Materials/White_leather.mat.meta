@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 53d5204ae7e3704468c7027772f6fdb4
+timeCreated: 1506653723
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/White_leather.mat
+  uploadId: 809082

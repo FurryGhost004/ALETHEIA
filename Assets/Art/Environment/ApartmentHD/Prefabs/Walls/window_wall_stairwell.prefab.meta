@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2ba5244a7c732f04a818595f63a17f27
+timeCreated: 1506143049
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/window_wall_stairwell.prefab
+  uploadId: 809082

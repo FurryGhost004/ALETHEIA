@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b4a025a3f5a68f94784eda15c77b0572
+timeCreated: 1501714149
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Models/Doors/Materials/No Name.mat
+  uploadId: 809082

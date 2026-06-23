@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3ed9f35d78f0a424caa0c3ae2e819f80
+timeCreated: 1506137980
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Lock2.prefab
+  uploadId: 809082

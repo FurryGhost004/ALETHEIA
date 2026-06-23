@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d3081d64364304e4783bab94ee65c4b3
+timeCreated: 1501123157
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Electric_stove_nonopenable_white.mat
+  uploadId: 809082

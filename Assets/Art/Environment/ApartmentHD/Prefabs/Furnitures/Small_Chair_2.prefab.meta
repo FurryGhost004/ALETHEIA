@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 412f8a32d8ccc3c4ebbc06d61899fb7f
+timeCreated: 1501989772
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Small_Chair_2.prefab
+  uploadId: 809082

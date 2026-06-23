@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a98166718a90e2d47a76d4fd9992ae25
+timeCreated: 1506559009
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Furniture_door_blue.prefab
+  uploadId: 809082

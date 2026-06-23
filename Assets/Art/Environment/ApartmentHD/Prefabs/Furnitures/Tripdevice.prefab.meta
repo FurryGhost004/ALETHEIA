@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a5b596f13fc9c34489bb25613a4c36a8
+timeCreated: 1502058142
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Tripdevice.prefab
+  uploadId: 809082

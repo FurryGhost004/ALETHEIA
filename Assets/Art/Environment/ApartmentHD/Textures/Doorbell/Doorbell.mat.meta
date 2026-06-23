@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b649ecfb8fbbfa64096e4016a52e8096
+timeCreated: 1508812264
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Textures/Doorbell/Doorbell.mat
+  uploadId: 809082

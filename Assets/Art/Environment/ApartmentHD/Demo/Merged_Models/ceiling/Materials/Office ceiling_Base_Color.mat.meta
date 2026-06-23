@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ee9388ef421dd5949946369ddc104b0f
+timeCreated: 1504141650
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Demo/Merged_Models/ceiling/Materials/Office ceiling_Base_Color.mat
+  uploadId: 809082

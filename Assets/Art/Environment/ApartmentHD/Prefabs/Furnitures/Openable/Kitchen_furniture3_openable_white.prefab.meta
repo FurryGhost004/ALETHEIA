@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 26de046fb1f84eb458c0493e18b07118
+timeCreated: 1506559089
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Openable/Kitchen_furniture3_openable_white.prefab
+  uploadId: 809082

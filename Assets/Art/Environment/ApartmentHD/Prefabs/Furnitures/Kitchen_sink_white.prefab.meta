@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 414fcdaf6e32e0c4b80c9eb68123bb4d
+timeCreated: 1501554798
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Kitchen_sink_white.prefab
+  uploadId: 809082

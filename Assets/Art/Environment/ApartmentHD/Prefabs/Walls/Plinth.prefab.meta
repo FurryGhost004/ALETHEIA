@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 84cf3463ee15d1044a28ad30c74d2e1e
+timeCreated: 1502125690
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Plinth.prefab
+  uploadId: 809082

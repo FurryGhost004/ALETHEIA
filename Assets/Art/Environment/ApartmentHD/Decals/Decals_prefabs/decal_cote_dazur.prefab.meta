@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 875a148e8ecd4754890dda89cd49db2f
+timeCreated: 1508291222
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Decals_prefabs/decal_cote_dazur.prefab
+  uploadId: 809082

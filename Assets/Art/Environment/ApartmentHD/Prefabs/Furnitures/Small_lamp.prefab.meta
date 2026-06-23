@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3166b8346b0358347ad45a12437a5599
+timeCreated: 1501987690
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Small_lamp.prefab
+  uploadId: 809082

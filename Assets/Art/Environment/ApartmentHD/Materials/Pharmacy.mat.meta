@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 060aa3b164f378544af4b0b359e846ed
+timeCreated: 1502057645
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Pharmacy.mat
+  uploadId: 809082

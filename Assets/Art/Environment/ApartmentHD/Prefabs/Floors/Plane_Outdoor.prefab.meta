@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b2f5cea14bdebd54e9ff94d4bdacaa17
+timeCreated: 1504396582
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Floors/Plane_Outdoor.prefab
+  uploadId: 809082

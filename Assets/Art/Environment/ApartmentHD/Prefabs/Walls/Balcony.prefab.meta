@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 38f9b8970b5271143a6266c59b85f78e
+timeCreated: 1504396708
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Balcony.prefab
+  uploadId: 809082

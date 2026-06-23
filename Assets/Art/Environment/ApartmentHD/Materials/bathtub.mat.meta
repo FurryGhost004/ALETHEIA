@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 950b906fc01f8b340bfcbbf9962c4bee
+timeCreated: 1501814307
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/bathtub.mat
+  uploadId: 809082

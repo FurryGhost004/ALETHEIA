@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 7d38db04e77e57649bf7316cd2c3d4bb
+timeCreated: 1508037830
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Endtable2.mat
+  uploadId: 809082

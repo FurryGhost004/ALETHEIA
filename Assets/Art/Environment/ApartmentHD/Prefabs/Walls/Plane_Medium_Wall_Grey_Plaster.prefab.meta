@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4c38b9ee9050bf84889bda67065dbf15
+timeCreated: 1504327096
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Plane_Medium_Wall_Grey_Plaster.prefab
+  uploadId: 809082

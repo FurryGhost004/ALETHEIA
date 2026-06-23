@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: cfb5aa05e29d1324287e57cdf057fa42
+timeCreated: 1507164874
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Kitchen_wall_3.prefab
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 7fea9f923c1b55349b3dfddea3b10431
+timeCreated: 1501539613
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Desk.prefab
+  uploadId: 809082

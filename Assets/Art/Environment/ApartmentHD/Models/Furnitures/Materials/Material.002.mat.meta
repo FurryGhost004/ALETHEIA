@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 7ee2c8c21bfa2cd4a8b4d47216f63ca7
+timeCreated: 1501709845
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Models/Furnitures/Materials/Material.002.mat
+  uploadId: 809082

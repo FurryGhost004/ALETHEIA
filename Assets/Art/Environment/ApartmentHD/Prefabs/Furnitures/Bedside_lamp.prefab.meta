@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fd7afa6017cb7f84188a44bf0b00dd4d
+timeCreated: 1502069900
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Bedside_lamp.prefab
+  uploadId: 809082

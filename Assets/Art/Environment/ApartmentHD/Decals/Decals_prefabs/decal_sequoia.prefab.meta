@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ecc98104772f1004f8d3c9dce57b84dd
+timeCreated: 1508468623
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Decals_prefabs/decal_sequoia.prefab
+  uploadId: 809082

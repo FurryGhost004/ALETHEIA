@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6635ee0976b430a42a46abd865c5de45
+timeCreated: 1504225047
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/internet_box.prefab
+  uploadId: 809082

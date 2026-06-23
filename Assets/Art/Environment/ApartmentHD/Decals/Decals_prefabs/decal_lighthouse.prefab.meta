@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3f2ecef79ad78fb4fa91d4d698b6ba7e
+timeCreated: 1501528045
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Decals_prefabs/decal_lighthouse.prefab
+  uploadId: 809082

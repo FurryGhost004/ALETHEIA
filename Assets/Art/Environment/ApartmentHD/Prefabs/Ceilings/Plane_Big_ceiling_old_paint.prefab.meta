@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5e015110dfdffdf429833899ce6769ed
+timeCreated: 1504326455
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Ceilings/Plane_Big_ceiling_old_paint.prefab
+  uploadId: 809082

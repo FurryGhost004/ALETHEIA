@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e28aecc02ecae0a43b73fa5fd2a835f0
+timeCreated: 1501903912
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/WC.mat
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b2c25c3487558b145a1c1eb01d499d70
+timeCreated: 1501544106
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Purple Material.mat
+  uploadId: 809082

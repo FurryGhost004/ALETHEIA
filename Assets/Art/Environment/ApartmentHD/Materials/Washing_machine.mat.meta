@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ff7014b6395289444b7102dc1011ea24
+timeCreated: 1501129967
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Washing_machine.mat
+  uploadId: 809082

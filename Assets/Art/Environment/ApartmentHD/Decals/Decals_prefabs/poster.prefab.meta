@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 96f8f591b9869e84c8391b0e4eb536df
+timeCreated: 1501957381
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Decals_prefabs/poster.prefab
+  uploadId: 809082

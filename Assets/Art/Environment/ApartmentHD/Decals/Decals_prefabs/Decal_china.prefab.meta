@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fcf2dc414cb34414a91b2be4950fbae9
+timeCreated: 1508291187
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Decals_prefabs/Decal_china.prefab
+  uploadId: 809082

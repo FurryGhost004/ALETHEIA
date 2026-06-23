@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 29abb60135fc3fb4ebc8961a7ae3bdf6
+timeCreated: 1507176320
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Ceilings/Plane_Big_ceiling_Eggplant.prefab
+  uploadId: 809082

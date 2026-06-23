@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4c4769f5747959e47aa2f0462f2c5daf
+timeCreated: 1506192218
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/exterior_bricks.mat
+  uploadId: 809082

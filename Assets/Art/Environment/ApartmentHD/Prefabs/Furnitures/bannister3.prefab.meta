@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 87e40d269a8620f4ebbcfd795449c217
+timeCreated: 1506044402
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/bannister3.prefab
+  uploadId: 809082

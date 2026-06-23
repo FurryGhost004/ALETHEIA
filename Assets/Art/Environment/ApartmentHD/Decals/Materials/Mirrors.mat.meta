@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e92d36321391fcd4ea1c6a2299f7a09e
+timeCreated: 1508466514
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Materials/Mirrors.mat
+  uploadId: 809082

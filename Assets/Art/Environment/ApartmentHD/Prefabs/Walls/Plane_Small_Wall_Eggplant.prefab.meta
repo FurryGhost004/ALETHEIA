@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d2c8a34acdc264745afaefe775dc55a8
+timeCreated: 1507149971
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Plane_Small_Wall_Eggplant.prefab
+  uploadId: 809082

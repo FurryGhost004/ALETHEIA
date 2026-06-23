@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6a7c3adad5d7ded4297cfc9b29fd1de1
+timeCreated: 1506304084
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/kitchen_drawer_blue.mat
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 499906161b75ee0478d796393322434a
+timeCreated: 1508124188
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Openable/tvcabinet3.prefab
+  uploadId: 809082

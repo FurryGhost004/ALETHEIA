@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 73ae4449e076229428dbc980c994943d
+timeCreated: 1503803550
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Couch.prefab
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f6585b61b6efe084d9720f18fadffa12
+timeCreated: 1500665082
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/shutter.mat
+  uploadId: 809082

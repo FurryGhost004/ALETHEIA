@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a95fea89ad2613c44bbcacf4e02693e3
+timeCreated: 1503786518
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Towel.prefab
+  uploadId: 809082

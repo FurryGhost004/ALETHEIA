@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 927106bb915d7e644812b1ce438faa83
+timeCreated: 1501555035
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Kitchen_Furniture3_nonopenable.prefab
+  uploadId: 809082

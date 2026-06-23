@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e029ac38135a24b4bbbbc8200af50c68
+timeCreated: 1506305940
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/kitchen_furniture_door_white.mat
+  uploadId: 809082

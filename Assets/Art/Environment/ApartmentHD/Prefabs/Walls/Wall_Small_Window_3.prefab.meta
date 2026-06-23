@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9d326b78befd24d43b5c889c09ea2a9e
+timeCreated: 1507164838
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Wall_Small_Window_3.prefab
+  uploadId: 809082

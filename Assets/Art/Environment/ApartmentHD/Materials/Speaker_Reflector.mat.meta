@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9d545ea279b453046887f32bb1c425dd
+timeCreated: 1501902489
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Speaker_Reflector.mat
+  uploadId: 809082

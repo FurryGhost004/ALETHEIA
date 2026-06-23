@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d79e4800125b1f44ea19bdee424e2e07
+timeCreated: 1506559060
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Kitchen_drawer_wood.prefab
+  uploadId: 809082

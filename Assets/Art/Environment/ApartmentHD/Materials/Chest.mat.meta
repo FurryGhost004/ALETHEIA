@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 7ab08b21290112542907f1ba2bae2138
+timeCreated: 1501103190
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Chest.mat
+  uploadId: 809082

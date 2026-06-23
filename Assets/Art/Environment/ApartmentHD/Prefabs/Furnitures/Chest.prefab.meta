@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 161beb4d201001848a573bccadae7047
+timeCreated: 1501548399
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Chest.prefab
+  uploadId: 809082

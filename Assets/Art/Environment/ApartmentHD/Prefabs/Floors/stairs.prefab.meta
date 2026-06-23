@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3b2683ad8277d014b85a598ecf756338
+timeCreated: 1506044381
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Floors/stairs.prefab
+  uploadId: 809082

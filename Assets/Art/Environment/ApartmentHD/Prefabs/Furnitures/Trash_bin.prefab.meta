@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8c74a5bb7a9c8404a94c0aabcd30404c
+timeCreated: 1508125377
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Trash_bin.prefab
+  uploadId: 809082

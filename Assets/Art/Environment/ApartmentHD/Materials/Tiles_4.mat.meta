@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d98e90cc28dd5824fa8506bb6f914000
+timeCreated: 1501452245
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Tiles_4.mat
+  uploadId: 809082

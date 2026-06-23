@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d2ea5b7642b342a48b8244dae40cac79
+timeCreated: 1507693192
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Plane_Big_concrete.prefab
+  uploadId: 809082

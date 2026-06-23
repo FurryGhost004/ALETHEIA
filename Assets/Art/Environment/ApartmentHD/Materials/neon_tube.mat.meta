@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0e07aa42b8045a747bf58c4c312a1a3d
+timeCreated: 1508116663
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/neon_tube.mat
+  uploadId: 809082

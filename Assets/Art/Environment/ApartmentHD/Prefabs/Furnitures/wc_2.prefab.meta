@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 786ee9db19b9bb34da1dd7d5f21174bf
+timeCreated: 1508816803
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/wc_2.prefab
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 907df72e80f4367478d83b9b99b9815b
+timeCreated: 1501539373
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Desk.mat
+  uploadId: 809082

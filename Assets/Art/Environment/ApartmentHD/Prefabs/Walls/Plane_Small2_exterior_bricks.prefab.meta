@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c5c323392723b7d4bbb332277236d0fd
+timeCreated: 1507674993
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Plane_Small2_exterior_bricks.prefab
+  uploadId: 809082

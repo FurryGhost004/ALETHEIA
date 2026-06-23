@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 991d1c32c8668d7418615c20d70dd339
+timeCreated: 1500673783
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Old paint.mat
+  uploadId: 809082

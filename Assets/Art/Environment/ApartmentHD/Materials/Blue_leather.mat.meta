@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f070626b69eb1854395086deb6ef821c
+timeCreated: 1506653562
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Blue_leather.mat
+  uploadId: 809082

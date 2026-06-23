@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 186e93c2ebf965443a16bcbb17d4a3d1
+timeCreated: 1504313846
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Doors/Door2.prefab
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 550ce5f010041044f9f63009e1c62568
+timeCreated: 1501893795
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Materials/Jumping Jack.mat
+  uploadId: 809082

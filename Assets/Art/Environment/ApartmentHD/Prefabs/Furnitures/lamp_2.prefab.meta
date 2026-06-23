@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 17f9a260b8f7c2145afce38fc0f5f4dd
+timeCreated: 1508124271
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/lamp_2.prefab
+  uploadId: 809082

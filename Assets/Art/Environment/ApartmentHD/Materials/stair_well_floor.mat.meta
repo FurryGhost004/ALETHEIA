@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6429e0fae6a11874b917d45b2348f3b8
+timeCreated: 1506106530
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/stair_well_floor.mat
+  uploadId: 809082

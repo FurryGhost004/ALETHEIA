@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 33c543787c934da4ba3452a93ea04486
+timeCreated: 1508124404
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/bed.prefab
+  uploadId: 809082

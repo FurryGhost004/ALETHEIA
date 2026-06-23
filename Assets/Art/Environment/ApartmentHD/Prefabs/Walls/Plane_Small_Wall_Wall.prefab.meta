@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d026aa6f7aa45e4488f91bd891a12beb
+timeCreated: 1504327170
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Walls/Plane_Small_Wall_Wall.prefab
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 80d5d331eb1ee744c96461cdcfa919da
+timeCreated: 1501527715
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Decals_prefabs/decal_cooktop.prefab
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f6a6ae7acf6dc3c458f70282cc5b29e7
+timeCreated: 1503798138
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Decals_prefabs/decal_fudji.prefab
+  uploadId: 809082

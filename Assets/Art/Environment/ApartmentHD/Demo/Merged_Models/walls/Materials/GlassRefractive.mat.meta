@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cb1825cb0cae0de43b214d7fbbcf9968
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Demo/Merged_Models/walls/Materials/GlassRefractive.mat
+  uploadId: 809082

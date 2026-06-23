@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 17e3c61f1f1713c48a9f1abe975d5554
+timeCreated: 1501521865
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Decals/Materials/Building.mat
+  uploadId: 809082

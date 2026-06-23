@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5270541bfc65fd74a996a238bad737d7
+timeCreated: 1501992203
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Tv.prefab
+  uploadId: 809082

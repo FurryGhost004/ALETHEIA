@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 55770322e7c77824ea8c28f6178b0a18
+timeCreated: 1501905168
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Materials/Lock.mat
+  uploadId: 809082

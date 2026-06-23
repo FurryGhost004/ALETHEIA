@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: cf43a801734e2d14da8ad998d8464fe0
+timeCreated: 1501703680
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Models/Furnitures/Materials/shutter_001_Base_Color.mat
+  uploadId: 809082
