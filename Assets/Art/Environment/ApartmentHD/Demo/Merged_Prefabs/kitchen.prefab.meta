@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 688dae6dd26c6eb41906dc3794c05a2c
+timeCreated: 1504401489
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Demo/Merged_Prefabs/kitchen.prefab
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b0b900c9d69424b4c846845605424050
+timeCreated: 1501362540
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Models/Walls and Planes/Materials/Bitmap2Material_3_Base_Color.mat
+  uploadId: 809082

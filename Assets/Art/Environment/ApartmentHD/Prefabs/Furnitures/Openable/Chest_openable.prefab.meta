@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 7647c841bc6fb824eb1af11b2c5bb8f1
+timeCreated: 1508124172
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Openable/Chest_openable.prefab
+  uploadId: 809082

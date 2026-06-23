@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ca3f1d885633e914790bc176b3c08084
+timeCreated: 1501708558
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Models/Furnitures/Materials/Carpet_Base_Color.mat
+  uploadId: 809082

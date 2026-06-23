@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d73e65138407558429e9d45ee75aea03
+timeCreated: 1501362562
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Models/Walls and Planes/Materials/marble_tiles_baseColor.mat
+  uploadId: 809082

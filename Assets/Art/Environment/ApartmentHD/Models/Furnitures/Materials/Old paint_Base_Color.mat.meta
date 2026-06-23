@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1f84bc5a890dc9e4b84bac37a5f8f751
+timeCreated: 1502125537
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Models/Furnitures/Materials/Old paint_Base_Color.mat
+  uploadId: 809082

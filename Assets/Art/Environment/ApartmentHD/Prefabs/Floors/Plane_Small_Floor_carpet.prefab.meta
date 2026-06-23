@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d5cb23785ac4e044eb38c6ecaa247091
+timeCreated: 1504327056
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Floors/Plane_Small_Floor_carpet.prefab
+  uploadId: 809082

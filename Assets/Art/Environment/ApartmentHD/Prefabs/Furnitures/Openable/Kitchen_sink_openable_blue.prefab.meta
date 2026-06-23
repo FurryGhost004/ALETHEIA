@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 79da865e97d6aca41bc35b04fc416a71
+timeCreated: 1506558958
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Openable/Kitchen_sink_openable_blue.prefab
+  uploadId: 809082

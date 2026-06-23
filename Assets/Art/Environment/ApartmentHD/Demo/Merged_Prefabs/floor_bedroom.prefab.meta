@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f9bf85e4eda1fe640ac85126b9769b9d
+timeCreated: 1504401570
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Demo/Merged_Prefabs/floor_bedroom.prefab
+  uploadId: 809082

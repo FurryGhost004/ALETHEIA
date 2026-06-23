@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d88a2f652abac1f4a8ef6ebb1bee5e06
+timeCreated: 1501900219
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Models/Furnitures/Materials/Speaker_Diffuse.mat
+  uploadId: 809082

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1ae7b5fbec040d443b5566bd8a355c17
+timeCreated: 1504401542
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Demo/Merged_Prefabs/ceiling_room.prefab
+  uploadId: 809082

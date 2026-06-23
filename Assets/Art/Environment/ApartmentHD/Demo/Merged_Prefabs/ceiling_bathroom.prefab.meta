@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a651655d4a8694c4e9a225a836c456b8
+timeCreated: 1504401551
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Demo/Merged_Prefabs/ceiling_bathroom.prefab
+  uploadId: 809082

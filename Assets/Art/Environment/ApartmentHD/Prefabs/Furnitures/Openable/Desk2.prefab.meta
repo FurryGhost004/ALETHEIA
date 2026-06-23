@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4a4841f70edab744483e688d44c0d6ef
+timeCreated: 1508124130
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Furnitures/Openable/Desk2.prefab
+  uploadId: 809082

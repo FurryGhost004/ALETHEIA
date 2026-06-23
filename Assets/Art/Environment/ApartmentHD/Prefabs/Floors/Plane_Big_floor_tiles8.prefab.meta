@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fcf2a922debe765448f8d030deb9d61d
+timeCreated: 1507152090
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Prefabs/Floors/Plane_Big_floor_tiles8.prefab
+  uploadId: 809082

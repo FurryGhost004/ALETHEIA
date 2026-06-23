@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f33eda88a7198aa45a27e1149a1a4232
+timeCreated: 1501362585
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Models/Walls and Planes/Materials/Tiles_2_Main.mat
+  uploadId: 809082

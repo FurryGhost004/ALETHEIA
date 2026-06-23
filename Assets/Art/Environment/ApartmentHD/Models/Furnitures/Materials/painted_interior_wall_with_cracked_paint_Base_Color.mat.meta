@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 774901185682540458402f2eaba3762a
+timeCreated: 1501700189
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97614
+  packageName: HD Apartment
+  packageVersion: 2.1
+  assetPath: Assets/HD Apartment/Models/Furnitures/Materials/painted_interior_wall_with_cracked_paint_Base_Color.mat
+  uploadId: 809082
