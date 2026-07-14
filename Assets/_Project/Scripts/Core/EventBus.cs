@@ -110,3 +110,5 @@ public struct DayTransitionEvent
     public int NewDay;
     public DayTransitionEvent(int newDay) { NewDay = newDay; }
 }
+
+public struct DialogueEndedEvent { }
