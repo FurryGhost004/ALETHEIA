@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerLook : MonoBehaviour
 {
@@ -8,20 +7,20 @@ public class PlayerLook : MonoBehaviour
 
     private float _pitch;
     private Vector2 _lookInput;
-
-    public void SetLookInput(Vector2 input)
-    {
-        _lookInput = input;
-    }
+    private bool _isCursorLocked = true;
 
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        SetCursorState(true);
     }
 
     private void Update()
     {
+        if (!_isCursorLocked)
+        {
+            return;
+        }
+
         float mouseX = _lookInput.x * _mouseSensitivity * Time.deltaTime;
         float mouseY = _lookInput.y * _mouseSensitivity * Time.deltaTime;
 
@@ -31,5 +30,26 @@ public class PlayerLook : MonoBehaviour
         _cameraHolder.localRotation = Quaternion.Euler(_pitch, 0f, 0f);
 
         transform.Rotate(Vector3.up * mouseX);
+    }
+
+    public void SetLookInput(Vector2 input)
+    {
+        _lookInput = input;
+    }
+
+    public void SetCursorLocked(bool isLocked)
+    {
+        SetCursorState(isLocked);
+    }
+
+    private void SetCursorState(bool isLocked)
+    {
+        _isCursorLocked = isLocked;
+
+        Cursor.lockState = isLocked
+            ? CursorLockMode.Locked
+            : CursorLockMode.None;
+
+        Cursor.visible = !isLocked;
     }
 }

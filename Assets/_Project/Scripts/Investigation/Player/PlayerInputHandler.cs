@@ -21,10 +21,13 @@ public class PlayerInputHandler : MonoBehaviour
         _input.Player.Move.performed += OnMove;
         _input.Player.Move.canceled += OnMove;
 
-        _input.Player.Interact.performed += OnInteract;
-
         _input.Player.Look.performed += OnLook;
         _input.Player.Look.canceled += OnLook;
+
+        _input.Player.Interact.performed += OnInteract;
+
+        _input.Player.ToggleCursor.performed += OnCursorPressed;
+        _input.Player.ToggleCursor.canceled += OnCursorReleased;
     }
 
     private void OnDisable()
@@ -32,12 +35,15 @@ public class PlayerInputHandler : MonoBehaviour
         _input.Player.Move.performed -= OnMove;
         _input.Player.Move.canceled -= OnMove;
 
-        _input.Player.Interact.performed -= OnInteract;
-
-        _input.Disable();
-
         _input.Player.Look.performed -= OnLook;
         _input.Player.Look.canceled -= OnLook;
+
+        _input.Player.Interact.performed -= OnInteract;
+
+        _input.Player.ToggleCursor.performed -= OnCursorPressed;
+        _input.Player.ToggleCursor.canceled -= OnCursorReleased;
+
+        _input.Disable();
     }
 
     private void OnMove(InputAction.CallbackContext context)
@@ -45,13 +51,23 @@ public class PlayerInputHandler : MonoBehaviour
         _movement.SetMoveInput(context.ReadValue<Vector2>());
     }
 
+    private void OnLook(InputAction.CallbackContext context)
+    {
+        _playerLook.SetLookInput(context.ReadValue<Vector2>());
+    }
+
     private void OnInteract(InputAction.CallbackContext context)
     {
         _interaction.TryInteract();
     }
 
-    private void OnLook(InputAction.CallbackContext context)
+    private void OnCursorPressed(InputAction.CallbackContext context)
     {
-        _playerLook.SetLookInput(context.ReadValue<Vector2>());
+        _playerLook.SetCursorLocked(false);
+    }
+
+    private void OnCursorReleased(InputAction.CallbackContext context)
+    {
+        _playerLook.SetCursorLocked(true);
     }
 }
