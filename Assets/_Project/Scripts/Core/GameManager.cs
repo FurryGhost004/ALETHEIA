@@ -1,5 +1,3 @@
-// Path: _Project/Scripts/Core/GameManager.cs
-
 using UnityEngine;
 
 /// <summary>

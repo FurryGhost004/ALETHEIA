@@ -112,3 +112,7 @@ public struct DayTransitionEvent
 }
 
 public struct DialogueEndedEvent { }
+
+public struct GamePausedEvent { }
+
+public struct GameResumedEvent { }
