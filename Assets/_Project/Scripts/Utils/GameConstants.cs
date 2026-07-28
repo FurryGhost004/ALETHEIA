@@ -23,4 +23,17 @@ public static class GameConstants
 
     // ── Save System ───────────────────────────────
     public const string SAVE_FILE_NAME = "savegame.json";
+
+    // ── Evidence / Inspection System ─────────────
+    public const float DEFAULT_MOVE_DURATION = 0.6f;
+    public const float DEFAULT_CAMERA_DISTANCE = 1.2f;
+    public const float DEFAULT_ROTATE_SENSITIVITY = 0.2f;
+
+    // ── Keyword / Interrogation System ────────────
+    public const string LOG_KEYWORD_UNLOCKED = "[Keyword Manager] Đã mở khóa từ khóa mới: ";
+    public const string LOG_KEYWORD_DUPLICATE = "[Keyword Manager] Từ khóa đã tồn tại: ";
+
+    // ── Debug / Log Messages ──────────────────────
+    public const string LOG_EVIDENCE_COLLECTED = "[Evidence] Đã thu thập: ";
+    public const string LOG_DETECTIVE_THOUGHT = "[Thám tử suy nghĩ]: ";
 }
