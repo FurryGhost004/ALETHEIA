@@ -36,4 +36,9 @@ public static class GameConstants
     // ── Debug / Log Messages ──────────────────────
     public const string LOG_EVIDENCE_COLLECTED = "[Evidence] Đã thu thập: ";
     public const string LOG_DETECTIVE_THOUGHT = "[Thám tử suy nghĩ]: ";
+
+    // ── Door System ───────────────────────────────
+    public const float INTERACT_DISTANCE = 3.0f;
+    public const float DOOR_OPEN_ANGLE = 90.0f;
+    public const float DOOR_OPEN_SPEED = 2.0f;
 }

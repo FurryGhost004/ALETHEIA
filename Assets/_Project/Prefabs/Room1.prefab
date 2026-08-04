@@ -3179,14 +3179,6 @@ PrefabInstance:
       value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 4506625939965704, guid: 65d6374b996a8364aa3e8d6f5f2e4465, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.152408
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506625939965704, guid: 65d6374b996a8364aa3e8d6f5f2e4465, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.9285842
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506625939965704, guid: 65d6374b996a8364aa3e8d6f5f2e4465, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.55215
       objectReference: {fileID: 0}
@@ -7316,10 +7308,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 64804107364340578, guid: de62c6e27bfbdfe44ab300e57c7039f2, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1890983856797806875, guid: de62c6e27bfbdfe44ab300e57c7039f2, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
