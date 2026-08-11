@@ -27,8 +27,7 @@ public class PlayerMovement : MonoBehaviour
         ApplyGravity();
 
         Vector3 move =
-            transform.right * _moveInput.x +
-            transform.forward * _moveInput.y;
+            (transform.right * _moveInput.x + transform.forward * _moveInput.y) * _moveSpeed;       
 
         move.y = _verticalVelocity;
 
