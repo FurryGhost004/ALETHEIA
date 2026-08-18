@@ -1,5 +1,4 @@
-using UnityEngine;
-using UnityEngine.InputSystem;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
@@ -9,8 +8,10 @@ public class PlayerMovement : MonoBehaviour
 
     private CharacterController _controller;
     private Vector2 _moveInput;
-
     private float _verticalVelocity;
+
+    // Biến kiểm tra cho phép di chuyển
+    private bool _canMove = true;
 
     private void Awake()
     {
@@ -22,12 +23,26 @@ public class PlayerMovement : MonoBehaviour
         _moveInput = input;
     }
 
+    // Hàm cho phép kích hoạt / vô hiệu hóa di chuyển từ bên ngoài
+    public void SetCanMove(bool canMove)
+    {
+        _canMove = canMove;
+        if (!_canMove)
+        {
+            _moveInput = Vector2.zero; // Xóa input cũ khi bị khóa
+        }
+    }
+
     private void Update()
     {
         ApplyGravity();
 
-        Vector3 move =
-            (transform.right * _moveInput.x + transform.forward * _moveInput.y) * _moveSpeed;       
+        // Nếu không cho phép di chuyển, chỉ giữ lại vận tốc trọng lực
+        Vector3 move = Vector3.zero;
+        if (_canMove)
+        {
+            move = (transform.right * _moveInput.x + transform.forward * _moveInput.y) * _moveSpeed;
+        }
 
         move.y = _verticalVelocity;
 

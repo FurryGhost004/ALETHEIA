@@ -4,6 +4,10 @@ using UnityEngine.InputSystem;
 
 public class EvidenceObject : Interactable
 {
+    [Header("Evidence Configuration")]
+    [SerializeField] private KeywordData _keywordData;
+    [SerializeField] private bool _destroyOnCollected = true; // True: Soi/Xoay/Phá hủy | False: Cố định
+
     [Header("Inspect Settings")]
     [SerializeField] private float _moveDuration = GameConstants.DEFAULT_MOVE_DURATION;
     [SerializeField] private float _distanceFromCamera = GameConstants.DEFAULT_CAMERA_DISTANCE;
@@ -13,6 +17,7 @@ public class EvidenceObject : Interactable
     [SerializeField] private PlayerLook _playerLook;
 
     private bool _isInteracted;
+    private bool _hasClickedHotspot; // Đánh dấu đã click trúng điểm Hotspot (vết máu) chưa
     private Collider _collider;
     private Camera _mainCamera;
 
@@ -26,16 +31,39 @@ public class EvidenceObject : Interactable
         }
 
         _mainCamera = Camera.main;
+
+        // Lắng nghe sự kiện từ tất cả các Hotspot con (nếu có)
+        InspectionHotspot[] childHotspots = GetComponentsInChildren<InspectionHotspot>();
+        foreach (var hotspot in childHotspots)
+        {
+            hotspot.OnHotspotClicked += HandleHotspotClicked;
+        }
     }
 
-    private void Start()
+    private void OnDestroy()
     {
+        InspectionHotspot[] childHotspots = GetComponentsInChildren<InspectionHotspot>();
+        foreach (var hotspot in childHotspots)
+        {
+            hotspot.OnHotspotClicked -= HandleHotspotClicked;
+        }
     }
 
     public override void Interact()
     {
         if (_isInteracted) return;
+
+        // LOẠI 1: ĐỒ CỐ ĐỊNH (Giường, Ghế...)
+        // Bắt buộc Raycast click trúng Hotspot thì mới thu thập/hiển thị
+        if (!_destroyOnCollected)
+        {
+            CheckClickHotspot();
+            return;
+        }
+
+        // LOẠI 2: ĐỒ BỊ PHÁ HỦY (Gậy, Mảnh giấy...)
         _isInteracted = true;
+        _hasClickedHotspot = false; // Reset trạng thái click hotspot
 
         if (_collider != null)
         {
@@ -43,6 +71,11 @@ public class EvidenceObject : Interactable
         }
 
         StartCoroutine(InspectRoutine());
+    }
+
+    private void HandleHotspotClicked()
+    {
+        _hasClickedHotspot = true;
     }
 
     private IEnumerator InspectRoutine()
@@ -54,7 +87,7 @@ public class EvidenceObject : Interactable
 
         Transform mainCamTransform = _mainCamera.transform;
 
-        // 1. Tắt xoay Camera & Mở con trỏ chuột
+        // 1. Khóa xoay Camera & Mở con trỏ chuột
         if (_playerLook != null)
         {
             _playerLook.SetCursorLocked(false);
@@ -83,13 +116,13 @@ public class EvidenceObject : Interactable
         {
             if (Mouse.current != null)
             {
-                // Bắn Raycast kiểm tra Hotspot khi nhấp chuột trái
+                // Nhấp chuột trái để kiểm tra Hotspot (vết máu)
                 if (Mouse.current.leftButton.wasPressedThisFrame)
                 {
                     CheckClickHotspot();
                 }
 
-                // Kéo giữ chuột trái để xoay vật thể
+                // Giữ chuột trái để xoay đồ vật
                 if (Mouse.current.leftButton.isPressed)
                 {
                     Vector2 mouseDelta = Mouse.current.delta.ReadValue();
@@ -104,6 +137,7 @@ public class EvidenceObject : Interactable
             Vector3 targetCenterPos = mainCamTransform.position + mainCamTransform.forward * _distanceFromCamera;
             transform.position = targetCenterPos - transform.TransformVector(centerOffset);
 
+            // Bấm Space / E để thoát
             if (Keyboard.current != null)
             {
                 bool isSpacePressed = Keyboard.current.spaceKey.wasPressedThisFrame;
@@ -111,17 +145,34 @@ public class EvidenceObject : Interactable
 
                 if (isSpacePressed || isEPressed)
                 {
-                    isInspecting = false;
+                    // Chỉ cho phép kết thúc/xóa đồ NẾU ĐÃ CLICK VÀO HOTSPOT ÍT NHẤT 1 LẦN
+                    if (_hasClickedHotspot)
+                    {
+                        isInspecting = false;
+                    }
+                    else
+                    {
+                        // Nhắc nhở người chơi phải tìm đúng vị trí
+                        if (ThinkingFeatureUI.Instance != null)
+                        {
+                            ThinkingFeatureUI.Instance.ShowThinking("Cần kiểm tra kỹ vật thể này trước khi cất đi...");
+                        }
+                    }
                 }
             }
 
             yield return null;
         }
 
-        // GIAI ĐOẠN 3: Khóa lại con trỏ chuột & Hoàn tất kiểm tra
+        // GIAI ĐOẠN 3: Thu thập Keyword & Phá hủy vật thể
         if (_playerLook != null)
         {
             _playerLook.SetCursorLocked(true);
+        }
+
+        if (_keywordData != null && KeywordManager.Instance != null)
+        {
+            KeywordManager.Instance.UnlockKeyword(_keywordData);
         }
 
         Debug.Log($"{GameConstants.LOG_EVIDENCE_COLLECTED}{gameObject.name}");
@@ -135,10 +186,8 @@ public class EvidenceObject : Interactable
         Vector2 mousePos = Mouse.current.position.ReadValue();
         Ray ray = _mainCamera.ScreenPointToRay(mousePos);
 
-        // Vẽ tia ray trong cửa sổ Scene (màu đỏ trong 2 giây) để debug
         Debug.DrawRay(ray.origin, ray.direction * 10f, Color.red, 2f);
 
-        // Bắn Raycast nhận diện cả Trigger Collider
         if (Physics.Raycast(ray, out RaycastHit hit, 100f, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide))
         {
             InspectionHotspot hotspot = hit.collider.GetComponent<InspectionHotspot>();

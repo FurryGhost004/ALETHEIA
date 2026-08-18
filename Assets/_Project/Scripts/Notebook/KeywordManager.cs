@@ -1,63 +1,41 @@
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeywordManager : SingletonBase<KeywordManager>
+public class KeywordManager : MonoBehaviour
 {
+    public static KeywordManager Instance { get; private set; }
+
     [SerializeField] private List<KeywordData> _unlockedKeywords = new List<KeywordData>();
+
+    public event Action<KeywordData> OnKeywordUnlocked;
 
     public IReadOnlyList<KeywordData> UnlockedKeywords => _unlockedKeywords;
 
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
-    }
-
-    private void Start()
-    {
-    }
-
-    private void OnEnable()
-    {
-        EventBus.Subscribe<KeywordUnlockedEvent>(OnKeywordUnlocked);
-    }
-
-    private void OnDisable()
-    {
-        EventBus.Unsubscribe<KeywordUnlockedEvent>(OnKeywordUnlocked);
-    }
-
-    private void OnKeywordUnlocked(KeywordUnlockedEvent eventData)
-    {
-        UnlockKeyword(eventData.KeywordData);
-    }
-
-    public bool UnlockKeyword(KeywordData keyword)
-    {
-        if (keyword == null) return false;
-
-        if (HasKeyword(keyword.Id))
+        if (Instance != null && Instance != this)
         {
-            Debug.Log($"{GameConstants.LOG_KEYWORD_DUPLICATE}{keyword.KeywordName}");
-            return false;
+            Destroy(gameObject);
+            return;
         }
 
-        _unlockedKeywords.Add(keyword);
-        Debug.Log($"{GameConstants.LOG_KEYWORD_UNLOCKED}{keyword.KeywordName}");
-
-        return true;
+        Instance = this;
     }
 
-    public bool HasKeyword(string keywordId)
+    public void UnlockKeyword(KeywordData keyword)
     {
-        if (string.IsNullOrEmpty(keywordId)) return false;
+        if (keyword == null) return;
 
-        foreach (KeywordData data in _unlockedKeywords)
+        if (!_unlockedKeywords.Contains(keyword))
         {
-            if (data != null && data.Id == keywordId)
-            {
-                return true;
-            }
+            _unlockedKeywords.Add(keyword);
+            Debug.Log($"[Keyword Manager] Đã mở khóa từ khóa mới: {keyword.KeywordName}");
+            OnKeywordUnlocked?.Invoke(keyword);
         }
-        return false;
+        else
+        {
+            Debug.Log($"[Keyword Manager] Từ khóa đã tồn tại: {keyword.KeywordName}");
+        }
     }
 }

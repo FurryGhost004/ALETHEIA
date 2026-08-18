@@ -6,6 +6,7 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private Camera _camera;
     [SerializeField] private float _interactDistance = 3f;
     [SerializeField] private LayerMask _interactionLayer;
+
     private void Awake()
     {
         if (_camera == null)
@@ -14,7 +15,15 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-    // Hàm gọi khi nhấn nút Interact (gán phím E trong Input Action)
+    private void Update()
+    {
+        // Bấm phím E để tương tác nếu sự kiện Input Action chưa gán ở Unity Events
+        if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
+        {
+            TryInteract();
+        }
+    }
+
     public void OnInteract(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -22,11 +31,12 @@ public class PlayerInteraction : MonoBehaviour
             TryInteract();
         }
     }
+
     public void TryInteract()
     {
-        Ray ray = new Ray(
-            _camera.transform.position,
-            _camera.transform.forward);
+        if (_camera == null) _camera = Camera.main;
+
+        Ray ray = new Ray(_camera.transform.position, _camera.transform.forward);
 
         if (Physics.Raycast(ray, out RaycastHit hit, _interactDistance, _interactionLayer))
         {

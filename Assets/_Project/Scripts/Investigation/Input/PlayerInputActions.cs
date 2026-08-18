@@ -127,6 +127,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ToggleNotebook"",
+                    ""type"": ""Button"",
+                    ""id"": ""beccc7b9-9415-4b74-9b61-89725b8fac14"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -217,6 +226,17 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""ToggleCursor"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""94aaa7d1-d14c-4d0a-a4c5-77678686bcb3"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ToggleNotebook"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -229,6 +249,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
         m_Player_ToggleCursor = m_Player.FindAction("ToggleCursor", throwIfNotFound: true);
+        m_Player_ToggleNotebook = m_Player.FindAction("ToggleNotebook", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
@@ -313,6 +334,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_Look;
     private readonly InputAction m_Player_ToggleCursor;
+    private readonly InputAction m_Player_ToggleNotebook;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -340,6 +362,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/ToggleCursor".
         /// </summary>
         public InputAction @ToggleCursor => m_Wrapper.m_Player_ToggleCursor;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/ToggleNotebook".
+        /// </summary>
+        public InputAction @ToggleNotebook => m_Wrapper.m_Player_ToggleNotebook;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -378,6 +404,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @ToggleCursor.started += instance.OnToggleCursor;
             @ToggleCursor.performed += instance.OnToggleCursor;
             @ToggleCursor.canceled += instance.OnToggleCursor;
+            @ToggleNotebook.started += instance.OnToggleNotebook;
+            @ToggleNotebook.performed += instance.OnToggleNotebook;
+            @ToggleNotebook.canceled += instance.OnToggleNotebook;
         }
 
         /// <summary>
@@ -401,6 +430,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @ToggleCursor.started -= instance.OnToggleCursor;
             @ToggleCursor.performed -= instance.OnToggleCursor;
             @ToggleCursor.canceled -= instance.OnToggleCursor;
+            @ToggleNotebook.started -= instance.OnToggleNotebook;
+            @ToggleNotebook.performed -= instance.OnToggleNotebook;
+            @ToggleNotebook.canceled -= instance.OnToggleNotebook;
         }
 
         /// <summary>
@@ -469,5 +501,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnToggleCursor(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "ToggleNotebook" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnToggleNotebook(InputAction.CallbackContext context);
     }
 }
