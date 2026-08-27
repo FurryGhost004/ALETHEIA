@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 _moveInput;
     private float _verticalVelocity;
 
-    // Biến kiểm tra cho phép di chuyển
+    // Biến kiểm tra quyền di chuyển
     private bool _canMove = true;
 
     private void Awake()
@@ -23,13 +23,13 @@ public class PlayerMovement : MonoBehaviour
         _moveInput = input;
     }
 
-    // Hàm cho phép kích hoạt / vô hiệu hóa di chuyển từ bên ngoài
+    // Hàm Bật/Tắt di chuyển từ UI
     public void SetCanMove(bool canMove)
     {
         _canMove = canMove;
         if (!_canMove)
         {
-            _moveInput = Vector2.zero; // Xóa input cũ khi bị khóa
+            _moveInput = Vector2.zero; // Xóa input cũ để tránh nhân vật bị trôi
         }
     }
 
@@ -37,8 +37,9 @@ public class PlayerMovement : MonoBehaviour
     {
         ApplyGravity();
 
-        // Nếu không cho phép di chuyển, chỉ giữ lại vận tốc trọng lực
         Vector3 move = Vector3.zero;
+
+        // Chỉ tính toán hướng đi nếu được phép di chuyển
         if (_canMove)
         {
             move = (transform.right * _moveInput.x + transform.forward * _moveInput.y) * _moveSpeed;
