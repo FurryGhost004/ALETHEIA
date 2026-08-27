@@ -1,103 +1,110 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using System.Collections;
 using TMPro;
-using System.Collections;
-using UnityEngine.InputSystem;
+using UnityEngine;
+using UnityEngine.UI;
 
-public class DialogueUI : SingletonBase<DialogueUI>
+public class DialogueUI : MonoBehaviour
 {
-    // ── Serialized Fields ─────────────────────────────
+    public static DialogueUI Instance { get; private set; }
+
+    [Header("UI Panels & Text")]
     [SerializeField] private GameObject _dialoguePanel;
     [SerializeField] private TextMeshProUGUI _nameText;
     [SerializeField] private TextMeshProUGUI _dialogueText;
     [SerializeField] private Image _characterPortrait;
     [SerializeField] private GameObject _continueIcon;
 
-    // ── Private Fields ────────────────────────────────
     private DialogueLine _currentLine;
     private bool _isTyping;
     private Coroutine _typingCoroutine;
 
-    // ── Public Methods ────────────────────────────────
-
-    /// <summary>
-    /// Sequence Diagram: startDialogue(npcId) → displayDialogue(text)
-    /// NPCController gọi method này sau khi checkCoopStatus() = true
-    /// </summary>
-    public void DisplayDialogue(DialogueLine line)
+    private void Awake()
     {
-        _currentLine = line;
-        _nameText.text = line.CharacterName;
-        _characterPortrait.sprite = line.CharacterPortrait;
-        _dialogueText.text = "";
-        _continueIcon.SetActive(false);
-        _dialoguePanel.SetActive(true);
-
-        if (_typingCoroutine != null)
-            StopCoroutine(_typingCoroutine);
-
-        _typingCoroutine = StartCoroutine(TypeText(line.Content));
+        if (Instance != null && Instance != this)
+        {
+            Debug.LogWarning($"[DialogueUI] Bị trùng Singleton! Script trên '{gameObject.name}' đang bị Destroy vì đã có Instance trên '{Instance.gameObject.name}'");
+            Destroy(this);
+            return;
+        }
+        Instance = this;
     }
 
-    /// <summary>
-    /// Sequence Diagram: displayVagueReply()
-    /// NPCController gọi khi LookupResponse() trả về null
-    /// </summary>
-    public void DisplayVagueReply()
+    public void DisplayDialogue(DialogueLine line, string overrideName = null, Sprite overridePortrait = null)
     {
-        // TODO: điền nội dung câu trả lời mơ hồ mặc định
-        // khi Duy hoàn thành task 3.7 NPCDatabase
-        DisplayDialogue(new DialogueLine());
+        if (_dialoguePanel != null) _dialoguePanel.SetActive(true);
+
+        // Ưu tiên dùng overrideName từ SuspectNPC, nếu trống mới dùng dữ liệu trong DialogueLine
+        if (_nameText != null)
+        {
+            _nameText.text = !string.IsNullOrEmpty(overrideName) ? overrideName : line.CharacterName;
+        }
+
+        // Ưu tiên dùng overridePortrait từ SuspectNPC
+        if (_characterPortrait != null)
+        {
+            Sprite targetPortrait = (overridePortrait != null) ? overridePortrait : line.CharacterPortrait;
+            if (targetPortrait != null)
+            {
+                _characterPortrait.sprite = targetPortrait;
+                _characterPortrait.gameObject.SetActive(true);
+            }
+        }
+
+        if (_dialogueText != null)
+        {
+            _dialogueText.text = line.Content;
+        }
     }
 
-    /// <summary>
-    /// Sequence Diagram: openNotebookUI() — đóng DialogueUI
-    /// </summary>
+    public void DisplayVagueReply(string npcName = "Nghi phạm", Sprite npcPortrait = null)
+    {
+        if (_dialoguePanel != null) _dialoguePanel.SetActive(true);
+
+        if (_nameText != null)
+            _nameText.text = npcName; // Hiển thị tên thực tế của NPC
+
+        if (_characterPortrait != null && npcPortrait != null)
+            _characterPortrait.sprite = npcPortrait;
+
+        if (_dialogueText != null)
+            _dialogueText.text = "Tôi không biết hoặc không muốn trả lời về điều đó...";
+    }
+
     public void CloseDialogue()
     {
         if (_typingCoroutine != null)
             StopCoroutine(_typingCoroutine);
 
-        _dialoguePanel.SetActive(false);
-        EventBus.Publish(new DialogueEndedEvent());
-    }
-
-    // ── Private Methods ───────────────────────────────
-
-    private void Update()
-    {
-        if (!_dialoguePanel.activeSelf) return;
-
-        // New Input System — không dùng Input.GetKeyDown()
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
-            NextLine();
-    }
-
-    private void NextLine()
-    {
-        if (_isTyping)
-        {
-            // Skip typing — hiện hết chữ ngay
-            StopCoroutine(_typingCoroutine);
-            _dialogueText.text = _currentLine.Content;
-            _isTyping = false;
-            _continueIcon.SetActive(true);
-            return;
-        }
-
-        // Hết dòng → đóng DialogueUI
-        CloseDialogue();
+        if (_dialoguePanel != null)
+            _dialoguePanel.SetActive(false);
     }
 
     private IEnumerator TypeText(string text)
     {
         _isTyping = true;
+
+        if (_dialogueText != null)
+            _dialogueText.text = string.Empty;
+
+        if (_continueIcon != null)
+            _continueIcon.SetActive(false);
+
+        if (string.IsNullOrEmpty(text))
+        {
+            text = "...";
+        }
+
         foreach (char c in text)
         {
-            _dialogueText.text += c;
+            if (_dialogueText != null)
+                _dialogueText.text += c;
+
             yield return new WaitForSecondsRealtime(0.03f);
         }
+
         _isTyping = false;
-        _continueIcon.SetActive(true);
+
+        if (_continueIcon != null)
+            _continueIcon.SetActive(true);
     }
 }
