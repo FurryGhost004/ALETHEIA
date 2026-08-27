@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 7516786701070676766}
   - component: {fileID: 6554699635843548123}
   m_Layer: 5
-  m_Name: Prefab_SuspectList
+  m_Name: PF_SuspectList
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
