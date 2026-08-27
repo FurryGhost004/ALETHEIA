@@ -141,3 +141,10 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 196390
+  packageName: Creepy headless statue
+  packageVersion: 
+  assetPath: Assets/Art/CreepyHeadlessStatue/textures/hdrp/metal/statueLow_headless_smetal_MaskMap.tga
+  uploadId: 0
