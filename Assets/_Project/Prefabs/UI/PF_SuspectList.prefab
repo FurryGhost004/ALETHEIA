@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 9186945360551901683}
   - component: {fileID: 7516786701070676766}
   - component: {fileID: 6554699635843548123}
+  - component: {fileID: 8063795618781524448}
   m_Layer: 5
   m_Name: PF_SuspectList
   m_TagString: Untagged
@@ -257,8 +258,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7905362840438190952}
-  - {fileID: 7269655696750482800}
   - {fileID: 5816789046478649767}
+  - {fileID: 7269655696750482800}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -348,3 +349,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8063795618781524448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7457443741674241472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8eef6790907ebf49911b0d39781aee3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SuspectItemUI
+  _avatarImage: {fileID: 7252793447987617351}
+  _itemButton: {fileID: 6554699635843548123}
+  _selectedHighlight: {fileID: 460891598566962399}

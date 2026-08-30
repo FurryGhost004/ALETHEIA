@@ -71,6 +71,10 @@ public class EvidenceObject : Interactable
         }
 
         StartCoroutine(InspectRoutine());
+        if (TimeManager.Instance != null)
+        {
+            TimeManager.Instance.AdvanceTime();
+        }
     }
 
     private void HandleHotspotClicked()
