@@ -3195,7 +3195,7 @@ MonoBehaviour:
   _movement: {fileID: 5940559630927305051}
   _interaction: {fileID: 2990055353301726115}
   _playerLook: {fileID: 8333277701224734375}
-  _notebookToggle: {fileID: 0}
+  _notebookHub: {fileID: 0}
 --- !u!114 &2990055353301726115
 MonoBehaviour:
   m_ObjectHideFlags: 0
