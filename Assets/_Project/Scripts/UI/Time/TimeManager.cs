@@ -83,6 +83,8 @@ public class TimeManager : MonoBehaviour
         Debug.Log($"[TimeManager] Đã hết ngày! Chuyển sang DAY {_currentDay}");
 
         NotifyTimeChanged();
+
+        // Đảm bảo dòng này được kích hoạt
         OnDayAdvanced?.Invoke(_currentDay);
     }
 

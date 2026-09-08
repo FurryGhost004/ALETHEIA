@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a77595e1727ce46b26ff4db3287b83, type: 3}
+  m_Name: npc 3
+  m_EditorClassIdentifier: Assembly-CSharp::NPCEventData
+  npcID: npc 3
+  eventType: 1
+  specificDay: 8
+  activeDays: 0200000005000000
+  intervalDays: 3
+  defaultPosition: {x: 0, y: 0, z: 0}
+  defaultRotation: {x: 0, y: 0, z: 0}
+  dayLocations:
+  - day: 2
+    position: {x: 0.46, y: 0.00000006940797, z: 1.96}
+    rotation: {x: 0, y: 0, z: 0}
+  - day: 5
+    position: {x: 0, y: 0.00000006940797, z: -2.68}
+    rotation: {x: 0, y: 0, z: 0}
