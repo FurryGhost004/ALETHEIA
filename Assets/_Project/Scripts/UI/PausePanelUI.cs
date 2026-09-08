@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PauseManager : MonoBehaviour
 {
@@ -27,10 +27,11 @@ public class PauseManager : MonoBehaviour
     [SerializeField] private GameObject notebookPanel;
 
     [Header("Main Menu")]
-    [Tooltip("Name of the Main Menu scene to load. Only used if no existing scene loader is hooked up below.")]
+    [Tooltip("Name of the Main Menu scene to load.")]
     [SerializeField] private string mainMenuSceneName = "MainMenu";
 
     private UIState currentState = UIState.Gameplay;
+    private UIState previousStateBeforeNotebook = UIState.Gameplay; // Lưu lại trạng thái trước khi mở Notebook
 
     private void Awake()
     {
@@ -48,6 +49,7 @@ public class PauseManager : MonoBehaviour
 
     private void Update()
     {
+        // Bấm ESC
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (currentState == UIState.Gameplay)
@@ -56,13 +58,29 @@ public class PauseManager : MonoBehaviour
             }
             else if (currentState == UIState.Notebook)
             {
-                OnNotebookReturnPressed();
+                CloseNotebook();
+            }
+            else if (currentState == UIState.Pause)
+            {
+                OnContinuePressed();
+            }
+            else if (currentState == UIState.Save || currentState == UIState.Load)
+            {
+                OnSaveReturnPressed(); // Trở lại Menu Pause
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Q) && currentState == UIState.Gameplay)
+        // Bấm Q để mở hoặc đóng Notebook
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            OpenNotebookFromGameplay();
+            if (currentState == UIState.Gameplay)
+            {
+                OpenNotebookFromGameplay();
+            }
+            else if (currentState == UIState.Notebook)
+            {
+                CloseNotebook();
+            }
         }
     }
 
@@ -93,6 +111,7 @@ public class PauseManager : MonoBehaviour
         SetPanelsActive(pause: true, save: false, load: false, notebook: false);
         Time.timeScale = 0f;
     }
+
     public void OnLoadButtonPressed()
     {
         currentState = UIState.Load;
@@ -109,6 +128,7 @@ public class PauseManager : MonoBehaviour
 
     public void OnNotebookButtonPressedFromPause()
     {
+        previousStateBeforeNotebook = UIState.Pause;
         currentState = UIState.Notebook;
         SetPanelsActive(pause: false, save: false, load: false, notebook: true);
         Time.timeScale = 0f;
@@ -116,15 +136,35 @@ public class PauseManager : MonoBehaviour
 
     public void OpenNotebookFromGameplay()
     {
+        previousStateBeforeNotebook = UIState.Gameplay;
         currentState = UIState.Notebook;
         SetPanelsActive(pause: false, save: false, load: false, notebook: true);
         Time.timeScale = 0f;
     }
+
+    /// <summary>
+    /// Đóng Notebook và khôi phục đúng trạng thái trước đó (Gameplay hoặc Pause)
+    /// </summary>
+    public void CloseNotebook()
+    {
+        if (previousStateBeforeNotebook == UIState.Pause)
+        {
+            currentState = UIState.Pause;
+            SetPanelsActive(pause: true, save: false, load: false, notebook: false);
+            Time.timeScale = 0f;
+        }
+        else // Trở về Gameplay
+        {
+            currentState = UIState.Gameplay;
+            SetPanelsActive(false, false, false, false);
+            Time.timeScale = 1f; // Tiếp tục chạy Game
+        }
+    }
+
+    // Giữ hàm này để gán vào Nút Back (Button UI) nếu có
     public void OnNotebookReturnPressed()
     {
-        currentState = UIState.Pause;
-        SetPanelsActive(pause: true, save: false, load: false, notebook: false);
-        Time.timeScale = 0f;
+        CloseNotebook();
     }
 
     public void OnReturnToMainMenuPressed()
