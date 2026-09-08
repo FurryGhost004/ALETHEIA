@@ -9515,6 +9515,7 @@ GameObject:
   - component: {fileID: 828089765}
   - component: {fileID: 828089767}
   - component: {fileID: 828089766}
+  - component: {fileID: 828089768}
   m_Layer: 5
   m_Name: Panel_Main
   m_TagString: Untagged
@@ -9581,6 +9582,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828089764}
   m_CullTransparentMesh: 1
+--- !u!114 &828089768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828089764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1182f805ef1ab81468905706aed9e25b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SuspectManager
 --- !u!1 &839886824
 GameObject:
   m_ObjectHideFlags: 0
@@ -23969,7 +23982,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1223881646}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.9999871
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
