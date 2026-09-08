@@ -30,6 +30,10 @@ public class PauseManager : MonoBehaviour
     [Tooltip("Name of the Main Menu scene to load.")]
     [SerializeField] private string mainMenuSceneName = "MainMenu";
 
+    [Header("Player Input")]
+    [Tooltip("Player Input Handler used to control player movement and cursor state.")]
+    [SerializeField] private PlayerInputHandler playerInputHandler;
+
     private UIState currentState = UIState.Gameplay;
     private UIState previousStateBeforeNotebook = UIState.Gameplay; // Lưu lại trạng thái trước khi mở Notebook
 
@@ -89,6 +93,18 @@ public class PauseManager : MonoBehaviour
         currentState = UIState.Pause;
         SetPanelsActive(pause: true, save: false, load: false, notebook: false);
         Time.timeScale = 0f;
+
+        Debug.Log("[PauseManager] Open Pause");
+
+        if (playerInputHandler != null)
+        {
+            Debug.Log("[PauseManager] PlayerInputHandler FOUND → SetInterrogating(true)");
+            playerInputHandler.SetInterrogating(true);
+        }
+        else
+        {
+            Debug.LogError("[PauseManager] PlayerInputHandler is NULL!");
+        }
     }
 
     public void OnContinuePressed()
@@ -96,6 +112,9 @@ public class PauseManager : MonoBehaviour
         currentState = UIState.Gameplay;
         SetPanelsActive(false, false, false, false);
         Time.timeScale = 1f;
+
+        if (playerInputHandler != null)
+            playerInputHandler.SetInterrogating(false);
     }
 
     public void OnSaveButtonPressed()
@@ -103,6 +122,9 @@ public class PauseManager : MonoBehaviour
         currentState = UIState.Save;
         SetPanelsActive(pause: false, save: true, load: false, notebook: false);
         Time.timeScale = 0f;
+
+        if (playerInputHandler != null)
+            playerInputHandler.SetInterrogating(true);
     }
 
     public void OnSaveReturnPressed()
@@ -117,6 +139,9 @@ public class PauseManager : MonoBehaviour
         currentState = UIState.Load;
         SetPanelsActive(pause: false, save: false, load: true, notebook: false);
         Time.timeScale = 0f;
+
+        if (playerInputHandler != null)
+            playerInputHandler.SetInterrogating(true);
     }
 
     public void OnLoadReturnPressed()
@@ -132,6 +157,9 @@ public class PauseManager : MonoBehaviour
         currentState = UIState.Notebook;
         SetPanelsActive(pause: false, save: false, load: false, notebook: true);
         Time.timeScale = 0f;
+
+        if (playerInputHandler != null)
+            playerInputHandler.SetInterrogating(true);
     }
 
     public void OpenNotebookFromGameplay()
@@ -140,6 +168,9 @@ public class PauseManager : MonoBehaviour
         currentState = UIState.Notebook;
         SetPanelsActive(pause: false, save: false, load: false, notebook: true);
         Time.timeScale = 0f;
+
+        if (playerInputHandler != null)
+            playerInputHandler.SetInterrogating(true);
     }
 
     /// <summary>
@@ -157,7 +188,10 @@ public class PauseManager : MonoBehaviour
         {
             currentState = UIState.Gameplay;
             SetPanelsActive(false, false, false, false);
-            Time.timeScale = 1f; // Tiếp tục chạy Game
+            Time.timeScale = 1f;
+
+            if (playerInputHandler != null)
+                playerInputHandler.SetInterrogating(false);
         }
     }
 
