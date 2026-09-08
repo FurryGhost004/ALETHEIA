@@ -6,7 +6,7 @@ public class PlayerInputHandler : MonoBehaviour
     [SerializeField] private PlayerMovement _movement;
     [SerializeField] private PlayerInteraction _interaction;
     [SerializeField] private PlayerLook _playerLook;
-    [SerializeField] private NotebookToggleUI _notebookToggle;
+    [SerializeField] private NotebookHubUI _notebookHub; // Đổi sang NotebookHubUI
 
     private PlayerInputActions _input;
     private bool _isInterrogating;
@@ -52,26 +52,24 @@ public class PlayerInputHandler : MonoBehaviour
         _input.Disable();
     }
 
-    // --- HÀM BẬT / TẮT TRẠNG THÁI THẨM VẤN ---
     public void SetInterrogating(bool state)
     {
         _isInterrogating = state;
 
         if (_movement != null)
         {
-            _movement.SetCanMove(!state); // Bật/Tắt di chuyển
+            _movement.SetCanMove(!state);
         }
 
         if (_playerLook != null)
         {
-            // Mở con trỏ chuột khi đang thẩm vấn (state = true), khóa chuột lại khi xong (state = false)
             _playerLook.SetCursorLocked(!state);
         }
     }
 
     private void OnMove(InputAction.CallbackContext context)
     {
-        if (_isInterrogating) return; // Không nhận di chuyển khi đang thẩm vấn
+        if (_isInterrogating) return;
         if (_movement != null) _movement.SetMoveInput(context.ReadValue<Vector2>());
     }
 
@@ -79,7 +77,7 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (_isInterrogating)
         {
-            if (_playerLook != null) _playerLook.SetLookInput(Vector2.zero); // Ngừng xoay góc nhìn
+            if (_playerLook != null) _playerLook.SetLookInput(Vector2.zero);
             return;
         }
         if (_playerLook != null) _playerLook.SetLookInput(context.ReadValue<Vector2>());
@@ -105,7 +103,12 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void OnToggleNotebook(InputAction.CallbackContext context)
     {
-        if (_isInterrogating) return;
-        if (_notebookToggle != null) _notebookToggle.ToggleNotebook();
+        if (_isInterrogating && _notebookHub != null && !_notebookHub.gameObject.activeSelf)
+            return; 
+
+        if (_notebookHub != null)
+        {
+            _notebookHub.ToggleHub();
+        }
     }
 }

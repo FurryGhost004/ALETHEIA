@@ -623,6 +623,7 @@ GameObject:
   - component: {fileID: 169601513}
   - component: {fileID: 169601515}
   - component: {fileID: 169601514}
+  - component: {fileID: 169601516}
   m_Layer: 5
   m_Name: Panel_CaseSelect
   m_TagString: Untagged
@@ -694,6 +695,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169601512}
   m_CullTransparentMesh: 1
+--- !u!114 &169601516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169601512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f98b4b3b3dee14b96b4166f21ee03f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CaseSelectUI
+  cases:
+  - caseName: CASE 1
+    caseDescription: An old case involving a mysterious incident in the city.
+    previewImage: {fileID: 21300000, guid: dd5c236a1181ce642beb6de9d8cd5c87, type: 3}
+    sceneName: UI_Prototype
+  - caseName: CASE 2
+    caseDescription: A new investigation leads to another suspicious location.
+    previewImage: {fileID: 21300000, guid: 1a22a6834867183478299f8d27a8d6df, type: 3}
+    sceneName: Investigation-Case 2
+  - caseName: CASE 3
+    caseDescription: The final case reveals a deeper mystery.
+    previewImage: {fileID: 21300000, guid: 45de274d428cad340a679937550a38ca, type: 3}
+    sceneName: Investigation-Case 3
+  Txt_CaseName: {fileID: 2078491531}
+  Txt_CaseDescription: {fileID: 612023108}
+  Img_CasePreview_Image: {fileID: 227118980}
+  Btn_PreviousCase: {fileID: 1071153822}
+  Btn_NextCase: {fileID: 1106475024}
+  Btn_StartCase: {fileID: 1177143295}
 --- !u!1 &191011857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,6 +1160,81 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
+--- !u!1 &227118979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 227118982}
+  - component: {fileID: 227118981}
+  - component: {fileID: 227118980}
+  m_Layer: 5
+  m_Name: Img_CasePreview_Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &227118980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227118979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &227118981
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227118979}
+  m_CullTransparentMesh: 1
+--- !u!224 &227118982
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227118979}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 477500694}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.2062988, y: 37.39453}
+  m_SizeDelta: {x: 387.0931, y: 348.4924}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &233581473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,7 +2362,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 227118982}
   m_Father: {fileID: 169601513}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2966,7 +3074,7 @@ GameObject:
   - component: {fileID: 559414039}
   - component: {fileID: 559414038}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Image_title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4156,7 +4264,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1071153825}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 169601516}
+        m_TargetAssemblyTypeName: CaseSelectUI, Assembly-CSharp
+        m_MethodName: PreviousCase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1071153825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4387,7 +4507,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1106475027}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 169601516}
+        m_TargetAssemblyTypeName: CaseSelectUI, Assembly-CSharp
+        m_MethodName: NextCase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1106475027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5022,11 +5154,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1177143298}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 169601516}
+        m_TargetAssemblyTypeName: CaseSelectUI, Assembly-CSharp
+        m_MethodName: StartSelectedCase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1177143298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7718,7 +7862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ScrollRect
   m_Content: {fileID: 221272220}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1

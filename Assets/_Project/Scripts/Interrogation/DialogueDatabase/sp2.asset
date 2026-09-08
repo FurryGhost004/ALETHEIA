@@ -22,7 +22,7 @@ MonoBehaviour:
     _content: This bat isn't my
   - _npcId: Suspect_02
     _whType: Who
-    _keyword: Bat1
+    _keyword: Bat too
     _hasNewInfo: 0
     _characterName: Tuan
     _characterPortrait: {fileID: 21300000, guid: 188f320d7eb70c14b9a6d877138b614d, type: 3}
