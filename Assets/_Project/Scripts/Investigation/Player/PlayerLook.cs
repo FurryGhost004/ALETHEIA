@@ -6,6 +6,7 @@ public class PlayerLook : MonoBehaviour
     [SerializeField] private Transform _cameraHolder;
     [SerializeField] private float _mouseSensitivity = 150f;
 
+
     private float _pitch;
     private Vector2 _lookInput;
     private bool _isCursorLocked = true;
@@ -53,6 +54,11 @@ public class PlayerLook : MonoBehaviour
             : CursorLockMode.None;
 
         Cursor.visible = !isLocked;
+
+        Debug.Log(
+            $"[PlayerLook] Cursor State: Locked={isLocked}, Visible={Cursor.visible}\n" +
+            $"STACK TRACE:\n{System.Environment.StackTrace}"
+        );
     }
 
     // --- HÀM MỚI THÊM: Xoay góc nhìn Camera về nằm ngang (Pitch = 0) mượt mà ---
