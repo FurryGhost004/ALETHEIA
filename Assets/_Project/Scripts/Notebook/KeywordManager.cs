@@ -2,40 +2,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeywordManager : MonoBehaviour
+public class KeywordManager : SingletonBase<KeywordManager>
 {
-    public static KeywordManager Instance { get; private set; }
-
     [SerializeField] private List<KeywordData> _unlockedKeywords = new List<KeywordData>();
-
-    public event Action<KeywordData> OnKeywordUnlocked;
 
     public IReadOnlyList<KeywordData> UnlockedKeywords => _unlockedKeywords;
 
-    private void Awake()
+    private void Awake() { }
+
+    private void Start() { }
+
+    /// <summary>
+    /// Tìm kiếm KeywordData theo Tên từ khóa hoặc ID.
+    /// </summary>
+    public KeywordData GetKeyword(string keywordNameOrId)
     {
-        if (Instance != null && Instance != this)
+        if (string.IsNullOrEmpty(keywordNameOrId)) return null;
+
+        foreach (var keyword in _unlockedKeywords)
         {
-            Destroy(gameObject);
-            return;
+            if (keyword == null) continue;
+
+            // So sánh với KeywordName hoặc Id của KeywordData
+            if (string.Equals(keyword.KeywordName, keywordNameOrId, StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(keyword.Id, keywordNameOrId, StringComparison.OrdinalIgnoreCase))
+            {
+                return keyword;
+            }
         }
 
-        Instance = this;
+        return null;
     }
 
     public void UnlockKeyword(KeywordData keyword)
     {
-        if (keyword == null) return;
-
-        if (!_unlockedKeywords.Contains(keyword))
+        if (keyword != null && !_unlockedKeywords.Contains(keyword))
         {
             _unlockedKeywords.Add(keyword);
-            Debug.Log($"[Keyword Manager] Đã mở khóa từ khóa mới: {keyword.KeywordName}");
-            OnKeywordUnlocked?.Invoke(keyword);
-        }
-        else
-        {
-            Debug.Log($"[Keyword Manager] Từ khóa đã tồn tại: {keyword.KeywordName}");
         }
     }
 }

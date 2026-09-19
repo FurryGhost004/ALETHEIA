@@ -37,6 +37,9 @@ public static class GameConstants
     public const string LOG_EVIDENCE_COLLECTED = "[Evidence] Đã thu thập: ";
     public const string LOG_DETECTIVE_THOUGHT = "[Thám tử suy nghĩ]: ";
 
+    // Bổ sung hằng số tốc độ gõ chữ mặc định (giây / ký tự)
+    public const float DEFAULT_TYPEWRITER_SPEED = 0.03f;
+
     // ── Door System ───────────────────────────────
     public const float INTERACT_DISTANCE = 3.0f;
     public const float DOOR_OPEN_ANGLE = 90.0f;
