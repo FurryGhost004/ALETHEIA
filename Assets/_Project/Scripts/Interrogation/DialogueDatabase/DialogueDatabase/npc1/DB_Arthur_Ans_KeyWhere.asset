@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35691d6ad6e610f4b8cd762bd2bfd486, type: 3}
+  m_Name: DB_Arthur_Ans_KeyWhere
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueDatabase
+  _lines:
+  - _characterName: Arthur
+    _characterPortrait: {fileID: 21300000, guid: 1329647001b79a14ca88b5585222b6c3, type: 3}
+    _content: "Ch\xECa kh\xF3a th\u01B0 ph\xF2ng lu\xF4n \u0111\u01B0\u1EE3c treo
+      \u1EDF m\xF3c kh\xF3a trong gian b\u1EBFp, ai trong nh\xE0 c\u0169ng c\xF3
+      th\u1EC3 l\u1EA5y \u0111\u01B0\u1EE3c."
