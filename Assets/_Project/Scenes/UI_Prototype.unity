@@ -600,8 +600,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 11:00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
+  m_sharedMaterial: {fileID: 5013390007530593570, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1723,8 +1723,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: DAY 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
+  m_sharedMaterial: {fileID: 5013390007530593570, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3798,13 +3798,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 623db819eb1b02e42b3a73f97254efca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SuspectNPC
-  _npcId: Suspect_02
-  _npcName: Lucas
-  _npcPortrait: {fileID: 21300000, guid: e9bb4d9855f77a14fb90c936f78812cc, type: 3}
-  _isFirstTalk: 1
-  _firstTalkDialogue: {fileID: 11400000, guid: 0627ccbc12b5fda43b41fafc2364ffab, type: 2}
-  _repeatTalkDialogue: {fileID: 11400000, guid: 28b9fd38460d35842b5f74c85b55800a, type: 2}
-  _canBeInterrogated: 1
+  _npcId: npc 3
+  _npcName: "Nghi ph\u1EA1m 03"
+  _npcPortrait: {fileID: 21300000, guid: 188f320d7eb70c14b9a6d877138b614d, type: 3}
+  _npcDatabase: {fileID: 11400000, guid: 990249161c9f9cf45b2635e25b6a742e, type: 2}
   _interrogationUI: {fileID: 1259911824}
 --- !u!135 &374436837
 SphereCollider:
@@ -5037,8 +5034,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Dialogue text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
+  m_sharedMaterial: {fileID: 5013390007530593570, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5132,13 +5129,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 623db819eb1b02e42b3a73f97254efca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SuspectNPC
-  _npcId: Suspect_01
-  _npcName: Arthur
-  _npcPortrait: {fileID: 21300000, guid: db5f33be6c6706b4a9e32c11c91851c1, type: 3}
-  _isFirstTalk: 1
-  _firstTalkDialogue: {fileID: 11400000, guid: 0c8885f15ac23b7469e77c875fa92a7e, type: 2}
-  _repeatTalkDialogue: {fileID: 11400000, guid: 11d7700ec59b6094f91c0641b4d32653, type: 2}
-  _canBeInterrogated: 1
+  _npcId: Suspect_02
+  _npcName: "Nghi ph\u1EA1m 02"
+  _npcPortrait: {fileID: 21300000, guid: 188f320d7eb70c14b9a6d877138b614d, type: 3}
+  _npcDatabase: {fileID: 11400000, guid: 990249161c9f9cf45b2635e25b6a742e, type: 2}
   _interrogationUI: {fileID: 1259911824}
 --- !u!135 &476472289
 SphereCollider:
@@ -6686,8 +6680,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Name: '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
+  m_sharedMaterial: {fileID: 5013390007530593570, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8065,8 +8059,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Press Space to continue '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
+  m_sharedMaterial: {fileID: 5013390007530593570, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9116,8 +9110,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Name: '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
+  m_sharedMaterial: {fileID: 5013390007530593570, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10965,7 +10959,7 @@ RectTransform:
   m_Father: {fileID: 1962954088}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 0.8562455}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -11594,8 +11588,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 994059545}
   m_HandleRect: {fileID: 994059544}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 1
+  m_Value: 0
+  m_Size: 0.8562455
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -14372,10 +14366,8 @@ GameObject:
   - component: {fileID: 1215899355}
   - component: {fileID: 1215899354}
   - component: {fileID: 1215899356}
-  - component: {fileID: 1215899357}
-  - component: {fileID: 1215899358}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14424,36 +14416,6 @@ MonoBehaviour:
   _startHour: 6
   _endHour: 20
   _minutesPerAction: 60
---- !u!114 &1215899357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215899353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7df024674927414b8822b4c81f4c7fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
-  _dialoguePanel: {fileID: 1414287827}
-  _nameText: {fileID: 1525344476}
-  _contentText: {fileID: 471197959}
-  _portraitImage: {fileID: 503273299}
-  _typewriterSpeed: 0.03
---- !u!114 &1215899358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215899353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4aa5a48a1ef172243a60745da50026c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InterrogationManager
-  _database: {fileID: 11400000, guid: ba56e6627fc23f64db9862c6588357dc, type: 2}
 --- !u!1 &1222084336
 GameObject:
   m_ObjectHideFlags: 0
@@ -15182,16 +15144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: defdf75192df19247ab50e9401a0022d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InterrogationUIController
-  _inputGroupPanel: {fileID: 1585546108}
   _dropdownWH: {fileID: 2048528067}
   _inputKeyword: {fileID: 1460706362}
   _btnAsk: {fileID: 0}
   _btnClose: {fileID: 0}
-  _npcNameText: {fileID: 2137093362}
-  _responseText: {fileID: 1497915712}
-  _npcPortraitImage: {fileID: 1146768218}
-  _typewriterSpeed: 0.03
-  _defaultVagueDialogue: {fileID: 11400000, guid: 26f34c627b1181749891e1151e89fb04, type: 2}
   _playerInputHandler: {fileID: 5639344}
 --- !u!224 &1265354568 stripped
 RectTransform:
@@ -17111,7 +17067,7 @@ PrefabInstance:
     - target: {fileID: 8280099717424053290, guid: 11028cf00979807418933d53a12c0cd8, type: 3}
       propertyPath: _associatedKeyword
       value: 
-      objectReference: {fileID: 11400000, guid: a00ce152738716940a94e957ed77d392, type: 2}
+      objectReference: {fileID: 11400000, guid: 92f6addc2dc5ee442ad9a9441cb94809, type: 2}
     - target: {fileID: 8753745617235321464, guid: 11028cf00979807418933d53a12c0cd8, type: 3}
       propertyPath: _playerLook
       value: 
@@ -17119,7 +17075,7 @@ PrefabInstance:
     - target: {fileID: 8753745617235321464, guid: 11028cf00979807418933d53a12c0cd8, type: 3}
       propertyPath: _keywordData
       value: 
-      objectReference: {fileID: 11400000, guid: a00ce152738716940a94e957ed77d392, type: 2}
+      objectReference: {fileID: 11400000, guid: 92f6addc2dc5ee442ad9a9441cb94809, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17443,7 +17399,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -150, y: -67}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1414287829
@@ -18548,8 +18504,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Dialogue text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
+  m_sharedMaterial: {fileID: 5013390007530593570, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19149,8 +19105,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: David
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
+  m_sharedMaterial: {fileID: 5013390007530593570, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19286,8 +19242,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Press Space to continue '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
+  m_sharedMaterial: {fileID: 5013390007530593570, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19419,7 +19375,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1545982535}
   - component: {fileID: 1545982534}
-  - component: {fileID: 1545982536}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -19460,23 +19415,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1545982536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1545982533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7df024674927414b8822b4c81f4c7fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
-  _dialoguePanel: {fileID: 1414287827}
-  _nameText: {fileID: 1525344476}
-  _contentText: {fileID: 471197959}
-  _portraitImage: {fileID: 503273299}
-  _typewriterSpeed: 0.03
 --- !u!1 &1551246522
 GameObject:
   m_ObjectHideFlags: 0
@@ -20630,10 +20568,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: bat_01
       objectReference: {fileID: 0}
-    - target: {fileID: 8280099717424053290, guid: 11028cf00979807418933d53a12c0cd8, type: 3}
-      propertyPath: _associatedKeyword
-      value: 
-      objectReference: {fileID: 11400000, guid: 4783132ff73f5d34abb46e48af4d2aab, type: 2}
     - target: {fileID: 8753745617235321464, guid: 11028cf00979807418933d53a12c0cd8, type: 3}
       propertyPath: _playerLook
       value: 
@@ -20641,7 +20575,7 @@ PrefabInstance:
     - target: {fileID: 8753745617235321464, guid: 11028cf00979807418933d53a12c0cd8, type: 3}
       propertyPath: _keywordData
       value: 
-      objectReference: {fileID: 11400000, guid: 4783132ff73f5d34abb46e48af4d2aab, type: 2}
+      objectReference: {fileID: 11400000, guid: 6589f1e083fd9e149b61d3602fe5571d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22631,8 +22565,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Option A
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
+  m_sharedMaterial: {fileID: 5013390007530593570, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -24462,19 +24396,19 @@ MonoBehaviour:
   m_MultiSelect: 0
   m_Options:
     m_Options:
-    - m_Text: Who
-      m_Image: {fileID: 0}
-      m_Color: {r: 1, g: 1, b: 1, a: 1}
     - m_Text: What
-      m_Image: {fileID: 0}
-      m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: Where
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
     - m_Text: When
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
+    - m_Text: Where
+      m_Image: {fileID: 0}
+      m_Color: {r: 1, g: 1, b: 1, a: 1}
     - m_Text: Why
+      m_Image: {fileID: 0}
+      m_Color: {r: 1, g: 1, b: 1, a: 1}
+    - m_Text: Who
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
     - m_Text: How
@@ -26018,8 +25952,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: David
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
+  m_sharedMaterial: {fileID: 5013390007530593570, guid: fdc6fd1e1f8d72c4dae9ca23924b2933, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26217,7 +26151,7 @@ SceneRoots:
   - {fileID: 1805509096}
   - {fileID: 1845211857}
   - {fileID: 906938000}
-  - {fileID: 378364603}
   - {fileID: 1365546908}
   - {fileID: 1660768291}
   - {fileID: 1215899355}
+  - {fileID: 378364603}
