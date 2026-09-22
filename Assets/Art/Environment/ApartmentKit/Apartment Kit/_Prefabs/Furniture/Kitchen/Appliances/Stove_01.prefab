@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 86442869419094166}
   - component: {fileID: 7882573751056727584}
   - component: {fileID: 7439132136406090810}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stove_Glass_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -994,7 +994,7 @@ GameObject:
   - component: {fileID: 5299778854498055857}
   - component: {fileID: 8102936645674678316}
   - component: {fileID: 2495558539343943039}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stove_Logo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1444,7 +1444,7 @@ GameObject:
   - component: {fileID: 6024667504322537127}
   - component: {fileID: 8805092948153564216}
   - component: {fileID: 8958669079032765739}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stove_Handle.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1805,7 +1805,8 @@ GameObject:
   - component: {fileID: 6808494370778432258}
   - component: {fileID: 3408815751114527932}
   - component: {fileID: 546353385}
-  m_Layer: 0
+  - component: {fileID: 4352346794551745079}
+  m_Layer: 7
   m_Name: Oven_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1908,6 +1909,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.08918679, y: 0.7990712, z: 1.111728}
   m_Center: {x: -0.016895091, y: 0.38153547, z: 0.000000029802322}
+--- !u!114 &4352346794551745079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6748149662637936420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd6bad5fe8321e4780a7803c82c27f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlapDoorInteractable
+  _openAngle: 270
+  _openSpeed: 3
+  _flapDirection: 2
+  _customRotationAxis: {x: 0, y: 0, z: 1}
 --- !u!1 &6985705042509791386
 GameObject:
   m_ObjectHideFlags: 0
