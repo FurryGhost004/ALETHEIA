@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c85e761e1b1967e4f9f3b012631f6435, type: 3}
+  m_Name: npc1
+  m_EditorClassIdentifier: Assembly-CSharp::SuspectData
+  _npcId: Suspect_02
+  _npcName: Lucas
+  _portrait: {fileID: 21300000, guid: 68628838cd9f9ad4c870c69acd786368, type: 3}
+  _address: 14/7
+  _height: 186cm
+  _description: cao
+  _isCulprit: 1
+  _suspect3DPrefab: {fileID: 8837761510329568495, guid: 6476b0757503f234db2d25f61e1baff2, type: 3}

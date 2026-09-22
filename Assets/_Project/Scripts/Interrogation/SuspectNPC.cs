@@ -2,10 +2,8 @@
 
 public class SuspectNPC : Interactable
 {
-    [Header("Suspect Data")]
-    [SerializeField] private string _npcId = "Suspect_01";
-    [SerializeField] private string _npcName = "Nghi phạm 01";
-    [SerializeField] private Sprite _npcPortrait;
+    [Header("Suspect Data Asset")]
+    [SerializeField] private SuspectData _suspectData; // Gán ScriptableObject SuspectData vào đây
 
     [Header("Dialogue Settings")]
     [SerializeField] private bool _isFirstTalk = true;
@@ -16,20 +14,17 @@ public class SuspectNPC : Interactable
     [SerializeField] private bool _canBeInterrogated = true;
     [SerializeField] private InterrogationUIController _interrogationUI;
 
-    public string NpcId => _npcId;
-    public string NpcName => _npcName;
-    public Sprite NpcPortrait => _npcPortrait;
-
-    private void Awake() { }
-
-    private void Start() { }
+    // Getter lấy dữ liệu trực tiếp từ SuspectData Asset
+    public string NpcId => _suspectData != null ? _suspectData.NpcId : string.Empty;
+    public string NpcName => _suspectData != null ? _suspectData.NpcName : string.Empty;
+    public Sprite NpcPortrait => _suspectData != null ? _suspectData.Portrait : null;
 
     public override void Interact()
     {
-        // 1. Lưu thông tin nghi phạm
-        if (SuspectManager.Instance != null)
+        // 1. Lưu thông tin nghi phạm vào SuspectManager
+        if (SuspectManager.Instance != null && _suspectData != null)
         {
-            SuspectManager.Instance.AddSuspect(_npcId, _npcName, _npcPortrait);
+            SuspectManager.Instance.AddSuspect(_suspectData);
         }
 
         // 2. Chọn DialogueDatabase tương ứng dựa theo _isFirstTalk
@@ -54,7 +49,7 @@ public class SuspectNPC : Interactable
             _isFirstTalk = false;
         }
 
-        // Tăng thời gian game (nếu có)
+        // Tăng thời gian game
         if (TimeManager.Instance != null)
         {
             TimeManager.Instance.AdvanceTime();
@@ -76,10 +71,9 @@ public class SuspectNPC : Interactable
             _interrogationUI = Object.FindFirstObjectByType<InterrogationUIController>(FindObjectsInactive.Include);
         }
 
-        if (_interrogationUI != null)
+        if (_interrogationUI != null && _suspectData != null)
         {
-            // Truyền 3 tham số phù hợp với InterrogationUIController
-            _interrogationUI.SetTargetNPC(_npcId, _npcName, _npcPortrait);
+            _interrogationUI.SetTargetNPC(_suspectData.NpcId, _suspectData.NpcName, _suspectData.Portrait);
         }
     }
 }

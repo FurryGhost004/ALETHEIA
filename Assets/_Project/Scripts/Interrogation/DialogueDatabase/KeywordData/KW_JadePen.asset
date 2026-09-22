@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
   _id: KW_02
   _keywordName: CayBut
+  _itemName: Cay but Long
   _description: "C\xE2y b\xFAt ng\u1ECDc b\xEDch"
   _icon: {fileID: 21300000, guid: 0169fa288b4c4a540b4be9abe9f3e5b3, type: 3}
   _playerNote: 
