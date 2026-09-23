@@ -13,10 +13,6 @@ MonoBehaviour:
   m_Name: New Dialogue Database
   m_EditorClassIdentifier: Assembly-CSharp::DialogueDatabase
   _lines:
-  - _npcId: 
-    _whType: 
-    _keyword: 
-    _hasNewInfo: 0
-    _characterName: 
+  - _characterName: not
     _characterPortrait: {fileID: 0}
-    _content: 
+    _content: khong biet

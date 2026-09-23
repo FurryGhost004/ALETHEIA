@@ -85,28 +85,36 @@ public class NotebookHubUI : MonoBehaviour
 
     private void SwitchTab(GameObject targetTab)
     {
-        if (_mainHubPanel != null) _mainHubPanel.SetActive(false);
+        Debug.Log($"[NotebookHubUI] Bấm chuyển Tab -> Target: {(targetTab != null ? targetTab.name : "NULL")}");
+
+        if (targetTab == null)
+        {
+            Debug.LogError("[NotebookHubUI] LỖI: Target Tab đang bị NULL! Hãy kiểm tra gán Reference trong Inspector.");
+            return;
+        }
+
+        if (_mainHubPanel != null && !targetTab.transform.IsChildOf(_mainHubPanel.transform))
+        {
+            _mainHubPanel.SetActive(false);
+        }
+
         if (_panelEvidenceList != null) _panelEvidenceList.SetActive(false);
         if (_panelSuspectList != null) _panelSuspectList.SetActive(false);
 
-        if (targetTab != null)
-        {
-            targetTab.SetActive(true);
+        targetTab.SetActive(true);
+        Debug.Log($"[NotebookHubUI] Đã SetActive(true) cho {targetTab.name}");
 
-            // --- ĐÂY LÀ ĐOẠN TẢI BẰNG CHỨNG BẠN CẦN ---
-            if (targetTab == _panelEvidenceList)
+        if (targetTab == _panelEvidenceList)
+        {
+            if (_notebookManagerUI != null && KeywordManager.Instance != null)
             {
-                if (_notebookManagerUI != null && KeywordManager.Instance != null)
-                {
-                    _notebookManagerUI.PopulateNotebook(KeywordManager.Instance.UnlockedKeywords);
-                }
+                _notebookManagerUI.PopulateNotebook(KeywordManager.Instance.UnlockedKeywords);
             }
-            // ----------------------------------------
-            else if (targetTab == _panelSuspectList)
-            {
-                SuspectListUI suspectUI = targetTab.GetComponent<SuspectListUI>();
-                if (suspectUI != null) suspectUI.RefreshList();
-            }
+        }
+        else if (targetTab == _panelSuspectList)
+        {
+            SuspectListUI suspectUI = targetTab.GetComponent<SuspectListUI>();
+            if (suspectUI != null) suspectUI.RefreshList();
         }
     }
 

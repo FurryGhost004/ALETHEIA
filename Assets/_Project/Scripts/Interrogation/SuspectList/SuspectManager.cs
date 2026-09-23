@@ -21,16 +21,17 @@ public class SuspectManager : MonoBehaviour
     /// <summary>
     /// Thêm nghi phạm vào danh sách nếu chưa tồn tại
     /// </summary>
-    public void AddSuspect(string id, string name, Sprite portrait)
+    public void AddSuspect(SuspectData suspect)
     {
+        if (suspect == null) return;
+
         // Kiểm tra xem nghi phạm đã có trong danh sách chưa
-        if (_discoveredSuspects.Exists(s => s.NpcId == id))
+        if (_discoveredSuspects.Exists(s => s.NpcId == suspect.NpcId))
         {
-            return; // Đã thêm trước đó rồi
+            return; // Đã thêm trước đó
         }
 
-        SuspectData newSuspect = new SuspectData(id, name, portrait);
-        _discoveredSuspects.Add(newSuspect);
-        Debug.Log($"[SuspectManager] Đã thêm nghi phạm mới: {name} (ID: {id})");
+        _discoveredSuspects.Add(suspect);
+        Debug.Log($"[SuspectManager] Đã thêm nghi phạm mới: {suspect.NpcName} (ID: {suspect.NpcId})");
     }
 }

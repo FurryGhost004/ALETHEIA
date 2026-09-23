@@ -8,7 +8,7 @@ public class NotebookDetailUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _txtEvidenceName;
     [SerializeField] private TextMeshProUGUI _txtLocationValue;
     [SerializeField] private TextMeshProUGUI _txtSizeValue;
-    [SerializeField] private TextMeshProUGUI _txtKeywordValue;
+    [SerializeField] private TextMeshProUGUI _txtKeywordValue; // TextMeshPro hiển thị ở mục Relate Keyword
     [SerializeField] private TextMeshProUGUI _txtDescriptionValue;
 
     [Header("Player Note Customization")]
@@ -35,7 +35,13 @@ public class NotebookDetailUI : MonoBehaviour
             return;
         }
 
-        if (_txtEvidenceName != null) _txtEvidenceName.text = data.KeywordName;
+        // 1. Tiêu đề lớn: Lấy ItemName ("Chìa Khóa Phòng")
+        if (_txtEvidenceName != null) _txtEvidenceName.text = data.ItemName;
+
+        // 2. Ô Relate Keyword: Lấy KeywordName ("ChiaKhoa")
+        if (_txtKeywordValue != null) _txtKeywordValue.text = data.KeywordName;
+
+        // 3. Mô tả vật phẩm
         if (_txtDescriptionValue != null) _txtDescriptionValue.text = data.Description;
 
         // Hiển thị ghi chú của người chơi đã nhập trước đó
@@ -58,6 +64,9 @@ public class NotebookDetailUI : MonoBehaviour
     {
         _currentSelectedKeyword = null;
         if (_txtEvidenceName != null) _txtEvidenceName.text = string.Empty;
+        if (_txtKeywordValue != null) _txtKeywordValue.text = string.Empty;
+        if (_txtLocationValue != null) _txtLocationValue.text = string.Empty;
+        if (_txtSizeValue != null) _txtSizeValue.text = string.Empty;
         if (_txtDescriptionValue != null) _txtDescriptionValue.text = string.Empty;
         if (_inputNoteValue != null) _inputNoteValue.text = string.Empty;
     }
