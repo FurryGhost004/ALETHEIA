@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a13e220e0bebf4142a7c5d3711a6c42d, type: 3}
-  m_Name: Sebastian'sLaptop
+  m_Name: SterlingLetterTray
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
-  _id: 014
-  _keywordName: Se'sLaptop
-  _description: 'Laptop of Sebastian, located on the cabinet in his room '
+  _id: 027
+  _keywordName: Sterling Letter tray
+  _description: Located on the carbinet in Sterlings's room
   _icon: {fileID: 0}
   _playerNote: 

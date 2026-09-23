@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a13e220e0bebf4142a7c5d3711a6c42d, type: 3}
-  m_Name: Melody'sNotebook
+  m_Name: MelodyBinder
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
-  _id: 005
-  _keywordName: Me'sNotebook
-  _description: Notebook of Melody, located underneath of her body
+  _id: 006
+  _keywordName: Melody Binder
+  _description: Located on Melody's table
   _icon: {fileID: 0}
   _playerNote: 

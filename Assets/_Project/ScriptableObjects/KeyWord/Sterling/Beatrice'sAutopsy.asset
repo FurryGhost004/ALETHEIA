@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a13e220e0bebf4142a7c5d3711a6c42d, type: 3}
+  m_Name: Beatrice'sAutopsy
+  m_EditorClassIdentifier: Assembly-CSharp::KeywordData
+  _id: 026
+  _keywordName: Beatrice's Autopsy
+  _description: "Beatrice Sterling, F/47\n\nMultiple stab wounds identified across
+    the face, neck, chest, and abdomen, with significant haemorrhaging indicating
+    the victim was alive throughout the assault. Wound patterns suggest a minimum
+    of eight separate strikes from a single-edged blade. Lividity is fixed and consistent
+    with the body's discovered position in the bedroom doorway, confirming no post-mortem
+    movement. Time of death estimated 5:00\u20136:00 PM."
+  _icon: {fileID: 0}
+  _playerNote: 

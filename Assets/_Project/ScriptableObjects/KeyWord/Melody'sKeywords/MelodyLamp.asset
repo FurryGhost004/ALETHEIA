@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a13e220e0bebf4142a7c5d3711a6c42d, type: 3}
-  m_Name: Melody'sBinder
+  m_Name: MelodyLamp
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
-  _id: 006
-  _keywordName: Me'sBinder
-  _description: Binders of melody, located on Melody's table
+  _id: 004
+  _keywordName: Melody Lamp
+  _description: Located on Melody's desk
   _icon: {fileID: 0}
   _playerNote: 

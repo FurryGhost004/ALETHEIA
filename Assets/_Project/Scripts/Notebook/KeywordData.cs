@@ -5,6 +5,7 @@ public class KeywordData : ScriptableObject
 {
     [SerializeField] private string _id;
     [SerializeField] private string _keywordName;
+    
 
     [TextArea(2, 4)]
     [SerializeField] private string _description;

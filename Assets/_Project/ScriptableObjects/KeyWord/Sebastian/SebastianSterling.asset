@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a13e220e0bebf4142a7c5d3711a6c42d, type: 3}
-  m_Name: Melody'sBed
+  m_Name: SebastianSterling
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
-  _id: 010
-  _keywordName: Me'sBed
-  _description: Bed of Melody , located in Melody room
+  _id: 013
+  _keywordName: Sebastian
+  _description: Sebastian Sterling, first son of Sterling family
   _icon: {fileID: 0}
   _playerNote: 

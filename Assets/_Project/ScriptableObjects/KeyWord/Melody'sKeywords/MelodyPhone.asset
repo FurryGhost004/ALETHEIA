@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a13e220e0bebf4142a7c5d3711a6c42d, type: 3}
-  m_Name: Melody'sLamp
+  m_Name: MelodyPhone
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
-  _id: 004
-  _keywordName: Me'sLamp
-  _description: Lamp on Melody's desk
-  _icon: {fileID: 0}
+  _id: 003
+  _keywordName: Melody Phone
+  _description: 'Located on her desk, on the right side of her body '
+  _icon: {fileID: 391333886, guid: 677fe59bc98c39b4380e1b5a01ad064c, type: 3}
   _playerNote: 

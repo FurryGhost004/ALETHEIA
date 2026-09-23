@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a13e220e0bebf4142a7c5d3711a6c42d, type: 3}
-  m_Name: Melody'sPiture
+  m_Name: MelodyChair
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
-  _id: 012
-  _keywordName: Me'Picture
-  _description: A picture that hang on a wall inside Melody's room
+  _id: 007
+  _keywordName: Melody Chair
+  _description: The chair which is seated on by Melody's body,located in her room
   _icon: {fileID: 0}
   _playerNote: 

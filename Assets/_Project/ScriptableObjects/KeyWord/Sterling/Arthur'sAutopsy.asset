@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a13e220e0bebf4142a7c5d3711a6c42d, type: 3}
+  m_Name: Arthur'sAutopsy
+  m_EditorClassIdentifier: Assembly-CSharp::KeywordData
+  _id: 025
+  _keywordName: Arthur'sAutopsy
+  _description: "Autopsy \u2014 Arthur Sterling, M/60\nThe decedent was discovered
+    on the kitchen floor in a supine position, with significant blood pooling beneath
+    the torso and head consistent with in-situ haemorrhage. Multiple stab wounds
+    are present across the neck, chest, back, and abdomen, with a total of eleven
+    identified entry points of varying depth suggesting repeated strikes from a single-edged
+    blade. A partially severed vertebral structure at the cervical region indicates
+    one wound penetrated to the spinal column, with associated neurological trauma
+    consistent with temporary motor impairment prior to death. Lacerations across
+    the palmar surfaces of both hands are consistent with contact with a bladed edge
+    during the struggle. Time of death estimated 6:30\u20137:30 PM; body position
+    and blood distribution indicate the decedent did not move significantly following
+    the fatal wound."
+  _icon: {fileID: 0}
+  _playerNote: 
