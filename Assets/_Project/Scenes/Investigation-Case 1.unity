@@ -21144,13 +21144,35 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 779462348975885429, guid: 066734dacda2eda42b400dde186c8f1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 44939710}
   m_SourcePrefab: {fileID: 100100000, guid: 066734dacda2eda42b400dde186c8f1a, type: 3}
 --- !u!4 &44939708 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4362419278593998438, guid: 066734dacda2eda42b400dde186c8f1a, type: 3}
   m_PrefabInstance: {fileID: 44939707}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &44939709 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 779462348975885429, guid: 066734dacda2eda42b400dde186c8f1a, type: 3}
+  m_PrefabInstance: {fileID: 44939707}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &44939710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44939709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755d83f85a245b74ab337d2a87fc78ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionHotspot
+  _innerMonologue: 
+  _associatedKeyword: {fileID: 0}
 --- !u!1001 &46864166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -193865,11 +193887,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8128322320853617336, guid: e9a47cdb5968d66499f6b4ee53467cd4, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.8600001
+      value: 0.8639561
       objectReference: {fileID: 0}
     - target: {fileID: 8128322320853617336, guid: e9a47cdb5968d66499f6b4ee53467cd4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.6461499
+      value: -3.6495
       objectReference: {fileID: 0}
     - target: {fileID: 8128322320853617336, guid: e9a47cdb5968d66499f6b4ee53467cd4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -265815,13 +265837,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1576947647410735205, guid: 75ac55336825b904399665d04b4ea42f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1684321020}
   m_SourcePrefab: {fileID: 100100000, guid: 75ac55336825b904399665d04b4ea42f, type: 3}
 --- !u!4 &1684321018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2574133051291925110, guid: 75ac55336825b904399665d04b4ea42f, type: 3}
   m_PrefabInstance: {fileID: 1684321017}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1684321019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1576947647410735205, guid: 75ac55336825b904399665d04b4ea42f, type: 3}
+  m_PrefabInstance: {fileID: 1684321017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1684321020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684321019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456bfad5e6c84d44b9c7a016426e5495, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EvidenceObject
+  _keywordData: {fileID: 0}
+  _destroyOnCollected: 0
+  _moveDuration: 0.6
+  _distanceFromCamera: 1.2
+  _rotateSensitivity: 0.2
+  _playerLook: {fileID: 0}
 --- !u!1 &1685180354
 GameObject:
   m_ObjectHideFlags: 0
