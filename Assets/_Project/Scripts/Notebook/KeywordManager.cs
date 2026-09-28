@@ -12,9 +12,6 @@ public class KeywordManager : SingletonBase<KeywordManager>
 
     private void Start() { }
 
-    /// <summary>
-    /// Tìm kiếm KeywordData theo Tên từ khóa hoặc ID.
-    /// </summary>
     public KeywordData GetKeyword(string keywordNameOrId)
     {
         if (string.IsNullOrEmpty(keywordNameOrId)) return null;
@@ -23,7 +20,6 @@ public class KeywordManager : SingletonBase<KeywordManager>
         {
             if (keyword == null) continue;
 
-            // So sánh với KeywordName hoặc Id của KeywordData
             if (string.Equals(keyword.KeywordName, keywordNameOrId, StringComparison.OrdinalIgnoreCase) ||
                 string.Equals(keyword.Id, keywordNameOrId, StringComparison.OrdinalIgnoreCase))
             {
@@ -39,6 +35,12 @@ public class KeywordManager : SingletonBase<KeywordManager>
         if (keyword != null && !_unlockedKeywords.Contains(keyword))
         {
             _unlockedKeywords.Add(keyword);
+
+            // TỰ ĐỘNG ĐỒNG BỘ SANG PLAYER INVENTORY
+            if (PlayerInventory.Instance != null)
+            {
+                PlayerInventory.Instance.AddEvidence(keyword);
+            }
         }
     }
 }

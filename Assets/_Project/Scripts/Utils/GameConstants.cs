@@ -44,4 +44,9 @@ public static class GameConstants
     public const float INTERACT_DISTANCE = 3.0f;
     public const float DOOR_OPEN_ANGLE = 90.0f;
     public const float DOOR_OPEN_SPEED = 2.0f;
+
+    // ── Settings / Audio PlayerPrefs Keys ─────────
+    public const string PREF_MASTER_VOLUME = "Settings_MasterVolume";
+    public const string PREF_SFX_VOLUME = "Settings_SFXVolume";
+    public const string PREF_MOUSE_SENSITIVITY = "Settings_MouseSensitivity";
 }
