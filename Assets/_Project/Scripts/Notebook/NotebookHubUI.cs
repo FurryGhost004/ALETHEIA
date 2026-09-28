@@ -55,6 +55,8 @@ public class NotebookHubUI : MonoBehaviour
 
     public void OpenHub()
     {
+        AudioManager.Instance.PlaySFX("PanelOpen");
+
         if (_panelEvidenceList != null) _panelEvidenceList.SetActive(false);
         if (_panelSuspectList != null) _panelSuspectList.SetActive(false);
         if (_mainHubPanel != null) _mainHubPanel.SetActive(true);
@@ -70,6 +72,8 @@ public class NotebookHubUI : MonoBehaviour
 
     public void CloseHub()
     {
+        AudioManager.Instance.PlaySFX("PanelClose");
+
         if (_mainHubPanel != null) _mainHubPanel.SetActive(false);
         if (_panelEvidenceList != null) _panelEvidenceList.SetActive(false);
         if (_panelSuspectList != null) _panelSuspectList.SetActive(false);
@@ -85,6 +89,8 @@ public class NotebookHubUI : MonoBehaviour
 
     private void SwitchTab(GameObject targetTab)
     {
+        AudioManager.Instance.PlaySFX("BookTurn");
+
         Debug.Log($"[NotebookHubUI] Bấm chuyển Tab -> Target: {(targetTab != null ? targetTab.name : "NULL")}");
 
         if (targetTab == null)
