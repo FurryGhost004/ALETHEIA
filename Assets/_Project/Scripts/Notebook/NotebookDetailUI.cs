@@ -70,4 +70,13 @@ public class NotebookDetailUI : MonoBehaviour
         if (_txtDescriptionValue != null) _txtDescriptionValue.text = string.Empty;
         if (_inputNoteValue != null) _inputNoteValue.text = string.Empty;
     }
+    // Thêm vào script chi tiết Bằng chứng khi Player nhấn nút "Trình Bằng Chứng"
+    public void OnClickPresentEvidence()
+    {
+        CourtTrialController trialController = FindFirstObjectByType<CourtTrialController>();
+        if (trialController != null && _currentSelectedKeyword != null)
+        {
+            trialController.    SubmitEvidence(_currentSelectedKeyword);
+        }
+    }
 }

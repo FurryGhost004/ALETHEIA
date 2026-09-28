@@ -20,3 +20,6 @@ MonoBehaviour:
   _description: cao
   _isCulprit: 1
   _suspect3DPrefab: {fileID: 8837761510329568495, guid: 6476b0757503f234db2d25f61e1baff2, type: 3}
+  _trialTopics:
+  - {fileID: 11400000, guid: e9a4bf4d35c525f44a011c0148cbb855, type: 2}
+  - {fileID: 11400000, guid: 3b7fc146c4962a843a30f09c8a534246, type: 2}
