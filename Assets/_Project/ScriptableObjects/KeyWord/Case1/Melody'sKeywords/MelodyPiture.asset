@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: MePicture
   _itemName: Melody Picture
   _description: A picture that hang on a wall inside Melody's room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: bf93bc88498e0c64d9851db29cd810ce, type: 3}
   _playerNote: 

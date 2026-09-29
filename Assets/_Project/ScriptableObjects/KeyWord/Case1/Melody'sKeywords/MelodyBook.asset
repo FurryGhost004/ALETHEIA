@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: MeBook
   _itemName: Melody Book
   _description: Located inside of her bottom desk's drawer
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: b404682437040704c83f35a2dd1057cf, type: 3}
   _playerNote: 

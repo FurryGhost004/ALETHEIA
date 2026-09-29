@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: SeTV
   _itemName: Sebastian TV
   _description: 'Hanged on the wall in Sebastian''s room '
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: dfacafa2815d8a440825e77d1f1a94e4, type: 3}
   _playerNote: 

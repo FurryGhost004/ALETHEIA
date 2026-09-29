@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: MeNotebook
   _itemName: Melody Notebook
   _description: Located underneath of her body
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 06a72bb0ebbb6d040909e9d020b8b427, type: 3}
   _playerNote: 
