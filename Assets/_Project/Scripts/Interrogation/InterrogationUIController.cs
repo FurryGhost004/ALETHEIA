@@ -37,8 +37,9 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
     private bool _isTyping;
     private Coroutine _typeCoroutine;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         if (_btnAsk != null) _btnAsk.onClick.AddListener(SubmitQuestion);
         if (_btnClose != null) _btnClose.onClick.AddListener(CloseInterrogation);
         if (_inputKeyword != null) _inputKeyword.onSubmit.AddListener(OnInputSubmit);
@@ -73,8 +74,9 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
         }
     }
 
-    private void OnDestroy()
+    protected override void OnDestroy()
     {
+        base.OnDestroy();
         if (_btnAsk != null) _btnAsk.onClick.RemoveListener(SubmitQuestion);
         if (_btnClose != null) _btnClose.onClick.RemoveListener(CloseInterrogation);
         if (_inputKeyword != null) _inputKeyword.onSubmit.RemoveListener(OnInputSubmit);
