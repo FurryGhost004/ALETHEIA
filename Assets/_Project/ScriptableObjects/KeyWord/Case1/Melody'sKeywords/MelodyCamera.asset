@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: MeCamera
   _itemName: Melody Camera
   _description: Stored inside her top desk drawer
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 0a2634a5e4d5b2f48b50b36ac1657d8c, type: 3}
   _playerNote: 

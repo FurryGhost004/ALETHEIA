@@ -18,5 +18,5 @@ MonoBehaviour:
   _description: 'Stored inside Sebastian''s top drawer.
 
 '
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 61149ef944bbca443900d9cf230750eb, type: 3}
   _playerNote: 

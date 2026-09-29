@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: MeBed
   _itemName: Melody Bed
   _description: Located in Melody room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: f8e85528ff79c9747913f1b08536565b, type: 3}
   _playerNote: 

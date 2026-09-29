@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: MePilow
   _itemName: Melody Pilow
   _description: Located on her bed
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: b071d8ee942d5ac4aa1107d3cf18ed1e, type: 3}
   _playerNote: 
