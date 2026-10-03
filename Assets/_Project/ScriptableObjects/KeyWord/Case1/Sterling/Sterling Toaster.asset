@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STTOASTER
   _itemName: Sterling toaster
   _description: 'Stored inside the sink caninet at the kitchen '
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: b749c954f90f7d147b1be91c798fcb93, type: 3}
   _playerNote: 

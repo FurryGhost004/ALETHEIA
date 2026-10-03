@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STCANDLE
   _itemName: Sterling candle
   _description: 'Located on the offering tray in Sterlings room '
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: e41e96219a2de6c45bda4a3e176d5b2a, type: 3}
   _playerNote: 

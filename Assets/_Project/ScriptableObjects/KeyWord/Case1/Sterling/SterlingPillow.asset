@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STPILLOW
   _itemName: Steling Bellow
   _description: Located on the bed at Sterlings's room.
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 664dc4f8b41635541964a8d540990f9c, type: 3}
   _playerNote: 

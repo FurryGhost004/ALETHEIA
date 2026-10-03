@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STTABLE
   _itemName: Sterling Table
   _description: 'Located in Sterlings''s arpartment room '
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: d3dcce23de5e9fe43b36eed30dc77436, type: 3}
   _playerNote: 

@@ -21,5 +21,5 @@ MonoBehaviour:
     of eight separate strikes from a single-edged blade. Lividity is fixed and consistent
     with the body's discovered position in the bedroom doorway, confirming no post-mortem
     movement. Time of death estimated 5:00\u20136:00 PM."
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 414ad97f416cd3a419632675e75e60fc, type: 3}
   _playerNote: 

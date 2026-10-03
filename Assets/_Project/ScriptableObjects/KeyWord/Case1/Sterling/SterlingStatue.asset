@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STSTATUE
   _itemName: Sterling statue
   _description: Located in Sterlings's room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 86ef6b806e01f954c82050fd46583e27, type: 3}
   _playerNote: 

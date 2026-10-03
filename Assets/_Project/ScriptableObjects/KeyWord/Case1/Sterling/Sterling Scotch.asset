@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: StScotch
   _itemName: Sterling Scotch tape
   _description: Stored in middle right drawer of the carbinet in Sterlings's room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: b1fc84b6536f8e44595f6b72b3187fb3, type: 3}
   _playerNote: 

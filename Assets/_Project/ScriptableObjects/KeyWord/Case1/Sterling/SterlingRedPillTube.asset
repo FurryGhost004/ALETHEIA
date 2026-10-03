@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STRPT
   _itemName: Sterling red pill tube
   _description: Hidden inside bed drawer at Sterlings's room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 095e2a627c09dc149aa88131fd5d1840, type: 3}
   _playerNote: 

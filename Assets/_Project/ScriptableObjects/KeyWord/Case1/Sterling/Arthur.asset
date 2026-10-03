@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: 'Arthur '
   _itemName: Arthur
   _description: Arthur Sterling, father of Sterling family
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: b22586ddac45af24b8a011343e567b44, type: 3}
   _playerNote: 

@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STFB
   _itemName: Sterling frozen bread
   _description: Stored inside the fridge at Sterlin's apartment room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 04f2fefd38c850245a0541f1b9db9a0c, type: 3}
   _playerNote: 
