@@ -1,60 +1,55 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class LockedChest : MonoBehaviour
+public class LockedChest : Interactable
 {
     [Header("Lock Settings")]
-    [SerializeField] private string _requiredKeyId = "ChestKey_01"; // Cần đúng Key ID này mới mở được
+    [SerializeField] private string _requiredKeyId = "ChestKey_01";
     [SerializeField] private bool _isLocked = true;
 
     [Header("Dialogues")]
-    [SerializeField] private DialogueDatabase _lockedDialogue;   // Thoại khi chưa có chìa khóa ("Nó bị khóa rồi...")
-    [SerializeField] private DialogueDatabase _unlockedDialogue; // Thoại khi mở khóa thành công
+    [SerializeField] private DialogueDatabase _lockedDialogue;
+    [SerializeField] private DialogueDatabase _unlockedDialogue;
 
     [Header("Chest Events")]
-    [SerializeField] private UnityEvent _onChestOpened; // Gọi Animation mở nắp, bật item bên trong...
+    [SerializeField] private UnityEvent OnChestOpened;
 
-    public bool IsLocked => _isLocked;
-
-    public void Interact()
+    public override void Interact()
     {
-        // Nếu đã mở rồi thì không xử lý lại
-        if (!_isLocked)
+        // 1. Nếu rương đang bị khóa
+        if (_isLocked)
         {
-            Debug.Log("[Chest] Rương đã được mở trước đó.");
-            return;
-        }
-
-        // Kiểm tra xem người chơi đã có chìa khóa tương ứng chưa
-        if (KeyManager.Instance != null && KeyManager.Instance.HasKey(_requiredKeyId))
-        {
-            OpenChest();
-        }
-        else
-        {
-            // Chưa có chìa khóa -> Báo thoại khóa
-            if (_lockedDialogue != null && DialogueManager.Instance != null)
+            // Kiểm tra chìa khóa trong KeyManager
+            if (KeyManager.Instance != null && KeyManager.Instance.HasKey(_requiredKeyId))
             {
-                DialogueManager.Instance.StartDialogue(_lockedDialogue);
+                Debug.Log($"<color=green>[CHEST UNLOCKED]</color> Đã dùng chìa {_requiredKeyId} để mở rương!");
+                _isLocked = false;
+
+                // Kích hoạt Event mở cánh cửa
+                OnChestOpened?.Invoke();
+
+                // Phát thoại khi mở khóa thành công
+                if (_unlockedDialogue != null && DialogueManager.Instance != null)
+                {
+                    DialogueManager.Instance.StartDialogue(_unlockedDialogue);
+                }
             }
             else
             {
-                Debug.Log($"[Chest] Rương đang bị khóa! Cần chìa khóa có ID: {_requiredKeyId}");
+                Debug.LogWarning($"<color=yellow>[CHEST LOCKED]</color> Rương bị khóa! Chưa có chìa khóa: {_requiredKeyId}");
+
+                // Phát thoại báo thiếu chìa khóa
+                if (_lockedDialogue != null && DialogueManager.Instance != null)
+                {
+                    DialogueManager.Instance.StartDialogue(_lockedDialogue);
+                }
             }
         }
-    }
-
-    private void OpenChest()
-    {
-        _isLocked = false;
-
-        // Phát thoại mở thành công
-        if (_unlockedDialogue != null && DialogueManager.Instance != null)
+        else
         {
-            DialogueManager.Instance.StartDialogue(_unlockedDialogue);
+            // 2. Nếu rương đã được mở khóa từ trước
+            Debug.Log("<color=cyan>[CHEST INTERACT]</color> Rương đã mở, kích hoạt xoay cửa.");
+            OnChestOpened?.Invoke();
         }
-
-        // Kích hoạt các hiệu ứng/Animation mở rương
-        _onChestOpened?.Invoke();
     }
 }

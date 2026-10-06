@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class InterrogationManager : SingletonBase<InterrogationManager>
 {
-<<<<<<< HEAD
+
     [Header("Danh sách tất cả các Interrogation Database")]
     [SerializeField] private List<InterrogationDatabase> _databases = new List<InterrogationDatabase>();
-=======
+
     [SerializeField] private InterrogationDatabase _database;
 
     protected override void Awake()
@@ -15,7 +15,7 @@ public class InterrogationManager : SingletonBase<InterrogationManager>
     }
 
     private void Start() { }
->>>>>>> fa3c7a815dbf0b904972f1ce7b048cb872c571de
+
 
     public InterrogationResponseEntry LookupResponse(string npcId, WHType whType, KeywordData keyword)
     {
