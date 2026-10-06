@@ -20,4 +20,5 @@ MonoBehaviour:
   _description: Justine's Senior, Leader of Aletheia
   _isCulprit: 0
   _suspect3DPrefab: {fileID: 1633127343438034825, guid: c5b2455b1a0df4b43aed9557a4e5c93b, type: 3}
-  _trialTopics: []
+  _trialTopics:
+  - {fileID: 0}

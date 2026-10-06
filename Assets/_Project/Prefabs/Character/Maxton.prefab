@@ -56,6 +56,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Maxton
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 56980a4777d25224e88ffb3f3535bd62, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 56980a4777d25224e88ffb3f3535bd62, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 56980a4777d25224e88ffb3f3535bd62, type: 3}
       propertyPath: m_Controller
       value: 

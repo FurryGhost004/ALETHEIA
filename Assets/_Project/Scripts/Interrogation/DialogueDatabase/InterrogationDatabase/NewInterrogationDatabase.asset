@@ -33,3 +33,38 @@ MonoBehaviour:
     _keyword: {fileID: 11400000, guid: 4783132ff73f5d34abb46e48af4d2aab, type: 2}
     _hasNewInfo: 1
     _responseDialogue: {fileID: 11400000, guid: 16d0d07ad7f93f84b91ec158c6250fbd, type: 2}
+  - _npcId: Suspect_02
+    _whType: 3
+    _keyword: {fileID: 11400000, guid: 4783132ff73f5d34abb46e48af4d2aab, type: 2}
+    _hasNewInfo: 1
+    _responseDialogue: {fileID: 11400000, guid: 16d0d07ad7f93f84b91ec158c6250fbd, type: 2}
+  - _npcId: Suspect_02
+    _whType: 3
+    _keyword: {fileID: 11400000, guid: 4783132ff73f5d34abb46e48af4d2aab, type: 2}
+    _hasNewInfo: 1
+    _responseDialogue: {fileID: 11400000, guid: 16d0d07ad7f93f84b91ec158c6250fbd, type: 2}
+  - _npcId: Suspect_02
+    _whType: 3
+    _keyword: {fileID: 11400000, guid: 4783132ff73f5d34abb46e48af4d2aab, type: 2}
+    _hasNewInfo: 1
+    _responseDialogue: {fileID: 11400000, guid: 16d0d07ad7f93f84b91ec158c6250fbd, type: 2}
+  - _npcId: Suspect_02
+    _whType: 3
+    _keyword: {fileID: 11400000, guid: 4783132ff73f5d34abb46e48af4d2aab, type: 2}
+    _hasNewInfo: 1
+    _responseDialogue: {fileID: 11400000, guid: 16d0d07ad7f93f84b91ec158c6250fbd, type: 2}
+  - _npcId: Suspect_02
+    _whType: 3
+    _keyword: {fileID: 11400000, guid: 4783132ff73f5d34abb46e48af4d2aab, type: 2}
+    _hasNewInfo: 1
+    _responseDialogue: {fileID: 11400000, guid: 16d0d07ad7f93f84b91ec158c6250fbd, type: 2}
+  - _npcId: Suspect_02
+    _whType: 3
+    _keyword: {fileID: 11400000, guid: 4783132ff73f5d34abb46e48af4d2aab, type: 2}
+    _hasNewInfo: 1
+    _responseDialogue: {fileID: 11400000, guid: 16d0d07ad7f93f84b91ec158c6250fbd, type: 2}
+  - _npcId: Suspect_02
+    _whType: 3
+    _keyword: {fileID: 11400000, guid: 4783132ff73f5d34abb46e48af4d2aab, type: 2}
+    _hasNewInfo: 1
+    _responseDialogue: {fileID: 11400000, guid: 16d0d07ad7f93f84b91ec158c6250fbd, type: 2}
