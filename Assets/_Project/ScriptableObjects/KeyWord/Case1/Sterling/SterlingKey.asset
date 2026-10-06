@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STKEY
   _itemName: Sterling key
   _description: Located behind trash bin
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: a2fa13a0e7bf90442baa72bd7b7e639c, type: 3}
   _playerNote: 

@@ -1,4 +1,4 @@
-ï»¿using UnityEngine;
+using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -18,7 +18,7 @@ public class CaseSelectUI : MonoBehaviour
         [Tooltip("3. Assign this case's preview Sprite in the Inspector.")]
         public Sprite previewImage;
 
-        [Tooltip("4. Change the scene name to load for this case. TEMPORARY placeholder ï¿½ update when real scene names are finalized.")]
+        [Tooltip("4. Change the scene name to load for this case. TEMPORARY placeholder — update when real scene names are finalized.")]
         public string sceneName;
     }
 
@@ -70,8 +70,6 @@ public class CaseSelectUI : MonoBehaviour
 
     public void NextCase()
     {
-        AudioManager.Instance.PlaySFX("ButtonClick");
-
         if (currentCaseIndex < cases.Length - 1)
         {
             currentCaseIndex++;
@@ -81,8 +79,6 @@ public class CaseSelectUI : MonoBehaviour
 
     public void PreviousCase()
     {
-        AudioManager.Instance.PlaySFX("ButtonClick");
-
         if (currentCaseIndex > 0)
         {
             currentCaseIndex--;
@@ -92,8 +88,6 @@ public class CaseSelectUI : MonoBehaviour
 
     public void StartSelectedCase()
     {
-        AudioManager.Instance.PlaySFX("ButtonClick");
-
         string sceneToLoad = cases[currentCaseIndex].sceneName;
         SceneManager.LoadScene(sceneToLoad);
     }

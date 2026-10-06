@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: SeBed
   _itemName: Sebastian Bed
   _description: Located in Sebastian room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 2b0acf75177f02c42943e2963e2517d1, type: 3}
   _playerNote: 

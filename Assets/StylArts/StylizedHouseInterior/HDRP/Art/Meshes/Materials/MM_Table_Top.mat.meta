@@ -1,15 +1,8 @@
 fileFormatVersion: 2
-guid: ae2fdd1455e756640a7b9818eb3d3013
+guid: 90235e23ba90e804ba91f3b2f37e0f44
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 2100000
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 224331
-  packageName: Stylized House Interior
-  packageVersion: 1.0
-  assetPath: Assets/StylArts/StylizedHouseInterior/HDRP/Art/Meshes/Materials/MM_Table_Top.mat
-  uploadId: 669223

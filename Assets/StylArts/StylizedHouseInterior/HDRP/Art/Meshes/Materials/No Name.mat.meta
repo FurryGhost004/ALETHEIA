@@ -1,15 +1,8 @@
 fileFormatVersion: 2
-guid: 9a8641aa36089c34c86363490d8258d4
+guid: bfbf4728787fae24e84c7ea23a577bfd
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 2100000
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 224331
-  packageName: Stylized House Interior
-  packageVersion: 1.0
-  assetPath: Assets/StylArts/StylizedHouseInterior/HDRP/Art/Meshes/Materials/No Name.mat
-  uploadId: 669223

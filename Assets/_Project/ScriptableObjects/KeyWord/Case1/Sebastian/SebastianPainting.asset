@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: SePainting
   _itemName: Sebastian Painting
   _description: 'Hanged on the wall in Sebastian''s room '
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: cf54a96877265c4479edf79424412d1f, type: 3}
   _playerNote: 

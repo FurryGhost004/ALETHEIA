@@ -1,28 +1,30 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[Serializable]
-public class InterrogationResponseEntry
-{
-    [SerializeField] private string _npcId;
-    [SerializeField] private WHType _whType;
-    [SerializeField] private KeywordData _keyword;
-    [SerializeField] private bool _hasNewInfo;
-    [SerializeField] private DialogueDatabase _responseDialogue;
-
-    public string NpcId => _npcId;
-    public WHType WhType => _whType;
-    public KeywordData Keyword => _keyword;
-    public bool HasNewInfo => _hasNewInfo;
-    public DialogueDatabase ResponseDialogue => _responseDialogue;
-}
-
-[CreateAssetMenu(fileName = "NewInterrogationDatabase", menuName = "Interrogation/Interrogation Database")]
+[CreateAssetMenu(fileName = "NPC_Keyword_Interrogation", menuName = "Interrogation/NPC Keyword Interrogation")]
 public class InterrogationDatabase : ScriptableObject
 {
+    [Header("NPC & Keyword Config")]
+    [SerializeField] private string _npcId;
+    [SerializeField] private KeywordData _keyword;
+
+    [Header("Responses List (Cho Keyword trên)")]
     [SerializeField] private List<InterrogationResponseEntry> _responses = new List<InterrogationResponseEntry>();
 
-    public IReadOnlyList<InterrogationResponseEntry> Responses => _responses;
+    public string NpcId => _npcId;
+    public KeywordData Keyword => _keyword;
+    public List<InterrogationResponseEntry> Responses => _responses;
+
+    // Tìm câu trả lời theo WHType trong file này
+    public InterrogationResponseEntry LookupResponse(WHType whType)
+    {
+        foreach (var entry in _responses)
+        {
+            if (entry.WhType == whType)
+            {
+                return entry;
+            }
+        }
+        return null;
+    }
 }

@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: SePillow
   _itemName: Sebastian Pillow
   _description: Located on Sebastian bed.
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: aed4202f0d72dac468ad789dd548e523, type: 3}
   _playerNote: 

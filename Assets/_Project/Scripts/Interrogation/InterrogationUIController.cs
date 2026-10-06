@@ -37,8 +37,9 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
     private bool _isTyping;
     private Coroutine _typeCoroutine;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         if (_btnAsk != null) _btnAsk.onClick.AddListener(SubmitQuestion);
         if (_btnClose != null) _btnClose.onClick.AddListener(CloseInterrogation);
         if (_inputKeyword != null) _inputKeyword.onSubmit.AddListener(OnInputSubmit);
@@ -73,8 +74,9 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
         }
     }
 
-    private void OnDestroy()
+    protected override void OnDestroy()
     {
+        base.OnDestroy();
         if (_btnAsk != null) _btnAsk.onClick.RemoveListener(SubmitQuestion);
         if (_btnClose != null) _btnClose.onClick.RemoveListener(CloseInterrogation);
         if (_inputKeyword != null) _inputKeyword.onSubmit.RemoveListener(OnInputSubmit);
@@ -161,8 +163,9 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
             responseEntry = InterrogationManager.Instance.LookupResponse(_currentNpcId, selectedWH, targetKeyword);
         }
 
-        DialogueDatabase dialogueToPlay = (responseEntry != null && responseEntry.ResponseDialogue != null)
-            ? responseEntry.ResponseDialogue
+        // Đã sửa thành responseEntry.DialogueResponse để khớp với InterrogationResponseEntry
+        DialogueDatabase dialogueToPlay = (responseEntry != null && responseEntry.DialogueResponse != null)
+            ? responseEntry.DialogueResponse
             : _defaultVagueDialogue;
 
         if (dialogueToPlay != null && dialogueToPlay.Lines.Count > 0)

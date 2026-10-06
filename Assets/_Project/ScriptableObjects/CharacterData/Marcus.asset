@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c85e761e1b1967e4f9f3b012631f6435, type: 3}
+  m_Name: Marcus
+  m_EditorClassIdentifier: Assembly-CSharp::SuspectData
+  _npcId: Marcus
+  _npcName: Marcus
+  _portrait: {fileID: 0}
+  _address: 782/4 Oak Street
+  _height: 1m85
+  _description: Justine's Senior, Leader of Aletheia
+  _isCulprit: 0
+  _suspect3DPrefab: {fileID: 1633127343438034825, guid: c5b2455b1a0df4b43aed9557a4e5c93b, type: 3}
+  _trialTopics:
+  - {fileID: 0}

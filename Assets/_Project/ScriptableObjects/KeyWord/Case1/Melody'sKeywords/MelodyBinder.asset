@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: MeBinder
   _itemName: Melody Binder
   _description: Located on Melody's table
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 0ba4d91b2907bc04c99775d0de180166, type: 3}
   _playerNote: 

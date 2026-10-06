@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STGLASS
   _itemName: Sterling glass
   _description: Hanged on rack at the kitchen
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 41345c214cd3cee448031e32b30d37bb, type: 3}
   _playerNote: 

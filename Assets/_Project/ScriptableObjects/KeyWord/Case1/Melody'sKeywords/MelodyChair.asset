@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: MeChair
   _itemName: Melody Chair
   _description: The chair which is seated on by Melody's body,located in her room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 016b9a2de92d50d418fc4bcfb675b1f0, type: 3}
   _playerNote: 

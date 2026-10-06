@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STMIRROR
   _itemName: Sterling mirror
   _description: Hanged on the wall of Sterlings's room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: a437e4b526e7e6f44a6c18f82df56159, type: 3}
   _playerNote: 

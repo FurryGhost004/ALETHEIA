@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STCB
   _itemName: Sterling cooked bread
   _description: Stored inside the oven  at Sterlin's apartment room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 083ecf8fbe67c6d48a7a512010ab71fe, type: 3}
   _playerNote: 

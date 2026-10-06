@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: StBible
   _itemName: Sterling Bible
   _description: Stored in top left drawer of the carbinet in Sterlings's room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 7e29b838e37da6d4d8779694d3746793, type: 3}
   _playerNote: 

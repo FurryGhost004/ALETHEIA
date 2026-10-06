@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35691d6ad6e610f4b8cd762bd2bfd486, type: 3}
+  m_Name: Marcus-Why-MelodyPhone
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueDatabase
+  _lines:
+  - _characterName: Justine
+    _characterPortrait: {fileID: 0}
+    _content: '"Why leave the phone behind? If it was a robbery, that''s easy money."'
+  - _characterName: Marcus
+    _characterPortrait: {fileID: 0}
+    _content: '"Easy way to get caught, kid."'
+  - _characterName: Marcus
+    _characterPortrait: {fileID: 0}
+    _content: '"Smart phones are basically tracking beacons now. Locked, blacklisted,
+      impossible to pawn.'
+  - _characterName: Marcus
+    _characterPortrait: {fileID: 0}
+    _content: '"Taking it is just begging the cops to knock on your door."'

@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: MeLamp
   _itemName: Melody Lamp
   _description: Located on Melody's desk
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 5690edbb687620840886473337fab186, type: 3}
   _playerNote: 

@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: SeMicrophone
   _itemName: Sebastian Microphone
   _description: Stored in top drawer in Sebastian room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 0b587df5f25576c4d9e98870c6402c3a, type: 3}
   _playerNote: 

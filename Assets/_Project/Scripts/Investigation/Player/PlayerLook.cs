@@ -45,12 +45,6 @@ public class PlayerLook : MonoBehaviour
         SetCursorState(isLocked);
     }
 
-    /// <summary>Được gọi bởi SettingsManager khi người chơi kéo Slider Mouse Sensitivity.</summary>
-    public void SetSensitivity(float sensitivity)
-    {
-        _mouseSensitivity = sensitivity;
-    }
-
     private void SetCursorState(bool isLocked)
     {
         _isCursorLocked = isLocked;

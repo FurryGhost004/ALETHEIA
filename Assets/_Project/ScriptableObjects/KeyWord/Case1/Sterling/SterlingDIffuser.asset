@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STDIFFUSER
   _itemName: Sterling difusser
   _description: Stored inside the diffuser vase at Sterlings's room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: ead26c0ce7756e64e8d22b9e58a1eb13, type: 3}
   _playerNote: 

@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STSAUCE
   _itemName: Sterling sauce bowl
   _description: Stored inside the fridge at Sterlin's apartment room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 99447767ee8d25d43a551bd43e256116, type: 3}
   _playerNote: 

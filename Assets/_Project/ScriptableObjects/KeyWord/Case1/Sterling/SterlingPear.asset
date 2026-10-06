@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STPEAR
   _itemName: Sterling pear
   _description: Stored inside the fridge at Sterlin's apartment room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: f33e931debbd00a478e60dc9ba397958, type: 3}
   _playerNote: 

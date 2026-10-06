@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: SeLaptop
   _itemName: Sebastian Laptop
   _description: 'Located on the cabinet in Sebastian room '
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 59c6d282694e9c74586d072157db7901, type: 3}
   _playerNote: 

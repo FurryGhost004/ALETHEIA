@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STLEMON
   _itemName: Sterling lemon
   _description: Stored inside the fridge at Sterlin's apartment room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 81dde27dbebfc2d4fa12c572a7b75a0d, type: 3}
   _playerNote: 

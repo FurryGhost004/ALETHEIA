@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STBLENDER
   _itemName: Sterling Blender
   _description: Stored inside the sink caninet at the kitchen
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 5ed673ddad1a54c46b24106500e02702, type: 3}
   _playerNote: 

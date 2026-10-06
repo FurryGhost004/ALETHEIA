@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Richmal
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6f26ac185b0528b4eb2b9385f135ed24, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4765841955299127511, guid: 6f26ac185b0528b4eb2b9385f135ed24, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.0000017554162
@@ -67,6 +71,10 @@ PrefabInstance:
     - target: {fileID: 4765841955299127511, guid: 6f26ac185b0528b4eb2b9385f135ed24, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.0018159788
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 6f26ac185b0528b4eb2b9385f135ed24, type: 3}
+      propertyPath: m_Avatar
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 6f26ac185b0528b4eb2b9385f135ed24, type: 3}
       propertyPath: m_Controller

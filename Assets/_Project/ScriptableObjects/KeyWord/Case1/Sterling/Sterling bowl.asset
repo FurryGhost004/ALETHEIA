@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STBOWL
   _itemName: Sterling Bowl
   _description: Hanged on the rack at the kitchen
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 680af1502b96a3c42925b9b7519d6142, type: 3}
   _playerNote: 

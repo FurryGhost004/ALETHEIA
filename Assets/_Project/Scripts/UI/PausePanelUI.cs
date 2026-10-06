@@ -90,8 +90,6 @@ public class PauseManager : MonoBehaviour
 
     public void OpenPauseFromGameplay()
     {
-        AudioManager.Instance.PlaySFX("PanelOpen");
-
         currentState = UIState.Pause;
         SetPanelsActive(pause: true, save: false, load: false, notebook: false);
         Time.timeScale = 0f;
@@ -111,8 +109,6 @@ public class PauseManager : MonoBehaviour
 
     public void OnContinuePressed()
     {
-        AudioManager.Instance.PlaySFX("PanelClose");
-
         currentState = UIState.Gameplay;
         SetPanelsActive(false, false, false, false);
         Time.timeScale = 1f;
@@ -123,9 +119,6 @@ public class PauseManager : MonoBehaviour
 
     public void OnSaveButtonPressed()
     {
-        AudioManager.Instance.PlaySFX("ButtonClick");
-        AudioManager.Instance.PlaySFX("PanelOpen");
-
         currentState = UIState.Save;
         SetPanelsActive(pause: false, save: true, load: false, notebook: false);
         Time.timeScale = 0f;
@@ -136,8 +129,6 @@ public class PauseManager : MonoBehaviour
 
     public void OnSaveReturnPressed()
     {
-        AudioManager.Instance.PlaySFX("PanelClose");
-
         currentState = UIState.Pause;
         SetPanelsActive(pause: true, save: false, load: false, notebook: false);
         Time.timeScale = 0f;
@@ -145,9 +136,6 @@ public class PauseManager : MonoBehaviour
 
     public void OnLoadButtonPressed()
     {
-        AudioManager.Instance.PlaySFX("ButtonClick");
-        AudioManager.Instance.PlaySFX("PanelOpen");
-
         currentState = UIState.Load;
         SetPanelsActive(pause: false, save: false, load: true, notebook: false);
         Time.timeScale = 0f;
@@ -158,9 +146,6 @@ public class PauseManager : MonoBehaviour
 
     public void OnLoadReturnPressed()
     {
-        AudioManager.Instance.PlaySFX("ButtonClick");
-        AudioManager.Instance.PlaySFX("PanelClose");
-
         currentState = UIState.Pause;
         SetPanelsActive(pause: true, save: false, load: false, notebook: false);
         Time.timeScale = 0f;
@@ -168,9 +153,6 @@ public class PauseManager : MonoBehaviour
 
     public void OnNotebookButtonPressedFromPause()
     {
-        AudioManager.Instance.PlaySFX("ButtonClick");
-        AudioManager.Instance.PlaySFX("PanelOpen");
-
         previousStateBeforeNotebook = UIState.Pause;
         currentState = UIState.Notebook;
         SetPanelsActive(pause: false, save: false, load: false, notebook: true);
@@ -196,8 +178,6 @@ public class PauseManager : MonoBehaviour
     /// </summary>
     public void CloseNotebook()
     {
-        AudioManager.Instance.PlaySFX("PanelClose");
-
         if (previousStateBeforeNotebook == UIState.Pause)
         {
             currentState = UIState.Pause;
@@ -218,15 +198,11 @@ public class PauseManager : MonoBehaviour
     // Giữ hàm này để gán vào Nút Back (Button UI) nếu có
     public void OnNotebookReturnPressed()
     {
-        AudioManager.Instance.PlaySFX("ButtonClick");
-
         CloseNotebook();
     }
 
     public void OnReturnToMainMenuPressed()
     {
-        AudioManager.Instance.PlaySFX("ButtonClick");
-
         Time.timeScale = 1f;
         UnityEngine.SceneManagement.SceneManager.LoadScene(mainMenuSceneName);
     }
