@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STBK
   _itemName: Sterling Bloody Knife
   _description: Hidden inside shoes box
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 601660780eaf8eb4e8d935cd78939130, type: 3}
   _playerNote: 

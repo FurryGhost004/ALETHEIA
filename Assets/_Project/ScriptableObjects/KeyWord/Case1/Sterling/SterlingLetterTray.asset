@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: StLettertray
   _itemName: Sterling Letter tray
   _description: Located on the carbinet in Sterlings's room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: fe08486f40a86ce418787b4a9576b2ba, type: 3}
   _playerNote: 

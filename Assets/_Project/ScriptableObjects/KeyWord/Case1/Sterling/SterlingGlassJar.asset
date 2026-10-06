@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STGJ
   _itemName: Sterling glass jar
   _description: Stored inside the fridge at Sterlin's apartment room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 01bf65d42d8edc64db315fb9e41e01af, type: 3}
   _playerNote: 
