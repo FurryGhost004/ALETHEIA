@@ -2910,10 +2910,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 623db819eb1b02e42b3a73f97254efca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SuspectNPC
-  _npcId: Suspect_02
-  _npcName: "Nghi ph\u1EA1m 02"
-  _npcPortrait: {fileID: 21300000, guid: 188f320d7eb70c14b9a6d877138b614d, type: 3}
-  _npcDatabase: {fileID: 11400000, guid: 990249161c9f9cf45b2635e25b6a742e, type: 2}
+  _suspectData: {fileID: 0}
+  _isFirstTalk: 1
+  _firstTalkDialogue: {fileID: 0}
+  _repeatTalkDialogue: {fileID: 0}
+  _canBeInterrogated: 1
   _interrogationUI: {fileID: 1960812819}
 --- !u!135 &341799233
 SphereCollider:
@@ -7938,7 +7939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755d83f85a245b74ab337d2a87fc78ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InspectionHotspot
-  _innerMonologue: "V\u1EBFt m\xE1u n\xE0y tr\xF4ng c\xF2n r\u1EA5t "
+  _hotspotDialogue: {fileID: 0}
   _associatedKeyword: {fileID: 11400000, guid: 0ff036aa0a478a341b165f82a9fbdf55, type: 2}
 --- !u!1 &932947264
 GameObject:
@@ -10884,6 +10885,8 @@ MonoBehaviour:
   _contentEvidenceParent: {fileID: 1226102427}
   _itemPrefab: {fileID: 4190229091028709950, guid: ab80445314071fd448c6fb99f7aa020f, type: 3}
   _detailUI: {fileID: 1501302959}
+  _trialController: {fileID: 0}
+  _doubleClickThreshold: 0.3
 --- !u!114 &1335850275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11518,6 +11521,11 @@ MonoBehaviour:
   _contentSuspectParent: {fileID: 1952910645}
   _suspectItemPrefab: {fileID: 8063795618781524448, guid: 9f56e4aaaa5af6a499da21a3ebb626f1, type: 3}
   _txtName: {fileID: 1084353859}
+  _txtAddress: {fileID: 0}
+  _txtHeight: {fileID: 0}
+  _txtDescription: {fileID: 0}
+  _imgPortrait: {fileID: 0}
+  _btnConvict: {fileID: 0}
 --- !u!1 &1418817744
 GameObject:
   m_ObjectHideFlags: 0
@@ -17214,7 +17222,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0010038002}
+  m_AnchoredPosition: {x: 0, y: 0.0008637604}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1952910646
@@ -17424,10 +17432,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: defdf75192df19247ab50e9401a0022d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InterrogationUIController
+  _inputGroupPanel: {fileID: 0}
   _dropdownWH: {fileID: 882716391}
   _inputKeyword: {fileID: 148297725}
   _btnAsk: {fileID: 0}
   _btnClose: {fileID: 0}
+  _npcNameText: {fileID: 0}
+  _responseText: {fileID: 0}
+  _npcPortraitImage: {fileID: 0}
+  _typewriterSpeed: 0.03
+  _defaultVagueDialogue: {fileID: 0}
   _playerInputHandler: {fileID: 1988866946}
 --- !u!114 &1960812820
 MonoBehaviour:
@@ -17950,7 +17964,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 524024734}
   m_HandleRect: {fileID: 524024733}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -18398,10 +18412,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 623db819eb1b02e42b3a73f97254efca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SuspectNPC
-  _npcId: Suspect_01
-  _npcName: "Nghi ph\u1EA1m 01"
-  _npcPortrait: {fileID: 21300000, guid: b76d3cbb10339404da21db0b461faaa7, type: 3}
-  _npcDatabase: {fileID: 11400000, guid: ce2909d55f91c104e9ae3bc2fb05e33d, type: 2}
+  _suspectData: {fileID: 0}
+  _isFirstTalk: 1
+  _firstTalkDialogue: {fileID: 0}
+  _repeatTalkDialogue: {fileID: 0}
+  _canBeInterrogated: 1
   _interrogationUI: {fileID: 1960812819}
 --- !u!1 &2092206643
 GameObject:

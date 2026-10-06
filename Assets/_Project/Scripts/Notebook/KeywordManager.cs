@@ -8,7 +8,10 @@ public class KeywordManager : SingletonBase<KeywordManager>
 
     public IReadOnlyList<KeywordData> UnlockedKeywords => _unlockedKeywords;
 
-    private void Awake() { }
+    protected override void Awake()
+    {
+        base.Awake();
+    }
 
     private void Start() { }
 

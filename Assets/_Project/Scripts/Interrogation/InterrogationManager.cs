@@ -4,7 +4,10 @@ public class InterrogationManager : SingletonBase<InterrogationManager>
 {
     [SerializeField] private InterrogationDatabase _database;
 
-    private void Awake() { }
+    protected override void Awake()
+    {
+        base.Awake();
+    }
 
     private void Start() { }
 

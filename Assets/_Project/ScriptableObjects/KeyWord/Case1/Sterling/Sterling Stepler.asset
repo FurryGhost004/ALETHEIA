@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: StStepler
   _itemName: Sterling Stepler
   _description: Stored in middle right drawer of the carbinet in Sterlings's room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 4a1fdc38917081e4794fb421ac84d734, type: 3}
   _playerNote: 

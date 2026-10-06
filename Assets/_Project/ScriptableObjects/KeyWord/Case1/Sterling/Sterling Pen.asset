@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: StPen
   _itemName: Sterling Pen
   _description: Stored in middle right drawer of the carbinet in Sterlings's room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 4a9e4071e912d414db032b16b67a9815, type: 3}
   _playerNote: 

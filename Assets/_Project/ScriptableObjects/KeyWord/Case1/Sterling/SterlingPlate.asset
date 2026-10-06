@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STPLATE
   _itemName: Sterling plate
   _description: Hanged on the rack at the kitchen
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: a898aac85255afe43bbca7d365580839, type: 3}
   _playerNote: 

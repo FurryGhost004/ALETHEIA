@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STMT
   _itemName: Sterling metal tin
   _description: Stored inside the fridge at Sterlin's apartment room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: d9938fcd8759d98429f614bbfcfc48a2, type: 3}
   _playerNote: 

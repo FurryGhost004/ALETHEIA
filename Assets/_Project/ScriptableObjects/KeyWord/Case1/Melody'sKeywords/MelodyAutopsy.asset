@@ -18,5 +18,5 @@ MonoBehaviour:
   _description: "Melody Sterling, F/17\nBlunt force trauma to the posterior skull
     (6+ impacts) delivered from behind while seated; no defensive wounds confirm
     instant incapacitation Time of death estimated 4:00\u20135:00 PM."
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 414ad97f416cd3a419632675e75e60fc, type: 3}
   _playerNote: 

@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STLAMP
   _itemName: Sterling lamp
   _description: Located on the nightstand at Sterlings's room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 478db7457fa1e184eb24ad49ef77aa1e, type: 3}
   _playerNote: 

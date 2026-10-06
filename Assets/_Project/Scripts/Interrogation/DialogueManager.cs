@@ -24,7 +24,10 @@ public class DialogueManager : SingletonBase<DialogueManager>
 
     public bool IsInDialogue { get; private set; }
 
-    private void Awake() { }
+    protected override void Awake()
+    {
+        base.Awake();
+    }
 
     private void Start() { }
 

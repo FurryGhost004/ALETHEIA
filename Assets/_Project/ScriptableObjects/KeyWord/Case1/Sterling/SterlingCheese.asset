@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STCHEESE
   _itemName: Sterling cheese
   _description: Stored inside the fridge at Sterlin's apartment room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 17e9d0c8ebb5a424986a8343a036bf2c, type: 3}
   _playerNote: 

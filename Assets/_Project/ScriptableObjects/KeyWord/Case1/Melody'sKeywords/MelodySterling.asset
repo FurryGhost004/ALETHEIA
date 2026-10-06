@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: Melody
   _itemName: Melody
   _description: Melody Sterling, second child of the Sterling family
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 9451a01b621d3ee43a698227c12c5806, type: 3}
   _playerNote: 

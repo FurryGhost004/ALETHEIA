@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STBED
   _itemName: Sterling bed
   _description: Located in Sterlings's room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: c71904231e856c24cba9e9606289c94e, type: 3}
   _playerNote: 

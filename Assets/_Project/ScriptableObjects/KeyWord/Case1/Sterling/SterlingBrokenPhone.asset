@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: STBP
   _itemName: Sterling broken phone
   _description: Located at Sterlin's apartment room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 8d0645b320b5ea840bfb13ceebb431e8, type: 3}
   _playerNote: 
