@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: LizetteScissors
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
   _id: 
-  _keywordName: RISCISSORS
-  _itemName: Richmal  scissors
-  _description: Stored in the top cabinet's drawer in Richmal bedroom
+  _keywordName: LISCISSORS
+  _itemName: Lizette  scissors
+  _description: Located on the cabinet's drawer in Lizette's bedroom
   _icon: {fileID: 0}
   _playerNote: 

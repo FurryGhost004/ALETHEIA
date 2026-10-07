@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: LizetteBook 1
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
   _id: 
-  _keywordName: RIBOOK
-  _itemName: Richmal book
-  _description: Located on the top left bookself in Richmal bedroom
+  _keywordName: LIBOOK 1
+  _itemName: Lizette book 1
+  _description: Located on the middle rack of bookself in Lizette bedroom
   _icon: {fileID: 0}
   _playerNote: 

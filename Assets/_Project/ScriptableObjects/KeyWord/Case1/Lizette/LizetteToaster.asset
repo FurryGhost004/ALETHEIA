@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: LizetteToaster
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
   _id: 
-  _keywordName: STTOASTER
-  _itemName: Sterling toaster
-  _description: 'Stored inside the sink caninet at the kitchen '
+  _keywordName: LITOASTER
+  _itemName: Lizette toaster
+  _description: 'Located on the table in Lizzete''s living room '
   _icon: {fileID: 0}
   _playerNote: 
