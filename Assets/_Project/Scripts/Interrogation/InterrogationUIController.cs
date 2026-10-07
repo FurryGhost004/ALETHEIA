@@ -163,8 +163,9 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
             responseEntry = InterrogationManager.Instance.LookupResponse(_currentNpcId, selectedWH, targetKeyword);
         }
 
-        DialogueDatabase dialogueToPlay = (responseEntry != null && responseEntry.ResponseDialogue != null)
-            ? responseEntry.ResponseDialogue
+        // Đã sửa thành responseEntry.DialogueResponse để khớp với InterrogationResponseEntry
+        DialogueDatabase dialogueToPlay = (responseEntry != null && responseEntry.DialogueResponse != null)
+            ? responseEntry.DialogueResponse
             : _defaultVagueDialogue;
 
         if (dialogueToPlay != null && dialogueToPlay.Lines.Count > 0)

@@ -19029,7 +19029,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aa5a48a1ef172243a60745da50026c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InterrogationManager
-  _database: {fileID: 11400000, guid: ba56e6627fc23f64db9862c6588357dc, type: 2}
+  _databases:
+  - {fileID: 11400000, guid: 89458faa7d1e04d409643bc27d4ef29a, type: 2}
+  - {fileID: 11400000, guid: 125c9c05cc7bc0a45962177b3a3d1adb, type: 2}
 --- !u!114 &1545982538
 MonoBehaviour:
   m_ObjectHideFlags: 0
