@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SebastianPainting
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
   _id: 020
-  _keywordName: SePainting
+  _keywordName: SEPAINTING
   _itemName: Sebastian Painting
   _description: 'Hanged on the wall in Sebastian''s room '
   _icon: {fileID: 21300000, guid: cf54a96877265c4479edf79424412d1f, type: 3}

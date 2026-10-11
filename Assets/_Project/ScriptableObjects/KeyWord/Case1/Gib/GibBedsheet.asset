@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a13e220e0bebf4142a7c5d3711a6c42d, type: 3}
-  m_Name: RichmalToil
+  m_Name: GibBedsheet
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
   _id: 
-  _keywordName: RITP
-  _itemName: Richmal toilet paper
-  _description: 'Located in the bathroom at Richmal''s arpartment room '
+  _keywordName: GIBS
+  _itemName: Gib bedsheet
+  _description: Located  in Gib's bedroom
   _icon: {fileID: 0}
   _playerNote: 
