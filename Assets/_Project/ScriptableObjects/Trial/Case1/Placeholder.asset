@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Placeholder
   m_EditorClassIdentifier: Assembly-CSharp::TrialTopic
   topicName: 1
-  introDialogue: Topic 1
+  introDialogue: {fileID: 11400000, guid: 470ba2236baaf514aa4de79e0501e6df, type: 2}
   correctEvidence: {fileID: 11400000, guid: 70a66b9a859562946964a4e73eea9770, type: 2}
-  winDialogue: You right 1
-  failDialogue: You wrong 1
+  winDialogue: {fileID: 11400000, guid: 729e0c05154ce594bb3dfb9e36b27007, type: 2}
+  failDialogue: {fileID: 11400000, guid: b9a3012d401b66145be6688b9716db6e, type: 2}

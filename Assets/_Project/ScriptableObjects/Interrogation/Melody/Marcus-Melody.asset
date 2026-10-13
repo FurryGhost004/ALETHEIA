@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Marcus-Melody
   m_EditorClassIdentifier: Assembly-CSharp::InterrogationDatabase
   _npcId: Marcus
-  _keyword: {fileID: 0}
+  _keyword: {fileID: 11400000, guid: e70350fc73fec2446b7d7660e6749fff, type: 2}
   _responses:
   - _whType: 0
     _dialogueResponse: {fileID: 11400000, guid: f180945150d516c439b6af4868c28350, type: 2}

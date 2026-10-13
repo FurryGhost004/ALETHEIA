@@ -19780,6 +19780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book_06 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030989400, guid: abc00000000001048202643603297622, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030989401, guid: abc00000000001048202643603297622, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.25
@@ -20152,6 +20156,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Food_SM_Apple_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1030990100, guid: abc00000000004537710561762321281, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030990101, guid: abc00000000004537710561762321281, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.26647162
@@ -20261,6 +20269,10 @@ PrefabInstance:
     - target: {fileID: 1179492306298648, guid: 414a750bd1e78fa4baf2e996ed904fb3, type: 3}
       propertyPath: m_Name
       value: Microphone
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179492306298648, guid: 414a750bd1e78fa4baf2e996ed904fb3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4091972346141570, guid: 414a750bd1e78fa4baf2e996ed904fb3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21184,6 +21196,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stepler
       objectReference: {fileID: 0}
+    - target: {fileID: 6071041418127652201, guid: c04bc87d651a3214589060dd42682aac, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6848704743278047187, guid: c04bc87d651a3214589060dd42682aac, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.6245165
@@ -21293,6 +21309,10 @@ PrefabInstance:
     - target: {fileID: 1030992331, guid: abc00000000003906270597115057518, type: 3}
       propertyPath: m_Name
       value: SM_Book03 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030992331, guid: abc00000000003906270597115057518, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030992332, guid: abc00000000003906270597115057518, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21681,6 +21701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bread_03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6093391673720001028, guid: 2475a01d6f14eaf48bd688382a900e55, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6907329811616041150, guid: 2475a01d6f14eaf48bd688382a900e55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.751
@@ -21785,6 +21809,10 @@ PrefabInstance:
     - target: {fileID: 6145271163491723563, guid: a104be747e53b0c4f875ab61494ff9f2, type: 3}
       propertyPath: m_Name
       value: Toaster_Apt_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145271163491723563, guid: a104be747e53b0c4f875ab61494ff9f2, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7935108168946035685, guid: a104be747e53b0c4f875ab61494ff9f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22030,7 +22058,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 635ea429d6e0004499c7d3f13344036f, type: 2}
   - {fileID: 11400000, guid: e4de82da08ab80840abd17c9df133169, type: 2}
   - {fileID: 11400000, guid: e2d01f69d723c5640b280d124568931d, type: 2}
-  _database: {fileID: 0}
 --- !u!114 &46146600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22058,7 +22085,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7abdf6424d1087c4d8b83f4216082dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeywordManager
-  _unlockedKeywords: []
+  _unlockedKeywords:
+  - {fileID: 11400000, guid: db387ff8682aa4d40bf84ac4c36608ad, type: 2}
+  - {fileID: 11400000, guid: e70350fc73fec2446b7d7660e6749fff, type: 2}
+  - {fileID: 11400000, guid: 70a66b9a859562946964a4e73eea9770, type: 2}
+  - {fileID: 11400000, guid: b9ed964f479506a44bf7be328c89e786, type: 2}
 --- !u!4 &46146602
 Transform:
   m_ObjectHideFlags: 0
@@ -22138,6 +22169,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sculpture_apt_01_01
       objectReference: {fileID: 0}
+    - target: {fileID: 2092558875539140737, guid: 6d99fe7157190374995611275c238de8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22202,6 +22237,10 @@ PrefabInstance:
     - target: {fileID: 1816606257826974, guid: fd7afa6017cb7f84188a44bf0b00dd4d, type: 3}
       propertyPath: m_Name
       value: Bedside_lamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816606257826974, guid: fd7afa6017cb7f84188a44bf0b00dd4d, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4337349175706944, guid: fd7afa6017cb7f84188a44bf0b00dd4d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22407,6 +22446,10 @@ PrefabInstance:
     - target: {fileID: 7315133584345758847, guid: a49ae77aac9fc4e8f81a4e4b20bbb700, type: 3}
       propertyPath: m_Name
       value: Free_CupCoffeeBreakfast_WIthCoffeeInCup
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315133584345758847, guid: a49ae77aac9fc4e8f81a4e4b20bbb700, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7984674951208969925, guid: a49ae77aac9fc4e8f81a4e4b20bbb700, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22810,6 +22853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: folder_2
       objectReference: {fileID: 0}
+    - target: {fileID: 8947212066891938385, guid: ef810fb0dc1f980459baebe625a5bc9c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22874,6 +22921,10 @@ PrefabInstance:
     - target: {fileID: 134800, guid: 39cce5eade83562498c854658c6a4060, type: 3}
       propertyPath: m_Name
       value: spoon
+      objectReference: {fileID: 0}
+    - target: {fileID: 134800, guid: 39cce5eade83562498c854658c6a4060, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 498078, guid: 39cce5eade83562498c854658c6a4060, type: 3}
       propertyPath: m_LocalScale.y
@@ -23239,6 +23290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Aluminum_Can_01_Closed (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2588616344386064687, guid: 091c40835fc7ae44ba18d6d34a022afa, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23486,6 +23541,10 @@ PrefabInstance:
     - target: {fileID: 1030989400, guid: abc00000000001048202643603297622, type: 3}
       propertyPath: m_Name
       value: SM_Book_06
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030989400, guid: abc00000000001048202643603297622, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030989401, guid: abc00000000001048202643603297622, type: 3}
       propertyPath: m_LocalScale.x
@@ -23741,6 +23800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wine bottle 04_Low Poly
       objectReference: {fileID: 0}
+    - target: {fileID: 5638865034277454350, guid: e0f8fa703bcf04a419f5263f5020b059, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5638865034277625390, guid: e0f8fa703bcf04a419f5263f5020b059, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.329
@@ -23911,6 +23974,10 @@ PrefabInstance:
     - target: {fileID: 2588616344386064687, guid: 091c40835fc7ae44ba18d6d34a022afa, type: 3}
       propertyPath: m_Name
       value: SM_Aluminum_Can_01_Closed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588616344386064687, guid: 091c40835fc7ae44ba18d6d34a022afa, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24208,6 +24275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Food_SM_Carrot_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030990280, guid: abc00000000010852538934778764189, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030990281, guid: abc00000000010852538934778764189, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.82
@@ -24359,6 +24430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_3_skin_3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2139299838465336030, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.46899992
@@ -24463,6 +24538,10 @@ PrefabInstance:
     - target: {fileID: 1030985975, guid: abc00000000010982447241134454019, type: 3}
       propertyPath: m_Name
       value: SM_Dining_Set_Bowl
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030985975, guid: abc00000000010982447241134454019, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030985976, guid: abc00000000010982447241134454019, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24609,6 +24688,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Couch_3_Pillow.007
       objectReference: {fileID: 0}
+    - target: {fileID: 6318319256271758510, guid: 4852e0b39caf52d4a83128c06530a8e1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24709,6 +24792,10 @@ PrefabInstance:
     - target: {fileID: 1114305854524414, guid: eaee10ff3c34a894abde0fb99cb6d783, type: 3}
       propertyPath: m_Name
       value: roundtable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114305854524414, guid: eaee10ff3c34a894abde0fb99cb6d783, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4984096946210654, guid: eaee10ff3c34a894abde0fb99cb6d783, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26056,6 +26143,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirstAid_Red
       objectReference: {fileID: 0}
+    - target: {fileID: 5396988188536389404, guid: a878263a8b8f3ef4d9b4989733883f3a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7004791479623421552, guid: a878263a8b8f3ef4d9b4989733883f3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.4753201
@@ -26285,6 +26376,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FoodPot_05
       objectReference: {fileID: 0}
+    - target: {fileID: 1030991576, guid: abc00000000002317329180730070583, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030991577, guid: abc00000000002317329180730070583, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.11500001
@@ -26465,6 +26560,10 @@ PrefabInstance:
     - target: {fileID: 3304547296615693552, guid: db3b0f21e0beb2845b327c01e10769f0, type: 3}
       propertyPath: m_Name
       value: cup_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3304547296615693552, guid: db3b0f21e0beb2845b327c01e10769f0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26791,9 +26890,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2824428921207601606, guid: bd82980ec0e466d48a84803eba02265f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5941839947436283181, guid: bd82980ec0e466d48a84803eba02265f, type: 3}
       propertyPath: m_Name
       value: Bed_Apt_01_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693551714665185562, guid: bd82980ec0e466d48a84803eba02265f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26902,6 +27009,10 @@ PrefabInstance:
     - target: {fileID: 1030989360, guid: abc00000000011845118053869951636, type: 3}
       propertyPath: m_Name
       value: SM_Book_04 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030989360, guid: abc00000000011845118053869951636, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030989361, guid: abc00000000011845118053869951636, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27884,6 +27995,10 @@ PrefabInstance:
     - target: {fileID: 4035178881683024354, guid: 143623a82f19a9e49b450142a80c6d52, type: 3}
       propertyPath: m_Name
       value: Bowl_Apt_01_Stacked
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035178881683024354, guid: 143623a82f19a9e49b450142a80c6d52, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36850,6 +36965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bowl_Apt_01_Stacked (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4035178881683024354, guid: 143623a82f19a9e49b450142a80c6d52, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37666,6 +37785,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book03 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030992331, guid: abc00000000003906270597115057518, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030992332, guid: abc00000000003906270597115057518, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.216
@@ -37897,6 +38020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bottles_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1030996926, guid: abc00000000008825234398094801437, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030996927, guid: abc00000000008825234398094801437, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -38054,6 +38181,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Free_JuiceGlas
       objectReference: {fileID: 0}
+    - target: {fileID: 6564814797449604145, guid: b02ab353c2ea9463a84fbd9e0c10b8a5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38118,6 +38249,10 @@ PrefabInstance:
     - target: {fileID: 117895243694500892, guid: 3e7be61a66e072c44bc2cc6bbee79f45, type: 3}
       propertyPath: m_Name
       value: Lamp_Table_Apt_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 117895243694500892, guid: 3e7be61a66e072c44bc2cc6bbee79f45, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6124730947378653682, guid: 3e7be61a66e072c44bc2cc6bbee79f45, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38300,6 +38435,10 @@ PrefabInstance:
     - target: {fileID: 1030995455, guid: abc00000000016339012204227793508, type: 3}
       propertyPath: m_Name
       value: SM_FlowerPot_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030995455, guid: abc00000000016339012204227793508, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030995456, guid: abc00000000016339012204227793508, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59653,6 +59792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WelcomeMat_01
       objectReference: {fileID: 0}
+    - target: {fileID: 4228638966643171970, guid: 7ade998a75360c54ca6e55373981e604, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9062602307051458104, guid: 7ade998a75360c54ca6e55373981e604, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.87168
@@ -64250,6 +64393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Food_SM_Lemon
       objectReference: {fileID: 0}
+    - target: {fileID: 1030990400, guid: abc00000000013683327929640946525, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030990401, guid: abc00000000013683327929640946525, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.3060999
@@ -64354,6 +64501,10 @@ PrefabInstance:
     - target: {fileID: 1030987216, guid: abc00000000014584767755029522906, type: 3}
       propertyPath: m_Name
       value: SM_Fork
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030987216, guid: abc00000000014584767755029522906, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030987217, guid: abc00000000014584767755029522906, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64921,6 +65072,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: phone_02
       objectReference: {fileID: 0}
+    - target: {fileID: 5689308074118991781, guid: 6b2db1c95c1a78d459f373f9dbbf959c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8696207150588444086, guid: 6b2db1c95c1a78d459f373f9dbbf959c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -65191,6 +65346,10 @@ PrefabInstance:
     - target: {fileID: 3241196014341189734, guid: 327860819d06a964d98cea7acb224d6e, type: 3}
       propertyPath: m_Name
       value: SM_Aluminum_Can_01_Opened (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241196014341189734, guid: 327860819d06a964d98cea7acb224d6e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -65608,6 +65767,10 @@ PrefabInstance:
     - target: {fileID: 6071041418127652201, guid: c04bc87d651a3214589060dd42682aac, type: 3}
       propertyPath: m_Name
       value: Stepler
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071041418127652201, guid: c04bc87d651a3214589060dd42682aac, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6848704743278047187, guid: c04bc87d651a3214589060dd42682aac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66123,6 +66286,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PillsTubeRed
       objectReference: {fileID: 0}
+    - target: {fileID: 5559945759241295410, guid: cb8aff9e49677dc4bbe17898109d0fbf, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66247,6 +66414,10 @@ PrefabInstance:
     - target: {fileID: 6698315325301556472, guid: 20c572e06bf755e46acfa2241a76248f, type: 3}
       propertyPath: m_Name
       value: pizza_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698315325301556472, guid: 20c572e06bf755e46acfa2241a76248f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -67510,6 +67681,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cup_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 609527497485715850, guid: 99e63e626edda4f4c8da003af6d41ae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4480558122111269785, guid: 99e63e626edda4f4c8da003af6d41ae5, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -67672,6 +67847,10 @@ PrefabInstance:
     - target: {fileID: 1030989440, guid: abc00000000014377863225868676669, type: 3}
       propertyPath: m_Name
       value: SM_Book_05 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030989440, guid: abc00000000014377863225868676669, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030989441, guid: abc00000000014377863225868676669, type: 3}
       propertyPath: m_LocalScale.x
@@ -68477,6 +68656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Food_SM_Banana (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030990220, guid: abc00000000008752041553851683911, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030990221, guid: abc00000000008752041553851683911, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.33698368
@@ -68945,6 +69128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Couch_3_Pillow.001
       objectReference: {fileID: 0}
+    - target: {fileID: 5699414919421401963, guid: 921181817ea61604d9db02f6760b9ea5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -69009,6 +69196,10 @@ PrefabInstance:
     - target: {fileID: 1442762684734426, guid: 73ae4449e076229428dbc980c994943d, type: 3}
       propertyPath: m_Name
       value: Couch (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442762684734426, guid: 73ae4449e076229428dbc980c994943d, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4636512513726152, guid: 73ae4449e076229428dbc980c994943d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -69211,6 +69402,10 @@ PrefabInstance:
     - target: {fileID: 100420537350111721, guid: acdd9e23c1c235846940d49e0758aa23, type: 3}
       propertyPath: m_Name
       value: cup_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 100420537350111721, guid: acdd9e23c1c235846940d49e0758aa23, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 733826561993087827, guid: acdd9e23c1c235846940d49e0758aa23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -69632,6 +69827,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_3_skin_3 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2139299838465336030, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.49799925
@@ -69967,6 +70166,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bat_01 (blood)
       objectReference: {fileID: 0}
+    - target: {fileID: 4610152295111564677, guid: a2f380fd259c1b04b93145d0c0e77252, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -70209,6 +70412,10 @@ PrefabInstance:
     - target: {fileID: 1030989440, guid: abc00000000014377863225868676669, type: 3}
       propertyPath: m_Name
       value: SM_Book_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030989440, guid: abc00000000014377863225868676669, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030989441, guid: abc00000000014377863225868676669, type: 3}
       propertyPath: m_LocalPosition.x
@@ -70841,6 +71048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: phone_02
       objectReference: {fileID: 0}
+    - target: {fileID: 5689308074118991781, guid: 6b2db1c95c1a78d459f373f9dbbf959c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8696207150588444086, guid: 6b2db1c95c1a78d459f373f9dbbf959c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.0563726
@@ -70986,6 +71197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Free_Lemon
       objectReference: {fileID: 0}
+    - target: {fileID: 703167557171235411, guid: 49aa30f8d383d4e898a73c0ef859dc98, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -71112,6 +71327,10 @@ PrefabInstance:
     - target: {fileID: 577058674734364262, guid: 45ca9e5fb811ded4e9f30270ca323dac, type: 3}
       propertyPath: m_Name
       value: Toilet_Paper
+      objectReference: {fileID: 0}
+    - target: {fileID: 577058674734364262, guid: 45ca9e5fb811ded4e9f30270ca323dac, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 577058674734721606, guid: 45ca9e5fb811ded4e9f30270ca323dac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -80081,6 +80300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_Chair_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1509551647037108, guid: 412f8a32d8ccc3c4ebbc06d61899fb7f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4746193299387070, guid: 412f8a32d8ccc3c4ebbc06d61899fb7f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.39215
@@ -80426,6 +80649,10 @@ PrefabInstance:
     - target: {fileID: 1030990220, guid: abc00000000008752041553851683911, type: 3}
       propertyPath: m_Name
       value: SM_Food_SM_Banana (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990220, guid: abc00000000008752041553851683911, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990221, guid: abc00000000008752041553851683911, type: 3}
       propertyPath: m_LocalPosition.x
@@ -80834,6 +81061,74 @@ MonoBehaviour:
   _distanceFromCamera: 1.2
   _rotateSensitivity: 0.2
   _playerLook: {fileID: 157253620}
+--- !u!1 &435135184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 435135185}
+  - component: {fileID: 435135187}
+  - component: {fileID: 435135186}
+  m_Layer: 7
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &435135185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435135184}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1280055961}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &435135186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435135184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755d83f85a245b74ab337d2a87fc78ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionHotspot
+  _hotspotDialogue: {fileID: 11400000, guid: f9e11f5fda239f345a801c0fa644a7f1, type: 2}
+  _associatedKeyword: {fileID: 11400000, guid: b81bb428573286d4cb9af84d5cfda8ed, type: 2}
+--- !u!65 &435135187
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435135184}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.17, z: 1}
+  m_Center: {x: 0, y: 0.11, z: 0}
 --- !u!1001 &438406346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80897,6 +81192,10 @@ PrefabInstance:
     - target: {fileID: 8441611114093278921, guid: 8dfa0d45cd834394f8c62eec3b88c8c4, type: 3}
       propertyPath: m_Name
       value: DrinkingGlass_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441611114093278921, guid: 8dfa0d45cd834394f8c62eec3b88c8c4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -81288,6 +81587,10 @@ PrefabInstance:
     - target: {fileID: 1030989440, guid: abc00000000014377863225868676669, type: 3}
       propertyPath: m_Name
       value: SM_Book_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030989440, guid: abc00000000014377863225868676669, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030989441, guid: abc00000000014377863225868676669, type: 3}
       propertyPath: m_LocalScale.x
@@ -91748,6 +92051,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bottles_03
       objectReference: {fileID: 0}
+    - target: {fileID: 1030996966, guid: abc00000000002422502236857483535, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030996967, guid: abc00000000002422502236857483535, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.16968298
@@ -92030,6 +92337,10 @@ PrefabInstance:
     - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_Name
       value: Book_3_skin_3 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2139299838465336030, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -92669,6 +92980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spray_FatWhite
       objectReference: {fileID: 0}
+    - target: {fileID: 2044509991041497664, guid: 89c821008be8e2c4da1cb0436a47cfba, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -92762,6 +93077,10 @@ PrefabInstance:
     - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_Name
       value: Book_3_skin_3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2139299838465336030, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -92907,6 +93226,10 @@ PrefabInstance:
     - target: {fileID: 6385662009729537733, guid: b8292e68b2a56c249a16db40e4e540cc, type: 3}
       propertyPath: m_Name
       value: OT_Scissors
+      objectReference: {fileID: 0}
+    - target: {fileID: 6385662009729537733, guid: b8292e68b2a56c249a16db40e4e540cc, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -93348,6 +93671,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OfficeBook_3
       objectReference: {fileID: 0}
+    - target: {fileID: 8831869515232395112, guid: a2bed3c70bba94e40bde36237bbbf1d6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -93570,6 +93897,10 @@ PrefabInstance:
     - target: {fileID: 2640015100330053026, guid: 46bf299537dbcae4cbccff6784223305, type: 3}
       propertyPath: m_Name
       value: CoffeeMaker_Apt_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2640015100330053026, guid: 46bf299537dbcae4cbccff6784223305, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5485911931104626639, guid: 46bf299537dbcae4cbccff6784223305, type: 3}
       propertyPath: m_LocalPosition.x
@@ -93864,6 +94195,10 @@ PrefabInstance:
     - target: {fileID: 5006834288570464544, guid: 046ec50b8328aa54c96774a0cc973a01, type: 3}
       propertyPath: m_Name
       value: Lamp_BR_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006834288570464544, guid: 046ec50b8328aa54c96774a0cc973a01, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -105485,6 +105820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Binder_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3928096965334557377, guid: fb8f6bea5fdb1e2448694aa828e2669c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4452010320012916859, guid: fb8f6bea5fdb1e2448694aa828e2669c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.9033957
@@ -113941,6 +114280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book03 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030992331, guid: abc00000000003906270597115057518, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030992332, guid: abc00000000003906270597115057518, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.111
@@ -114389,6 +114732,10 @@ PrefabInstance:
     - target: {fileID: 1030991616, guid: abc00000000002823469112721667942, type: 3}
       propertyPath: m_Name
       value: SM_Carpet_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030991616, guid: abc00000000002823469112721667942, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030991617, guid: abc00000000002823469112721667942, type: 3}
       propertyPath: m_LocalPosition.x
@@ -115096,6 +115443,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Letter_Tray_1
       objectReference: {fileID: 0}
+    - target: {fileID: 409030693305198359, guid: 582f09bc2c4cd2e4ca784e4365e533ae, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1073822169986792877, guid: 582f09bc2c4cd2e4ca784e4365e533ae, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.08732772
@@ -115324,6 +115675,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1381312787}
     m_Modifications:
+    - target: {fileID: 9189065509120254492, guid: 8af73887c9cd7fa47a2f642969b20378, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189065509477827631, guid: 8af73887c9cd7fa47a2f642969b20378, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9189065510491252739, guid: 8af73887c9cd7fa47a2f642969b20378, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -115761,6 +116120,10 @@ PrefabInstance:
     - target: {fileID: 1030996826, guid: abc00000000016849560554680633536, type: 3}
       propertyPath: m_Name
       value: SM_FoodPot_15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030996826, guid: abc00000000016849560554680633536, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030996827, guid: abc00000000016849560554680633536, type: 3}
       propertyPath: m_LocalPosition.x
@@ -116596,6 +116959,10 @@ PrefabInstance:
     - target: {fileID: 1030989120, guid: abc00000000015771535597873723813, type: 3}
       propertyPath: m_Name
       value: SM_BookOpen_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030989120, guid: abc00000000015771535597873723813, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030989121, guid: abc00000000015771535597873723813, type: 3}
       propertyPath: m_LocalPosition.x
@@ -124902,6 +125269,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Food_SM_Pear (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030990200, guid: abc00000000014799989761545463732, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030990201, guid: abc00000000014799989761545463732, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.60400015
@@ -125106,6 +125477,10 @@ PrefabInstance:
     - target: {fileID: 6356314544226226810, guid: 4037cb538401b8a43a88a63393225224, type: 3}
       propertyPath: m_Name
       value: Scotch
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356314544226226810, guid: 4037cb538401b8a43a88a63393225224, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -125382,6 +125757,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book03 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030992331, guid: abc00000000003906270597115057518, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030992332, guid: abc00000000003906270597115057518, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.165
@@ -125487,6 +125866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FoodCan09
       objectReference: {fileID: 0}
+    - target: {fileID: 1030988305, guid: abc00000000012870526047940471529, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030988306, guid: abc00000000012870526047940471529, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.19379926
@@ -125591,6 +125974,10 @@ PrefabInstance:
     - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_Name
       value: Book_3_skin_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2139299838465336030, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -126026,6 +126413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_3_skin_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2139299838465336030, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.32099983
@@ -126224,6 +126615,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_Painting_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5828997711346961650, guid: 034a790e51efb8c42af98f9b7728dfe6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6273954348158240993, guid: 034a790e51efb8c42af98f9b7728dfe6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.43771
@@ -126328,6 +126723,10 @@ PrefabInstance:
     - target: {fileID: 2640015100330053026, guid: 46bf299537dbcae4cbccff6784223305, type: 3}
       propertyPath: m_Name
       value: CoffeeMaker_Apt_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2640015100330053026, guid: 46bf299537dbcae4cbccff6784223305, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5485911931104626639, guid: 46bf299537dbcae4cbccff6784223305, type: 3}
       propertyPath: m_LocalPosition.x
@@ -126842,6 +127241,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Food_SM_Apple_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1030990100, guid: abc00000000004537710561762321281, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030990101, guid: abc00000000004537710561762321281, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.47698975
@@ -127131,6 +127534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_3_skin_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2139299838465336030, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.6539994
@@ -127390,6 +127797,10 @@ PrefabInstance:
     - target: {fileID: 1030989400, guid: abc00000000001048202643603297622, type: 3}
       propertyPath: m_Name
       value: SM_Book_06
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030989400, guid: abc00000000001048202643603297622, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030989401, guid: abc00000000001048202643603297622, type: 3}
       propertyPath: m_LocalPosition.x
@@ -128724,6 +129135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: teapot
       objectReference: {fileID: 0}
+    - target: {fileID: 170910, guid: 0aab0b1a5f8606044a537e15822c6369, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 467712, guid: 0aab0b1a5f8606044a537e15822c6369, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.5331275
@@ -129047,6 +129462,10 @@ PrefabInstance:
     - target: {fileID: 1030990750, guid: abc00000000011029386198930911358, type: 3}
       propertyPath: m_Name
       value: SM_FoodPot_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990750, guid: abc00000000011029386198930911358, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990751, guid: abc00000000011029386198930911358, type: 3}
       propertyPath: m_LocalPosition.x
@@ -129469,6 +129888,10 @@ PrefabInstance:
     - target: {fileID: 3241196014341189734, guid: 327860819d06a964d98cea7acb224d6e, type: 3}
       propertyPath: m_Name
       value: SM_Aluminum_Can_01_Opened (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241196014341189734, guid: 327860819d06a964d98cea7acb224d6e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -135189,6 +135612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Plate_Mug_Plate_A_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1030988515, guid: abc00000000006731255952619987755, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030988516, guid: abc00000000006731255952619987755, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9120808
@@ -136521,6 +136948,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bowl_Apt_01_Stacked
       objectReference: {fileID: 0}
+    - target: {fileID: 4035178881683024354, guid: 143623a82f19a9e49b450142a80c6d52, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -136687,6 +137118,10 @@ PrefabInstance:
     - target: {fileID: 8933469904465650184, guid: ab931d06f54192f45ae5f39db40c6e7b, type: 3}
       propertyPath: m_Name
       value: Plate_Apt_01_Stacked
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933469904465650184, guid: ab931d06f54192f45ae5f39db40c6e7b, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -137834,6 +138269,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spoon
       objectReference: {fileID: 0}
+    - target: {fileID: 134800, guid: 39cce5eade83562498c854658c6a4060, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 498078, guid: 39cce5eade83562498c854658c6a4060, type: 3}
       propertyPath: m_LocalScale.y
       value: 83.17421
@@ -137946,6 +138385,10 @@ PrefabInstance:
     - target: {fileID: 1030990200, guid: abc00000000014799989761545463732, type: 3}
       propertyPath: m_Name
       value: SM_Food_SM_Pear
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990200, guid: abc00000000014799989761545463732, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990201, guid: abc00000000014799989761545463732, type: 3}
       propertyPath: m_LocalPosition.x
@@ -138083,6 +138526,10 @@ PrefabInstance:
     - target: {fileID: 3451982701686888311, guid: 8b726a9375ea2e442aa068972abf0c08, type: 3}
       propertyPath: m_Name
       value: Blender_Apt_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451982701686888311, guid: 8b726a9375ea2e442aa068972abf0c08, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5532235739179982029, guid: 8b726a9375ea2e442aa068972abf0c08, type: 3}
       propertyPath: m_LocalPosition.x
@@ -138474,6 +138921,10 @@ PrefabInstance:
     - target: {fileID: 1030996966, guid: abc00000000002422502236857483535, type: 3}
       propertyPath: m_Name
       value: SM_Bottles_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030996966, guid: abc00000000002422502236857483535, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030996967, guid: abc00000000002422502236857483535, type: 3}
       propertyPath: m_LocalPosition.x
@@ -145954,6 +146405,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coffe_cup (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 117648, guid: 162e9d1c25f64bc47bba7927fe1f556b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 425562, guid: 162e9d1c25f64bc47bba7927fe1f556b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7062004
@@ -146841,6 +147296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tvcabinet3
       objectReference: {fileID: 0}
+    - target: {fileID: 1808124284998954, guid: 499906161b75ee0478d796393322434a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4190258280923478, guid: 499906161b75ee0478d796393322434a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9029164
@@ -147040,6 +147499,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: knife_01
       objectReference: {fileID: 0}
+    - target: {fileID: 4348509921937735954, guid: ad82862f11bcbca48b0441964f9c0bf8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -147202,6 +147665,10 @@ PrefabInstance:
     - target: {fileID: 1030990690, guid: abc00000000011940219362235086960, type: 3}
       propertyPath: m_Name
       value: SM_FoodPot_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990690, guid: abc00000000011940219362235086960, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990691, guid: abc00000000011940219362235086960, type: 3}
       propertyPath: m_LocalPosition.x
@@ -147534,6 +148001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Frames_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1030995275, guid: abc00000000004296911870042177125, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030995276, guid: abc00000000004296911870042177125, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.092865
@@ -147781,6 +148252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tea_cup
       objectReference: {fileID: 0}
+    - target: {fileID: 125608, guid: 7e8206774189fca4aba2e0ae2af661e3, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 455846, guid: 7e8206774189fca4aba2e0ae2af661e3, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.37949592
@@ -147970,7 +148445,7 @@ GameObject:
   - component: {fileID: 838067356}
   - component: {fileID: 838067357}
   - component: {fileID: 838067358}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ChalkOutline (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156379,6 +156854,10 @@ PrefabInstance:
     - target: {fileID: 1030986177, guid: abc00000000004898950581537412971, type: 3}
       propertyPath: m_Name
       value: SM_Cutting_Board
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030986177, guid: abc00000000004898950581537412971, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030986178, guid: abc00000000004898950581537412971, type: 3}
       propertyPath: m_LocalPosition.x
@@ -167582,6 +168061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tv
       objectReference: {fileID: 0}
+    - target: {fileID: 1208664771530722, guid: 5270541bfc65fd74a996a238bad737d7, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4308554943244646, guid: 5270541bfc65fd74a996a238bad737d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.392
@@ -177639,6 +178122,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pizza_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6698315325301556472, guid: 20c572e06bf755e46acfa2241a76248f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6723420314436648946, guid: 20c572e06bf755e46acfa2241a76248f, type: 3}
@@ -177711,6 +178198,10 @@ PrefabInstance:
     - target: {fileID: 115424, guid: fdfc8919be9818a4d969c7c448ccf5da, type: 3}
       propertyPath: m_Name
       value: saucer
+      objectReference: {fileID: 0}
+    - target: {fileID: 115424, guid: fdfc8919be9818a4d969c7c448ccf5da, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 463078, guid: fdfc8919be9818a4d969c7c448ccf5da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -177817,6 +178308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coffe_cup
       objectReference: {fileID: 0}
+    - target: {fileID: 117648, guid: 162e9d1c25f64bc47bba7927fe1f556b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 425562, guid: 162e9d1c25f64bc47bba7927fe1f556b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7034302
@@ -177921,6 +178416,10 @@ PrefabInstance:
     - target: {fileID: 1030990100, guid: abc00000000004537710561762321281, type: 3}
       propertyPath: m_Name
       value: SM_Food_SM_Apple_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990100, guid: abc00000000004537710561762321281, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990101, guid: abc00000000004537710561762321281, type: 3}
       propertyPath: m_LocalPosition.x
@@ -178071,6 +178570,10 @@ PrefabInstance:
       propertyPath: pull
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4721157838418399921, guid: 79723f7a04c42fa4cb0fefb4f7686381, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5720241602834145110, guid: 79723f7a04c42fa4cb0fefb4f7686381, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.86
@@ -178083,7 +178586,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bed_Apt_02_01
       objectReference: {fileID: 0}
+    - target: {fileID: 7892085742027063612, guid: 79723f7a04c42fa4cb0fefb4f7686381, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8729703060127603101, guid: 79723f7a04c42fa4cb0fefb4f7686381, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8750441588209735861, guid: 79723f7a04c42fa4cb0fefb4f7686381, type: 3}
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
@@ -178340,6 +178851,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_3_skin_2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2168246010118713068, guid: 12c158cd60ab54249a20580a5b587510, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -178479,6 +178994,10 @@ PrefabInstance:
     - target: {fileID: 1030990630, guid: abc00000000017890500769778002702, type: 3}
       propertyPath: m_Name
       value: SM_FoodPot_13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990630, guid: abc00000000017890500769778002702, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990631, guid: abc00000000017890500769778002702, type: 3}
       propertyPath: m_LocalPosition.x
@@ -178706,6 +179225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: snack_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 768528759832394618, guid: 5e630ce0b626da14cad61fbb2670f9fa, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -178811,6 +179334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_3_skin_2
       objectReference: {fileID: 0}
+    - target: {fileID: 2168246010118713068, guid: 12c158cd60ab54249a20580a5b587510, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -178875,6 +179402,10 @@ PrefabInstance:
     - target: {fileID: 1198030904616494067, guid: 8a6b0935376d783439e952c404e2e666, type: 3}
       propertyPath: m_Name
       value: CorkScrew_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1198030904616494067, guid: 8a6b0935376d783439e952c404e2e666, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8944134660108856553, guid: 8a6b0935376d783439e952c404e2e666, type: 3}
       propertyPath: m_LocalPosition.x
@@ -190457,6 +190988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FoodCan08
       objectReference: {fileID: 0}
+    - target: {fileID: 1030988285, guid: abc00000000012632749404281210848, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030988286, guid: abc00000000012632749404281210848, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.23527455
@@ -198880,6 +199415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FoodPot_09
       objectReference: {fileID: 0}
+    - target: {fileID: 1030990650, guid: abc00000000006097114836781796675, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030990651, guid: abc00000000006097114836781796675, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.26323557
@@ -199091,6 +199630,10 @@ PrefabInstance:
     - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_Name
       value: Book_3_skin_3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2139299838465336030, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -199543,6 +200086,10 @@ PrefabInstance:
     - target: {fileID: 1030986157, guid: abc00000000000897884760194085480, type: 3}
       propertyPath: m_Name
       value: SM_Wood_Bowl_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030986157, guid: abc00000000000897884760194085480, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030986158, guid: abc00000000000897884760194085480, type: 3}
       propertyPath: m_LocalPosition.x
@@ -200092,6 +200639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp_Table_Apt_01
       objectReference: {fileID: 0}
+    - target: {fileID: 117895243694500892, guid: 3e7be61a66e072c44bc2cc6bbee79f45, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6124730947378653682, guid: 3e7be61a66e072c44bc2cc6bbee79f45, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.68715
@@ -200478,6 +201029,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Flatbread_01a (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6087065980635308339, guid: b519bc1b306369142a6b3d19e7f67def, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6859627571295927177, guid: b519bc1b306369142a6b3d19e7f67def, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.2816417
@@ -200582,6 +201137,10 @@ PrefabInstance:
     - target: {fileID: 166450, guid: f6d6b44570abec7499912dcfa7b9badf, type: 3}
       propertyPath: m_Name
       value: tray
+      objectReference: {fileID: 0}
+    - target: {fileID: 166450, guid: f6d6b44570abec7499912dcfa7b9badf, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 402396, guid: f6d6b44570abec7499912dcfa7b9badf, type: 3}
       propertyPath: m_LocalScale.x
@@ -200748,6 +201307,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TV_Apt_01
       objectReference: {fileID: 0}
+    - target: {fileID: 8890821166399119553, guid: 56a93cd127ed0184982c13ec0a61cfa5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -200852,6 +201415,10 @@ PrefabInstance:
     - target: {fileID: 3241196014341189734, guid: 327860819d06a964d98cea7acb224d6e, type: 3}
       propertyPath: m_Name
       value: SM_Aluminum_Can_01_Opened
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241196014341189734, guid: 327860819d06a964d98cea7acb224d6e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -200980,6 +201547,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FoodPot_12
       objectReference: {fileID: 0}
+    - target: {fileID: 1030990610, guid: abc00000000000913755268778106119, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030990611, guid: abc00000000000913755268778106119, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.043024063
@@ -201085,6 +201656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Knife
       objectReference: {fileID: 0}
+    - target: {fileID: 1030987316, guid: abc00000000005935026503463577137, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030987317, guid: abc00000000005935026503463577137, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.27
@@ -201189,6 +201764,10 @@ PrefabInstance:
     - target: {fileID: 1030989140, guid: abc00000000016787496469004018636, type: 3}
       propertyPath: m_Name
       value: SM_Bottles_08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030989140, guid: abc00000000016787496469004018636, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030989141, guid: abc00000000016787496469004018636, type: 3}
       propertyPath: m_LocalScale.x
@@ -201382,6 +201961,10 @@ PrefabInstance:
     - target: {fileID: 7851711041489694631, guid: 7769b6e68c1a90a458fec4955db6b2fd, type: 3}
       propertyPath: m_Name
       value: Dresser Closet_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7851711041489694631, guid: 7769b6e68c1a90a458fec4955db6b2fd, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -202144,6 +202727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_3_skin_2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2168246010118713068, guid: 12c158cd60ab54249a20580a5b587510, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -202208,6 +202795,10 @@ PrefabInstance:
     - target: {fileID: 115424, guid: fdfc8919be9818a4d969c7c448ccf5da, type: 3}
       propertyPath: m_Name
       value: saucer (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 115424, guid: fdfc8919be9818a4d969c7c448ccf5da, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 463078, guid: fdfc8919be9818a4d969c7c448ccf5da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -202607,6 +203198,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_BookOpen_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1030989120, guid: abc00000000015771535597873723813, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030989121, guid: abc00000000015771535597873723813, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.2523227
@@ -202711,6 +203306,10 @@ PrefabInstance:
     - target: {fileID: 125608, guid: 7e8206774189fca4aba2e0ae2af661e3, type: 3}
       propertyPath: m_Name
       value: tea_cup (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 125608, guid: 7e8206774189fca4aba2e0ae2af661e3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 455846, guid: 7e8206774189fca4aba2e0ae2af661e3, type: 3}
       propertyPath: m_LocalScale.y
@@ -203006,6 +203605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MirrorPlate
       objectReference: {fileID: 0}
+    - target: {fileID: 5152982008466466033, guid: ba11bcdb94e8ac2498db51b197091c7a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -203070,6 +203673,10 @@ PrefabInstance:
     - target: {fileID: 6071041418127652201, guid: c04bc87d651a3214589060dd42682aac, type: 3}
       propertyPath: m_Name
       value: Stepler
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071041418127652201, guid: c04bc87d651a3214589060dd42682aac, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6848704743278047187, guid: c04bc87d651a3214589060dd42682aac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -203375,6 +203982,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book03 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030992331, guid: abc00000000003906270597115057518, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030992332, guid: abc00000000003906270597115057518, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.033
@@ -203677,6 +204288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: knife_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4348509921937735954, guid: ad82862f11bcbca48b0441964f9c0bf8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -203781,6 +204396,10 @@ PrefabInstance:
     - target: {fileID: 768528759832394618, guid: 5e630ce0b626da14cad61fbb2670f9fa, type: 3}
       propertyPath: m_Name
       value: snack_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 768528759832394618, guid: 5e630ce0b626da14cad61fbb2670f9fa, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -204714,6 +205333,14 @@ PrefabInstance:
     - target: {fileID: 1138282741740275121, guid: 0e7d9b4b0ce39464ab11760bb4639131, type: 3}
       propertyPath: m_Name
       value: keg_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3676949157403577912, guid: 0e7d9b4b0ce39464ab11760bb4639131, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063723297043849970, guid: 0e7d9b4b0ce39464ab11760bb4639131, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -206461,6 +207088,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Aluminum_Can_01_Opened (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3241196014341189734, guid: 327860819d06a964d98cea7acb224d6e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -207686,6 +208317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book_05 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030989440, guid: abc00000000014377863225868676669, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030989441, guid: abc00000000014377863225868676669, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2500002
@@ -207802,6 +208437,10 @@ PrefabInstance:
     - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_Name
       value: Book_3_skin_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2139299838465336030, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -208521,6 +209160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sofa_Apt_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9063128926208519524, guid: d46fa1eeedbcb0e41b8c735b2594b434, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -208647,6 +209290,10 @@ PrefabInstance:
     - target: {fileID: 1030992331, guid: abc00000000003906270597115057518, type: 3}
       propertyPath: m_Name
       value: SM_Book03 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030992331, guid: abc00000000003906270597115057518, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030992332, guid: abc00000000003906270597115057518, type: 3}
       propertyPath: m_LocalPosition.x
@@ -217472,6 +218119,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Cereal_Box_C
       objectReference: {fileID: 0}
+    - target: {fileID: 1030988775, guid: abc00000000001001278731117829918, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030988776, guid: abc00000000001001278731117829918, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.6384437
@@ -217886,6 +218537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Food_SM_Carrot_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1030990280, guid: abc00000000010852538934778764189, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030990281, guid: abc00000000010852538934778764189, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.82
@@ -218128,6 +218783,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_Chair_2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1509551647037108, guid: 412f8a32d8ccc3c4ebbc06d61899fb7f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4746193299387070, guid: 412f8a32d8ccc3c4ebbc06d61899fb7f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.31215
@@ -218355,6 +219014,10 @@ PrefabInstance:
     - target: {fileID: 1030990220, guid: abc00000000008752041553851683911, type: 3}
       propertyPath: m_Name
       value: SM_Food_SM_Banana
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990220, guid: abc00000000008752041553851683911, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990221, guid: abc00000000008752041553851683911, type: 3}
       propertyPath: m_LocalPosition.x
@@ -218639,6 +219302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Pepper_03
       objectReference: {fileID: 0}
+    - target: {fileID: 1030990420, guid: abc00000000010468005246498656550, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030990421, guid: abc00000000010468005246498656550, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.43215
@@ -218744,6 +219411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bread_03
       objectReference: {fileID: 0}
+    - target: {fileID: 6093391673720001028, guid: 2475a01d6f14eaf48bd688382a900e55, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6907329811616041150, guid: 2475a01d6f14eaf48bd688382a900e55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.8750009
@@ -218848,6 +219519,10 @@ PrefabInstance:
     - target: {fileID: 1030992331, guid: abc00000000003906270597115057518, type: 3}
       propertyPath: m_Name
       value: SM_Book03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030992331, guid: abc00000000003906270597115057518, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030992332, guid: abc00000000003906270597115057518, type: 3}
       propertyPath: m_LocalPosition.x
@@ -218962,6 +219637,10 @@ PrefabInstance:
     - target: {fileID: 1030989360, guid: abc00000000011845118053869951636, type: 3}
       propertyPath: m_Name
       value: SM_Book_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030989360, guid: abc00000000011845118053869951636, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030989361, guid: abc00000000011845118053869951636, type: 3}
       propertyPath: m_LocalPosition.x
@@ -219102,6 +219781,10 @@ PrefabInstance:
     - target: {fileID: 7534363390545457008, guid: 6adc4ebb7089af041909c4b1ea69ade4, type: 3}
       propertyPath: m_Name
       value: Bed_Sheet_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534363390545457008, guid: 6adc4ebb7089af041909c4b1ea69ade4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7534363390545556304, guid: 6adc4ebb7089af041909c4b1ea69ade4, type: 3}
       propertyPath: m_LocalScale.x
@@ -219695,6 +220378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RR_ToiletPaperDispenser
       objectReference: {fileID: 0}
+    - target: {fileID: 7803581856017361530, guid: c78bc6eecce41e24ea169a70169c6508, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -219791,6 +220478,10 @@ PrefabInstance:
     - target: {fileID: 1030990870, guid: abc00000000010487918212601137926, type: 3}
       propertyPath: m_Name
       value: SM_SaucePan_Black_Pan_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990870, guid: abc00000000010487918212601137926, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990871, guid: abc00000000010487918212601137926, type: 3}
       propertyPath: m_LocalPosition.x
@@ -219981,9 +220672,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2824428921207601606, guid: bd82980ec0e466d48a84803eba02265f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5941839947436283181, guid: bd82980ec0e466d48a84803eba02265f, type: 3}
       propertyPath: m_Name
       value: Bed_Apt_01_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693551714665185562, guid: bd82980ec0e466d48a84803eba02265f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -220131,6 +220830,10 @@ PrefabInstance:
     - target: {fileID: 1030987056, guid: abc00000000005574097902513541609, type: 3}
       propertyPath: m_Name
       value: SM_Plate_Mug_Bowl_A_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030987056, guid: abc00000000005574097902513541609, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030987057, guid: abc00000000005574097902513541609, type: 3}
       propertyPath: m_LocalPosition.x
@@ -220330,6 +221033,10 @@ PrefabInstance:
     - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_Name
       value: Book_3_skin_3 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2139299838465336030, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -222361,6 +223068,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TV_Apt_01
       objectReference: {fileID: 0}
+    - target: {fileID: 8890821166399119553, guid: 56a93cd127ed0184982c13ec0a61cfa5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -222425,6 +223136,10 @@ PrefabInstance:
     - target: {fileID: 1030988205, guid: abc00000000005843694400444456596, type: 3}
       propertyPath: m_Name
       value: SM_FoodCan04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030988205, guid: abc00000000005843694400444456596, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030988206, guid: abc00000000005843694400444456596, type: 3}
       propertyPath: m_LocalPosition.x
@@ -222771,6 +223486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book03 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030992331, guid: abc00000000003906270597115057518, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030992332, guid: abc00000000003906270597115057518, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.188
@@ -222918,6 +223637,10 @@ PrefabInstance:
     - target: {fileID: 1030990220, guid: abc00000000008752041553851683911, type: 3}
       propertyPath: m_Name
       value: SM_Food_SM_Banana
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990220, guid: abc00000000008752041553851683911, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990221, guid: abc00000000008752041553851683911, type: 3}
       propertyPath: m_LocalPosition.x
@@ -235201,6 +235924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: phone_01 (smashed)
       objectReference: {fileID: 0}
+    - target: {fileID: 3782889720260527507, guid: 992aaeff2bf8bde4ba4ca852a8b64762, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -235368,6 +236095,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stack_of_sheets_1_2_skin_3
       objectReference: {fileID: 0}
+    - target: {fileID: 795958668170321682, guid: 60828f78b7effa843b65a87447e0fdb4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -235432,6 +236163,10 @@ PrefabInstance:
     - target: {fileID: 1030987216, guid: abc00000000014584767755029522906, type: 3}
       propertyPath: m_Name
       value: SM_Fork
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030987216, guid: abc00000000014584767755029522906, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030987217, guid: abc00000000014584767755029522906, type: 3}
       propertyPath: m_LocalPosition.x
@@ -235534,6 +236269,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 893310076}
     m_Modifications:
+    - target: {fileID: 9189065509120254492, guid: 8af73887c9cd7fa47a2f642969b20378, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189065509477827631, guid: 8af73887c9cd7fa47a2f642969b20378, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9189065510491252739, guid: 8af73887c9cd7fa47a2f642969b20378, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6999998
@@ -235588,14 +236331,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 9189065509477827616, guid: 8af73887c9cd7fa47a2f642969b20378, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 435135185}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9189065509477827631, guid: 8af73887c9cd7fa47a2f642969b20378, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1280055957}
-    - targetCorrespondingSourceObject: {fileID: 9189065509477827631, guid: 8af73887c9cd7fa47a2f642969b20378, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1280055956}
     - targetCorrespondingSourceObject: {fileID: 9189065509120254492, guid: 8af73887c9cd7fa47a2f642969b20378, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1280055955}
@@ -235650,20 +236393,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InspectionHotspot
   _hotspotDialogue: {fileID: 11400000, guid: f9e11f5fda239f345a801c0fa644a7f1, type: 2}
   _associatedKeyword: {fileID: 11400000, guid: b9ed964f479506a44bf7be328c89e786, type: 2}
---- !u!114 &1280055956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1280055953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 755d83f85a245b74ab337d2a87fc78ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InspectionHotspot
-  _hotspotDialogue: {fileID: 11400000, guid: f9e11f5fda239f345a801c0fa644a7f1, type: 2}
-  _associatedKeyword: {fileID: 11400000, guid: b81bb428573286d4cb9af84d5cfda8ed, type: 2}
 --- !u!114 &1280055957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235677,11 +236406,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EvidenceObject
   _keywordData: {fileID: 11400000, guid: b81bb428573286d4cb9af84d5cfda8ed, type: 2}
-  _destroyOnCollected: 0
+  _destroyOnCollected: 1
   _moveDuration: 0.6
   _distanceFromCamera: 1.2
   _rotateSensitivity: 0.2
   _playerLook: {fileID: 157253620}
+--- !u!4 &1280055961 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9189065509477827616, guid: 8af73887c9cd7fa47a2f642969b20378, type: 3}
+  m_PrefabInstance: {fileID: 1280055950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1286039191
 GameObject:
   m_ObjectHideFlags: 0
@@ -235830,6 +236564,10 @@ PrefabInstance:
     - target: {fileID: 1509551647037108, guid: 412f8a32d8ccc3c4ebbc06d61899fb7f, type: 3}
       propertyPath: m_Name
       value: Small_Chair_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509551647037108, guid: 412f8a32d8ccc3c4ebbc06d61899fb7f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4746193299387070, guid: 412f8a32d8ccc3c4ebbc06d61899fb7f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -247106,6 +247844,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FoodCan06
       objectReference: {fileID: 0}
+    - target: {fileID: 1030988245, guid: abc00000000013493523063887354198, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030988246, guid: abc00000000013493523063887354198, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.344292
@@ -247348,6 +248090,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Vintage_Dining_Table
       objectReference: {fileID: 0}
+    - target: {fileID: 1030986914, guid: abc00000000012972773621642560953, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030986915, guid: abc00000000012972773621642560953, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.1537886
@@ -247554,6 +248300,10 @@ PrefabInstance:
     - target: {fileID: 1442762684734426, guid: 73ae4449e076229428dbc980c994943d, type: 3}
       propertyPath: m_Name
       value: Couch
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442762684734426, guid: 73ae4449e076229428dbc980c994943d, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4636512513726152, guid: 73ae4449e076229428dbc980c994943d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -247889,6 +248639,10 @@ PrefabInstance:
     - target: {fileID: 8933469904465650184, guid: ab931d06f54192f45ae5f39db40c6e7b, type: 3}
       propertyPath: m_Name
       value: Plate_Apt_01_Stacked
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933469904465650184, guid: ab931d06f54192f45ae5f39db40c6e7b, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -256468,6 +257222,50 @@ PrefabInstance:
     - target: {fileID: 906174139027358015, guid: 1991c21ed6ac7451c925d3bff8a399f8, type: 3}
       propertyPath: m_Name
       value: Plate_WithToastTopping
+      objectReference: {fileID: 0}
+    - target: {fileID: 1300790622065959857, guid: 1991c21ed6ac7451c925d3bff8a399f8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348192196329793542, guid: 1991c21ed6ac7451c925d3bff8a399f8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348192196509998822, guid: 1991c21ed6ac7451c925d3bff8a399f8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348192196814559630, guid: 1991c21ed6ac7451c925d3bff8a399f8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2853581232222044331, guid: 1991c21ed6ac7451c925d3bff8a399f8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2853581232726993765, guid: 1991c21ed6ac7451c925d3bff8a399f8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2853581233300969962, guid: 1991c21ed6ac7451c925d3bff8a399f8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2853581233848604456, guid: 1991c21ed6ac7451c925d3bff8a399f8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6460115165547845122, guid: 1991c21ed6ac7451c925d3bff8a399f8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6460115165969349814, guid: 1991c21ed6ac7451c925d3bff8a399f8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6460115166352898942, guid: 1991c21ed6ac7451c925d3bff8a399f8, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -266663,6 +267461,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Food_SM_Pear
       objectReference: {fileID: 0}
+    - target: {fileID: 1030990200, guid: abc00000000014799989761545463732, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030990201, guid: abc00000000014799989761545463732, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.7226458
@@ -266767,6 +267569,10 @@ PrefabInstance:
     - target: {fileID: 299959443875588556, guid: cd74c82ea081b814284c5fc4c932c427, type: 3}
       propertyPath: m_Name
       value: laptop_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 299959443875588556, guid: cd74c82ea081b814284c5fc4c932c427, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3635234337142381535, guid: cd74c82ea081b814284c5fc4c932c427, type: 3}
       propertyPath: m_LocalScale.x
@@ -267303,6 +268109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Ceramic_Bottle_B
       objectReference: {fileID: 0}
+    - target: {fileID: 1030986397, guid: abc00000000011270534403862466914, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030986398, guid: abc00000000011270534403862466914, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.10006857
@@ -267460,6 +268270,10 @@ PrefabInstance:
     - target: {fileID: 552706870638209866, guid: 140cd0d7029ab4cfdb81995d933b925a, type: 3}
       propertyPath: m_Name
       value: Free_Glas
+      objectReference: {fileID: 0}
+    - target: {fileID: 552706870638209866, guid: 140cd0d7029ab4cfdb81995d933b925a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 927824351346995696, guid: 140cd0d7029ab4cfdb81995d933b925a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -276333,6 +277147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Creepy_headless_statue
       objectReference: {fileID: 0}
+    - target: {fileID: 7953293925273849854, guid: f95c62cc929401d45b1e1dc35df72c4b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -276397,6 +277215,10 @@ PrefabInstance:
     - target: {fileID: 5689308074118991781, guid: 6b2db1c95c1a78d459f373f9dbbf959c, type: 3}
       propertyPath: m_Name
       value: phone_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689308074118991781, guid: 6b2db1c95c1a78d459f373f9dbbf959c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8696207150588444086, guid: 6b2db1c95c1a78d459f373f9dbbf959c, type: 3}
       propertyPath: m_LocalScale.x
@@ -276604,6 +277426,10 @@ PrefabInstance:
     - target: {fileID: 1030990870, guid: abc00000000010487918212601137926, type: 3}
       propertyPath: m_Name
       value: SM_SaucePan_Black_Pan_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990870, guid: abc00000000010487918212601137926, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990871, guid: abc00000000010487918212601137926, type: 3}
       propertyPath: m_LocalPosition.x
@@ -276926,6 +277752,10 @@ PrefabInstance:
     - target: {fileID: 1030991010, guid: abc00000000013987766930236748181, type: 3}
       propertyPath: m_Name
       value: SM_KitchenUstensil_Roll
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030991010, guid: abc00000000013987766930236748181, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030991011, guid: abc00000000013987766930236748181, type: 3}
       propertyPath: m_LocalPosition.x
@@ -277343,6 +278173,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: knife_01
       objectReference: {fileID: 0}
+    - target: {fileID: 4348509921937735954, guid: ad82862f11bcbca48b0441964f9c0bf8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -277407,6 +278241,10 @@ PrefabInstance:
     - target: {fileID: 4918038477038877587, guid: 4e5ff7d5e75ff1444a8c4b94480d94e7, type: 3}
       propertyPath: m_Name
       value: OT_Ruler
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918038477038877587, guid: 4e5ff7d5e75ff1444a8c4b94480d94e7, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5695841164669395241, guid: 4e5ff7d5e75ff1444a8c4b94480d94e7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -277721,6 +278559,10 @@ PrefabInstance:
     - target: {fileID: 1030989120, guid: abc00000000015771535597873723813, type: 3}
       propertyPath: m_Name
       value: SM_BookOpen_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030989120, guid: abc00000000015771535597873723813, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030989121, guid: abc00000000015771535597873723813, type: 3}
       propertyPath: m_LocalPosition.x
@@ -278194,6 +279036,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DrinkingGlass_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8441611114093278921, guid: 8dfa0d45cd834394f8c62eec3b88c8c4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -278299,6 +279145,10 @@ PrefabInstance:
     - target: {fileID: 1030992251, guid: abc00000000001963143895760378412, type: 3}
       propertyPath: m_Name
       value: SM_Book01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030992251, guid: abc00000000001963143895760378412, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030992252, guid: abc00000000001963143895760378412, type: 3}
       propertyPath: m_LocalPosition.x
@@ -278583,6 +279433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_Chair_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1509551647037108, guid: 412f8a32d8ccc3c4ebbc06d61899fb7f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4746193299387070, guid: 412f8a32d8ccc3c4ebbc06d61899fb7f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.91215
@@ -278687,6 +279541,10 @@ PrefabInstance:
     - target: {fileID: 5816239372131114435, guid: 0675aea74eddeea44bc39525a7509a30, type: 3}
       propertyPath: m_Name
       value: Binder_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5816239372131114435, guid: 0675aea74eddeea44bc39525a7509a30, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6628381968871737209, guid: 0675aea74eddeea44bc39525a7509a30, type: 3}
       propertyPath: m_LocalPosition.x
@@ -279309,6 +280167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bowl_Apt_01_Stacked
       objectReference: {fileID: 0}
+    - target: {fileID: 4035178881683024354, guid: 143623a82f19a9e49b450142a80c6d52, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -279373,6 +280235,10 @@ PrefabInstance:
     - target: {fileID: 125608, guid: 7e8206774189fca4aba2e0ae2af661e3, type: 3}
       propertyPath: m_Name
       value: tea_cup
+      objectReference: {fileID: 0}
+    - target: {fileID: 125608, guid: 7e8206774189fca4aba2e0ae2af661e3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 455846, guid: 7e8206774189fca4aba2e0ae2af661e3, type: 3}
       propertyPath: m_LocalScale.y
@@ -279486,6 +280352,10 @@ PrefabInstance:
     - target: {fileID: 1509551647037108, guid: 412f8a32d8ccc3c4ebbc06d61899fb7f, type: 3}
       propertyPath: m_Name
       value: Small_Chair_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509551647037108, guid: 412f8a32d8ccc3c4ebbc06d61899fb7f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4746193299387070, guid: 412f8a32d8ccc3c4ebbc06d61899fb7f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -279687,6 +280557,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book_04 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030989360, guid: abc00000000011845118053869951636, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030989361, guid: abc00000000011845118053869951636, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.869359
@@ -279791,6 +280665,34 @@ PrefabInstance:
     - target: {fileID: 2348743984104464245, guid: 57c88468704ae69488156b563516783f, type: 3}
       propertyPath: m_Name
       value: Wall Wine Rack_Apt_01_Filled Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5276568022785326895, guid: 57c88468704ae69488156b563516783f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5276568022856726722, guid: 57c88468704ae69488156b563516783f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5276568022946897198, guid: 57c88468704ae69488156b563516783f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5276568023457257983, guid: 57c88468704ae69488156b563516783f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5276568024224673904, guid: 57c88468704ae69488156b563516783f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5276568024716298499, guid: 57c88468704ae69488156b563516783f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5276568024737086920, guid: 57c88468704ae69488156b563516783f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6928896269754264771, guid: 57c88468704ae69488156b563516783f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -280027,6 +280929,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Food_SM_Apple_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1030990080, guid: abc00000000013512582383750689786, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030990081, guid: abc00000000013512582383750689786, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5830027
@@ -280128,6 +281034,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1389290813}
     m_Modifications:
+    - target: {fileID: 9189065509120254492, guid: 8af73887c9cd7fa47a2f642969b20378, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9189065509120254493, guid: 8af73887c9cd7fa47a2f642969b20378, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.99999857
@@ -280155,6 +281065,10 @@ PrefabInstance:
     - target: {fileID: 9189065509120254493, guid: 8af73887c9cd7fa47a2f642969b20378, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.192
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189065509477827631, guid: 8af73887c9cd7fa47a2f642969b20378, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9189065510491252739, guid: 8af73887c9cd7fa47a2f642969b20378, type: 3}
       propertyPath: m_LocalScale.x
@@ -280848,6 +281762,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OT_Pencil
       objectReference: {fileID: 0}
+    - target: {fileID: 5584706801474514637, guid: 77b85d8bc71c31b43bb461948f338650, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -280952,6 +281870,10 @@ PrefabInstance:
     - target: {fileID: 5625415713199252842, guid: 0899c7f378b7c4740bd6fafa9ef64069, type: 3}
       propertyPath: m_Name
       value: Magnifier
+      objectReference: {fileID: 0}
+    - target: {fileID: 5625415713199252842, guid: 0899c7f378b7c4740bd6fafa9ef64069, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -281900,6 +282822,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Food_SM_Garlic
       objectReference: {fileID: 0}
+    - target: {fileID: 1030990360, guid: abc00000000009377508569252053142, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030990361, guid: abc00000000009377508569252053142, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.12958738
@@ -282222,6 +283148,10 @@ PrefabInstance:
     - target: {fileID: 2168246010118713068, guid: 12c158cd60ab54249a20580a5b587510, type: 3}
       propertyPath: m_Name
       value: Book_3_skin_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168246010118713068, guid: 12c158cd60ab54249a20580a5b587510, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -282706,6 +283636,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_Chair_2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1509551647037108, guid: 412f8a32d8ccc3c4ebbc06d61899fb7f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4746193299387070, guid: 412f8a32d8ccc3c4ebbc06d61899fb7f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.672151
@@ -282850,6 +283784,10 @@ PrefabInstance:
     - target: {fileID: 5781420221921499261, guid: 266d5a1d00e2ac2479b93bdd1914ad78, type: 3}
       propertyPath: m_Name
       value: Sofa_Apt_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5781420221921499261, guid: 266d5a1d00e2ac2479b93bdd1914ad78, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -283229,6 +284167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stack_of_sheets_2_skin_2
       objectReference: {fileID: 0}
+    - target: {fileID: 6704439622274573327, guid: 2317d2a515aad2a4086955110a3ee1e2, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -283466,6 +284408,10 @@ PrefabInstance:
     - target: {fileID: 4260607895235208370, guid: bf8e0bd5312587d41b3614b03d88b413, type: 3}
       propertyPath: m_Name
       value: cup_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4260607895235208370, guid: bf8e0bd5312587d41b3614b03d88b413, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -284014,6 +284960,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OT_pen_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5068748375947734053, guid: cdcea681711e40345a11b1f196de721f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5556350565338035871, guid: cdcea681711e40345a11b1f196de721f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.18700022
@@ -284323,6 +285273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030992251, guid: abc00000000001963143895760378412, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030992252, guid: abc00000000001963143895760378412, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.79132
@@ -284605,6 +285559,10 @@ PrefabInstance:
     - target: {fileID: 1030990280, guid: abc00000000010852538934778764189, type: 3}
       propertyPath: m_Name
       value: SM_Food_SM_Carrot_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990280, guid: abc00000000010852538934778764189, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990281, guid: abc00000000010852538934778764189, type: 3}
       propertyPath: m_LocalPosition.x
@@ -284956,6 +285914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table_CH_01_04
       objectReference: {fileID: 0}
+    - target: {fileID: 1018413024894314, guid: bec03bc25fea2b947ad7eed1d675ebb4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4912485757375302, guid: bec03bc25fea2b947ad7eed1d675ebb4, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.61
@@ -285105,6 +286067,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Aluminum_Can_01_Closed (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2588616344386064687, guid: 091c40835fc7ae44ba18d6d34a022afa, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -285206,15 +286172,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5100249363123307314, guid: 0dc74fafeabd10148b34ce3bcbb42b18, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.90952
+      value: -8.801
       objectReference: {fileID: 0}
     - target: {fileID: 5100249363123307314, guid: 0dc74fafeabd10148b34ce3bcbb42b18, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.7422357
+      value: 4.762
       objectReference: {fileID: 0}
     - target: {fileID: 5100249363123307314, guid: 0dc74fafeabd10148b34ce3bcbb42b18, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5369458
+      value: -0.82
       objectReference: {fileID: 0}
     - target: {fileID: 5100249363123307314, guid: 0dc74fafeabd10148b34ce3bcbb42b18, type: 3}
       propertyPath: m_LocalRotation.w
@@ -285248,6 +286214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sebastian
       objectReference: {fileID: 0}
+    - target: {fileID: 5587957144202828168, guid: 0dc74fafeabd10148b34ce3bcbb42b18, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -285258,6 +286228,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5587957144202828168, guid: 0dc74fafeabd10148b34ce3bcbb42b18, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1531211436}
+    - targetCorrespondingSourceObject: {fileID: 5587957144202828168, guid: 0dc74fafeabd10148b34ce3bcbb42b18, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1531211440}
   m_SourcePrefab: {fileID: 100100000, guid: 0dc74fafeabd10148b34ce3bcbb42b18, type: 3}
 --- !u!1 &1531211435 stripped
 GameObject:
@@ -285305,6 +286278,21 @@ CapsuleCollider:
   m_Height: 1.98
   m_Direction: 1
   m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!114 &1531211440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531211435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca0b7d711ae6b24ea0367f628524491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DaySpecificNPC
+  _eventData: {fileID: 11400000, guid: e064774f85da73a4184f01554bb9571b, type: 2}
+  _renderers: []
+  _colliders: []
 --- !u!43 &1534101324
 Mesh:
   m_ObjectHideFlags: 0
@@ -285535,6 +286523,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Free_JamCup
       objectReference: {fileID: 0}
+    - target: {fileID: 1833767547804341471, guid: 11ac1592c88f34021b19cac7ef99697f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -285726,6 +286718,10 @@ PrefabInstance:
     - target: {fileID: 1804609664735070, guid: 066aea94f999cac45805bcbdb92b2a16, type: 3}
       propertyPath: m_Name
       value: Tv_cabinet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804609664735070, guid: 066aea94f999cac45805bcbdb92b2a16, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4288585360212226, guid: 066aea94f999cac45805bcbdb92b2a16, type: 3}
       propertyPath: m_LocalPosition.x
@@ -286212,6 +287208,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: folder
       objectReference: {fileID: 0}
+    - target: {fileID: 1280187599240921928, guid: 12df83f414ef19b48810315d07c2bd78, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1914016072507185650, guid: 12df83f414ef19b48810315d07c2bd78, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.50100005
@@ -286666,6 +287666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: keg_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1138282741740275121, guid: 0e7d9b4b0ce39464ab11760bb4639131, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -286882,6 +287886,10 @@ PrefabInstance:
     - target: {fileID: 1030988305, guid: abc00000000012870526047940471529, type: 3}
       propertyPath: m_Name
       value: SM_FoodCan09
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030988305, guid: abc00000000012870526047940471529, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030988306, guid: abc00000000012870526047940471529, type: 3}
       propertyPath: m_LocalPosition.x
@@ -295257,6 +296265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spoon (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 134800, guid: 39cce5eade83562498c854658c6a4060, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 498078, guid: 39cce5eade83562498c854658c6a4060, type: 3}
       propertyPath: m_LocalScale.y
       value: 83.174194
@@ -295370,6 +296382,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030992331, guid: abc00000000003906270597115057518, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030992332, guid: abc00000000003906270597115057518, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.242
@@ -295476,6 +296492,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1937642319}
     m_Modifications:
+    - target: {fileID: 1011645502748652, guid: af39d668d910306438d3f3694208399d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619710433271396, guid: af39d668d910306438d3f3694208399d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667618250656172, guid: af39d668d910306438d3f3694208399d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1756573236683764, guid: af39d668d910306438d3f3694208399d, type: 3}
       propertyPath: m_Name
       value: Futon
@@ -295687,6 +296715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tv
       objectReference: {fileID: 0}
+    - target: {fileID: 1208664771530722, guid: 5270541bfc65fd74a996a238bad737d7, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4308554943244646, guid: 5270541bfc65fd74a996a238bad737d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.39032
@@ -295791,6 +296823,10 @@ PrefabInstance:
     - target: {fileID: 1030989200, guid: abc00000000000660220615115172049, type: 3}
       propertyPath: m_Name
       value: SM_Bottles_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030989200, guid: abc00000000000660220615115172049, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030989201, guid: abc00000000000660220615115172049, type: 3}
       propertyPath: m_LocalPosition.x
@@ -295931,6 +296967,10 @@ PrefabInstance:
     - target: {fileID: 1030994755, guid: abc00000000007851371512938932570, type: 3}
       propertyPath: m_Name
       value: SM_Letter_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030994755, guid: abc00000000007851371512938932570, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030994756, guid: abc00000000007851371512938932570, type: 3}
       propertyPath: m_LocalPosition.x
@@ -296164,6 +297204,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BPS_Chair_01
       objectReference: {fileID: 0}
+    - target: {fileID: 3368034678457217880, guid: cd8fcc5431d7f7e46be3c7c12ed32513, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -296379,6 +297423,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Ceramic_Bottle_A
       objectReference: {fileID: 0}
+    - target: {fileID: 1030986357, guid: abc00000000003168835583360030633, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030986358, guid: abc00000000003168835583360030633, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.021756172
@@ -296558,6 +297606,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Food_SM_Pear (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030990200, guid: abc00000000014799989761545463732, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030990201, guid: abc00000000014799989761545463732, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.83
@@ -296662,6 +297714,10 @@ PrefabInstance:
     - target: {fileID: 5545358821207315566, guid: ee1183319ecbb3d45a6a544579596a0d, type: 3}
       propertyPath: m_Name
       value: camera_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5545358821207315566, guid: ee1183319ecbb3d45a6a544579596a0d, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8840086334869792381, guid: ee1183319ecbb3d45a6a544579596a0d, type: 3}
       propertyPath: m_LocalScale.x
@@ -296779,6 +297835,10 @@ PrefabInstance:
     - target: {fileID: 1030990080, guid: abc00000000013512582383750689786, type: 3}
       propertyPath: m_Name
       value: SM_Food_SM_Apple_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990080, guid: abc00000000013512582383750689786, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990081, guid: abc00000000013512582383750689786, type: 3}
       propertyPath: m_LocalPosition.x
@@ -297016,6 +298076,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book03 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030992331, guid: abc00000000003906270597115057518, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030992332, guid: abc00000000003906270597115057518, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.057
@@ -297160,6 +298224,10 @@ PrefabInstance:
     - target: {fileID: 8667673312399118122, guid: 8c62e0f64b2956748ab5f5ece60bc90c, type: 3}
       propertyPath: m_Name
       value: Table_Coffee_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667673312399118122, guid: 8c62e0f64b2956748ab5f5ece60bc90c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -297403,6 +298471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Binder_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5690725412965654983, guid: dc911fc977328a0409a858d7d7a268fc, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -297467,6 +298539,10 @@ PrefabInstance:
     - target: {fileID: 1733447016227815370, guid: edd8c8a56bfb7744f92d5e40bd9ba828, type: 3}
       propertyPath: m_Name
       value: PillsTube_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733447016227815370, guid: edd8c8a56bfb7744f92d5e40bd9ba828, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4326347401871315580, guid: edd8c8a56bfb7744f92d5e40bd9ba828, type: 3}
       propertyPath: m_LocalPosition.x
@@ -298098,15 +299174,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2950898034661340011, guid: 4a3e134fa9181bb4580b93277c9c6be6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1772071736}
+    - targetCorrespondingSourceObject: {fileID: 2950898034661340011, guid: 4a3e134fa9181bb4580b93277c9c6be6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1772071739}
     - targetCorrespondingSourceObject: {fileID: 2475597115874836009, guid: 4a3e134fa9181bb4580b93277c9c6be6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1639918226}
     - targetCorrespondingSourceObject: {fileID: 2475597115874836009, guid: 4a3e134fa9181bb4580b93277c9c6be6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1639918232}
-    - targetCorrespondingSourceObject: {fileID: 2475597115874836009, guid: 4a3e134fa9181bb4580b93277c9c6be6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1639918231}
+      addedObject: {fileID: 1639918239}
     - targetCorrespondingSourceObject: {fileID: 1062023516504125812, guid: 4a3e134fa9181bb4580b93277c9c6be6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1639918225}
@@ -298386,25 +299462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InspectionHotspot
   _hotspotDialogue: {fileID: 11400000, guid: f9e11f5fda239f345a801c0fa644a7f1, type: 2}
   _associatedKeyword: {fileID: 0}
---- !u!114 &1639918231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639918221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 456bfad5e6c84d44b9c7a016426e5495, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EvidenceObject
-  _keywordData: {fileID: 11400000, guid: c1092040cf55e4942a169b3691a90979, type: 2}
-  _destroyOnCollected: 1
-  _moveDuration: 0.6
-  _distanceFromCamera: 1.2
-  _rotateSensitivity: 0.2
-  _playerLook: {fileID: 157253620}
---- !u!114 &1639918232
+--- !u!114 &1639918239
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -298429,6 +299487,10 @@ PrefabInstance:
     - target: {fileID: 1030990400, guid: abc00000000013683327929640946525, type: 3}
       propertyPath: m_Name
       value: SM_Food_SM_Lemon
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990400, guid: abc00000000013683327929640946525, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990401, guid: abc00000000013683327929640946525, type: 3}
       propertyPath: m_LocalPosition.x
@@ -298620,6 +299682,10 @@ PrefabInstance:
     - target: {fileID: 166450, guid: f6d6b44570abec7499912dcfa7b9badf, type: 3}
       propertyPath: m_Name
       value: tray
+      objectReference: {fileID: 0}
+    - target: {fileID: 166450, guid: f6d6b44570abec7499912dcfa7b9badf, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 402396, guid: f6d6b44570abec7499912dcfa7b9badf, type: 3}
       propertyPath: m_LocalScale.y
@@ -298927,6 +299993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_3_skin_2
       objectReference: {fileID: 0}
+    - target: {fileID: 2168246010118713068, guid: 12c158cd60ab54249a20580a5b587510, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -298991,6 +300061,10 @@ PrefabInstance:
     - target: {fileID: 1030992331, guid: abc00000000003906270597115057518, type: 3}
       propertyPath: m_Name
       value: SM_Book03 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030992331, guid: abc00000000003906270597115057518, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030992332, guid: abc00000000003906270597115057518, type: 3}
       propertyPath: m_LocalPosition.x
@@ -299097,6 +300171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toaster_Apt_01
       objectReference: {fileID: 0}
+    - target: {fileID: 6145271163491723563, guid: a104be747e53b0c4f875ab61494ff9f2, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7935108168946035685, guid: a104be747e53b0c4f875ab61494ff9f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.923157
@@ -299201,6 +300279,10 @@ PrefabInstance:
     - target: {fileID: 1030991050, guid: abc00000000012478916998034574281, type: 3}
       propertyPath: m_Name
       value: SM_FoodPot_14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030991050, guid: abc00000000012478916998034574281, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030991051, guid: abc00000000012478916998034574281, type: 3}
       propertyPath: m_LocalPosition.x
@@ -300385,6 +301467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Couch_3_Pillow.003
       objectReference: {fileID: 0}
+    - target: {fileID: 2336787979211004526, guid: af66eceafc0858a4691d9b2edfcedb3a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -300898,6 +301984,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_3_skin_3 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2139299838465336030, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.43699938
@@ -301042,6 +302132,10 @@ PrefabInstance:
     - target: {fileID: 6385662009729537733, guid: b8292e68b2a56c249a16db40e4e540cc, type: 3}
       propertyPath: m_Name
       value: OT_Scissors
+      objectReference: {fileID: 0}
+    - target: {fileID: 6385662009729537733, guid: b8292e68b2a56c249a16db40e4e540cc, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -301335,6 +302429,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 888ce82c0af2ab0499d39c93fb0f4ce4, type: 3}
       propertyPath: m_Name
       value: book_0001c
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 888ce82c0af2ab0499d39c93fb0f4ce4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 888ce82c0af2ab0499d39c93fb0f4ce4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -301912,6 +303010,10 @@ PrefabInstance:
     - target: {fileID: 1030985077, guid: abc00000000013359847654944595511, type: 3}
       propertyPath: m_Name
       value: SM_Mirror
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030985077, guid: abc00000000013359847654944595511, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030985078, guid: abc00000000013359847654944595511, type: 3}
       propertyPath: m_LocalPosition.x
@@ -307744,7 +308846,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InspectionHotspot
   _hotspotDialogue: {fileID: 11400000, guid: f9e11f5fda239f345a801c0fa644a7f1, type: 2}
-  _associatedKeyword: {fileID: 0}
+  _associatedKeyword: {fileID: 11400000, guid: c1092040cf55e4942a169b3691a90979, type: 2}
+--- !u!114 &1772071739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772071735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456bfad5e6c84d44b9c7a016426e5495, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EvidenceObject
+  _keywordData: {fileID: 11400000, guid: c1092040cf55e4942a169b3691a90979, type: 2}
+  _destroyOnCollected: 1
+  _moveDuration: 0.6
+  _distanceFromCamera: 1.2
+  _rotateSensitivity: 0.2
+  _playerLook: {fileID: 157253620}
 --- !u!1001 &1788727583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -307992,6 +309112,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book_06 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030989400, guid: abc00000000001048202643603297622, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030989401, guid: abc00000000001048202643603297622, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.25
@@ -308217,6 +309341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FlowerPot_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1030991250, guid: abc00000000010887752417777416742, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030991251, guid: abc00000000010887752417777416742, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.29415
@@ -308361,6 +309489,10 @@ PrefabInstance:
     - target: {fileID: 7897607870090502119, guid: 9904f834f7778984e9b3dad7b1609bd5, type: 3}
       propertyPath: m_Name
       value: Book_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897607870090502119, guid: 9904f834f7778984e9b3dad7b1609bd5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -308605,6 +309737,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: lamp_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1325400926862850, guid: 17f9a260b8f7c2145afce38fc0f5f4dd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4555784475067732, guid: 17f9a260b8f7c2145afce38fc0f5f4dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7840579
@@ -308751,6 +309887,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_3_skin_3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2139299838465336030, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5629998
@@ -308855,6 +309995,10 @@ PrefabInstance:
     - target: {fileID: 4658667771868738423, guid: 3f8f648eaa30cdc498bcdb6a14bbbd96, type: 3}
       propertyPath: m_Name
       value: Couch_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658667771868738423, guid: 3f8f648eaa30cdc498bcdb6a14bbbd96, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4658667771868770135, guid: 3f8f648eaa30cdc498bcdb6a14bbbd96, type: 3}
       propertyPath: m_LocalPosition.x
@@ -309980,6 +311124,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table_Dining_Apt_01
       objectReference: {fileID: 0}
+    - target: {fileID: 8228670744583830499, guid: 88eb65b4dea685a4cad7ad664104b001, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9003417335845753540, guid: 88eb65b4dea685a4cad7ad664104b001, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.5
@@ -310603,6 +311751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DrinkingGlass_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8441611114093278921, guid: 8dfa0d45cd834394f8c62eec3b88c8c4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -310719,6 +311871,10 @@ PrefabInstance:
     - target: {fileID: 3424860193087993434, guid: cb7444de8bf22c64596ed3f5b600c419, type: 3}
       propertyPath: m_Name
       value: usb_stick_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424860193087993434, guid: cb7444de8bf22c64596ed3f5b600c419, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -310963,6 +312119,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plate_Apt_01
       objectReference: {fileID: 0}
+    - target: {fileID: 2731220904129377452, guid: c155150d56fafb64ebab3a94b2cd86bf, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6950694643063592744, guid: c155150d56fafb64ebab3a94b2cd86bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.019001635
@@ -311086,6 +312246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Free_CupCoffeeBreakfast
       objectReference: {fileID: 0}
+    - target: {fileID: 4870732232529611836, guid: 3a4f867f5254a403bb005ab1edd70b51, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5247680396250404486, guid: 3a4f867f5254a403bb005ab1edd70b51, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.190967
@@ -311190,6 +312354,10 @@ PrefabInstance:
     - target: {fileID: 1030988225, guid: abc00000000008376439572443181629, type: 3}
       propertyPath: m_Name
       value: SM_FoodCan05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030988225, guid: abc00000000008376439572443181629, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030988226, guid: abc00000000008376439572443181629, type: 3}
       propertyPath: m_LocalPosition.x
@@ -311486,6 +312654,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wallet_01.card 01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3853355318448626830, guid: f2503a26b8bd8b14bad3415df3ac34fb, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -311670,6 +312842,10 @@ PrefabInstance:
     - target: {fileID: 747843209996140098, guid: 57ddbe3946ed29b4c83e5af663887e97, type: 3}
       propertyPath: m_Name
       value: Book_1_skin_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 747843209996140098, guid: 57ddbe3946ed29b4c83e5af663887e97, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -321848,6 +323024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book02
       objectReference: {fileID: 0}
+    - target: {fileID: 1030992271, guid: abc00000000011627893098031340007, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030992272, guid: abc00000000011627893098031340007, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.7497654
@@ -321953,6 +323133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Glass_Jar_A
       objectReference: {fileID: 0}
+    - target: {fileID: 1030985883, guid: abc00000000001089649636536759656, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030985884, guid: abc00000000001089649636536759656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.19700003
@@ -322057,6 +323241,10 @@ PrefabInstance:
     - target: {fileID: 1030990590, guid: abc00000000002085848667412338252, type: 3}
       propertyPath: m_Name
       value: SM_FoodPot_11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990590, guid: abc00000000002085848667412338252, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990591, guid: abc00000000002085848667412338252, type: 3}
       propertyPath: m_LocalPosition.x
@@ -322203,6 +323391,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stack_of_sheets_3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 05b3734eb5deb7a4aa994b8e93c3eecf, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -322342,6 +323534,10 @@ PrefabInstance:
     - target: {fileID: 3969647202003862007, guid: 01e5d421990d48c4c930ecf81888e008, type: 3}
       propertyPath: m_Name
       value: stack_of_sheets_2_2_skin_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3969647202003862007, guid: 01e5d421990d48c4c930ecf81888e008, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4349586315740715853, guid: 01e5d421990d48c4c930ecf81888e008, type: 3}
       propertyPath: m_LocalPosition.x
@@ -322509,6 +323705,10 @@ PrefabInstance:
     - target: {fileID: 1030990100, guid: abc00000000004537710561762321281, type: 3}
       propertyPath: m_Name
       value: SM_Food_SM_Apple_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990100, guid: abc00000000004537710561762321281, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990101, guid: abc00000000004537710561762321281, type: 3}
       propertyPath: m_LocalPosition.x
@@ -323752,6 +324952,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bread_03
       objectReference: {fileID: 0}
+    - target: {fileID: 6093391673720001028, guid: 2475a01d6f14eaf48bd688382a900e55, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6907329811616041150, guid: 2475a01d6f14eaf48bd688382a900e55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5889981
@@ -323856,6 +325060,10 @@ PrefabInstance:
     - target: {fileID: 1030989440, guid: abc00000000014377863225868676669, type: 3}
       propertyPath: m_Name
       value: SM_Book_05 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030989440, guid: abc00000000014377863225868676669, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030989441, guid: abc00000000014377863225868676669, type: 3}
       propertyPath: m_LocalScale.x
@@ -333748,6 +334956,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book01
       objectReference: {fileID: 0}
+    - target: {fileID: 1030992251, guid: abc00000000001963143895760378412, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030992252, guid: abc00000000001963143895760378412, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.79132
@@ -334031,6 +335243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Food_SM_Apple_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030990100, guid: abc00000000004537710561762321281, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030990101, guid: abc00000000004537710561762321281, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.47698307
@@ -334176,6 +335392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_4_skin_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1995195562815973556, guid: 3aa45495b4803ab4f8d0ac596f039ba6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -334288,6 +335508,10 @@ PrefabInstance:
     - target: {fileID: 9063128926208519524, guid: d46fa1eeedbcb0e41b8c735b2594b434, type: 3}
       propertyPath: m_Name
       value: Sofa_Apt_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 9063128926208519524, guid: d46fa1eeedbcb0e41b8c735b2594b434, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -334405,6 +335629,10 @@ PrefabInstance:
     - target: {fileID: 8441611114093278921, guid: 8dfa0d45cd834394f8c62eec3b88c8c4, type: 3}
       propertyPath: m_Name
       value: DrinkingGlass_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441611114093278921, guid: 8dfa0d45cd834394f8c62eec3b88c8c4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -335276,6 +336504,22 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.84862787
       objectReference: {fileID: 0}
+    - target: {fileID: 148389634393107630, guid: e2fa05d22ec876745aec3dd263e3622f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 148389635804244550, guid: e2fa05d22ec876745aec3dd263e3622f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 539976605081686648, guid: e2fa05d22ec876745aec3dd263e3622f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407590784801126548, guid: e2fa05d22ec876745aec3dd263e3622f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2840204843479947207, guid: e2fa05d22ec876745aec3dd263e3622f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.263
@@ -335319,6 +336563,18 @@ PrefabInstance:
     - target: {fileID: 3746901468632373317, guid: e2fa05d22ec876745aec3dd263e3622f, type: 3}
       propertyPath: m_Name
       value: CandelSetting_apt_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3746901468632373317, guid: e2fa05d22ec876745aec3dd263e3622f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226411726152332437, guid: e2fa05d22ec876745aec3dd263e3622f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9160276275937149471, guid: e2fa05d22ec876745aec3dd263e3622f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -335489,6 +336745,10 @@ PrefabInstance:
     - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_Name
       value: Book_3_skin_3 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2139299838465336030, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -335740,6 +337000,10 @@ PrefabInstance:
     - target: {fileID: 1030989360, guid: abc00000000011845118053869951636, type: 3}
       propertyPath: m_Name
       value: SM_Book_04 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030989360, guid: abc00000000011845118053869951636, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030989361, guid: abc00000000011845118053869951636, type: 3}
       propertyPath: m_LocalPosition.x
@@ -336022,6 +337286,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Couch_3_Pillow.001 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5699414919421401963, guid: 921181817ea61604d9db02f6760b9ea5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -336091,6 +337359,10 @@ PrefabInstance:
     - target: {fileID: 1030990200, guid: abc00000000014799989761545463732, type: 3}
       propertyPath: m_Name
       value: SM_Food_SM_Pear (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990200, guid: abc00000000014799989761545463732, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990201, guid: abc00000000014799989761545463732, type: 3}
       propertyPath: m_LocalPosition.x
@@ -336196,6 +337468,10 @@ PrefabInstance:
     - target: {fileID: 170910, guid: 0aab0b1a5f8606044a537e15822c6369, type: 3}
       propertyPath: m_Name
       value: teapot
+      objectReference: {fileID: 0}
+    - target: {fileID: 170910, guid: 0aab0b1a5f8606044a537e15822c6369, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 467712, guid: 0aab0b1a5f8606044a537e15822c6369, type: 3}
       propertyPath: m_LocalPosition.x
@@ -337416,6 +338692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Endtable
       objectReference: {fileID: 0}
+    - target: {fileID: 1356488815884518, guid: 13c76b2b258c62345b2838c57f752f92, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4240523363631844, guid: 13c76b2b258c62345b2838c57f752f92, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.538321
@@ -337553,6 +338833,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Food_SM_Apple_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030990080, guid: abc00000000013512582383750689786, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030990081, guid: abc00000000013512582383750689786, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.65600264
@@ -337654,6 +338938,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 857230462}
     m_Modifications:
+    - target: {fileID: 536174323827863739, guid: fa44f0d9a5a05314ea800e30dbcc564a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2488615507539452749, guid: fa44f0d9a5a05314ea800e30dbcc564a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2735465005772526773, guid: fa44f0d9a5a05314ea800e30dbcc564a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3249482263116753110, guid: fa44f0d9a5a05314ea800e30dbcc564a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4009615379129919053, guid: fa44f0d9a5a05314ea800e30dbcc564a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.536091
@@ -337694,9 +338994,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4294351467393615484, guid: fa44f0d9a5a05314ea800e30dbcc564a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4390679083592924407, guid: fa44f0d9a5a05314ea800e30dbcc564a, type: 3}
       propertyPath: m_Name
       value: pizza_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390679083592924407, guid: fa44f0d9a5a05314ea800e30dbcc564a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419581781394098173, guid: fa44f0d9a5a05314ea800e30dbcc564a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419910508384912694, guid: fa44f0d9a5a05314ea800e30dbcc564a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6783727998745129838, guid: fa44f0d9a5a05314ea800e30dbcc564a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -338024,6 +339344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_KitchenUstensil_Spoon
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: abc00000000017673044607000564445, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: abc00000000017673044607000564445, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.47732
@@ -338128,6 +339452,10 @@ PrefabInstance:
     - target: {fileID: 6087065980635308339, guid: b519bc1b306369142a6b3d19e7f67def, type: 3}
       propertyPath: m_Name
       value: SM_Flatbread_01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087065980635308339, guid: b519bc1b306369142a6b3d19e7f67def, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6859627571295927177, guid: b519bc1b306369142a6b3d19e7f67def, type: 3}
       propertyPath: m_LocalPosition.x
@@ -338555,6 +339883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_3_skin_2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2168246010118713068, guid: 12c158cd60ab54249a20580a5b587510, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -338619,6 +339951,10 @@ PrefabInstance:
     - target: {fileID: 2093170353575555094, guid: 914bfa6fb4b7ff644b2f3dff7688d145, type: 3}
       propertyPath: m_Name
       value: Pill_LongBundleRed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2093170353575555094, guid: 914bfa6fb4b7ff644b2f3dff7688d145, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4976417109197572817, guid: 914bfa6fb4b7ff644b2f3dff7688d145, type: 3}
       propertyPath: m_LocalPosition.x
@@ -338947,6 +340283,10 @@ PrefabInstance:
     - target: {fileID: 2168246010118713068, guid: 12c158cd60ab54249a20580a5b587510, type: 3}
       propertyPath: m_Name
       value: Book_3_skin_2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168246010118713068, guid: 12c158cd60ab54249a20580a5b587510, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -339541,6 +340881,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Croissant_02a
       objectReference: {fileID: 0}
+    - target: {fileID: 7896177316561888210, guid: f78a4e7b46a73f14eb1f9b52ad095c47, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -339605,6 +340949,10 @@ PrefabInstance:
     - target: {fileID: 1030990670, guid: abc00000000014722471444982492666, type: 3}
       propertyPath: m_Name
       value: SM_FoodPot_08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990670, guid: abc00000000014722471444982492666, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990671, guid: abc00000000014722471444982492666, type: 3}
       propertyPath: m_LocalPosition.x
@@ -340119,6 +341467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallArt_Apt_01
       objectReference: {fileID: 0}
+    - target: {fileID: 8198272116638378021, guid: 6ab6af969cb643e44b67269676f36669, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8584123281821640870, guid: 6ab6af969cb643e44b67269676f36669, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.61915
@@ -340223,6 +341575,10 @@ PrefabInstance:
     - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_Name
       value: Book_3_skin_3 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656059617860827236, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2139299838465336030, guid: f179c8916b7a6e1419916b3c2f98ed3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -340705,6 +342061,10 @@ PrefabInstance:
     - target: {fileID: 1030990730, guid: abc00000000000554766084010937081, type: 3}
       propertyPath: m_Name
       value: SM_FoodPot_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030990730, guid: abc00000000000554766084010937081, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030990731, guid: abc00000000000554766084010937081, type: 3}
       propertyPath: m_LocalPosition.x
@@ -341472,6 +342832,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FoodPot_14
       objectReference: {fileID: 0}
+    - target: {fileID: 1030991050, guid: abc00000000012478916998034574281, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030991051, guid: abc00000000012478916998034574281, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.681
@@ -341686,6 +343050,10 @@ PrefabInstance:
     - target: {fileID: 3241196014341189734, guid: 327860819d06a964d98cea7acb224d6e, type: 3}
       propertyPath: m_Name
       value: SM_Aluminum_Can_01_Opened
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241196014341189734, guid: 327860819d06a964d98cea7acb224d6e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -342813,6 +344181,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PillsTubeRed
       objectReference: {fileID: 0}
+    - target: {fileID: 5559945759241295410, guid: cb8aff9e49677dc4bbe17898109d0fbf, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -342877,6 +344249,10 @@ PrefabInstance:
     - target: {fileID: 1030987236, guid: abc00000000002567005786210614815, type: 3}
       propertyPath: m_Name
       value: SM_Glass_Cup_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030987236, guid: abc00000000002567005786210614815, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030987237, guid: abc00000000002567005786210614815, type: 3}
       propertyPath: m_LocalPosition.x
@@ -343915,6 +345291,10 @@ PrefabInstance:
     - target: {fileID: 3304547296615693552, guid: db3b0f21e0beb2845b327c01e10769f0, type: 3}
       propertyPath: m_Name
       value: cup_03 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3304547296615693552, guid: db3b0f21e0beb2845b327c01e10769f0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
