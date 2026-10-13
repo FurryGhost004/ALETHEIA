@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: LizettePillow
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
   _id: 
-  _keywordName: RIPILLOW
+  _keywordName: LIPILLOW
   _itemName: Richmal Pilllow
-  _description: Located in Richmal bedroom
+  _description: Located in Lizette's bedroom
   _icon: {fileID: 0}
   _playerNote: 

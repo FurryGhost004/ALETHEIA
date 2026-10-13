@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: LizetteTeacup
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
   _id: 
-  _keywordName: RITEACUP
-  _itemName: Richmal tea cup
-  _description: Located on the table in living room
+  _keywordName: LITEACUP
+  _itemName: Lizette tea cup
+  _description: Located on the table in Lizzete's living room
   _icon: {fileID: 0}
   _playerNote: 

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCEventData
   npcID: npc 3
   eventType: 1
-  specificDay: 8
+  specificDay: 2
   activeDays: 0200000005000000
   intervalDays: 3
   defaultPosition: {x: 0, y: 0, z: 0}

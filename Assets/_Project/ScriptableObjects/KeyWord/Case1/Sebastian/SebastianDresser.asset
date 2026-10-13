@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SebastianDresser
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
   _id: 022
-  _keywordName: SeDresser
+  _keywordName: SED
   _itemName: Sebastian Dresser
   _description: Located in Sebastian room
   _icon: {fileID: 21300000, guid: 286c823e3804d7344a87180adb81bb5f, type: 3}

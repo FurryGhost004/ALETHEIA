@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad21d791df3aed843918bf3457e3687a, type: 3}
+  m_Name: SE-MelodyBook
+  m_EditorClassIdentifier: Assembly-CSharp::InterrogationDatabase
+  _npcId: Sebastian
+  _keyword: {fileID: 0}
+  _responses:
+  - _whType: 0
+    _dialogueResponse: {fileID: 11400000, guid: 846cd010001ba5f44a8fa99a27444843, type: 2}
+  - _whType: 1
+    _dialogueResponse: {fileID: 11400000, guid: 846cd010001ba5f44a8fa99a27444843, type: 2}
+  - _whType: 2
+    _dialogueResponse: {fileID: 11400000, guid: 846cd010001ba5f44a8fa99a27444843, type: 2}
+  - _whType: 3
+    _dialogueResponse: {fileID: 11400000, guid: 846cd010001ba5f44a8fa99a27444843, type: 2}
+  - _whType: 4
+    _dialogueResponse: {fileID: 11400000, guid: 846cd010001ba5f44a8fa99a27444843, type: 2}
+  - _whType: 5
+    _dialogueResponse: {fileID: 11400000, guid: 846cd010001ba5f44a8fa99a27444843, type: 2}

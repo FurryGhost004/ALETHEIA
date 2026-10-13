@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: LizetteSpoon 1
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
   _id: 
-  _keywordName: RISPOON1
-  _itemName: Richmal spoon 1
-  _description: Located on the table in living room
+  _keywordName: LISPOON1
+  _itemName: Lizette spoon 1
+  _description: Located on the table in Lizzete's living room
   _icon: {fileID: 0}
   _playerNote: 

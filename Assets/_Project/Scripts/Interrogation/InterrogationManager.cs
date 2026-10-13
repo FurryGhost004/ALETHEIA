@@ -1,8 +1,11 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class InterrogationManager : SingletonBase<InterrogationManager>
 {
-    [SerializeField] private InterrogationDatabase _database;
+
+    [Header("Danh sách tất cả các Interrogation Database")]
+    [SerializeField] private List<InterrogationDatabase> _databases = new List<InterrogationDatabase>();
 
     protected override void Awake()
     {
@@ -11,18 +14,21 @@ public class InterrogationManager : SingletonBase<InterrogationManager>
 
     private void Start() { }
 
+
     public InterrogationResponseEntry LookupResponse(string npcId, WHType whType, KeywordData keyword)
     {
-        if (_database == null) return null;
+        if (string.IsNullOrEmpty(npcId) || keyword == null) return null;
 
-        foreach (var entry in _database.Responses)
+        // Quét tìm file Database khớp cả NPC Id và Keyword
+        foreach (var db in _databases)
         {
-            if (entry.NpcId == npcId && entry.WhType == whType && entry.Keyword == keyword)
+            if (db != null && db.NpcId == npcId && db.Keyword == keyword)
             {
-                return entry;
+                return db.LookupResponse(whType);
             }
         }
 
         return null;
     }
 }
+

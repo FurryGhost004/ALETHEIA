@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a77595e1727ce46b26ff4db3287b83, type: 3}
+  m_Name: NewNPCEvent 1
+  m_EditorClassIdentifier: Assembly-CSharp::NPCEventData
+  npcID: Sebastian
+  eventType: 2
+  specificDay: 2
+  activeDays: 0200000004000000
+  intervalDays: 2
+  defaultPosition: {x: -5.90952, y: 4.762, z: 2.287}
+  defaultRotation: {x: 0, y: 72.61645, z: 0}
+  dayLocations:
+  - day: 2
+    position: {x: -2.03, y: 4.762, z: 2.287}
+    rotation: {x: 0, y: 72.61645, z: 0}
+  - day: 4
+    position: {x: -8.801, y: 4.762, z: -0.82}
+    rotation: {x: 0, y: 72.61645, z: 0}

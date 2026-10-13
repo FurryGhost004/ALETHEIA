@@ -1,9 +1,9 @@
 public enum WHType
 {
-    Who,    // Ai
-    What,   // Cái gì
+    What,    // Ai
+    When,   // Cái gì
     Where,  // Ở đâu
-    When,   // Khi nào
-    Why,    // Tại sao
+    Why,   // Khi nào
+    Who,    // Tại sao
     How     // Như thế nào
 }
