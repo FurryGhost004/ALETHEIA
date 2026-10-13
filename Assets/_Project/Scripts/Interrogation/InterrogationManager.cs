@@ -7,6 +7,8 @@ public class InterrogationManager : SingletonBase<InterrogationManager>
     [Header("Danh sách tất cả các Interrogation Database")]
     [SerializeField] private List<InterrogationDatabase> _databases = new List<InterrogationDatabase>();
 
+    [SerializeField] private InterrogationDatabase _database;
+
     protected override void Awake()
     {
         base.Awake();

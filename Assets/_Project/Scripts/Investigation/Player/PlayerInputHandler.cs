@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using SojaExiles;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerInputHandler : MonoBehaviour
@@ -10,6 +11,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     private PlayerInputActions _input;
     private bool _isInterrogating;
+    private bool _isTalkingToNPC = false;
 
     private void Awake()
     {
@@ -52,18 +54,33 @@ public class PlayerInputHandler : MonoBehaviour
         _input.Disable();
     }
 
-    public void SetInterrogating(bool state)
+    public void SetInterrogating(bool isInterrogating)
     {
-        _isInterrogating = state;
+        _isInterrogating = isInterrogating;
+        _isTalkingToNPC = isInterrogating;
 
+        // 1. Quản lý di chuyển của Player (Dùng _movement đúng với khai báo)
         if (_movement != null)
         {
-            _movement.SetCanMove(!state);
+            _movement.SetCanMove(!isInterrogating);
+            if (isInterrogating)
+            {
+                // Triệt tiêu ngay lập tức hướng di chuyển cũ nếu đang bấm WASD lúc kích hoạt thoại
+                _movement.SetMoveInput(Vector2.zero);
+            }
         }
 
+        // 2. Quản lý xoay camera & con trỏ chuột
         if (_playerLook != null)
         {
-            _playerLook.SetCursorLocked(!state);
+            // Mở khóa chuột để click UI khi isInterrogating = true
+            _playerLook.SetCursorLocked(!isInterrogating);
+
+            if (isInterrogating)
+            {
+                // Cố định góc nhìn camera, tránh xoay khi di chuột vào UI
+                _playerLook.SetLookInput(Vector2.zero);
+            }
         }
     }
 
@@ -104,7 +121,7 @@ public class PlayerInputHandler : MonoBehaviour
     private void OnToggleNotebook(InputAction.CallbackContext context)
     {
         if (_isInterrogating && _notebookHub != null && !_notebookHub.gameObject.activeSelf)
-            return; 
+            return;
 
         if (_notebookHub != null)
         {

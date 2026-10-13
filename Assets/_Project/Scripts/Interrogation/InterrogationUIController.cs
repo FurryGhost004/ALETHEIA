@@ -37,6 +37,11 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
     private bool _isTyping;
     private Coroutine _typeCoroutine;
 
+    private float _lastAdvanceTime;
+    private float _advanceCooldown = 0.2f;
+    private float _canAcceptInputTime;
+    private bool _isSubmitting = false;
+
     protected override void Awake()
     {
         base.Awake();
@@ -56,21 +61,18 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
             return;
         }
 
-        // 2. Nếu đang hiển thị lời thoại trả lời -> Bấm Space hoặc Click chuột để chuyển dòng / hoàn thành chữ
+        // 2. Nếu đang hiển thị lời thoại trả lời
         if (_isShowingResponse)
         {
-            if (Keyboard.current.spaceKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame)
+            // Chỉ cho phép bấm chuyển thoại sau khi đã qua thời gian chống dính (0.25s)
+            if (Time.time >= _canAcceptInputTime)
             {
-                AdvanceResponseDialogue();
+                if (Keyboard.current.spaceKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame)
+                {
+                    AdvanceResponseDialogue();
+                }
             }
             return;
-        }
-
-        // 3. Bắt phím Enter khi đang gõ Keyword trong ô InputField
-        if (_inputKeyword != null && _inputKeyword.isFocused &&
-            (Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.numpadEnterKey.wasPressedThisFrame))
-        {
-            SubmitQuestion();
         }
     }
 
@@ -133,21 +135,39 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
 
         if (_typeCoroutine != null) StopCoroutine(_typeCoroutine);
         _isShowingResponse = false;
+        _isSubmitting = false; // Reset khóa
 
         gameObject.SetActive(false);
     }
 
     private void OnInputSubmit(string text)
     {
-        SubmitQuestion();
+        if (!string.IsNullOrWhiteSpace(text))
+
+            SubmitQuestion();
     }
 
     public void SubmitQuestion()
     {
-        if (_dropdownWH == null || _inputKeyword == null) return;
+        // Khóa ngay lập tức từ dòng đầu tiên để ngăn chặn việc gọi đúp từ onSubmit và onClick cùng lúc
+        if (_isSubmitting || _isShowingResponse) return;
+        _isSubmitting = true;
+
+        if (_dropdownWH == null || _inputKeyword == null)
+        {
+            _isSubmitting = false;
+            return;
+        }
 
         string enteredKeywordStr = _inputKeyword.text.Trim();
-        if (string.IsNullOrEmpty(enteredKeywordStr)) return;
+        if (string.IsNullOrEmpty(enteredKeywordStr))
+        {
+            _isSubmitting = false;
+            return;
+        }
+
+        // Chặn nhận input trong 0.3 giây đầu tiên
+        _canAcceptInputTime = Time.time + 0.3f;
 
         WHType selectedWH = (WHType)_dropdownWH.value;
 
@@ -163,7 +183,6 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
             responseEntry = InterrogationManager.Instance.LookupResponse(_currentNpcId, selectedWH, targetKeyword);
         }
 
-        // Đã sửa thành responseEntry.DialogueResponse để khớp với InterrogationResponseEntry
         DialogueDatabase dialogueToPlay = (responseEntry != null && responseEntry.DialogueResponse != null)
             ? responseEntry.DialogueResponse
             : _defaultVagueDialogue;
@@ -172,6 +191,10 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
         {
             StartResponseDialogue(dialogueToPlay);
         }
+        else
+        {
+            _isSubmitting = false;
+        }
     }
 
     private void StartResponseDialogue(DialogueDatabase responseDialogue)
@@ -179,6 +202,9 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
         _currentResponseDialogue = responseDialogue;
         _currentLineIndex = 0;
         _isShowingResponse = true;
+
+        // Chặn nhận input trong 0.25 giây đầu tiên để triệt tiêu hoàn toàn dư âm của việc bấm Enter / Click nút Ask
+        _canAcceptInputTime = Time.time + 0.25f;
 
         // Ẩn thanh nhập liệu (Dropdown/InputField)
         SetInputGroupActive(false);
@@ -189,6 +215,10 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
 
     private void AdvanceResponseDialogue()
     {
+        // Chống bấm quá nhanh hoặc nhận diện trùng lặp Space/Click chuột
+        if (Time.time - _lastAdvanceTime < _advanceCooldown) return;
+        _lastAdvanceTime = Time.time;
+
         // Nếu đang trong quá trình gõ chữ -> Hoàn thành dòng chữ ngay lập tức
         if (_isTyping)
         {
@@ -249,6 +279,7 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
     private void EndResponseDialogue()
     {
         _isShowingResponse = false;
+        _isSubmitting = false; // Mở khóa để cho phép đặt câu hỏi tiếp theo
 
         // Bật lại thanh nhập liệu
         SetInputGroupActive(true);

@@ -42,7 +42,10 @@ public class PlayerLook : MonoBehaviour
 
     public void SetCursorLocked(bool isLocked)
     {
-        SetCursorState(isLocked);
+        _isCursorLocked = isLocked;
+
+        Cursor.lockState = isLocked ? CursorLockMode.Locked : CursorLockMode.None;
+        Cursor.visible = !isLocked;
     }
 
     private void SetCursorState(bool isLocked)
