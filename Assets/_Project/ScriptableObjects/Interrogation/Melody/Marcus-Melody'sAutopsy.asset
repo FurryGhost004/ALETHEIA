@@ -12,34 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad21d791df3aed843918bf3457e3687a, type: 3}
   m_Name: Marcus-Melody'sAutopsy
   m_EditorClassIdentifier: Assembly-CSharp::InterrogationDatabase
+  _npcId: Marcus
+  _keyword: {fileID: 11400000, guid: db387ff8682aa4d40bf84ac4c36608ad, type: 2}
   _responses:
-  - _npcId: Marcus
-    _whType: 0
-    _keyword: {fileID: 11400000, guid: db387ff8682aa4d40bf84ac4c36608ad, type: 2}
-    _hasNewInfo: 0
-    _responseDialogue: {fileID: 11400000, guid: 3a20ffb11b0b458458d5d5f0e93a4202, type: 2}
-  - _npcId: Marcus
-    _whType: 1
-    _keyword: {fileID: 11400000, guid: db387ff8682aa4d40bf84ac4c36608ad, type: 2}
-    _hasNewInfo: 0
-    _responseDialogue: {fileID: 11400000, guid: f37c4832382e8514badbe42da5fa0a78, type: 2}
-  - _npcId: Marcus
-    _whType: 2
-    _keyword: {fileID: 11400000, guid: db387ff8682aa4d40bf84ac4c36608ad, type: 2}
-    _hasNewInfo: 0
-    _responseDialogue: {fileID: 11400000, guid: 3a20ffb11b0b458458d5d5f0e93a4202, type: 2}
-  - _npcId: Marcus
-    _whType: 3
-    _keyword: {fileID: 11400000, guid: db387ff8682aa4d40bf84ac4c36608ad, type: 2}
-    _hasNewInfo: 0
-    _responseDialogue: {fileID: 11400000, guid: 3a20ffb11b0b458458d5d5f0e93a4202, type: 2}
-  - _npcId: Marcus
-    _whType: 4
-    _keyword: {fileID: 11400000, guid: db387ff8682aa4d40bf84ac4c36608ad, type: 2}
-    _hasNewInfo: 0
-    _responseDialogue: {fileID: 11400000, guid: 3a20ffb11b0b458458d5d5f0e93a4202, type: 2}
-  - _npcId: Marcus
-    _whType: 5
-    _keyword: {fileID: 11400000, guid: db387ff8682aa4d40bf84ac4c36608ad, type: 2}
-    _hasNewInfo: 0
-    _responseDialogue: {fileID: 11400000, guid: 3a20ffb11b0b458458d5d5f0e93a4202, type: 2}
+  - _whType: 0
+    _dialogueResponse: {fileID: 11400000, guid: f37c4832382e8514badbe42da5fa0a78, type: 2}
+  - _whType: 1
+    _dialogueResponse: {fileID: 11400000, guid: 3a20ffb11b0b458458d5d5f0e93a4202, type: 2}
+  - _whType: 2
+    _dialogueResponse: {fileID: 11400000, guid: 3a20ffb11b0b458458d5d5f0e93a4202, type: 2}
+  - _whType: 3
+    _dialogueResponse: {fileID: 11400000, guid: ca5dbfce5641dcf4fbc06ffc24fcd50c, type: 2}
+  - _whType: 4
+    _dialogueResponse: {fileID: 11400000, guid: 3a20ffb11b0b458458d5d5f0e93a4202, type: 2}
+  - _whType: 5
+    _dialogueResponse: {fileID: 11400000, guid: 3a20ffb11b0b458458d5d5f0e93a4202, type: 2}

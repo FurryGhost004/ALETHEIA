@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c85e761e1b1967e4f9f3b012631f6435, type: 3}
+  m_Name: Sebastian
+  m_EditorClassIdentifier: Assembly-CSharp::SuspectData
+  _npcId: Sebastian
+  _npcName: Sebastian
+  _portrait: {fileID: 21300000, guid: 398836d11002c554488f0fd58d0947fb, type: 3}
+  _address: 25/74 Birch Street,Room 2-Jules apartment
+  _height: 1m78
+  _description: First child of the Sterling family
+  _isCulprit: 1
+  _suspect3DPrefab: {fileID: 5587957144202828168, guid: 0dc74fafeabd10148b34ce3bcbb42b18, type: 3}
+  _trialTopics:
+  - {fileID: 11400000, guid: 39cf24443b3096f43869fb209b99d4ad, type: 2}
+  - {fileID: 11400000, guid: 08d7617cfab75344fb29f4f5d64766fc, type: 2}
+  - {fileID: 11400000, guid: 47051dd583ce69649959eb3f6b3907b4, type: 2}

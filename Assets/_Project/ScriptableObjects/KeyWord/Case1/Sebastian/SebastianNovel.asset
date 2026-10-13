@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a13e220e0bebf4142a7c5d3711a6c42d, type: 3}
-  m_Name: SterlingKey
+  m_Name: SebastianNovel
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
-  _id: 
-  _keywordName: STKEY
-  _itemName: Sterling key
-  _description: Located behind trash bin
-  _icon: {fileID: 21300000, guid: a2fa13a0e7bf90442baa72bd7b7e639c, type: 3}
+  _id: 017
+  _keywordName: SENOVEL
+  _itemName: Sebastian novel
+  _description: Stored in bottom drawer in Sebastian room
+  _icon: {fileID: 21300000, guid: 0b587df5f25576c4d9e98870c6402c3a, type: 3}
   _playerNote: 
