@@ -42,7 +42,7 @@ public class CourtTrialController : MonoBehaviour
     [SerializeField] private DialogueDatabase _introDialogueDatabase;
 
     [Header("--- HEALTH / PENALTY CONFIG (SLIDER) ---")]
-    [SerializeField] private int _maxHealth = 3;            // Mặc định 3 mạng (mỗi lần sai trừ 1/3)
+    [SerializeField] private int _maxHealth = 3;            // Mặc định 3 mạng
     [SerializeField] private Slider _healthSlider;          // Dùng Slider UI làm thanh máu/lỗi
     private int _currentHealth;
 
@@ -57,6 +57,7 @@ public class CourtTrialController : MonoBehaviour
 
     private GameObject _spawnedSuspect;
     private int _currentIntroIndex = 0;
+    private int _currentResultIndex = 0; // Quản lý index câu thoại kết quả (Thắng/Thua)
     private TrialState _currentState;
 
     private void Start()
@@ -98,6 +99,25 @@ public class CourtTrialController : MonoBehaviour
         }
     }
 
+    // --- HÀM HỖ TRỢ HIỂN THỊ DÒNG THOẠI TỪ DIALOGUE DATABASE ---
+    private void ShowDialogueLine(DialogueDatabase database, int index, string defaultSpeaker = "")
+    {
+        if (database == null || database.Lines == null || index >= database.Lines.Count) return;
+
+        DialogueLine currentLine = database.Lines[index];
+
+        if (_txtSpeakerName != null)
+            _txtSpeakerName.text = !string.IsNullOrEmpty(currentLine.CharacterName) ? currentLine.CharacterName : defaultSpeaker;
+
+        if (_txtDialogueContent != null)
+            _txtDialogueContent.text = currentLine.Content;
+
+        if (_imgSuspectPortrait != null && currentLine.CharacterPortrait != null)
+        {
+            _imgSuspectPortrait.sprite = currentLine.CharacterPortrait;
+        }
+    }
+
     // --- BƯỚC 1: HỘI THOẠI MỞ ĐẦU ---
     private void StartIntroDialogue()
     {
@@ -111,25 +131,11 @@ public class CourtTrialController : MonoBehaviour
 
         if (_introDialogueDatabase != null && _introDialogueDatabase.Lines != null && _introDialogueDatabase.Lines.Count > 0)
         {
-            ShowIntroSentence(_currentIntroIndex);
+            ShowDialogueLine(_introDialogueDatabase, _currentIntroIndex, "Thẩm Phán");
         }
         else
         {
             ShowTopicSelection();
-        }
-    }
-
-    private void ShowIntroSentence(int index)
-    {
-        if (_introDialogueDatabase == null || index >= _introDialogueDatabase.Lines.Count) return;
-
-        DialogueLine currentLine = _introDialogueDatabase.Lines[index];
-
-        if (_txtSpeakerName != null) _txtSpeakerName.text = currentLine.CharacterName;
-        if (_txtDialogueContent != null) _txtDialogueContent.text = currentLine.Content;
-        if (_imgSuspectPortrait != null && currentLine.CharacterPortrait != null)
-        {
-            _imgSuspectPortrait.sprite = currentLine.CharacterPortrait;
         }
     }
 
@@ -142,7 +148,6 @@ public class CourtTrialController : MonoBehaviour
 
         if (_panelDialogue != null) _panelDialogue.SetActive(false);
         if (_panelEvidence != null) _panelEvidence.SetActive(false);
-
         if (_panelTopic != null) _panelTopic.SetActive(true);
     }
 
@@ -151,10 +156,7 @@ public class CourtTrialController : MonoBehaviour
     {
         _selectedTopic = topic;
 
-        // Tắt bảng Topic
         if (_panelTopic != null) _panelTopic.SetActive(false);
-
-        // Mở trực tiếp bảng chọn Bằng chứng
         ShowEvidenceSelection();
     }
 
@@ -164,7 +166,6 @@ public class CourtTrialController : MonoBehaviour
         _currentState = TrialState.EvidenceSelection;
 
         if (_panelDialogue != null) _panelDialogue.SetActive(false);
-
         SwitchCamera(CameraView.Player);
 
         if (_panelEvidence != null) _panelEvidence.SetActive(true);
@@ -175,11 +176,13 @@ public class CourtTrialController : MonoBehaviour
     {
         if (selectedEvidence == null || _currentHealth <= 0) return;
 
-        // Tắt bảng Bằng chứng, Mở Khung Dialogue
         if (_panelEvidence != null) _panelEvidence.SetActive(false);
         if (_panelDialogue != null) _panelDialogue.SetActive(true);
 
+        // Đã sửa 'log' thành 'null' ở đây:
         bool isCorrect = (_selectedTopic != null && selectedEvidence == _selectedTopic.correctEvidence);
+
+        _currentResultIndex = 0; // Reset index dòng thoại kết quả
 
         if (isCorrect)
         {
@@ -192,10 +195,13 @@ public class CourtTrialController : MonoBehaviour
                 _completedTopics.Add(_selectedTopic);
             }
 
-            if (_txtSpeakerName != null) _txtSpeakerName.text = "Thẩm Phán";
-            if (_txtDialogueContent != null && _selectedTopic != null)
+            if (_selectedTopic != null && _selectedTopic.winDialogue != null && _selectedTopic.winDialogue.Lines.Count > 0)
             {
-                _txtDialogueContent.text = _selectedTopic.winDialogue;
+                ShowDialogueLine(_selectedTopic.winDialogue, _currentResultIndex, "Thẩm Phán");
+            }
+            else
+            {
+                ProceedAfterSuccessDialogue();
             }
         }
         else
@@ -204,19 +210,21 @@ public class CourtTrialController : MonoBehaviour
             _currentState = TrialState.ResultDialogueFail;
             SwitchCamera(CameraView.Suspect);
 
-            TakeDamage(1); // Trừ 1 nấc trên Slider
+            TakeDamage(1);
 
-            if (_txtSpeakerName != null && ConvictedSuspect != null)
-                _txtSpeakerName.text = ConvictedSuspect.NpcName;
+            string suspectName = (ConvictedSuspect != null) ? ConvictedSuspect.NpcName : "Nghi phạm";
 
-            if (_txtDialogueContent != null && _selectedTopic != null)
+            if (_selectedTopic != null && _selectedTopic.failDialogue != null && _selectedTopic.failDialogue.Lines.Count > 0)
             {
-                _txtDialogueContent.text = _selectedTopic.failDialogue;
+                ShowDialogueLine(_selectedTopic.failDialogue, _currentResultIndex, suspectName);
+            }
+            else
+            {
+                ShowTopicSelection();
             }
         }
     }
 
-    // Trừ máu khi chọn sai
     private void TakeDamage(int damage)
     {
         _currentHealth -= damage;
@@ -224,14 +232,12 @@ public class CourtTrialController : MonoBehaviour
 
         UpdateHealthUI();
 
-        // KIỂM TRA ĐIỀU KIỆN THUA
         if (_currentHealth <= 0)
         {
             OnTrialLose();
         }
     }
 
-    // Cập nhật giá trị Slider
     private void UpdateHealthUI()
     {
         if (_healthSlider != null)
@@ -243,7 +249,7 @@ public class CourtTrialController : MonoBehaviour
     // --- BƯỚC 5: CHUYỂN CÂU THOẠI KHI BẤM SPACE ---
     public void OnClickNextDialogue()
     {
-        if (_currentHealth <= 0) return; // Đã thua thì dừng luồng thoại
+        if (_currentHealth <= 0) return;
 
         switch (_currentState)
         {
@@ -251,7 +257,7 @@ public class CourtTrialController : MonoBehaviour
                 _currentIntroIndex++;
                 if (_introDialogueDatabase != null && _currentIntroIndex < _introDialogueDatabase.Lines.Count)
                 {
-                    ShowIntroSentence(_currentIntroIndex);
+                    ShowDialogueLine(_introDialogueDatabase, _currentIntroIndex, "Thẩm Phán");
                 }
                 else
                 {
@@ -260,25 +266,45 @@ public class CourtTrialController : MonoBehaviour
                 break;
 
             case TrialState.ResultDialogueSuccess:
-                // KIỂM TRA ĐIỀU KIỆN THẮNG: Đã hoàn thành tất cả Topic (hoặc đủ số lượng)
-                int totalTopicsCount = (_topicList != null && _topicList.Count > 0)
-                    ? _topicList.Count
-                    : (ConvictedSuspect != null && ConvictedSuspect.TrialTopics != null ? ConvictedSuspect.TrialTopics.Count : 0);
-
-                if (_completedTopics.Count >= totalTopicsCount && totalTopicsCount > 0)
+                _currentResultIndex++;
+                if (_selectedTopic != null && _selectedTopic.winDialogue != null && _currentResultIndex < _selectedTopic.winDialogue.Lines.Count)
                 {
-                    OnTrialWin();
+                    ShowDialogueLine(_selectedTopic.winDialogue, _currentResultIndex, "Thẩm Phán");
+                }
+                else
+                {
+                    ProceedAfterSuccessDialogue();
+                }
+                break;
+
+            case TrialState.ResultDialogueFail:
+                _currentResultIndex++;
+                if (_selectedTopic != null && _selectedTopic.failDialogue != null && _currentResultIndex < _selectedTopic.failDialogue.Lines.Count)
+                {
+                    string suspectName = (ConvictedSuspect != null) ? ConvictedSuspect.NpcName : "Nghi phạm";
+                    ShowDialogueLine(_selectedTopic.failDialogue, _currentResultIndex, suspectName);
                 }
                 else
                 {
                     ShowTopicSelection();
                 }
                 break;
+        }
+    }
 
-            case TrialState.ResultDialogueFail:
-                // Trả lời sai -> Tự động quay lại bảng chọn Topic
-                ShowTopicSelection();
-                break;
+    private void ProceedAfterSuccessDialogue()
+    {
+        int totalTopicsCount = (_topicList != null && _topicList.Count > 0)
+            ? _topicList.Count
+            : (ConvictedSuspect != null && ConvictedSuspect.TrialTopics != null ? ConvictedSuspect.TrialTopics.Count : 0);
+
+        if (_completedTopics.Count >= totalTopicsCount && totalTopicsCount > 0)
+        {
+            OnTrialWin();
+        }
+        else
+        {
+            ShowTopicSelection();
         }
     }
 
