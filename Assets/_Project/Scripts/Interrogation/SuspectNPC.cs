@@ -49,12 +49,6 @@ public class SuspectNPC : Interactable
             _isFirstTalk = false;
         }
 
-        // Tăng thời gian game
-        if (TimeManager.Instance != null)
-        {
-            TimeManager.Instance.AdvanceTime();
-        }
-
         // Bật thẩm vấn sau khi hoàn tất hội thoại
         if (_canBeInterrogated)
         {

@@ -41,6 +41,10 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
     private float _advanceCooldown = 0.2f;
     private float _canAcceptInputTime;
     private bool _isSubmitting = false;
+    private bool _isOpen;
+    public bool IsOpen => _isOpen;
+
+
 
     protected override void Awake()
     {
@@ -84,8 +88,17 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
         if (_inputKeyword != null) _inputKeyword.onSubmit.RemoveListener(OnInputSubmit);
     }
 
+    private void ResetState()
+    {
+        if (_typeCoroutine != null) StopCoroutine(_typeCoroutine);
+        _isShowingResponse = false;
+        _isTyping = false;
+    }
     public void SetTargetNPC(string npcId, string npcName, Sprite npcPortrait)
     {
+        if (_isOpen) return;   // ignore re-triggers while already open
+        _isOpen = true;
+        ResetState();
         _currentNpcId = npcId;
         _currentNpcName = npcName;
         _currentNpcPortrait = npcPortrait;
@@ -123,6 +136,10 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
 
     public void CloseInterrogation()
     {
+        if (!_isOpen) return;      // Esc + Close button can't charge twice
+        _isOpen = false;
+        ResetState();
+        _isSubmitting = false;
         if (_playerInputHandler == null)
         {
             _playerInputHandler = Object.FindFirstObjectByType<PlayerInputHandler>();
@@ -133,9 +150,8 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
             _playerInputHandler.SetInterrogating(false);
         }
 
-        if (_typeCoroutine != null) StopCoroutine(_typeCoroutine);
-        _isShowingResponse = false;
-        _isSubmitting = false; // Reset khóa
+        if (TimeManager.Instance != null)
+            TimeManager.Instance.AdvanceTime();
 
         gameObject.SetActive(false);
     }
