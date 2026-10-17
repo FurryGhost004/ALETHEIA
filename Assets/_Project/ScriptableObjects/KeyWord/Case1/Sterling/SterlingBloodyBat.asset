@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a13e220e0bebf4142a7c5d3711a6c42d, type: 3}
   m_Name: SterlingBloodyBat
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
-  _id: 
+  _id: 051
   _keywordName: STBB
-  _itemName: 
-  _description: 
+  _itemName: Bloody bat
+  _description: Hidden inside kitchen cabient in sterlings' room
   _icon: {fileID: 21300000, guid: 3bcda33ab3ddd504282d97a1be6990f5, type: 3}
   _playerNote: 

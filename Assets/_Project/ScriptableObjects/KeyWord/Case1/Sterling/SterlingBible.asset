@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SterlingBible
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
   _id: 032
-  _keywordName: StBible
+  _keywordName: STBIBLE
   _itemName: Sterling Bible
   _description: Stored in top left drawer of the carbinet in Sterlings's room
   _icon: {fileID: 21300000, guid: b943a0dc9345f7547921d7f4db34a529, type: 3}
