@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a13e220e0bebf4142a7c5d3711a6c42d, type: 3}
-  m_Name: LaurissaPlant
+  m_Name: RylandSofa
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
   _id: 
-  _keywordName: LAPLANT
-  _itemName: Laurissa plant
-  _description: Stored in flower pot at  Laurissa's living room
+  _keywordName: RYSOFA
+  _itemName: Ryland sofa
+  _description: Located  at Ryland's living room
   _icon: {fileID: 0}
   _playerNote: 
