@@ -26,7 +26,7 @@ public class NPCEventData : ScriptableObject
     [Header("Event Settings")]
     public EventType eventType = EventType.SingleDay;
 
-    [Tooltip("Dùng cho SingleDay: Ngày NPC xuất hiện")]
+    [Tooltip("Dùng cho SingleDay: Ngày duy nhất NPC xuất hiện")]
     public int specificDay = 1;
 
     [Tooltip("Dùng cho MultipleDays: Danh sách các ngày NPC sẽ xuất hiện")]
@@ -36,11 +36,11 @@ public class NPCEventData : ScriptableObject
     public int intervalDays = 2;
 
     [Header("Location Settings")]
-    [Tooltip("Vị trí mặc định khi NPC xuất hiện nếu không có thiết lập vị trí riêng")]
+    [Tooltip("Vị trí mặc định khi NPC xuất hiện nếu không có thiết lập vị trí riêng cho ngày đó")]
     public Vector3 defaultPosition;
     public Vector3 defaultRotation;
 
-    [Tooltip("Danh sách vị trí cụ thể theo từng ngày")]
+    [Tooltip("Danh sách vị trí cụ thể theo từng ngày (Không bắt buộc điền hết)")]
     public List<DayLocation> dayLocations = new List<DayLocation>();
 
     public bool ShouldBeActive(int currentDay)
@@ -48,7 +48,8 @@ public class NPCEventData : ScriptableObject
         switch (eventType)
         {
             case EventType.SingleDay:
-                return currentDay >= specificDay;
+                // Sửa từ >= thành == để sự kiện Single chỉ đúng vào ngày cụ thể đó
+                return currentDay == specificDay;
 
             case EventType.MultipleDays:
                 return activeDays != null && activeDays.Contains(currentDay);
@@ -63,7 +64,8 @@ public class NPCEventData : ScriptableObject
     }
 
     /// <summary>
-    /// Lấy vị trí và góc xoay tương ứng với ngày hiện tại
+    /// Lấy vị trí và góc xoay tương ứng với ngày hiện tại. 
+    /// Nếu không có cấu hình riêng trong dayLocations, tự động trả về defaultPosition.
     /// </summary>
     public bool GetLocationForDay(int currentDay, out Vector3 targetPos, out Quaternion targetRot)
     {
@@ -73,13 +75,13 @@ public class NPCEventData : ScriptableObject
             {
                 targetPos = loc.position;
                 targetRot = Quaternion.Euler(loc.rotation);
-                return true;
+                return true; // Tìm thấy vị trí riêng theo ngày
             }
         }
 
-        // Nếu không cài đặt ngày riêng thì lấy vị trí mặc định
+        // Nếu không cài đặt ngày riêng thì dùng vị trí mặc định của EventData
         targetPos = defaultPosition;
         targetRot = Quaternion.Euler(defaultRotation);
-        return false;
+        return false; // Dùng vị trí mặc định
     }
 }

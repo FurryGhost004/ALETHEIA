@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerInputHandler : MonoBehaviour
+public class PlayerInputHandler : SingletonBase<PlayerInputHandler>
 {
     [SerializeField] private PlayerMovement _movement;
     [SerializeField] private PlayerInteraction _interaction;
@@ -59,15 +59,14 @@ public class PlayerInputHandler : MonoBehaviour
         _isInterrogating = isInterrogating;
         _isTalkingToNPC = isInterrogating;
 
-        // 1. Quản lý di chuyển của Player (Dùng _movement đúng với khai báo)
+        // 1. Quản lý di chuyển của Player (Tắt hoàn toàn component PlayerMovement của SojaExiles)
         if (_movement != null)
         {
-            _movement.SetCanMove(!isInterrogating);
-            if (isInterrogating)
-            {
-                // Triệt tiêu ngay lập tức hướng di chuyển cũ nếu đang bấm WASD lúc kích hoạt thoại
-                _movement.SetMoveInput(Vector2.zero);
-            }
+            // Vô hiệu hóa component di chuyển để script này ngừng chạy mọi hàm Update/FixedUpdate
+            _movement.enabled = !isInterrogating;
+
+            // Đồng thời ngắt sạch hướng di chuyển
+            _movement.SetMoveInput(Vector2.zero);
         }
 
         // 2. Quản lý xoay camera & con trỏ chuột

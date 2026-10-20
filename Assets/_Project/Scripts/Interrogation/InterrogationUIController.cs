@@ -56,6 +56,13 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
 
     private void Update()
     {
+        // Đảm bảo khi Panel đang mở thì Player LUÔN LUÔN bị khóa (kể cả khi click linh tinh ra ngoài)
+        if (_isOpen && PlayerInputHandler.Instance != null)
+        {
+            // Duy trì trạng thái khóa nếu bị tuột
+            PlayerInputHandler.Instance.SetInterrogating(true);
+        }
+
         if (Keyboard.current == null) return;
 
         // 1. Phím ESC để đóng giao diện
@@ -68,7 +75,6 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
         // 2. Nếu đang hiển thị lời thoại trả lời
         if (_isShowingResponse)
         {
-            // Chỉ cho phép bấm chuyển thoại sau khi đã qua thời gian chống dính (0.25s)
             if (Time.time >= _canAcceptInputTime)
             {
                 if (Keyboard.current.spaceKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame)
@@ -180,6 +186,12 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
         {
             _isSubmitting = false;
             return;
+        }
+
+        // 🔒 KHÓA DI CHUYỂN VÀ CAMERA NGAY LẬP TỨC NGAY KHI VỪA BẤM GỬI CÂU HỎI
+        if (PlayerInputHandler.Instance != null)
+        {
+            PlayerInputHandler.Instance.SetInterrogating(true);
         }
 
         // Chặn nhận input trong 0.3 giây đầu tiên
@@ -300,10 +312,31 @@ public class InterrogationUIController : SingletonBase<InterrogationUIController
         // Bật lại thanh nhập liệu
         SetInputGroupActive(true);
 
+        // Đảm bảo duy trì khóa di chuyển và camera cho người chơi khi quay lại màn hình nhập câu hỏi
+        if (_playerInputHandler == null)
+        {
+            _playerInputHandler = Object.FindFirstObjectByType<PlayerInputHandler>();
+        }
+        if (_playerInputHandler != null)
+        {
+            _playerInputHandler.SetInterrogating(true);
+        }
+
+        // Focus lại vào ô InputField một cách chắc chắn sau 1 frame
         if (_inputKeyword != null)
         {
             _inputKeyword.text = string.Empty;
+            StartCoroutine(FocusInputFieldRoutine());
+        }
+    }
+
+    private IEnumerator FocusInputFieldRoutine()
+    {
+        yield return null; // Đợi 1 frame để Unity UI active hoàn tất các thành phần
+        if (_inputKeyword != null)
+        {
             _inputKeyword.ActivateInputField();
+            _inputKeyword.Select();
         }
     }
 
