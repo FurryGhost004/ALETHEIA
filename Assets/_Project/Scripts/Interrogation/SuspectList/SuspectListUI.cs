@@ -122,6 +122,10 @@ public class SuspectListUI : MonoBehaviour
     {
         if (_selectedSuspect == null) return;
 
+        // === BỔ SUNG DÒNG NÀY ĐỂ GHI NHỚ MÀN CHƠI HIỆN TẠI ===
+        TimeManager.LastExplorationScene = SceneManager.GetActiveScene().name;
+        Debug.Log($"[SuspectListUI] Đã lưu màn chơi trước khi vào tòa: {TimeManager.LastExplorationScene}");
+
         // 1. Lưu nghi phạm bị buộc tội vào bộ nhớ tĩnh để dùng ở Scene CourtTrial
         CourtTrialController.ConvictedSuspect = _selectedSuspect;
 

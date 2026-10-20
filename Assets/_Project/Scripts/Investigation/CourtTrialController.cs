@@ -313,17 +313,25 @@ public class CourtTrialController : MonoBehaviour
             int nextDay = TimeManager.Instance.CurrentDay + 1;
             TimeManager.Instance.SetTimeAndDay(nextDay, 10, 0);
         }
+
+        // 2. TỰ ĐỘNG DỊCH CHUYỂN VỀ SCENE TRƯỚC NGAY LẬP TỨC
+        // (Hoặc bạn có thể dùng Invoke("ReturnToExplorationScene", 2f); nếu muốn đợi 2 giây cho người chơi đọc chữ rồi mới chuyển)
+        ReturnToExplorationScene();
     }
 
     // --- HÀM GÁN VÀO NÚT BẤM TRÊN BẢNG THUA ĐỂ QUAY VỀ MÀN CHƠI CŨ ---
     public void ReturnToExplorationScene()
     {
-        // Lấy tên màn chơi trước đó đã được lưu trong TimeManager
-        string targetScene = !string.IsNullOrEmpty(TimeManager.LastExplorationScene)
-            ? TimeManager.LastExplorationScene
-            : "GameScene"; // Fallback mặc định nếu quên lưu
+        string targetScene = TimeManager.LastExplorationScene;
 
-        Debug.Log($"[CourtTrial] Đang đưa player trở lại màn chơi: {targetScene}");
+        // Kiểm tra xem biến lưu tên scene có bị rỗng hay không
+        if (string.IsNullOrEmpty(targetScene))
+        {
+            Debug.LogWarning("[CourtTrial] LastExplorationScene đang bị trống! Đang fallback về 'GameScene'. Hãy đảm bảo bạn đã gán TimeManager.LastExplorationScene trước khi vào tòa.");
+            targetScene = "GameScene";
+        }
+
+        Debug.Log($"[CourtTrial] Đang thực hiện chuyển cảnh về lại: {targetScene}");
         SceneManager.LoadScene(targetScene);
     }
 
