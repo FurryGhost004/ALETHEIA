@@ -15,7 +15,8 @@ MonoBehaviour:
   _lines:
   - _characterName: Justine
     _characterPortrait: {fileID: 0}
-    _content: '"A bed in Melody''s room"'
+    _content: '"Just a bit of blood spatter on the bed sheet... Looking at the spray
+      pattern..."'
   - _characterName: Justine
     _characterPortrait: {fileID: 0}
-    _content: '"Hmmm... nothing unusual"'
+    _content: '"It seems the culprit was standing near the bed during the attack."'
