@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NewNPCEvent
   m_EditorClassIdentifier: Assembly-CSharp::NPCEventData
   npcID: Sebastian
-  eventType: 1
+  eventType: 0
   specificDay: 1
   activeDays: 010000000200000003000000
   intervalDays: 2
