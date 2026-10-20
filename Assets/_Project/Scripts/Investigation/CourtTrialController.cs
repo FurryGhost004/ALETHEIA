@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CourtTrialController : MonoBehaviour
@@ -16,7 +17,6 @@ public class CourtTrialController : MonoBehaviour
         ResultDialogueFail
     }
 
-    // --- PROPERTY ĐƯỢC GỌI TỪ TOPICUICONTROLLER / KHỦNG TRUYỀN DỮ LIỆU ---
     public static SuspectData ConvictedSuspect { get; set; }
 
     [Header("Spawn Points")]
@@ -42,22 +42,22 @@ public class CourtTrialController : MonoBehaviour
     [SerializeField] private DialogueDatabase _introDialogueDatabase;
 
     [Header("--- HEALTH / PENALTY CONFIG (SLIDER) ---")]
-    [SerializeField] private int _maxHealth = 3;            // Mặc định 3 mạng
-    [SerializeField] private Slider _healthSlider;          // Dùng Slider UI làm thanh máu/lỗi
+    [SerializeField] private int _maxHealth = 3;
+    [SerializeField] private Slider _healthSlider;
     private int _currentHealth;
 
     [Header("--- RESULT PANELS ---")]
-    [SerializeField] private GameObject _panelWin;          // Bảng Thắng
-    [SerializeField] private GameObject _panelLose;         // Bảng Thua
+    [SerializeField] private GameObject _panelWin;
+    [SerializeField] private GameObject _panelLose;
 
     [Header("--- TOPICS DATA ---")]
-    [SerializeField] private List<TrialTopic> _topicList;    // Danh sách Topic phiên tòa
+    [SerializeField] private List<TrialTopic> _topicList;
     private HashSet<TrialTopic> _completedTopics = new HashSet<TrialTopic>();
     private TrialTopic _selectedTopic;
 
     private GameObject _spawnedSuspect;
     private int _currentIntroIndex = 0;
-    private int _currentResultIndex = 0; // Quản lý index câu thoại kết quả (Thắng/Thua)
+    private int _currentResultIndex = 0;
     private TrialState _currentState;
 
     private void Start()
@@ -66,7 +66,6 @@ public class CourtTrialController : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        // 1. Khởi tạo thanh máu Slider
         _currentHealth = _maxHealth;
         if (_healthSlider != null)
         {
@@ -87,7 +86,6 @@ public class CourtTrialController : MonoBehaviour
 
     private void Update()
     {
-        // Nhấn phím SPACE để chuyển thoại
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (_currentState == TrialState.IntroDialogue ||
@@ -99,7 +97,6 @@ public class CourtTrialController : MonoBehaviour
         }
     }
 
-    // --- HÀM HỖ TRỢ HIỂN THỊ DÒNG THOẠI TỪ DIALOGUE DATABASE ---
     private void ShowDialogueLine(DialogueDatabase database, int index, string defaultSpeaker = "")
     {
         if (database == null || database.Lines == null || index >= database.Lines.Count) return;
@@ -118,7 +115,6 @@ public class CourtTrialController : MonoBehaviour
         }
     }
 
-    // --- BƯỚC 1: HỘI THOẠI MỞ ĐẦU ---
     private void StartIntroDialogue()
     {
         _currentState = TrialState.IntroDialogue;
@@ -139,7 +135,6 @@ public class CourtTrialController : MonoBehaviour
         }
     }
 
-    // --- BƯỚC 2: BẢNG CHỌN TOPIC ---
     public void ShowTopicSelection()
     {
         _currentState = TrialState.TopicSelection;
@@ -151,7 +146,6 @@ public class CourtTrialController : MonoBehaviour
         if (_panelTopic != null) _panelTopic.SetActive(true);
     }
 
-    // --- HÀM CỤ THỂ CHO TOPICUICONTROLLER GỌI ---
     public void OnTopicSelected(TrialTopic topic)
     {
         _selectedTopic = topic;
@@ -160,7 +154,6 @@ public class CourtTrialController : MonoBehaviour
         ShowEvidenceSelection();
     }
 
-    // --- BƯỚC 3: BẢNG CHỌN BẰNG CHỨNG ---
     public void ShowEvidenceSelection()
     {
         _currentState = TrialState.EvidenceSelection;
@@ -171,7 +164,6 @@ public class CourtTrialController : MonoBehaviour
         if (_panelEvidence != null) _panelEvidence.SetActive(true);
     }
 
-    // --- BƯỚC 4: NỘP BẰNG CHỨNG & XỬ LÝ MÁU / THẮNG THUA ---
     public void SubmitEvidence(KeywordData selectedEvidence)
     {
         if (selectedEvidence == null || _currentHealth <= 0) return;
@@ -179,14 +171,12 @@ public class CourtTrialController : MonoBehaviour
         if (_panelEvidence != null) _panelEvidence.SetActive(false);
         if (_panelDialogue != null) _panelDialogue.SetActive(true);
 
-        // Đã sửa 'log' thành 'null' ở đây:
         bool isCorrect = (_selectedTopic != null && selectedEvidence == _selectedTopic.correctEvidence);
 
-        _currentResultIndex = 0; // Reset index dòng thoại kết quả
+        _currentResultIndex = 0;
 
         if (isCorrect)
         {
-            // === ĐÚNG BẰNG CHỨNG ===
             _currentState = TrialState.ResultDialogueSuccess;
             SwitchCamera(CameraView.Judge);
 
@@ -206,7 +196,6 @@ public class CourtTrialController : MonoBehaviour
         }
         else
         {
-            // === SAI BẰNG CHỨNG -> TRỪ MÁU ===
             _currentState = TrialState.ResultDialogueFail;
             SwitchCamera(CameraView.Suspect);
 
@@ -246,7 +235,6 @@ public class CourtTrialController : MonoBehaviour
         }
     }
 
-    // --- BƯỚC 5: CHUYỂN CÂU THOẠI KHI BẤM SPACE ---
     public void OnClickNextDialogue()
     {
         if (_currentHealth <= 0) return;
@@ -318,6 +306,25 @@ public class CourtTrialController : MonoBehaviour
     {
         if (_panelDialogue != null) _panelDialogue.SetActive(false);
         if (_panelLose != null) _panelLose.SetActive(true);
+
+        // 1. Tự động cộng sang ngày hôm sau và set đồng hồ lúc 10:00 sáng
+        if (TimeManager.Instance != null)
+        {
+            int nextDay = TimeManager.Instance.CurrentDay + 1;
+            TimeManager.Instance.SetTimeAndDay(nextDay, 10, 0);
+        }
+    }
+
+    // --- HÀM GÁN VÀO NÚT BẤM TRÊN BẢNG THUA ĐỂ QUAY VỀ MÀN CHƠI CŨ ---
+    public void ReturnToExplorationScene()
+    {
+        // Lấy tên màn chơi trước đó đã được lưu trong TimeManager
+        string targetScene = !string.IsNullOrEmpty(TimeManager.LastExplorationScene)
+            ? TimeManager.LastExplorationScene
+            : "GameScene"; // Fallback mặc định nếu quên lưu
+
+        Debug.Log($"[CourtTrial] Đang đưa player trở lại màn chơi: {targetScene}");
+        SceneManager.LoadScene(targetScene);
     }
 
     public void SwitchCamera(CameraView view)
