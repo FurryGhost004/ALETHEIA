@@ -15,4 +15,11 @@ MonoBehaviour:
   _lines:
   - _characterName: Justine
     _characterPortrait: {fileID: 0}
-    _content: A Camera
+    _content: '"A camera..."'
+  - _characterName: Justine
+    _characterPortrait: {fileID: 0}
+    _content: '"Based on the number of photos she took, the date of her first shot,
+      and the condition it''s in..."'
+  - _characterName: Justine
+    _characterPortrait: {fileID: 0}
+    _content: '"She must have taken really good care of this camera."'

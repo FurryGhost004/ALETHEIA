@@ -15,7 +15,10 @@ MonoBehaviour:
   _lines:
   - _characterName: Justine
     _characterPortrait: {fileID: 0}
-    _content: '"She put the picture she took into a frame" '
+    _content: '"She put the picture she took in a big frame and hung it on the wall." '
   - _characterName: Justine
     _characterPortrait: {fileID: 0}
-    _content: '"The place she took this picture must be important to her" '
+    _content: '"Wherever this was taken, it must have meant a lot to her." '
+  - _characterName: Justine
+    _characterPortrait: {fileID: 0}
+    _content: '"Or it was simply her favorite photo." '

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: NewNPCEvent
   m_EditorClassIdentifier: Assembly-CSharp::NPCEventData
   npcID: Sebastian
-  eventType: 0
-  specificDay: 1
-  activeDays: 010000000200000003000000
+  eventType: 2
+  specificDay: 2
+  activeDays: 0100000003000000
   intervalDays: 2
   defaultPosition: {x: -5.90952, y: 4.762, z: 2.287}
   defaultRotation: {x: 0, y: 72.61645, z: 0}

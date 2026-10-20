@@ -5,6 +5,9 @@ public class TimeManager : MonoBehaviour
 {
     public static TimeManager Instance { get; private set; }
 
+    // Lưu lại tên Scene khám phá trước đó để khi thua tòa có đường quay về đúng màn
+    public static string LastExplorationScene { get; set; } = "";
+
     [Header("Time Config")]
     [SerializeField] private int _startHour = 6;
     [SerializeField] private int _endHour = 20; // 20:00 hết ngày
@@ -32,13 +35,18 @@ public class TimeManager : MonoBehaviour
             return;
         }
         Instance = this;
+        DontDestroyOnLoad(gameObject); // Giữ nguyên dữ liệu thời gian khi đổi Scene
     }
 
     private void Start()
     {
-        _currentHour = _startHour;
-        _currentMinute = 0;
-        NotifyTimeChanged();
+        // Chỉ khởi tạo mặc định nếu mới bắt đầu game lần đầu
+        if (_currentHour == 0)
+        {
+            _currentHour = _startHour;
+            _currentMinute = 0;
+            NotifyTimeChanged();
+        }
     }
 
     /// <summary>
@@ -91,5 +99,18 @@ public class TimeManager : MonoBehaviour
     private void NotifyTimeChanged()
     {
         OnTimeChanged?.Invoke(_currentDay, _currentHour, _currentMinute);
+    }
+
+    /// <summary>
+    /// Đặt lại thời gian và ngày cụ thể (Dùng khi thua phiên tòa: reset ngày mới lúc 10:00 sáng)
+    /// </summary>
+    public void SetTimeAndDay(int targetDay, int targetHour, int targetMinute = 0)
+    {
+        _currentDay = targetDay;
+        _currentHour = targetHour;
+        _currentMinute = targetMinute;
+
+        Debug.Log($"[TimeManager] Đã đặt lại thời gian: Ngày {_currentDay}, {_currentHour:00}:{_currentMinute:00}");
+        NotifyTimeChanged();
     }
 }

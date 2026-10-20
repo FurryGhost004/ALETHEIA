@@ -18,4 +18,20 @@ MonoBehaviour:
     _content: '"A lamp in Melody''s room"'
   - _characterName: Justine
     _characterPortrait: {fileID: 0}
-    _content: '"Hmmm... outside of her blood splatter there was nothing unusual" '
+    _content: '"Hmm... other than the blood spatter on the lampshade, there''s nothing
+      unusual about it." '
+  - _characterName: Justine
+    _characterPortrait: {fileID: 0}
+    _content: '"Wait, it isn''t damaged at all, and it didn''t even get knocked off
+      the desk..." '
+  - _characterName: Justine
+    _characterPortrait: {fileID: 0}
+    _content: '"That... that means she died on the very first strike. She didn''t
+      even get a chance to fight back." '
+  - _characterName: Justine
+    _characterPortrait: {fileID: 0}
+    _content: '"..." '
+  - _characterName: Justine
+    _characterPortrait: {fileID: 0}
+    _content: '"At least... she didn''t have to suffer through any more blows after
+      that." '
