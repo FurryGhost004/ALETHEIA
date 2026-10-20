@@ -16,9 +16,6 @@ public class DialogueManager : SingletonBase<DialogueManager>
     [Header("Settings")]
     [SerializeField] private float _typewriterSpeed = GameConstants.DEFAULT_TYPEWRITER_SPEED;
 
-    [Header("Player References")]
-    [SerializeField] private PlayerInputHandler _playerInputHandler;
-
     private DialogueDatabase _currentDialogue;
     private int _currentLineIndex;
     private bool _isTyping;
@@ -58,18 +55,6 @@ public class DialogueManager : SingletonBase<DialogueManager>
         IsInDialogue = true;
 
         if (_dialoguePanel != null) _dialoguePanel.SetActive(true);
-
-        // Tự động tìm PlayerInputHandler nếu chưa được kéo vào Inspector
-        if (_playerInputHandler == null)
-        {
-            _playerInputHandler = UnityEngine.Object.FindFirstObjectByType<PlayerInputHandler>();
-        }
-
-        // KHÓA DI CHUYỂN VÀ CAMERA KHI BẮT ĐẦU TRÒ CHUYỆN
-        if (_playerInputHandler != null)
-        {
-            _playerInputHandler.SetInterrogating(true);
-        }
 
         ShowLine(_currentDialogue.Lines[_currentLineIndex]);
     }
@@ -134,17 +119,6 @@ public class DialogueManager : SingletonBase<DialogueManager>
     {
         IsInDialogue = false;
         if (_dialoguePanel != null) _dialoguePanel.SetActive(false);
-
-        // MỞ KHÓA DI CHUYỂN VÀ CAMERA KHI KẾT THÚC TRÒ CHUYỆN
-        if (_playerInputHandler == null)
-        {
-            _playerInputHandler = UnityEngine.Object.FindFirstObjectByType<PlayerInputHandler>();
-        }
-
-        if (_playerInputHandler != null)
-        {
-            _playerInputHandler.SetInterrogating(false);
-        }
 
         Action callback = _onCompleteCallback;
         _onCompleteCallback = null;
