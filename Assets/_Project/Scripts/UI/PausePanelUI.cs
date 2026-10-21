@@ -74,18 +74,6 @@ public class PauseManager : MonoBehaviour
             }
         }
 
-        // Bấm Q để mở hoặc đóng Notebook
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            if (currentState == UIState.Gameplay)
-            {
-                OpenNotebookFromGameplay();
-            }
-            else if (currentState == UIState.Notebook)
-            {
-                CloseNotebook();
-            }
-        }
     }
 
     public void OpenPauseFromGameplay()
@@ -156,10 +144,27 @@ public class PauseManager : MonoBehaviour
         previousStateBeforeNotebook = UIState.Pause;
         currentState = UIState.Notebook;
         SetPanelsActive(pause: false, save: false, load: false, notebook: true);
+
+        NotebookHubUI notebookHub = GetNotebookHub();
+        if (notebookHub != null)
+            notebookHub.OpenHub();
+
         Time.timeScale = 0f;
 
         if (playerInputHandler != null)
             playerInputHandler.SetInterrogating(true);
+    }
+
+    public void ToggleNotebookFromGameplay()
+    {
+        if (currentState == UIState.Gameplay)
+        {
+            OpenNotebookFromGameplay();
+        }
+        else if (currentState == UIState.Notebook && previousStateBeforeNotebook == UIState.Gameplay)
+        {
+            CloseNotebook();
+        }
     }
 
     public void OpenNotebookFromGameplay()
@@ -167,6 +172,11 @@ public class PauseManager : MonoBehaviour
         previousStateBeforeNotebook = UIState.Gameplay;
         currentState = UIState.Notebook;
         SetPanelsActive(pause: false, save: false, load: false, notebook: true);
+
+        NotebookHubUI notebookHub = GetNotebookHub();
+        if (notebookHub != null)
+            notebookHub.OpenHub();
+
         Time.timeScale = 0f;
 
         if (playerInputHandler != null)
@@ -178,11 +188,18 @@ public class PauseManager : MonoBehaviour
     /// </summary>
     public void CloseNotebook()
     {
+        NotebookHubUI notebookHub = GetNotebookHub();
+        if (notebookHub != null)
+            notebookHub.CloseHub();
+
         if (previousStateBeforeNotebook == UIState.Pause)
         {
             currentState = UIState.Pause;
             SetPanelsActive(pause: true, save: false, load: false, notebook: false);
             Time.timeScale = 0f;
+
+            if (playerInputHandler != null)
+                playerInputHandler.SetInterrogating(true);
         }
         else // Trở về Gameplay
         {
@@ -205,6 +222,11 @@ public class PauseManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         UnityEngine.SceneManagement.SceneManager.LoadScene(mainMenuSceneName);
+    }
+
+    private NotebookHubUI GetNotebookHub()
+    {
+        return notebookPanel != null ? notebookPanel.GetComponent<NotebookHubUI>() : null;
     }
 
     private void SetPanelsActive(bool pause, bool save, bool load, bool notebook)
