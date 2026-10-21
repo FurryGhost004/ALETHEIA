@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: New Dialogue Database
   m_EditorClassIdentifier: Assembly-CSharp::DialogueDatabase
   _lines:
-  - _characterName: not
+  - _characterName: (System)
     _characterPortrait: {fileID: 0}
-    _content: khong biet
+    _content: Invalid keyword
