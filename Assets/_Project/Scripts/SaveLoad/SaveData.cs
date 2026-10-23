@@ -6,12 +6,20 @@ using UnityEngine;
 
 // ── Wrapper cho Player's Note của từng nghi phạm (Req 6) ─────────────────────
 // JsonUtility không hỗ trợ Dictionary → phải dùng class riêng.
-// Mỗi entry = 1 nghi phạm + đoạn text mà người chơi đã gõ vào Player's Note.
+//
+// Người chơi gõ vào ô Player's Note rồi bấm Enter → note đó hiển thị bên dưới ô.
+// Có thể thêm nhiều lần → mỗi lần Enter = 1 phần tử mới trong Notes.
+// Mỗi entry = 1 nghi phạm + danh sách các note đã gõ theo thứ tự.
 [Serializable]
 public class SuspectNoteEntry
 {
-    public string SuspectId;   // ID của nghi phạm trong Suspect List
-    public string NoteText;    // Nội dung người chơi gõ vào ô Player's Note
+    public string SuspectId;        // ID của nghi phạm trong Suspect List
+    public List<string> Notes;      // Danh sách note theo thứ tự gõ — mỗi Enter = 1 phần tử
+
+    public SuspectNoteEntry()
+    {
+        Notes = new List<string>();
+    }
 }
 
 /// <summary>
@@ -39,17 +47,19 @@ public class SaveData
     public Vector3 PlayerPosition;
 
     // ── Req 1 — Thời gian ─────────────────────────────────────────────────
-    // Save: TimeManager.Instance.CurrentDay / TimeManager.Instance.TimeRemaining
-    // Load: TimeManager.Instance.SetDay(CurrentDay), SetTimeRemaining(TimeRemaining)
+    // TimeManager không có TimeRemaining — chỉ có CurrentDay, CurrentHour, CurrentMinute.
+    // Save: TimeManager.Instance.CurrentDay / CurrentHour / CurrentMinute
+    // Load: TimeManager.Instance.SetTimeAndDay(CurrentDay, CurrentHour, CurrentMinute)
     public int CurrentDay;
-    public float TimeRemaining;
+    public int CurrentHour;
+    public int CurrentMinute;
 
-    // ── Req 1 (phần sự kiện) — TODO ───────────────────────────────────────
-    // Duy đề cập "lưu cả sự kiện của ngày và thời gian đó".
-    // Cần xác nhận thêm: "sự kiện" là flags riêng (VD: "ngày 3 NPC X xuất hiện, đã trigger chưa")
-    // hay chỉ là dữ liệu tương tác đã có ở Req 3?
-    // Nếu có hệ thống event riêng → thêm: public List<string> CompletedEventIds = new List<string>();
-    // Tạm thời để trống chờ xác nhận.
+    // ── Req 1 (phần sự kiện) — ĐÃ XÁC NHẬN, KHÔNG CẦN THÊM FIELD ──────────
+    // NPCEventData là ScriptableObject baked sẵn — Active Days và Day Locations
+    // là dữ liệu tĩnh trong asset, không phải state runtime.
+    // Khi load lại game, hệ thống NPC Event tự đọc CurrentDay → đối chiếu với
+    // Active Days → tính ra NPC nào xuất hiện ở đâu. Không có "event đã fire"
+    // nào cần lưu riêng. CurrentDay + TimeRemaining ở trên là đủ cho Req 1.
 
     // ── Req 2 — Vật phẩm đã bị destroy ──────────────────────────────────
     // EvidenceObject (_destroyOnCollected = true): sau khi inspect xong → Destroy(gameObject).
@@ -112,17 +122,26 @@ public class SaveData
     // JsonUtility không hỗ trợ Dictionary<string, string> → dùng List<SuspectNoteEntry>.
     // Mỗi entry = 1 nghi phạm + nội dung ghi chú.
     //
-    // Save: foreach suspect → lấy text từ ô Player's Note trong UI → tạo SuspectNoteEntry
-    // Load: foreach entry → tìm suspect theo SuspectId → điền NoteText vào ô tương ứng
+    // Save: foreach suspect → lấy List<string> notes từ UI → tạo SuspectNoteEntry {SuspectId, Notes}
+    // Load: foreach entry → tìm suspect theo SuspectId → render từng string trong Notes xuống dưới ô input
     public List<SuspectNoteEntry> SuspectNotes = new List<SuspectNoteEntry>();
 
     // ── Court Trial: lịch phiên tòa đang PENDING (UC15) ──────────────────
     // HasScheduledCourtTrial = true: có phiên tòa đã lên lịch nhưng CHƯA diễn ra.
     // Tách biệt với ConvictedSuspectIds (phiên tòa đã xong, có kết quả).
     public bool HasScheduledCourtTrial;
-    public string ScheduledSuspectId;
+    public string ScheduledSuspectId;     // SuspectData.NpcId của nghi phạm đang chờ xét xử
     public int ScheduledCourtDay;
 
     // ── Court Trial: số lần đã hoãn phiên tòa (UC18) ─────────────────────
     public int PostponeCount;
+
+    // ── Scene điều tra cuối cùng (dùng cho ReturnToExplorationScene) ──────
+    // TimeManager.LastExplorationScene là static string — mất khi tắt game.
+    // Lưu lại để sau khi tòa xử xong (Win hoặc Lose) biết quay về scene nào.
+    //
+    // Save: gọi SaveLastExplorationScene(TimeManager.LastExplorationScene)
+    //       → nên gọi ngay trước khi LoadScene vào tòa án
+    // Load: TimeManager.LastExplorationScene = data.LastExplorationScene
+    public string LastExplorationScene;
 }

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26a77595e1727ce46b26ff4db3287b83, type: 3}
-  m_Name: npc 3
+  m_Name: NPC3
   m_EditorClassIdentifier: Assembly-CSharp::NPCEventData
   npcID: npc 3
   eventType: 1

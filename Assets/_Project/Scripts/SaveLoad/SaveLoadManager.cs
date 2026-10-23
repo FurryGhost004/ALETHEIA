@@ -4,74 +4,94 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Tầng CAO của Save/Load — gom dữ liệu game thật (vị trí, evidence, ngày...)
-/// thành 1 SaveData, rồi giao cho SaveSystem ghi xuống disk. Đây là nơi
-/// PauseMenuUI và GameManager gọi vào để Save/Load — không gọi trực tiếp
-/// SaveSystem từ UI.
+/// Tầng CAO của Save/Load — gom dữ liệu game thật thành SaveData,
+/// rồi giao cho SaveSystem ghi xuống disk.
 ///
 /// Theo Sequence Diagram:
-/// - Pause Menu (Save Case):    PauseMenuUI → SaveGame()
-/// - Convict Suspect (UC15):    GameManager → SaveCourtSchedule()
-/// - Convicted (UC15 result):   GameManager → SaveConviction()
-/// - (Load dùng nội bộ bởi GameManager khi Continue Case)
+/// - Pause Menu (Save Case):   PauseMenuUI  → SaveGame()
+/// - Convict (UC15):           GameManager  → SaveConviction()
+/// - Schedule court (UC15):    GameManager  → SaveCourtSchedule()
+/// - Continue Case (UC03):     GameManager  → LoadGame()
 /// </summary>
 public class SaveLoadManager : SingletonBase<SaveLoadManager>
 {
-    // ── Private Fields ───────────────────────────
-    // Giữ lại SaveData hiện tại trong RAM để các method partial update
-    // có thể cập nhật 1 phần mà không cần load lại toàn bộ file từ disk.
+    // Giữ SaveData trong RAM để các method partial update không phải đọc lại file từ disk.
     private SaveData _currentSaveData;
 
-    // ── Public Methods ───────────────────────────
+    // ─────────────────────────────────────────────────────────────────────
+    // SAVE FULL
+    // ─────────────────────────────────────────────────────────────────────
 
     /// <summary>
-    /// UC13 Pause Menu (Save Case): Gom toàn bộ trạng thái game hiện tại
-    /// thành SaveData, rồi ghi xuống disk qua SaveSystem.
+    /// UC13 Pause Menu (Save Case): Gom toàn bộ trạng thái game thành SaveData
+    /// rồi ghi xuống disk qua SaveSystem.
     /// </summary>
     public void SaveGame()
     {
         SaveData data = _currentSaveData ?? new SaveData();
 
-        // ── Req 1: Thời gian ──────────────────────────────────────────────
-        // TODO: data.CurrentDay       = TimeManager.Instance.CurrentDay;
-        // TODO: data.TimeRemaining    = TimeManager.Instance.TimeRemaining;
-
         // ── Vị trí player ────────────────────────────────────────────────
-        // TODO: data.PlayerPosition   = PlayerController.Instance.transform.position;
+        // TODO: data.PlayerPosition = PlayerController.Instance.transform.position;
+
+        // ── Req 1: Thời gian ──────────────────────────────────────────────
+        // NPCEventData là ScriptableObject tĩnh — chỉ cần lưu CurrentDay + giờ/phút là đủ.
+        // TimeManager.Instance.SetTimeAndDay(day, hour, minute) dùng để restore khi Load.
+        if (TimeManager.Instance != null)
+        {
+            data.CurrentDay = TimeManager.Instance.CurrentDay;
+            data.CurrentHour = TimeManager.Instance.CurrentHour;
+            data.CurrentMinute = TimeManager.Instance.CurrentMinute;
+        }
 
         // ── Req 2: Vật phẩm đã bị destroy ───────────────────────────────
-        // EvidenceObject.EvidenceId cần được thêm vào list này mỗi khi Destroy() gọi.
-        // SaveGame() KHÔNG tự quét scene — EvidenceObject tự gọi NotifyDestroyed()
-        // khi bị phá hủy để cập nhật _currentSaveData.DestroyedEvidenceIds.
-        // (Xem method NotifyEvidenceDestroyed bên dưới)
-        // data.DestroyedEvidenceIds đã được cập nhật realtime — không cần gom lại ở đây.
+        // KHÔNG gom ở đây — EvidenceObject tự gọi NotifyEvidenceDestroyed() realtime.
+        // _currentSaveData.DestroyedEvidenceIds đã được cập nhật liên tục.
 
-        // ── Req 3: Keywords đã mở khóa ──────────────────────────────────
-        // TODO (chờ Thịnh thêm _allKeywords catalog vào KeywordManager):
-        // data.CollectedKeywordIds = new List<string>();
-        // foreach (var kw in KeywordManager.Instance.UnlockedKeywords)
-        //     if (!string.IsNullOrEmpty(kw.Id)) data.CollectedKeywordIds.Add(kw.Id);
+        // ── Req 3: Danh sách đã tương tác ───────────────────────────────
+        // SuspectManager lưu danh sách nghi phạm đã discover dưới dạng List<SuspectData>.
+        // Chỉ cần lấy NpcId từ mỗi item.
+        if (SuspectManager.Instance != null)
+        {
+            data.InteractedSuspectIds = new System.Collections.Generic.List<string>();
+            foreach (SuspectData s in SuspectManager.Instance.DiscoveredSuspects)
+                if (!string.IsNullOrEmpty(s.NpcId))
+                    data.InteractedSuspectIds.Add(s.NpcId);
+        }
+        // TODO: data.InteractedWitnessIds  = WitnessManager.Instance.GetDiscoveredIds();   (chờ file)
+        // TODO: data.InteractedEvidenceIds = EvidenceManager.Instance.GetDiscoveredIds();  (chờ file)
 
-        // ── Notebook: bằng chứng đã thu thập ────────────────────────────
-        // TODO: data.CollectedEvidenceIds = NotebookData.Instance.GetEvidenceIds();
+        // ── Req 4: Đã kết tội những ai ──────────────────────────────────
+        // KHÔNG gom ở đây — SaveConviction() đã ghi realtime khi người chơi bấm Convict.
 
-        // ── Req 4: Danh sách nhân chứng / vật chứng / nghi phạm ──────────
-        // TODO (cần CaseBoard/SuspectManager file):
-        // data.UnlockedSuspectIds          = CaseBoardManager.Instance.GetUnlockedSuspectIds();
-        // data.UnlockedWitnessIds          = CaseBoardManager.Instance.GetUnlockedWitnessIds();
-        // data.UnlockedPhysicalEvidenceIds = CaseBoardManager.Instance.GetUnlockedPhysicalEvidenceIds();
+        // ── Req 5: Keyword đã mở khóa ────────────────────────────────────
+        // KeywordManager.Instance.UnlockedKeywords đã có sẵn (IReadOnlyList<KeywordData>).
+        // Lấy Id từ mỗi item — KeywordData.Id xác nhận từ dòng 26-27 KeywordManager.cs.
+        // Lưu ý: UnlockKeyword() tự sync sang PlayerInventory (dòng 44-47 KeywordManager.cs).
+        if (KeywordManager.Instance != null)
+        {
+            data.CollectedKeywordIds = new System.Collections.Generic.List<string>();
+            foreach (KeywordData kw in KeywordManager.Instance.UnlockedKeywords)
+                if (kw != null && !string.IsNullOrEmpty(kw.Id))
+                    data.CollectedKeywordIds.Add(kw.Id);
+        }
+        // *** YÊU CẦU THỊNH: thêm _allKeywords catalog + GetKeywordById() vào KeywordManager.cs
+        // để Load side có thể resolve ID → KeywordData và gọi UnlockKeyword() lại.
 
-        // ── Req 6: Notes trong Notebook ──────────────────────────────────
-        // TODO (cần NotebookData.cs file):
-        // data.NotebookNoteIds = NotebookData.Instance.GetNoteIds();
+        // ── Req 6: Player's Note của từng nghi phạm ───────────────────────
+        // TODO: data.SuspectNotes = SuspectListUI.Instance.GetAllSuspectNotes();
+        //   GetAllSuspectNotes() trả về List<SuspectNoteEntry>, mỗi entry = {SuspectId, NoteText}
 
         _currentSaveData = data;
         SaveSystem.Instance.SaveData(data);
     }
 
+    // ─────────────────────────────────────────────────────────────────────
+    // LOAD
+    // ─────────────────────────────────────────────────────────────────────
+
     /// <summary>
-    /// UC03 Continue Case: Đọc file save từ disk qua SaveSystem, trả về SaveData
-    /// để GameManager dùng cho SceneLoader.RestoreState().
+    /// UC03 Continue Case: Đọc file save từ disk, trả về SaveData để
+    /// GameManager dùng cho SceneLoader.RestoreState().
     /// </summary>
     public SaveData LoadGame()
     {
@@ -79,13 +99,18 @@ public class SaveLoadManager : SingletonBase<SaveLoadManager>
         return _currentSaveData;
     }
 
+    // ─────────────────────────────────────────────────────────────────────
+    // PARTIAL UPDATE — Các sự kiện ghi ngay lập tức, không chờ SaveGame()
+    // ─────────────────────────────────────────────────────────────────────
+
     /// <summary>
-    /// Req 2 — Được gọi bởi EvidenceObject ngay trước Destroy(gameObject).
-    /// Cập nhật realtime thay vì đợi đến lúc SaveGame() quét lại scene.
+    /// Req 2 — Gọi bởi EvidenceObject ngay TRƯỚC Destroy(gameObject).
+    /// Cập nhật realtime thay vì đợi SaveGame() quét scene.
     ///
-    /// Cách dùng trong EvidenceObject (thêm vào cuối InspectRoutine, trước Destroy):
+    /// Cách thêm vào EvidenceObject.cs (cuối InspectRoutine, trước Destroy):
     ///   if (SaveLoadManager.Instance != null)
     ///       SaveLoadManager.Instance.NotifyEvidenceDestroyed(_evidenceId);
+    ///   Destroy(gameObject);
     /// </summary>
     public void NotifyEvidenceDestroyed(string evidenceId)
     {
@@ -93,16 +118,33 @@ public class SaveLoadManager : SingletonBase<SaveLoadManager>
 
         SaveData data = _currentSaveData ?? new SaveData();
         if (!data.DestroyedEvidenceIds.Contains(evidenceId))
-        {
             data.DestroyedEvidenceIds.Add(evidenceId);
-        }
 
         _currentSaveData = data;
     }
 
     /// <summary>
-    /// UC15 Convict Suspect: Lưu lịch phiên tòa sau khi người chơi kết tội nghi phạm.
-    /// Cập nhật phần lịch phiên tòa trong SaveData hiện tại rồi ghi xuống disk.
+    /// Lưu tên scene điều tra cuối cùng — gọi ngay trước khi LoadScene vào tòa án.
+    /// Khi tòa xử xong (Win/Lose), CourtTrialController dùng TimeManager.LastExplorationScene
+    /// để quay về đúng scene, nhưng static đó mất khi tắt game → cần persist vào file.
+    ///
+    /// Cách gọi (từ GameManager hoặc nơi trigger LoadScene vào CourtScene):
+    ///   if (SaveLoadManager.Instance != null)
+    ///       SaveLoadManager.Instance.SaveLastExplorationScene(TimeManager.LastExplorationScene);
+    /// </summary>
+    public void SaveLastExplorationScene(string sceneName)
+    {
+        if (string.IsNullOrEmpty(sceneName)) return;
+
+        SaveData data = _currentSaveData ?? new SaveData();
+        data.LastExplorationScene = sceneName;
+        _currentSaveData = data;
+        SaveSystem.Instance.SaveData(data);
+    }
+
+    /// <summary>
+    /// UC15 — Lưu lịch phiên tòa sau khi người chơi chọn nghi phạm và bấm Convict.
+    /// Ghi xuống disk ngay vì đây là sự kiện quan trọng, không thể để mất.
     /// </summary>
     public void SaveCourtSchedule(string suspectId, int courtDay)
     {
@@ -117,21 +159,25 @@ public class SaveLoadManager : SingletonBase<SaveLoadManager>
     }
 
     /// <summary>
-    /// Req 5 — Gọi khi phiên tòa kết thúc và nghi phạm bị kết tội chính thức.
+    /// Req 4 — Gọi khi phiên tòa kết thúc và nghi phạm bị kết tội chính thức.
     /// Khác với SaveCourtSchedule (đang lên lịch) — đây là kết quả cuối cùng.
-    /// Ghi xuống disk ngay lập tức vì đây là sự kiện không thể đảo ngược.
+    /// Tự động xóa khỏi pending schedule nếu đây là người vừa xét xử xong.
+    /// Ghi xuống disk ngay.
+    ///
+    /// Cách gọi từ CourtTrialController.OnTrialWin():
+    ///   if (SaveLoadManager.Instance != null && ConvictedSuspect != null)
+    ///       SaveLoadManager.Instance.SaveConviction(ConvictedSuspect.NpcId);
     /// </summary>
     public void SaveConviction(string suspectId)
     {
         if (string.IsNullOrEmpty(suspectId)) return;
 
         SaveData data = _currentSaveData ?? new SaveData();
-        if (!data.ConvictedSuspectIds.Contains(suspectId))
-        {
-            data.ConvictedSuspectIds.Add(suspectId);
-        }
 
-        // Xóa khỏi pending schedule nếu đây là suspect vừa bị xét xử xong
+        if (!data.ConvictedSuspectIds.Contains(suspectId))
+            data.ConvictedSuspectIds.Add(suspectId);
+
+        // Xóa pending schedule nếu đây là người vừa bị xét xử
         if (data.ScheduledSuspectId == suspectId)
         {
             data.HasScheduledCourtTrial = false;
