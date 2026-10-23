@@ -10,9 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35691d6ad6e610f4b8cd762bd2bfd486, type: 3}
-  m_Name: PlaceHolder 1
+  m_Name: Justine-melodyChair
   m_EditorClassIdentifier: Assembly-CSharp::DialogueDatabase
   _lines:
-  - _characterName: Justime
+  - _characterName: Justine
     _characterPortrait: {fileID: 0}
-    _content: Hmmm.......1
+    _content: '"Melody''s chair..."'
+    _animationTrigger: 
+  - _characterName: Justine
+    _characterPortrait: {fileID: 0}
+    _content: '"Except for the fact that she was sitting on it when she was killed,
+      there''s nothing unusual about it."'
+    _animationTrigger: 
