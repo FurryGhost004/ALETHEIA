@@ -294917,6 +294917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DaySpecificNPC
   _eventData: {fileID: 11400000, guid: e064774f85da73a4184f01554bb9571b, type: 2}
+  _useDefaultPositionWhenNoEvent: 1
   _renderers: []
   _colliders: []
 --- !u!1 &1531418431
