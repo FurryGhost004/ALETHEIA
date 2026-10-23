@@ -120,12 +120,23 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void OnToggleNotebook(InputAction.CallbackContext context)
     {
-        if (_isInterrogating && _notebookHub != null && !_notebookHub.gameObject.activeSelf)
+        bool isNotebookOpen = _notebookHub != null && _notebookHub.gameObject.activeSelf;
+
+        // Chặn mở Notebook khi một UI khác đang khóa Player,
+        // nhưng vẫn cho phép Q đóng chính Notebook đang mở.
+        if (_isInterrogating && !isNotebookOpen)
             return;
 
         if (_notebookHub != null)
         {
-            _notebookHub.ToggleHub();
+            if (PauseManager.Instance != null)
+            {
+                PauseManager.Instance.ToggleNotebookFromGameplay();
+            }
+            else
+            {
+                _notebookHub.ToggleHub();
+            }
         }
     }
 }

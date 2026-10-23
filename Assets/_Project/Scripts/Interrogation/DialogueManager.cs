@@ -22,6 +22,9 @@ public class DialogueManager : SingletonBase<DialogueManager>
     private Coroutine _typeCoroutine;
     private Action _onCompleteCallback;
 
+    // Lưu tham chiếu Animator của NPC đang nói hiện tại
+    private Animator _currentSpeakerAnimator;
+
     public bool IsInDialogue { get; private set; }
 
     protected override void Awake()
@@ -41,7 +44,10 @@ public class DialogueManager : SingletonBase<DialogueManager>
         }
     }
 
-    public void StartDialogue(DialogueDatabase dialogue, Action onComplete = null)
+    /// <summary>
+    /// Bắt đầu hội thoại, có thể truyền thêm Animator của nhân vật nói
+    /// </summary>
+    public void StartDialogue(DialogueDatabase dialogue, Action onComplete = null, Animator speakerAnimator = null)
     {
         if (dialogue == null || dialogue.Lines.Count == 0)
         {
@@ -52,6 +58,7 @@ public class DialogueManager : SingletonBase<DialogueManager>
         _currentDialogue = dialogue;
         _currentLineIndex = 0;
         _onCompleteCallback = onComplete;
+        _currentSpeakerAnimator = speakerAnimator; // Gán animator của NPC
         IsInDialogue = true;
 
         if (_dialoguePanel != null) _dialoguePanel.SetActive(true);
@@ -97,6 +104,12 @@ public class DialogueManager : SingletonBase<DialogueManager>
             }
         }
 
+        // --- KÍCH HOẠT ANIMATION TRIGGER CHO TỪNG CÂU THOẠI ---
+        if (_currentSpeakerAnimator != null && !string.IsNullOrEmpty(line.AnimationTrigger))
+        {
+            _currentSpeakerAnimator.SetTrigger(line.AnimationTrigger);
+        }
+
         if (_typeCoroutine != null) StopCoroutine(_typeCoroutine);
         _typeCoroutine = StartCoroutine(TypewriterRoutine(line.Content));
     }
@@ -119,6 +132,8 @@ public class DialogueManager : SingletonBase<DialogueManager>
     {
         IsInDialogue = false;
         if (_dialoguePanel != null) _dialoguePanel.SetActive(false);
+
+        _currentSpeakerAnimator = null; // Xóa tham chiếu animator khi kết thúc hội thoại
 
         Action callback = _onCompleteCallback;
         _onCompleteCallback = null;

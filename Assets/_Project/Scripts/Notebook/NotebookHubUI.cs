@@ -3,8 +3,9 @@ using UnityEngine.UI;
 
 public class NotebookHubUI : MonoBehaviour
 {
-    [Header("Main Hub Panel")]
-    [SerializeField] private GameObject _mainHubPanel;
+    [Header("Notebook Root & Choose Panel")]
+    [SerializeField] private GameObject _notebookRoot;
+    [SerializeField] private GameObject _panelChooseNotebook;
 
     [Header("Sub Panels")]
     [SerializeField] private GameObject _panelEvidenceList;
@@ -16,7 +17,6 @@ public class NotebookHubUI : MonoBehaviour
     [Header("Tab Buttons")]
     [SerializeField] private Button _btnEvidence;
     [SerializeField] private Button _btnSuspect;
-    [SerializeField] private Button _btnClose;
 
     private PlayerInputHandler _playerInputHandler;
 
@@ -24,21 +24,12 @@ public class NotebookHubUI : MonoBehaviour
     {
         if (_btnEvidence != null) _btnEvidence.onClick.AddListener(() => SwitchTab(_panelEvidenceList));
         if (_btnSuspect != null) _btnSuspect.onClick.AddListener(() => SwitchTab(_panelSuspectList));
-        if (_btnClose != null) _btnClose.onClick.AddListener(CloseHub);
     }
 
     private void Start()
     {
         _playerInputHandler = FindFirstObjectByType<PlayerInputHandler>();
         CloseHub();
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape) && IsAnyNotebookUIOpen())
-        {
-            CloseHub();
-        }
     }
 
     public void ToggleHub()
@@ -55,9 +46,10 @@ public class NotebookHubUI : MonoBehaviour
 
     public void OpenHub()
     {
+        if (_panelChooseNotebook != null) _panelChooseNotebook.SetActive(true);
         if (_panelEvidenceList != null) _panelEvidenceList.SetActive(false);
         if (_panelSuspectList != null) _panelSuspectList.SetActive(false);
-        if (_mainHubPanel != null) _mainHubPanel.SetActive(true);
+        if (_notebookRoot != null) _notebookRoot.SetActive(true);
 
         if (_playerInputHandler != null)
         {
@@ -70,9 +62,10 @@ public class NotebookHubUI : MonoBehaviour
 
     public void CloseHub()
     {
-        if (_mainHubPanel != null) _mainHubPanel.SetActive(false);
+        if (_panelChooseNotebook != null) _panelChooseNotebook.SetActive(false);
         if (_panelEvidenceList != null) _panelEvidenceList.SetActive(false);
         if (_panelSuspectList != null) _panelSuspectList.SetActive(false);
+        if (_notebookRoot != null) _notebookRoot.SetActive(false);
 
         if (_playerInputHandler != null)
         {
@@ -93,11 +86,7 @@ public class NotebookHubUI : MonoBehaviour
             return;
         }
 
-        if (_mainHubPanel != null && !targetTab.transform.IsChildOf(_mainHubPanel.transform))
-        {
-            _mainHubPanel.SetActive(false);
-        }
-
+        if (_panelChooseNotebook != null) _panelChooseNotebook.SetActive(false);
         if (_panelEvidenceList != null) _panelEvidenceList.SetActive(false);
         if (_panelSuspectList != null) _panelSuspectList.SetActive(false);
 
@@ -120,10 +109,6 @@ public class NotebookHubUI : MonoBehaviour
 
     private bool IsAnyNotebookUIOpen()
     {
-        bool isHubOpen = _mainHubPanel != null && _mainHubPanel.activeSelf;
-        bool isEvidenceOpen = _panelEvidenceList != null && _panelEvidenceList.activeSelf;
-        bool isSuspectOpen = _panelSuspectList != null && _panelSuspectList.activeSelf;
-
-        return isHubOpen || isEvidenceOpen || isSuspectOpen;
+        return _notebookRoot != null && _notebookRoot.activeSelf;
     }
 }

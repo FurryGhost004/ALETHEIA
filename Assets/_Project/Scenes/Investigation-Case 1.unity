@@ -116418,13 +116418,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f2841ebd3d3dae4e9b7021fd5b6d35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NotebookHubUI
-  _mainHubPanel: {fileID: 500130343}
+  _notebookRoot: {fileID: 0}
+  _panelChooseNotebook: {fileID: 0}
   _panelEvidenceList: {fileID: 931991214}
   _panelSuspectList: {fileID: 967033030}
   _notebookManagerUI: {fileID: 931991216}
   _btnEvidence: {fileID: 1680687545}
   _btnSuspect: {fileID: 203350761}
-  _btnClose: {fileID: 1171494591}
 --- !u!224 &500130345
 RectTransform:
   m_ObjectHideFlags: 0
@@ -184246,7 +184246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &931991215
 RectTransform:
   m_ObjectHideFlags: 0
@@ -205785,7 +205785,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &967033031
 RectTransform:
   m_ObjectHideFlags: 0
