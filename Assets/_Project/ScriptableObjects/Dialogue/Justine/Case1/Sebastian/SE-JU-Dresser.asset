@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35691d6ad6e610f4b8cd762bd2bfd486, type: 3}
+  m_Name: SE-JU-Dresser
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueDatabase
+  _lines:
+  - _characterName: Justine
+    _characterPortrait: {fileID: 0}
+    _content: '"This seems to be Sebastian''s closet..."'
+    _animationTrigger: 
+  - _characterName: Justine
+    _characterPortrait: {fileID: 0}
+    _content: '"Just like his sister, he seems to have pretty good social skills."'
+    _animationTrigger: 
+  - _characterName: Justine
+    _characterPortrait: {fileID: 0}
+    _content: '"But look at all these designer clothes... He''s probably the show-off
+      type."'
+    _animationTrigger: 

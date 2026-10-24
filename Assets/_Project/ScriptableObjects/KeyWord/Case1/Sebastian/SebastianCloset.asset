@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a13e220e0bebf4142a7c5d3711a6c42d, type: 3}
-  m_Name: SebastianDresser
+  m_Name: SebastianCloset
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
   _id: 022
-  _keywordName: SED
-  _itemName: Sebastian Dresser
+  _keywordName: SECLOSET
+  _itemName: Sebastian closet
   _description: Located in Sebastian room
   _icon: {fileID: 21300000, guid: 286c823e3804d7344a87180adb81bb5f, type: 3}
   _playerNote: 
