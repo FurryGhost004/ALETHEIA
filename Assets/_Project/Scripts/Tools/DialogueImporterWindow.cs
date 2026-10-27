@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEditor;
 using UnityEngine;
+using System.IO;
+
 
 public class DialogueImporterWindow : EditorWindow
 {
@@ -10,6 +12,7 @@ public class DialogueImporterWindow : EditorWindow
     private DialogueDatabase _targetDatabase;
     private SerializedObject _serializedDb;
     private Vector2 _scrollPosition;
+    private const string SpriteRoot = "Assets/Art/UI/keyword";
 
     [MenuItem("Tools/Dialogue Importer Tool")]
     public static void ShowWindow()
@@ -61,6 +64,55 @@ public class DialogueImporterWindow : EditorWindow
         }
     }
 
+    // Accepts "bed", "Melody/bed" or "Melody/bed.png"
+    private Sprite FindSprite(string key, int row)
+    {
+        key = key.Replace('\\', '/').Trim();
+        string name = Path.GetFileNameWithoutExtension(key);
+        string folderHint = Path.GetDirectoryName(key)?.Replace('\\', '/');
+
+        string[] guids = AssetDatabase.FindAssets($"{name} t:Sprite", new[] { SpriteRoot });
+
+        var matches = new List<string>();
+        foreach (string guid in guids)
+        {
+            string path = AssetDatabase.GUIDToAssetPath(guid);
+
+            // FindAssets matches substrings, so keep only the exact file name
+            if (!string.Equals(Path.GetFileNameWithoutExtension(path), name,
+                    System.StringComparison.OrdinalIgnoreCase)) continue;
+
+            // If a folder was given ("Melody/bed"), it must be in that path
+            if (!string.IsNullOrEmpty(folderHint) &&
+                path.IndexOf("/" + folderHint + "/", System.StringComparison.OrdinalIgnoreCase) < 0) continue;
+
+            matches.Add(path);
+        }
+
+        if (matches.Count == 0)
+        {
+            Debug.LogWarning($"[DialogueImporter] Row {row}: no sprite '{key}' under {SpriteRoot}");
+            return null;
+        }
+
+        if (matches.Count > 1)
+        {
+            Debug.LogWarning($"[DialogueImporter] Row {row}: '{key}' matches {matches.Count} sprites, using {matches[0]}. " +
+                             $"Add the folder in the CSV (e.g. Melody/{name}) to be specific.");
+        }
+
+        // Works for Single and Multiple sprite modes (sprites are sub-assets of the texture)
+        Sprite fallback = null;
+        foreach (Object asset in AssetDatabase.LoadAllAssetsAtPath(matches[0]))
+        {
+            if (asset is Sprite s)
+            {
+                if (s.name.Equals(name, System.StringComparison.OrdinalIgnoreCase)) return s;
+                if (fallback == null) fallback = s;
+            }
+        }
+        return fallback;
+    }
     private void ImportCSV()
     {
         var db = new SerializedObject(_targetDatabase);
@@ -101,17 +153,16 @@ public class DialogueImporterWindow : EditorWindow
             Sprite portrait = null;
             if (!string.IsNullOrEmpty(spritePath))
             {
-                portrait = Resources.Load<Sprite>(spritePath);
-                if (portrait == null)
-                    Debug.LogWarning($"[DialogueImporter] Row {i + 1}: sprite not found at Resources/{spritePath}");
+                portrait = FindSprite(spritePath, i + 1);
             }
+            
 
             linesProp.InsertArrayElementAtIndex(linesProp.arraySize);
             SerializedProperty element = linesProp.GetArrayElementAtIndex(linesProp.arraySize - 1);
 
-            SetString(element, "_characterName", charName, ref warnedMissingField);
-            SetString(element, "_content", content, ref warnedMissingField);
-            SetString(element, "_animationTrigger", animTrigger, ref warnedMissingField);
+            element.FindPropertyRelative("_characterName").stringValue = charName;
+            element.FindPropertyRelative("_content").stringValue = content;
+            element.FindPropertyRelative("_animationTrigger").stringValue = animTrigger;
 
             SerializedProperty portraitProp = element.FindPropertyRelative("_characterPortrait");
             if (portraitProp != null) portraitProp.objectReferenceValue = portrait;
