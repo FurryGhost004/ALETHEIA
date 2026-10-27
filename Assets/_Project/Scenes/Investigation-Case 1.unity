@@ -20457,7 +20457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755d83f85a245b74ab337d2a87fc78ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InspectionHotspot
-  _hotspotDialogue: {fileID: 11400000, guid: f9e11f5fda239f345a801c0fa644a7f1, type: 2}
+  _hotspotDialogue: {fileID: 11400000, guid: 0d0e52f16b8d9d742905ca883c8a9535, type: 2}
   _associatedKeyword: {fileID: 11400000, guid: 6f9d431ebbfcce64f89fffdc12866265, type: 2}
 --- !u!1001 &21732913
 PrefabInstance:
@@ -23195,7 +23195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755d83f85a245b74ab337d2a87fc78ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InspectionHotspot
-  _hotspotDialogue: {fileID: 11400000, guid: f9e11f5fda239f345a801c0fa644a7f1, type: 2}
+  _hotspotDialogue: {fileID: 11400000, guid: 41dfcc085d1ef024995da605359dba5c, type: 2}
   _associatedKeyword: {fileID: 11400000, guid: d0d695b3bd77d0d42b1ea693641191cd, type: 2}
 --- !u!1001 &59803417
 PrefabInstance:
@@ -346246,7 +346246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InspectionHotspot
   _hotspotDialogue: {fileID: 11400000, guid: f9e11f5fda239f345a801c0fa644a7f1, type: 2}
-  _associatedKeyword: {fileID: 11400000, guid: fd8459b9385bfbe4495a2a593b2d70a4, type: 2}
+  _associatedKeyword: {fileID: 11400000, guid: eddb58c839d3fa7408438688022e8b5e, type: 2}
 --- !u!1001 &1956235812
 PrefabInstance:
   m_ObjectHideFlags: 0
