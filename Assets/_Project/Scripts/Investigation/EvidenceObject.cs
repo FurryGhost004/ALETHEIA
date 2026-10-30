@@ -6,6 +6,7 @@ public class EvidenceObject : Interactable
 {
     [Header("Evidence Configuration")]
     [SerializeField] private KeywordData _keywordData;
+    [SerializeField] private DialogueDatabase _collectDialogue; // Dialogue hiển thị khi nhặt/tương tác vật phẩm
     [SerializeField] private bool _destroyOnCollected = true; // True: Soi/Xoay/Phá hủy | False: Cố định
 
     [Header("Inspect Settings")]
@@ -27,7 +28,7 @@ public class EvidenceObject : Interactable
 
         if (_playerLook == null)
         {
-            _playerLook = Object.FindFirstObjectByType<PlayerLook>();
+            _playerLook = FindFirstObjectByType<PlayerLook>();
         }
 
         _mainCamera = Camera.main;
@@ -54,7 +55,6 @@ public class EvidenceObject : Interactable
         if (_isInteracted) return;
 
         // LOẠI 1: ĐỒ CỐ ĐỊNH (Giường, Ghế...)
-        // Bắt buộc Raycast click trúng Hotspot thì mới thu thập/hiển thị
         if (!_destroyOnCollected)
         {
             CheckClickHotspot();
@@ -208,6 +208,33 @@ public class EvidenceObject : Interactable
         {
             Debug.Log("[Inspect] Raycast không bắn trúng bất kỳ Collider nào trên màn hình.");
         }
+    }
+
+    public void CollectItem()
+    {
+        // 1. Kích hoạt Dialogue thông tin khi nhặt vật phẩm (nếu có cấu hình)
+        if (_collectDialogue != null && DialogueManager.Instance != null)
+        {
+            DialogueManager.Instance.StartDialogue(_collectDialogue);
+        }
+        else
+        {
+            InspectionHotspot hotspot = GetComponentInChildren<InspectionHotspot>();
+            if (hotspot != null)
+            {
+                hotspot.OnDiscovered();
+            }
+        }
+
+        // 2. Mở khóa Keyword tương ứng
+        if (_keywordData != null && KeywordManager.Instance != null)
+        {
+            KeywordManager.Instance.UnlockKeyword(_keywordData);
+        }
+
+        // 3. Log và xóa vật phẩm khỏi hộp
+        Debug.Log($"{GameConstants.LOG_EVIDENCE_COLLECTED}{gameObject.name}");
+        Destroy(gameObject);
     }
 
     private Vector3 GetLocalCenterOffset()
