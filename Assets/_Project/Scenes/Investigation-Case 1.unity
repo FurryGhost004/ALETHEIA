@@ -346227,7 +346227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 456bfad5e6c84d44b9c7a016426e5495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EvidenceObject
-  _keywordData: {fileID: 11400000, guid: fd8459b9385bfbe4495a2a593b2d70a4, type: 2}
+  _keywordData: {fileID: 11400000, guid: fa5cd3fc407fb8041aa1f7577dd048e6, type: 2}
   _destroyOnCollected: 0
   _moveDuration: 0.6
   _distanceFromCamera: 1.2
@@ -346245,8 +346245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755d83f85a245b74ab337d2a87fc78ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InspectionHotspot
-  _hotspotDialogue: {fileID: 11400000, guid: f9e11f5fda239f345a801c0fa644a7f1, type: 2}
-  _associatedKeyword: {fileID: 11400000, guid: eddb58c839d3fa7408438688022e8b5e, type: 2}
+  _hotspotDialogue: {fileID: 11400000, guid: 885463ea4a98acd468379560120e0cc2, type: 2}
+  _associatedKeyword: {fileID: 11400000, guid: fa5cd3fc407fb8041aa1f7577dd048e6, type: 2}
 --- !u!1001 &1956235812
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -15,9 +15,14 @@ MonoBehaviour:
   _lines:
   - _characterName: Justine
     _characterPortrait: {fileID: 0}
-    _content: '"Sebastian''s bed..."'
+    _content: '"These novels..."'
     _animationTrigger: 
   - _characterName: Justine
     _characterPortrait: {fileID: 0}
-    _content: '"Nothing unusual." '
+    _content: '"I''m not big on fiction, but at first glance, they look like romance
+      and sci-fi." '
+    _animationTrigger: 
+  - _characterName: Justine
+    _characterPortrait: {fileID: 0}
+    _content: '"I should probably ask someone who knows more about this kind of stuff." '
     _animationTrigger: 

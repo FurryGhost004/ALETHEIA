@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35691d6ad6e610f4b8cd762bd2bfd486, type: 3}
+  m_Name: SE-JU-Notebook
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueDatabase
+  _lines:
+  - _characterName: Justine
+    _characterPortrait: {fileID: 0}
+    _content: '"This is Sebastian''s notebook..."'
+    _animationTrigger: 
+  - _characterName: Justine
+    _characterPortrait: {fileID: 0}
+    _content: '"Hmm... his schedule for yesterday is completely packed. Let''s see..." '
+    _animationTrigger: 
+  - _characterName: Justine
+    _characterPortrait: {fileID: 0}
+    _content: '"''Go to the supermarket with Andrew at 9 a.m., get ready at Amy''s
+      house at 3 p.m., party starts at 7 p.m.''" '
+    _animationTrigger: 
