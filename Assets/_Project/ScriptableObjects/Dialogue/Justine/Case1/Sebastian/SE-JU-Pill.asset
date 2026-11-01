@@ -15,14 +15,14 @@ MonoBehaviour:
   _lines:
   - _characterName: Justine
     _characterPortrait: {fileID: 0}
-    _content: '"Wait, what are?"'
+    _content: '"Wait, what are these?"'
     _animationTrigger: 
   - _characterName: Justine
     _characterPortrait: {fileID: 0}
-    _content: '"Why he have a bunch of unlable pill inside his drawer" '
+    _content: '"Why does he have a bunch of unlabeled pills hidden in his drawer?" '
     _animationTrigger: 
   - _characterName: Justine
     _characterPortrait: {fileID: 0}
-    _content: '"I could sent them to the lab and check but it will took a few day
-      or i could ask around" '
+    _content: '"I could send them to the lab, but that''ll take a few days... Or
+      I could just ask around." '
     _animationTrigger: 

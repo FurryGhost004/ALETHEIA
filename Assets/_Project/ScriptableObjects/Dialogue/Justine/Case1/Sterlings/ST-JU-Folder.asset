@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35691d6ad6e610f4b8cd762bd2bfd486, type: 3}
+  m_Name: ST-JU-Folder
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueDatabase
+  _lines:
+  - _characterName: Justin
+    _characterPortrait: {fileID: 0}
+    _content: '"This folder has... Mr. Arthur''s medical report and a will."'
+    _animationTrigger: 
+  - _characterName: Justin
+    _characterPortrait: {fileID: 0}
+    _content: '"Stress, insomnia, high blood pressure..."'
+    _animationTrigger: 
+  - _characterName: Justin
+    _characterPortrait: {fileID: 0}
+    _content: '"Did he feel like he''d reached his limit with these illnesses and
+      wanted to write a will before passing away?"'
+    _animationTrigger: 
+  - _characterName: Justin
+    _characterPortrait: {fileID: 0}
+    _content: '"The estate would be split between their children after they both
+      passed."'
+    _animationTrigger: 
+  - _characterName: Justin
+    _characterPortrait: {fileID: 0}
+    _content: '"But since Melody is dead too... Sebastian''s going to inherit everything,
+      isn''t he?"'
+    _animationTrigger: 
+  - _characterName: Justin
+    _characterPortrait: {fileID: 0}
+    _content: '"...Wait. What''s this paper underneath?"'
+    _animationTrigger: 
+  - _characterName: Justin
+    _characterPortrait: {fileID: 0}
+    _content: '"...A life insurance policy?!"'
+    _animationTrigger: 
+  - _characterName: Justin
+    _characterPortrait: {fileID: 0}
+    _content: '"...Why? I thought life insurance usually doesn''t pay out for natural
+      illnesses..."'
+    _animationTrigger: 

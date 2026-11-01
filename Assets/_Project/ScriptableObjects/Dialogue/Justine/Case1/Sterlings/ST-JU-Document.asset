@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35691d6ad6e610f4b8cd762bd2bfd486, type: 3}
+  m_Name: ST-JU-Document
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueDatabase
+  _lines:
+  - _characterName: Justin
+    _characterPortrait: {fileID: 0}
+    _content: '"Hmm... building blueprints, construction contracts, material supply
+      agreements..."'
+    _animationTrigger: 
+  - _characterName: Justin
+    _characterPortrait: {fileID: 0}
+    _content: '"Oh right! Mr. Arthur is a chief architect, and Ms. Beatrice is an
+      interior designer."'
+    _animationTrigger: 
+  - _characterName: Justin
+    _characterPortrait: {fileID: 0}
+    _content: '"So these are just their work documents."'
+    _animationTrigger: 
+  - _characterName: Justin
+    _characterPortrait: {fileID: 0}
+    _content: '"It doesn''t look like they''ve been rummaged through. The killer
+      probably wasn''t interested in any of this."'
+    _animationTrigger: 
