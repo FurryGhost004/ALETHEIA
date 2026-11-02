@@ -20,35 +20,22 @@ public class NotebookHubUI : MonoBehaviour
 
     private PlayerInputHandler _playerInputHandler;
 
+    public bool IsOpen => _notebookRoot != null && _notebookRoot.activeSelf;
+    public bool IsSubPanelOpen =>
+        (_panelEvidenceList != null && _panelEvidenceList.activeSelf) ||
+        (_panelSuspectList != null && _panelSuspectList.activeSelf);
+
     private void Awake()
     {
         if (_btnEvidence != null) _btnEvidence.onClick.AddListener(() => SwitchTab(_panelEvidenceList));
         if (_btnSuspect != null) _btnSuspect.onClick.AddListener(() => SwitchTab(_panelSuspectList));
     }
 
-    private void Start()
-    {
-        _playerInputHandler = FindFirstObjectByType<PlayerInputHandler>();
-        CloseHub();
-    }
-
-    public void ToggleHub()
-    {
-        if (IsAnyNotebookUIOpen())
-        {
-            CloseHub();
-        }
-        else
-        {
-            OpenHub();
-        }
-    }
-
     public void OpenHub()
     {
-        if (_panelChooseNotebook != null) _panelChooseNotebook.SetActive(true);
-        if (_panelEvidenceList != null) _panelEvidenceList.SetActive(false);
-        if (_panelSuspectList != null) _panelSuspectList.SetActive(false);
+        EnsurePlayerInputHandler();
+
+        OpenChoosePanel();
         if (_notebookRoot != null) _notebookRoot.SetActive(true);
 
         if (_playerInputHandler != null)
@@ -74,6 +61,28 @@ public class NotebookHubUI : MonoBehaviour
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void OpenChoosePanel()
+    {
+        if (_panelChooseNotebook != null) _panelChooseNotebook.SetActive(true);
+        if (_panelEvidenceList != null) _panelEvidenceList.SetActive(false);
+        if (_panelSuspectList != null) _panelSuspectList.SetActive(false);
+    }
+
+    public void ReturnToChoose()
+    {
+        if (!IsOpen) return;
+
+        OpenChoosePanel();
+    }
+
+    private void EnsurePlayerInputHandler()
+    {
+        if (_playerInputHandler == null)
+        {
+            _playerInputHandler = FindFirstObjectByType<PlayerInputHandler>();
+        }
     }
 
     private void SwitchTab(GameObject targetTab)
@@ -107,8 +116,4 @@ public class NotebookHubUI : MonoBehaviour
         }
     }
 
-    private bool IsAnyNotebookUIOpen()
-    {
-        return _notebookRoot != null && _notebookRoot.activeSelf;
-    }
 }
