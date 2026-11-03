@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RIFORK
   _itemName: Richmal fork
   _description: Located at Richmal's kitchen
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: e10b42e388063034996bb1b41becdc77, type: 3}
   _playerNote: 

@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RISOFA
   _itemName: Richmal sofa
   _description: Located  in living room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 7013c35e454ab7746b02b2fe341b6a72, type: 3}
   _playerNote: 

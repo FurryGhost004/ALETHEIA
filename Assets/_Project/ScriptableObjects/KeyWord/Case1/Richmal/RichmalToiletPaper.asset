@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RITP
   _itemName: Richmal toilet paper
   _description: 'Located in the bathroom at Richmal''s arpartment room '
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 2c484453f1721f74fa80feab1f56391f, type: 3}
   _playerNote: 

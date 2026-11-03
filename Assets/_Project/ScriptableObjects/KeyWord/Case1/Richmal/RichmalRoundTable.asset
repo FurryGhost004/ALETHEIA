@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RIRT
   _itemName: Richmal round table
   _description: Located  in kitchen
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 646ce4c3942f1694aaf4438029ded78c, type: 3}
   _playerNote: 

@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RIKNIFE
   _itemName: Richmal knife
   _description: Stored inside the sink in Richmal's kitchen
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: de9573a458b209341883d090e8371bb3, type: 3}
   _playerNote: 

@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RITT
   _itemName: Richmal tea tray
   _description: Located on the table in living room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 91738fe7081435e42b32d3d4fff2d4b5, type: 3}
   _playerNote: 

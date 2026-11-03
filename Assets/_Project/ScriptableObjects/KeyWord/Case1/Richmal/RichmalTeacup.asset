@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RITEACUP
   _itemName: Richmal tea cup
   _description: Located on the table in living room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: a3975c7b8e38ea341a6741b212e1a990, type: 3}
   _playerNote: 

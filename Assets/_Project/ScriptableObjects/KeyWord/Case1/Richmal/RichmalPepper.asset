@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RIPEPPER
   _itemName: Richmal pepper
   _description: Located at Richmal's kitchen
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 13ef053d11e55cd48a0883726e2a5b1b, type: 3}
   _playerNote: 

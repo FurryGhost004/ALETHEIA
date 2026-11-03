@@ -131267,8 +131267,8 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 178, y: 150}
-  m_Spacing: {x: 20, y: 20}
+  m_CellSize: {x: 178, y: 180}
+  m_Spacing: {x: 23, y: 23}
   m_Constraint: 1
   m_ConstraintCount: 3
 --- !u!114 &598420900
@@ -185032,7 +185032,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &931991215
 RectTransform:
   m_ObjectHideFlags: 0
@@ -225281,11 +225281,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030990421, guid: abc00000000010468005246498656550, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.43215
+      value: -11.556
       objectReference: {fileID: 0}
     - target: {fileID: 1030990421, guid: abc00000000010468005246498656550, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4030001
+      value: 1.3274
       objectReference: {fileID: 0}
     - target: {fileID: 1030990421, guid: abc00000000010468005246498656550, type: 3}
       propertyPath: m_LocalPosition.z

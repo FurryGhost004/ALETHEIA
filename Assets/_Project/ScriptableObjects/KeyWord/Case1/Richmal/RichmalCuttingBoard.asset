@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RICB
   _itemName: Richmal cuttingboard
   _description: Located on the cabinet in Richmal's kitchen
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: c4a5fc580e585fb489047ce5d9cb9206, type: 3}
   _playerNote: 

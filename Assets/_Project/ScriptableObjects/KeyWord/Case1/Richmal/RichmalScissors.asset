@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RISCISSORS
   _itemName: Richmal  scissors
   _description: Stored in the top cabinet's drawer in Richmal bedroom
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 81aeaa031e5e7034ca6a077adf6b77ec, type: 3}
   _playerNote: 

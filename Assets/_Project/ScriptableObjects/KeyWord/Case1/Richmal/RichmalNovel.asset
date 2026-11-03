@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RINOVEL
   _itemName: Richmal novel
   _description: Located on the top right of the bookself in Richmal bedroom
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 9b0b19343aba68d4a8494d1313a37dff, type: 3}
   _playerNote: 

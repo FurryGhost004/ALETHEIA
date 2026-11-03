@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RITEAPOT
   _itemName: Richmal teapot
   _description: Located on the table in living room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: bbeeb6f943f078445a461b8657ab0d2f, type: 3}
   _playerNote: 

@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RIMG
   _itemName: Richmal  magnifying glass
   _description: Stored in the top cabinet's drawer in Richmal bedroom
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: c752c62df844295499efd617950324f3, type: 3}
   _playerNote: 

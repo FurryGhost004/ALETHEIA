@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RISPOON1
   _itemName: Richmal spoon 1
   _description: Located on the table in living room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: b377e92699e087c499c86126f7bb796b, type: 3}
   _playerNote: 

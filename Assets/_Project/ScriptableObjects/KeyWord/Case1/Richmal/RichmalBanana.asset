@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RIBANANA
   _itemName: Richmal banana
   _description: Stored inside the trash bin in Richmal's kitchen
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 8516f0ea78c1eec44a4fdc261e3c9b57, type: 3}
   _playerNote: 

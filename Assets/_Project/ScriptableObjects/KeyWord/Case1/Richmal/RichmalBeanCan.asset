@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RIBC
   _itemName: Richmal bean can
   _description: Located at Richmal's kitchen
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 2d4fa8d59a5809044a7fd42d7dafdf07, type: 3}
   _playerNote: 
