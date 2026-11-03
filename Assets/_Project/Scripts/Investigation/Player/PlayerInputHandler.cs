@@ -13,6 +13,8 @@ public class PlayerInputHandler : MonoBehaviour
     private bool _isInterrogating;
     private bool _isTalkingToNPC = false;
 
+    public bool IsInteractingOrUILocked => _isInterrogating;
+
     private void Awake()
     {
         _input = new PlayerInputActions();
@@ -120,23 +122,20 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void OnToggleNotebook(InputAction.CallbackContext context)
     {
-        bool isNotebookOpen = _notebookHub != null && _notebookHub.gameObject.activeSelf;
+        if (_notebookHub == null) return;
 
-        // Chặn mở Notebook khi một UI khác đang khóa Player,
-        // nhưng vẫn cho phép Q đóng chính Notebook đang mở.
-        if (_isInterrogating && !isNotebookOpen)
+        // UI khác đang khóa Player thì không cho mở Notebook.
+        // Khi chính Notebook đang mở, Q vẫn được dùng để quay lại màn Choose.
+        if (_isInterrogating && !_notebookHub.IsOpen)
             return;
 
-        if (_notebookHub != null)
+        if (!_notebookHub.IsOpen)
         {
-            if (PauseManager.Instance != null)
-            {
-                PauseManager.Instance.ToggleNotebookFromGameplay();
-            }
-            else
-            {
-                _notebookHub.ToggleHub();
-            }
+            _notebookHub.OpenHub();
+        }
+        else if (_notebookHub.IsSubPanelOpen)
+        {
+            _notebookHub.ReturnToChoose();
         }
     }
 }

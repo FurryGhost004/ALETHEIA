@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5baa0845e9967f44fa4c3f4cff765c4e
+guid: 81797c03701361148a7811ea1683405d
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - IM FELL English SC
+  - Averia Serif Libre
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
