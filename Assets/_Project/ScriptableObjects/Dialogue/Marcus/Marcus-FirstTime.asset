@@ -16,19 +16,29 @@ MonoBehaviour:
   - _characterName: Justine
     _characterPortrait: {fileID: 0}
     _content: '"Hey, Marcus. What''s the situation?"'
+    _animationTriggers:
+    - Talk_Trigger
   - _characterName: Marcus
     _characterPortrait: {fileID: 0}
     _content: "\"Pretty grim. Three victims\u2014the couple and their daughter.\""
+    _animationTriggers:
+    - Talk_Trigger
   - _characterName: Marcus
     _characterPortrait: {fileID: 0}
     _content: '"Forensics just hauled the bodies away. Autopsy reports will take
       a few days."'
+    _animationTriggers: []
   - _characterName: Marcus
     _characterPortrait: {fileID: 0}
     _content: '"First time working a live crime scene, right? "'
+    _animationTriggers:
+    - Talk_Trigger
   - _characterName: Marcus
     _characterPortrait: {fileID: 0}
     _content: '"Head inside, sweep the area, then start interviewing the neighbors."'
+    _animationTriggers:
+    - Talk_Trigger
   - _characterName: Justine
     _characterPortrait: {fileID: 0}
     _content: '"Understood"'
+    _animationTriggers: []

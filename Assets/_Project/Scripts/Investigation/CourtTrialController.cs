@@ -46,9 +46,11 @@ public class CourtTrialController : MonoBehaviour
     [SerializeField] private Slider _healthSlider;
     private int _currentHealth;
 
-    [Header("--- RESULT PANELS ---")]
-    [SerializeField] private GameObject _panelWin;
-    [SerializeField] private GameObject _panelLose;
+    [Header("--- FINAL RESULT PANEL ---")]
+    [SerializeField] private GameObject _panelFinalResult; // Chỉ cần kéo Panel_FinalResult vào đây
+
+    [Header("Score UI (In-game HUD nếu có)")]
+    [SerializeField] private TextMeshProUGUI _txtScoreDisplay;
 
     [Header("--- TOPICS DATA ---")]
     [SerializeField] private List<TrialTopic> _topicList;
@@ -66,6 +68,8 @@ public class CourtTrialController : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
+        UpdateScoreUI();
+
         _currentHealth = _maxHealth;
         if (_healthSlider != null)
         {
@@ -77,8 +81,7 @@ public class CourtTrialController : MonoBehaviour
         _completedTopics.Clear();
 
         if (_panelEvidence != null) _panelEvidence.SetActive(false);
-        if (_panelWin != null) _panelWin.SetActive(false);
-        if (_panelLose != null) _panelLose.SetActive(false);
+        if (_panelFinalResult != null) _panelFinalResult.SetActive(false);
 
         SpawnSuspectModel();
         StartIntroDialogue();
@@ -296,38 +299,49 @@ public class CourtTrialController : MonoBehaviour
         }
     }
 
-    private void OnTrialWin()
+    // Chỉ cần bật Panel Kết Quả lên, việc điền số liệu đã có ResultUIController lo
+    private void ShowFinalResultPanel()
     {
         if (_panelDialogue != null) _panelDialogue.SetActive(false);
-        if (_panelWin != null) _panelWin.SetActive(true);
+        if (_panelFinalResult != null) _panelFinalResult.SetActive(true);
+    }
+
+    private void OnTrialWin()
+    {
+        ShowFinalResultPanel();
+        Debug.Log("[CourtTrial] Thắng phiên tòa!");
     }
 
     private void OnTrialLose()
     {
-        if (_panelDialogue != null) _panelDialogue.SetActive(false);
-        if (_panelLose != null) _panelLose.SetActive(true);
+        // 1. Ghi nhận thua và kiểm tra xem đã quá 3 lần chưa
+        bool isGameOverFinal = TimeManager.Instance.RegisterLoss();
 
-        // 1. Tự động cộng sang ngày hôm sau và set đồng hồ lúc 10:00 sáng
+        // 2. Chuyển thời gian sang ngày hôm sau lúc 10:00 sáng
         if (TimeManager.Instance != null)
         {
             int nextDay = TimeManager.Instance.CurrentDay + 1;
             TimeManager.Instance.SetTimeAndDay(nextDay, 10, 0);
         }
 
-        // 2. TỰ ĐỘNG DỊCH CHUYỂN VỀ SCENE TRƯỚC NGAY LẬP TỨC
-        // (Hoặc bạn có thể dùng Invoke("ReturnToExplorationScene", 2f); nếu muốn đợi 2 giây cho người chơi đọc chữ rồi mới chuyển)
-        ReturnToExplorationScene();
+        // 3. Hiện bảng kết quả chung
+        ShowFinalResultPanel();
+
+        if (isGameOverFinal)
+        {
+            Debug.Log("[CourtTrial] Đã thua đủ 3 lần! Game Over vĩnh viễn.");
+            return;
+        }
     }
 
-    // --- HÀM GÁN VÀO NÚT BẤM TRÊN BẢNG THUA ĐỂ QUAY VỀ MÀN CHƠI CŨ ---
+    // --- HÀM GÁN VÀO NÚT BẤM TRÊN BẢNG KẾT QUẢ ĐỂ QUAY VỀ MÀN CHƠI CŨ ---
     public void ReturnToExplorationScene()
     {
         string targetScene = TimeManager.LastExplorationScene;
 
-        // Kiểm tra xem biến lưu tên scene có bị rỗng hay không
         if (string.IsNullOrEmpty(targetScene))
         {
-            Debug.LogWarning("[CourtTrial] LastExplorationScene đang bị trống! Đang fallback về 'GameScene'. Hãy đảm bảo bạn đã gán TimeManager.LastExplorationScene trước khi vào tòa.");
+            Debug.LogWarning("[CourtTrial] LastExplorationScene đang bị trống! Đang fallback về 'GameScene'.");
             targetScene = "GameScene";
         }
 
@@ -360,6 +374,14 @@ public class CourtTrialController : MonoBehaviour
         if (_imgSuspectPortrait != null && ConvictedSuspect.Portrait != null)
         {
             _imgSuspectPortrait.sprite = ConvictedSuspect.Portrait;
+        }
+    }
+
+    private void UpdateScoreUI()
+    {
+        if (_txtScoreDisplay != null && TimeManager.Instance != null)
+        {
+            _txtScoreDisplay.text = $"Điểm số: {TimeManager.Instance.CurrentScore}";
         }
     }
 }

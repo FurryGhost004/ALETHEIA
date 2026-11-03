@@ -18,6 +18,16 @@ public class TimeManager : MonoBehaviour
     private int _currentHour = 6;
     private int _currentMinute = 0;
 
+    // --- TÍNH NĂNG MỚI: ĐIỂM SỐ & GIỚI HẠN THUA ---
+    [Header("Game Over & Score Settings")]
+    [SerializeField] private int _maxAllowedLosses = 3; // Giới hạn thua tối đa ở tòa án
+    [SerializeField] private int _startingScore = 100;    // Điểm khởi điểm ban đầu
+    [SerializeField] private int _scorePenaltyPerDay = 10;// Số điểm bị trừ mỗi khi sang ngày mới
+
+    public int LossCount { get; private set; } = 0;
+    public int CurrentScore { get; private set; }
+    private int _lastRecordedDay = 1;
+
     // Properties cho các script khác đọc dữ liệu
     public int CurrentDay => _currentDay;
     public int CurrentHour => _currentHour;
@@ -40,6 +50,12 @@ public class TimeManager : MonoBehaviour
 
     private void Start()
     {
+        // Khởi tạo điểm số ban đầu nếu game mới bắt đầu
+        if (CurrentScore == 0)
+        {
+            CurrentScore = _startingScore;
+        }
+
         // Chỉ khởi tạo mặc định nếu mới bắt đầu game lần đầu
         if (_currentHour == 0)
         {
@@ -88,12 +104,42 @@ public class TimeManager : MonoBehaviour
         _currentHour = _startHour;
         _currentMinute = 0;
 
-        Debug.Log($"[TimeManager] Đã hết ngày! Chuyển sang DAY {_currentDay}");
+        // Tự động trừ điểm khi sang ngày mới
+        UpdateScoreOnDayAdvanced();
+
+        Debug.Log($"[TimeManager] Đã hết ngày! Chuyển sang DAY {_currentDay}. Điểm hiện tại: {CurrentScore}");
 
         NotifyTimeChanged();
 
         // Đảm bảo dòng này được kích hoạt
         OnDayAdvanced?.Invoke(_currentDay);
+    }
+
+    /// <summary>
+    /// Trừ điểm dựa trên số ngày trôi qua
+    /// </summary>
+    private void UpdateScoreOnDayAdvanced()
+    {
+        if (_currentDay > _lastRecordedDay)
+        {
+            int daysPassed = _currentDay - _lastRecordedDay;
+            CurrentScore -= daysPassed * _scorePenaltyPerDay;
+            if (CurrentScore < 0) CurrentScore = 0;
+
+            _lastRecordedDay = _currentDay;
+        }
+    }
+
+    /// <summary>
+    /// Ghi nhận mỗi khi người chơi thua phiên tòa
+    /// </summary>
+    public bool RegisterLoss()
+    {
+        LossCount++;
+        Debug.Log($"[TimeManager] Thua phiên tòa lần thứ: {LossCount}/{_maxAllowedLosses}");
+
+        // Kiểm tra nếu thua quá giới hạn cho phép
+        return LossCount >= _maxAllowedLosses;
     }
 
     private void NotifyTimeChanged()
@@ -109,6 +155,9 @@ public class TimeManager : MonoBehaviour
         _currentDay = targetDay;
         _currentHour = targetHour;
         _currentMinute = targetMinute;
+
+        // Cập nhật lại điểm số nếu việc đổi ngày/giờ có sự chênh lệch lớn
+        UpdateScoreOnDayAdvanced();
 
         Debug.Log($"[TimeManager] Đã đặt lại thời gian: Ngày {_currentDay}, {_currentHour:00}:{_currentMinute:00}");
         NotifyTimeChanged();
