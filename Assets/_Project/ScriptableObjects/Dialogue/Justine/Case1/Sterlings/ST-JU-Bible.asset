@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35691d6ad6e610f4b8cd762bd2bfd486, type: 3}
+  m_Name: ST-JU-Bible
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueDatabase
+  _lines:
+  - _characterName: Justin
+    _characterPortrait: {fileID: 21300000, guid: 9451a01b621d3ee43a698227c12c5806, type: 3}
+    _content: 1
+    _animationTrigger: 
+  - _characterName: Justin
+    _characterPortrait: {fileID: 21300000, guid: f8e85528ff79c9747913f1b08536565b, type: 3}
+    _content: 2
+    _animationTrigger: 
