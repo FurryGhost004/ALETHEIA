@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RIPILLOW
   _itemName: Richmal Pilllow
   _description: Located in Richmal bedroom
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 41fd7b06091f5b24d82e25fae8a69739, type: 3}
   _playerNote: 

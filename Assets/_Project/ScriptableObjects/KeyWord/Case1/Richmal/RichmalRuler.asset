@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RIRULER
   _itemName: Richmal ruler
   _description: Located on the cabinet in Richmal's bedroom
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: e60282671aef0df4789e6ca064647382, type: 3}
   _playerNote: 

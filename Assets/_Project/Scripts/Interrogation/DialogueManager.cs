@@ -25,11 +25,19 @@ public class DialogueManager : SingletonBase<DialogueManager>
     // Lưu tham chiếu Animator của NPC đang nói hiện tại
     private Animator _currentSpeakerAnimator;
 
+    // Tham chiếu tới PlayerMovement và PlayerLook để khóa/mở điều khiển
+    private PlayerMovement _playerMovement;
+    private PlayerLook _playerLook;
+
     public bool IsInDialogue { get; private set; }
 
     protected override void Awake()
     {
         base.Awake();
+
+        // Tự động tìm PlayerMovement và PlayerLook trong Scene khi khởi động
+        _playerMovement = UnityEngine.Object.FindFirstObjectByType<PlayerMovement>();
+        _playerLook = UnityEngine.Object.FindFirstObjectByType<PlayerLook>();
     }
 
     private void Start() { }
@@ -47,7 +55,7 @@ public class DialogueManager : SingletonBase<DialogueManager>
     /// <summary>
     /// Bắt đầu hội thoại, có thể truyền thêm Animator của nhân vật nói
     /// </summary>
-    public void StartDialogue(DialogueDatabase dialogue, Action onComplete = null, Animator speakerAnimator = null)
+    public void StartDialogue(DialogueDatabase dialogue, Action onComplete = null, Animator speakerAnimator = null, Transform speakerTransform = null)
     {
         if (dialogue == null || dialogue.Lines.Count == 0)
         {
@@ -58,12 +66,40 @@ public class DialogueManager : SingletonBase<DialogueManager>
         _currentDialogue = dialogue;
         _currentLineIndex = 0;
         _onCompleteCallback = onComplete;
-        _currentSpeakerAnimator = speakerAnimator; // Gán animator của NPC
-        IsInDialogue = true;
+        _currentSpeakerAnimator = speakerAnimator;
 
-        if (_dialoguePanel != null) _dialoguePanel.SetActive(true);
+        // 1. Khóa di chuyển và khóa góc nhìn của Player ngay lập tức khi bấm tương tác
+        if (_playerMovement == null) _playerMovement = UnityEngine.Object.FindFirstObjectByType<PlayerMovement>();
+        if (_playerLook == null) _playerLook = UnityEngine.Object.FindFirstObjectByType<PlayerLook>();
 
-        ShowLine(_currentDialogue.Lines[_currentLineIndex]);
+        if (_playerMovement != null) _playerMovement.SetCanMove(false);
+        if (_playerLook != null) _playerLook.SetCanLook(false);
+
+        // 2. Hàm nội bộ để bắt đầu bật thoại sau khi NPC đã quay xong
+        Action startLineAction = () =>
+        {
+            IsInDialogue = true;
+            if (_dialoguePanel != null) _dialoguePanel.SetActive(true);
+            ShowLine(_currentDialogue.Lines[_currentLineIndex]);
+        };
+
+        // 3. Nếu có NPC, xoay từ từ trước rồi mới gọi startLineAction
+        if (speakerTransform != null)
+        {
+            SuspectNPC suspectNPC = speakerTransform.GetComponent<SuspectNPC>();
+            if (suspectNPC != null && _playerMovement != null)
+            {
+                suspectNPC.FacePlayerSmooth(_playerMovement.transform, startLineAction);
+            }
+            else
+            {
+                startLineAction();
+            }
+        }
+        else
+        {
+            startLineAction();
+        }
     }
 
     private void AdvanceDialogue()
@@ -104,10 +140,16 @@ public class DialogueManager : SingletonBase<DialogueManager>
             }
         }
 
-        // --- KÍCH HOẠT ANIMATION TRIGGER CHO TỪNG CÂU THOẠI ---
-        if (_currentSpeakerAnimator != null && !string.IsNullOrEmpty(line.AnimationTrigger))
+        // --- KÍCH HOẠT TẤT CẢ CÁC ANIMATION TRIGGERS TRONG CÂU THOẠI ---
+        if (_currentSpeakerAnimator != null && line.AnimationTriggers != null)
         {
-            _currentSpeakerAnimator.SetTrigger(line.AnimationTrigger);
+            foreach (string trigger in line.AnimationTriggers)
+            {
+                if (!string.IsNullOrEmpty(trigger))
+                {
+                    _currentSpeakerAnimator.SetTrigger(trigger);
+                }
+            }
         }
 
         if (_typeCoroutine != null) StopCoroutine(_typeCoroutine);
@@ -134,6 +176,17 @@ public class DialogueManager : SingletonBase<DialogueManager>
         if (_dialoguePanel != null) _dialoguePanel.SetActive(false);
 
         _currentSpeakerAnimator = null; // Xóa tham chiếu animator khi kết thúc hội thoại
+
+        // --- MỞ LẠI QUYỀN DI CHUYỂN VÀ XOAY CAMERA CHO PLAYER KHI KẾT THÚC ---
+        if (_playerMovement != null)
+        {
+            _playerMovement.SetCanMove(true);
+        }
+
+        if (_playerLook != null)
+        {
+            _playerLook.SetCanLook(true);
+        }
 
         Action callback = _onCompleteCallback;
         _onCompleteCallback = null;

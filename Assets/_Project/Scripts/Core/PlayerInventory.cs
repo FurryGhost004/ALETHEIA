@@ -18,18 +18,44 @@ public class PlayerInventory : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-            // Tự động nạp bằng chứng test nếu chạy riêng Scene Court
-#if UNITY_EDITOR
-            if (CollectedEvidences.Count == 0 && _debugTestEvidences.Count > 0)
-            {
-                CollectedEvidences.AddRange(_debugTestEvidences);
-            }
-#endif
+            // Tự động đồng bộ toàn bộ keyword từ KeywordManager
+            SyncAllKeywordsFromManager();
         }
         else
         {
             Destroy(gameObject);
         }
+    }
+
+    /// <summary>
+    /// Lấy toàn bộ keyword từ KeywordManager đưa vào kho của Player
+    /// </summary>
+    public void SyncAllKeywordsFromManager()
+    {
+        CollectedEvidences.Clear();
+
+        // 1. Thử lấy thông qua Instance của KeywordManager (nếu có)
+        if (KeywordManager.Instance != null && KeywordManager.Instance.UnlockedKeywords != null)
+        {
+            CollectedEvidences.AddRange(KeywordManager.Instance.UnlockedKeywords);
+        }
+        else
+        {
+            // 2. Nếu không tìm thấy Instance, tìm trực tiếp trong Scene
+            KeywordManager kwManager = Object.FindAnyObjectByType<KeywordManager>();
+            if (kwManager != null && kwManager.UnlockedKeywords != null)
+            {
+                CollectedEvidences.AddRange(kwManager.UnlockedKeywords);
+            }
+        }
+
+        // 3. Dự phòng trường hợp chạy riêng Scene Court mà KeywordManager chưa có sẵn dữ liệu
+#if UNITY_EDITOR
+        if (CollectedEvidences.Count == 0 && _debugTestEvidences.Count > 0)
+        {
+            CollectedEvidences.AddRange(_debugTestEvidences);
+        }
+#endif
     }
 
     public void AddEvidence(KeywordData evidence)

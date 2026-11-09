@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RIBED
   _itemName: Richmal bed
   _description: Located in Richmal bedroom
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: d614c598ffb153049b383aef9492399a, type: 3}
   _playerNote: 

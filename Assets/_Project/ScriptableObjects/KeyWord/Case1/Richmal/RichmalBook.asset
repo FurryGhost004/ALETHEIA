@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RIBOOK
   _itemName: Richmal book
   _description: Located on the top left bookself in Richmal bedroom
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 43db8f1560bb4664dbe6e164464d37ac, type: 3}
   _playerNote: 

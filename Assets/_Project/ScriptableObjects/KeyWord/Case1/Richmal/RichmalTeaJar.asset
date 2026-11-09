@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RITJ
   _itemName: Richmal Tea  jar
   _description: Stored inside the fridge at Richmal's apartment room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 55c210c5050433a499fbe7961e4929c4, type: 3}
   _playerNote: 

@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RISAUCER
   _itemName: Richmal Saucer
   _description: Located on the table in living room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 2d41b0b065c29a748be5bfd06b733457, type: 3}
   _playerNote: 

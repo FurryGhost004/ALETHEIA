@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RIC
   _itemName: Richmal Clementine
   _description: Stored inside the trash bin in Richmal's kitchen
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 137c932a596cd1f4f87cb5baefdf88f3, type: 3}
   _playerNote: 

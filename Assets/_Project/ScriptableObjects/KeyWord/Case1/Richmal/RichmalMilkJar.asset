@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RIMJ
   _itemName: Richmal milk jar
   _description: Stored inside the fridge at Richmal's apartment room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 38466db69ea560d42a3c0b66ab25e8dd, type: 3}
   _playerNote: 

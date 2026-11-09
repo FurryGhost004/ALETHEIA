@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RICT
   _itemName: Richmal coffe table
   _description: Located in Richmal's living room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: ebcdcade2d334e340976e281f5d38725, type: 3}
   _playerNote: 

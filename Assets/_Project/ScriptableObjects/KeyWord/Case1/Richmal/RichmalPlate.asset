@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RIPLATE
   _itemName: Richmal plate
   _description: Stored inside the sink's right cabinet in Richmal's kitchen
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: a898aac85255afe43bbca7d365580839, type: 3}
   _playerNote: 

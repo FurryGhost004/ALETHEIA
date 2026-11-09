@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RICC
   _itemName: Richmal coffe cup
   _description: Located on the table in living room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: a8caf8049d36aef45bf90ef42d036aa1, type: 3}
   _playerNote: 

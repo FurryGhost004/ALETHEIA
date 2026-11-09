@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RITC
   _itemName: Richmal tomato can
   _description: Stored inside the trash bin in Richmal's kitchen
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: fb12ba31e2f126f4ba479b3dca172457, type: 3}
   _playerNote: 

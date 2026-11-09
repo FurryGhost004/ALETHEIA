@@ -6,10 +6,10 @@ public class PlayerLook : MonoBehaviour
     [SerializeField] private Transform _cameraHolder;
     [SerializeField] private float _mouseSensitivity = 150f;
 
-
     private float _pitch;
     private Vector2 _lookInput;
     private bool _isCursorLocked = true;
+    private bool _canLook = true; // Biến kiểm tra quyền xoay camera
     private Coroutine _resetPitchCoroutine;
 
     private void Start()
@@ -19,7 +19,8 @@ public class PlayerLook : MonoBehaviour
 
     private void Update()
     {
-        if (!_isCursorLocked)
+        // Nếu chuột không bị khóa HOẶC đang bị cấm xoay (đang hội thoại) thì dừng tính toán xoay camera
+        if (!_isCursorLocked || !_canLook)
         {
             return;
         }
@@ -38,6 +39,16 @@ public class PlayerLook : MonoBehaviour
     public void SetLookInput(Vector2 input)
     {
         _lookInput = input;
+    }
+
+    // --- HÀM BẬT/TẮT QUYỀN XOAY CAMERA (Dùng cho DialogueManager) ---
+    public void SetCanLook(bool canLook)
+    {
+        _canLook = canLook;
+        if (!_canLook)
+        {
+            _lookInput = Vector2.zero; // Xóa input cũ để tránh camera bị trôi hướng khi bật lại
+        }
     }
 
     public void SetCursorLocked(bool isLocked)
@@ -64,7 +75,7 @@ public class PlayerLook : MonoBehaviour
         );
     }
 
-    // --- HÀM MỚI THÊM: Xoay góc nhìn Camera về nằm ngang (Pitch = 0) mượt mà ---
+    // Xoay góc nhìn Camera về nằm ngang (Pitch = 0) mượt mà
     public void ResetPitchSmooth(float duration)
     {
         if (_resetPitchCoroutine != null)

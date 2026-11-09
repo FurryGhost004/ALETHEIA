@@ -1,5 +1,7 @@
 ﻿using SojaExiles;
+using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class PlayerInputHandler : MonoBehaviour
@@ -12,12 +14,30 @@ public class PlayerInputHandler : MonoBehaviour
     private PlayerInputActions _input;
     private bool _isInterrogating;
     private bool _isTalkingToNPC = false;
+    private bool _wasTypingInInputField;
 
-    public bool IsInteractingOrUILocked => _isInterrogating;
+    public bool IsInteractingOrUILocked =>
+        _isInterrogating || IsTypingInInputField();
 
     private void Awake()
     {
         _input = new PlayerInputActions();
+    }
+
+    private void Update()
+    {
+        bool isTyping = IsTypingInInputField();
+
+        if (isTyping && !_wasTypingInInputField)
+        {
+            if (_movement != null)
+                _movement.SetMoveInput(Vector2.zero);
+
+            if (_playerLook != null)
+                _playerLook.SetLookInput(Vector2.zero);
+        }
+
+        _wasTypingInInputField = isTyping;
     }
 
     private void OnEnable()
@@ -88,13 +108,13 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void OnMove(InputAction.CallbackContext context)
     {
-        if (_isInterrogating) return;
+        if (IsInteractingOrUILocked) return;
         if (_movement != null) _movement.SetMoveInput(context.ReadValue<Vector2>());
     }
 
     private void OnLook(InputAction.CallbackContext context)
     {
-        if (_isInterrogating)
+        if (IsInteractingOrUILocked)
         {
             if (_playerLook != null) _playerLook.SetLookInput(Vector2.zero);
             return;
@@ -104,24 +124,25 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void OnInteract(InputAction.CallbackContext context)
     {
-        if (_isInterrogating) return;
+        if (IsInteractingOrUILocked) return;
         if (_interaction != null) _interaction.TryInteract();
     }
 
     private void OnCursorPressed(InputAction.CallbackContext context)
     {
-        if (_isInterrogating) return;
+        if (IsInteractingOrUILocked) return;
         if (_playerLook != null) _playerLook.SetCursorLocked(false);
     }
 
     private void OnCursorReleased(InputAction.CallbackContext context)
     {
-        if (_isInterrogating) return;
+        if (IsInteractingOrUILocked) return;
         if (_playerLook != null) _playerLook.SetCursorLocked(true);
     }
 
     private void OnToggleNotebook(InputAction.CallbackContext context)
     {
+        if (IsTypingInInputField()) return;
         if (_notebookHub == null) return;
 
         // UI khác đang khóa Player thì không cho mở Notebook.
@@ -137,5 +158,18 @@ public class PlayerInputHandler : MonoBehaviour
         {
             _notebookHub.ReturnToChoose();
         }
+    }
+
+    private bool IsTypingInInputField()
+    {
+        if (EventSystem.current == null)
+            return false;
+
+        GameObject selectedObject = EventSystem.current.currentSelectedGameObject;
+        if (selectedObject == null)
+            return false;
+
+        TMP_InputField inputField = selectedObject.GetComponentInParent<TMP_InputField>();
+        return inputField != null && inputField.isFocused;
     }
 }

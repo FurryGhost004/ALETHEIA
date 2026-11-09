@@ -16,6 +16,12 @@ MonoBehaviour:
   - _characterName: ???
     _characterPortrait: {fileID: 21300000, guid: af4e50bc4027045479c9af74a8c1d9e9, type: 3}
     _content: Bla bla bla
+    _animationTriggers:
+    - Talking
+    - Blinking
   - _characterName: ???
     _characterPortrait: {fileID: 21300000, guid: af4e50bc4027045479c9af74a8c1d9e9, type: 3}
     _content: Ble ble ble
+    _animationTriggers:
+    - Talking
+    - Blinking

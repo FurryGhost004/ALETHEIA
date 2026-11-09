@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RICHAIR
   _itemName: Richmal chair
   _description: Located  in kitchen
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 0d3fac90ddb558342a719b81c059c3f5, type: 3}
   _playerNote: 

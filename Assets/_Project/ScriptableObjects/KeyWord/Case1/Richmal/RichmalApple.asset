@@ -16,5 +16,5 @@ MonoBehaviour:
   _keywordName: RIAPPLE
   _itemName: Richmal apple
   _description: Stored inside the fridge at Richmal's apartment room
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 5c23fd8ea81a8da469fb5a204e19e181, type: 3}
   _playerNote: 
