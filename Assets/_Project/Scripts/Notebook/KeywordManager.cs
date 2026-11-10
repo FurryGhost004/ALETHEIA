@@ -5,6 +5,7 @@ using UnityEngine;
 public class KeywordManager : SingletonBase<KeywordManager>
 {
     [SerializeField] private List<KeywordData> _unlockedKeywords = new List<KeywordData>();
+    [SerializeField] private List<KeywordData> _allKeywords = new List<KeywordData>();
 
     public IReadOnlyList<KeywordData> UnlockedKeywords => _unlockedKeywords;
 
@@ -30,6 +31,17 @@ public class KeywordManager : SingletonBase<KeywordManager>
             }
         }
 
+        return null;
+    }
+
+    public KeywordData GetKeywordById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        foreach (KeywordData kw in _allKeywords)
+        {
+            if (kw != null && string.Equals(kw.Id, id, StringComparison.OrdinalIgnoreCase))
+                return kw;
+        }
         return null;
     }
 

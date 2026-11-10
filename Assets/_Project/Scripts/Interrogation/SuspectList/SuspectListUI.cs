@@ -125,9 +125,16 @@ public class SuspectListUI : MonoBehaviour
         // === BỔ SUNG DÒNG NÀY ĐỂ GHI NHỚ MÀN CHƠI HIỆN TẠI ===
         TimeManager.LastExplorationScene = SceneManager.GetActiveScene().name;
         Debug.Log($"[SuspectListUI] Đã lưu màn chơi trước khi vào tòa: {TimeManager.LastExplorationScene}");
+        if (SaveLoadManager.Instance != null)
+            SaveLoadManager.Instance.SaveLastExplorationScene(TimeManager.LastExplorationScene);
 
         // 1. Lưu nghi phạm bị buộc tội vào bộ nhớ tĩnh để dùng ở Scene CourtTrial
         CourtTrialController.ConvictedSuspect = _selectedSuspect;
+        if (SaveLoadManager.Instance != null)
+        {
+            int courtDay = TimeManager.Instance != null ? TimeManager.Instance.CurrentDay : 0;
+            SaveLoadManager.Instance.SaveCourtSchedule(_selectedSuspect.NpcId, courtDay);
+        }
 
         // 2. Đóng Notebook
         NotebookHubUI notebookHub = Object.FindFirstObjectByType<NotebookHubUI>();

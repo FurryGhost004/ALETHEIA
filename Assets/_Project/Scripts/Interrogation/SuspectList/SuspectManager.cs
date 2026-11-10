@@ -6,6 +6,10 @@ public class SuspectManager : MonoBehaviour
     public static SuspectManager Instance { get; private set; }
 
     private readonly List<SuspectData> _discoveredSuspects = new List<SuspectData>();
+
+    [SerializeField] private List<SuspectData> _allSuspects = new List<SuspectData>();
+    private readonly HashSet<string> _convictedIds = new HashSet<string>();
+
     public IReadOnlyList<SuspectData> DiscoveredSuspects => _discoveredSuspects;
 
     private void Awake()
@@ -33,5 +37,22 @@ public class SuspectManager : MonoBehaviour
 
         _discoveredSuspects.Add(suspect);
         Debug.Log($"[SuspectManager] Đã thêm nghi phạm mới: {suspect.NpcName} (ID: {suspect.NpcId})");
+    }
+
+    public SuspectData GetSuspectById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        return _allSuspects?.Find(s => s != null && s.NpcId == id);
+    }
+
+    public void MarkAsConvicted(string npcId)
+    {
+        if (!string.IsNullOrEmpty(npcId))
+            _convictedIds.Add(npcId);
+    }
+
+    public bool IsConvicted(string npcId)
+    {
+        return !string.IsNullOrEmpty(npcId) && _convictedIds.Contains(npcId);
     }
 }

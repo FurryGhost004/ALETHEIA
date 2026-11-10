@@ -17,6 +17,7 @@ public class SaveLoadManager : SingletonBase<SaveLoadManager>
 {
     // Giữ SaveData trong RAM để các method partial update không phải đọc lại file từ disk.
     private SaveData _currentSaveData;
+    public SaveData CurrentSaveData => _currentSaveData;
 
     // ─────────────────────────────────────────────────────────────────────
     // SAVE FULL
@@ -48,17 +49,15 @@ public class SaveLoadManager : SingletonBase<SaveLoadManager>
         // _currentSaveData.DestroyedEvidenceIds đã được cập nhật liên tục.
 
         // ── Req 3: Danh sách đã tương tác ───────────────────────────────
-        // SuspectManager lưu danh sách nghi phạm đã discover dưới dạng List<SuspectData>.
-        // Chỉ cần lấy NpcId từ mỗi item.
+        // Nhân chứng + nghi phạm đều là SuspectData trong SuspectManager — gộp chung một list.
         if (SuspectManager.Instance != null)
         {
-            data.InteractedSuspectIds = new System.Collections.Generic.List<string>();
+            data.InteractedNpcIds = new System.Collections.Generic.List<string>();
             foreach (SuspectData s in SuspectManager.Instance.DiscoveredSuspects)
                 if (!string.IsNullOrEmpty(s.NpcId))
-                    data.InteractedSuspectIds.Add(s.NpcId);
+                    data.InteractedNpcIds.Add(s.NpcId);
         }
-        // TODO: data.InteractedWitnessIds  = WitnessManager.Instance.GetDiscoveredIds();   (chờ file)
-        // TODO: data.InteractedEvidenceIds = EvidenceManager.Instance.GetDiscoveredIds();  (chờ file)
+        // TODO: data.InteractedEvidenceIds = ... (chờ file quản lý vật chứng cố định)
 
         // ── Req 4: Đã kết tội những ai ──────────────────────────────────
         // KHÔNG gom ở đây — SaveConviction() đã ghi realtime khi người chơi bấm Convict.
@@ -97,6 +96,57 @@ public class SaveLoadManager : SingletonBase<SaveLoadManager>
     {
         _currentSaveData = SaveSystem.Instance.ReadSaveFile();
         return _currentSaveData;
+    }
+
+    public void RestoreState(SaveData data)
+    {
+        if (data == null) return;
+
+        // Req 1: Thời gian
+        if (TimeManager.Instance != null)
+            TimeManager.Instance.SetTimeAndDay(data.CurrentDay, data.CurrentHour, data.CurrentMinute);
+
+        if (!string.IsNullOrEmpty(data.LastExplorationScene))
+            TimeManager.LastExplorationScene = data.LastExplorationScene;
+
+        // Req 3: Nhân chứng + nghi phạm đã tương tác
+        if (SuspectManager.Instance != null)
+        {
+            foreach (string id in data.InteractedNpcIds)
+            {
+                SuspectData s = SuspectManager.Instance.GetSuspectById(id);
+                if (s != null) SuspectManager.Instance.AddSuspect(s);
+            }
+        }
+
+        // Req 4: Đánh dấu đã kết tội
+        if (SuspectManager.Instance != null)
+        {
+            foreach (string id in data.ConvictedSuspectIds)
+                SuspectManager.Instance.MarkAsConvicted(id);
+        }
+
+        // Req 4: Khôi phục ConvictedSuspect nếu có phiên tòa đang chờ
+        if (data.HasScheduledCourtTrial && !string.IsNullOrEmpty(data.ScheduledSuspectId)
+            && SuspectManager.Instance != null)
+        {
+            SuspectData pending = SuspectManager.Instance.GetSuspectById(data.ScheduledSuspectId);
+            if (pending != null) CourtTrialController.ConvictedSuspect = pending;
+        }
+
+        // Req 5: Keyword đã mở khóa
+        if (KeywordManager.Instance != null)
+        {
+            foreach (string id in data.CollectedKeywordIds)
+            {
+                KeywordData kw = KeywordManager.Instance.GetKeywordById(id);
+                if (kw != null) KeywordManager.Instance.UnlockKeyword(kw);
+            }
+        }
+
+        // Req 6: TODO sau khi có SuspectItemUI.cs
+        // Req 2: EvidenceObject tự xử lý trong Awake/Start — xem EvidenceObject.cs
+        // Vị trí player: TODO sau khi có PlayerController
     }
 
     // ─────────────────────────────────────────────────────────────────────

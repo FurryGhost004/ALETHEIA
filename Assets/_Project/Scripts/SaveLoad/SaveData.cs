@@ -76,18 +76,16 @@ public class SaveData
     public List<string> DestroyedEvidenceIds = new List<string>();
 
     // ── Req 3 — Danh sách đã tương tác ───────────────────────────────────
-    // Khi người chơi tương tác với nhân chứng / vật chứng / nghi phạm lần đầu,
-    // ID của họ được thêm vào list tương ứng. Khi load lại, list này được dùng
-    // để khôi phục đúng danh sách đã unlock trong Investigation Board.
+    // Nhân chứng VÀ nghi phạm đều là SuspectData, đều nằm trong SuspectManager.
+    // → Gộp chung vào một list InteractedNpcIds (không tách riêng).
     //
-    // "Vật chứng" (PhysicalEvidence) ở đây là loại vật chứng CỐ ĐỊNH trong scene
-    // (EvidenceObject._destroyOnCollected = false), KHÔNG phải vật bị destroy.
+    // "Vật chứng" (PhysicalEvidence) là loại EvidenceObject._destroyOnCollected = false
+    // (cố định trong scene, không bị destroy) — quản lý riêng, chờ file.
     //
-    // Save: InvestigationBoardManager.Instance.GetInteractedSuspectIds() (hoặc tương đương)
-    // Load: InvestigationBoardManager.Instance.RestoreInteractions(...)
-    public List<string> InteractedSuspectIds = new List<string>();
-    public List<string> InteractedWitnessIds = new List<string>();
-    public List<string> InteractedEvidenceIds = new List<string>(); // vật chứng cố định
+    // Save: SuspectManager.Instance.DiscoveredSuspects → lấy NpcId từng item
+    // Load: foreach id → SuspectManager.Instance.GetSuspectById(id) → AddSuspect()
+    public List<string> InteractedNpcIds = new List<string>(); // nhân chứng + nghi phạm
+    public List<string> InteractedEvidenceIds = new List<string>(); // vật chứng cố định (chờ file)
 
     // ── Req 4 — Đã kết tội những ai ──────────────────────────────────────
     // Khi người chơi bấm Convict → SuspectId đó được thêm vào list.

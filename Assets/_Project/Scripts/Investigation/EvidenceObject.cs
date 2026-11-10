@@ -8,6 +8,8 @@ public class EvidenceObject : Interactable
     [SerializeField] private KeywordData _keywordData;
     [SerializeField] private DialogueDatabase _collectDialogue; // Dialogue hiển thị khi nhặt/tương tác vật phẩm
     [SerializeField] private bool _destroyOnCollected = true; // True: Soi/Xoay/Phá hủy | False: Cố định
+    [SerializeField] private string _evidenceId; // ID duy nhất — Duy điền trong Inspector
+    public string EvidenceId => _evidenceId;
 
     [Header("Inspect Settings")]
     [SerializeField] private float _moveDuration = GameConstants.DEFAULT_MOVE_DURATION;
@@ -38,6 +40,20 @@ public class EvidenceObject : Interactable
         foreach (var hotspot in childHotspots)
         {
             hotspot.OnHotspotClicked += HandleHotspotClicked;
+        }
+    }
+
+    private void Start()
+    {
+        // Req 2 Load: nếu vật phẩm này đã bị destroy trong lần chơi trước → tự hủy ngay
+        if (_destroyOnCollected && !string.IsNullOrEmpty(_evidenceId)
+            && SaveLoadManager.Instance != null)
+        {
+            SaveData saved = SaveLoadManager.Instance.CurrentSaveData;
+            if (saved != null && saved.DestroyedEvidenceIds.Contains(_evidenceId))
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -180,6 +196,7 @@ public class EvidenceObject : Interactable
         }
 
         Debug.Log($"{GameConstants.LOG_EVIDENCE_COLLECTED}{gameObject.name}");
+        if (SaveLoadManager.Instance != null) SaveLoadManager.Instance.NotifyEvidenceDestroyed(_evidenceId);
         Destroy(gameObject);
     }
 
@@ -234,6 +251,7 @@ public class EvidenceObject : Interactable
 
         // 3. Log và xóa vật phẩm khỏi hộp
         Debug.Log($"{GameConstants.LOG_EVIDENCE_COLLECTED}{gameObject.name}");
+        if (SaveLoadManager.Instance != null) SaveLoadManager.Instance.NotifyEvidenceDestroyed(_evidenceId);
         Destroy(gameObject);
     }
 

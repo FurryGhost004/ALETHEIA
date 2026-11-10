@@ -310,6 +310,9 @@ public class CourtTrialController : MonoBehaviour
     {
         ShowFinalResultPanel();
         Debug.Log("[CourtTrial] Thắng phiên tòa!");
+
+        if (SaveLoadManager.Instance != null && ConvictedSuspect != null)
+            SaveLoadManager.Instance.SaveConviction(ConvictedSuspect.NpcId);
     }
 
     private void OnTrialLose()
